@@ -1,0 +1,736 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #fbf7ef url(../images/faintBackground.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding-top: 0;
+  box-sizing: border-box;
+  animation: slide 60s linear infinite alternate; /* Set animation-direction to alternate */
+  transition: background-color 0.4s ease, color 0.4s ease;
+  color: #3d3933;
+}
+
+@keyframes slide {
+  0% { background-position: 0 0; }
+  100% { background-position: -512px -512px; }
+}
+
+.centered-text {
+  text-align: center; /* Center-align the text within the <p> element */
+}
+
+p{
+  text-align: center;
+}
+
+ul{
+  text-align: left;
+}
+li{
+  margin-bottom: 15px;
+}
+
+/* Start - NAVIGATION BAR*/
+.topPanel {
+    background-color: #a07e38;
+    overflow: hidden;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* Specify the offset from the top of the viewport */
+    z-index: 999;
+}
+
+.topPanel .rightSide{
+    float: right;
+}
+
+.topPanel a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topPanel a:hover {
+    background-color: #42300d;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rightSide i,
+  .rightSide .smallscreen,
+  a i,
+  a .smallscreen {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+@media (max-width: 1000px) {
+    .rightSide .smallscreen,
+    a i,
+    a .smallscreen {
+      display: none;
+    }
+
+    .smallscreen{
+        display:none;
+    }
+    
+    
+}
+
+.pokemonleafgreen {
+  position: relative; /* Required for positioning the pseudo-element */
+  overflow: hidden; /* Clip the background image to the border-radius */
+}
+
+.pokemonleafgreen::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/fallingleaves.gif");
+  background-size: cover;
+  opacity: 0; /* Initially invisible */
+  z-index: -1; /* Ensure pseudo-element is behind the content */
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  border-radius: inherit; /* Match the border radius of the parent */
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pokemonleafgreen:hover::before {
+  opacity: 3; /* Make the background image more visible on hover */
+  animation-play-state: running; /* Run the animation on hover */
+}
+
+/* End - NAVIGATION BAR*/
+@keyframes morphIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.fa-moon, .fa-sun {
+  transition: transform 0.5s ease-in-out;
+  animation: morphIcon 0.5s ease-in-out;
+}
+
+.dark .fa-moon{
+  transform: rotate(360deg);
+}
+
+.dark .fa-sun{
+  transform: rotate(0deg);
+}
+
+.bannerimage{
+  width: 100%;
+  max-width: 700px;
+  align-content: center;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* Start - NAVIGATION BAR2*/
+.topPanel1 {
+  background-color: #7b5e24;
+  overflow: hidden;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: transform 0.9s ease-out; /* Add transition property here */
+  box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+}
+
+.topPanel1 .rightSide1{
+  float: right;
+}
+
+.topPanel1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 5px 0;
+}
+
+.topPanel1 a:hover {
+  background-color: #42300d;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topPanel1 input[type=text] {
+  float: right;
+  padding: 15px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.my-select-menu{
+  float: left;
+  text-align: left;
+  margin: 8px 10px 0px 16px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #42300d;
+  border: 1px solid #42300d; 
+  color: white;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1000px) {
+   .topPanel1 input[type=text] {
+    display: block;
+    text-align: left;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .my-select-menu{
+    display: block;
+    text-align: left;
+    margin: 3px 15px 3px 15px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #42300d;
+    border: 1px solid #42300d; 
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+  
+  .topPanel1 input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.rightSide1 i,
+.rightSide1 .smallscreen1,
+a i,
+a .smallscreen1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 30%;
+  transform: translateY(10%); /* Move the element off-screen when not sticky */
+  box-shadow: 2px 6px 2px #0000003b;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.navDash {
+  display: block; /* Hide the navigation links by default */
+}
+
+@media (max-width: 1000px) {
+
+  .topPanel1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 0;
+  }
+
+  .rightSide1 .smallscreen1,
+  a i,
+  a .smallscreen1 {
+    display: none;
+    text-align: left;
+  }
+
+  .navDash a, .navDash{
+    text-align: left;
+    font-size: 15px;
+    display: none;
+  }
+
+  .mainNavigator{
+    display: none;
+  }
+
+  .smallscreen1{
+      display:none;
+  }
+
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 40%;
+    margin-right: 30%;
+    transform: translateY(10%); /* Move the element off-screen when not sticky */
+    box-shadow: 2px 6px 2px #0000003b;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+
+
+/* End - NAVIGATION BAR2*/
+/* Start - moving background */
+  
+  .shaper h1 {
+    font-family: sans-serif;
+    font-size: 80px;
+  }
+  
+  .shaper h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+  }
+  
+
+/* End - moving background */
+
+/* ko-fi icon */
+.fa-ko-fi::before {
+    content: "\f0f4";
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 0.45em;
+    margin: -0.45em 0 0 -0.2em;
+    overflow-y: hidden;
+    padding-top: 0.45em;
+  }
+  .fa-ko-fi::after {
+    color: #a07e38;
+    content: "\f004";
+    font-size: 50%;
+    font-weight: 900;
+    margin: 0.5em 0 0 -2em;
+    position: absolute;
+  }
+
+
+  .subscriber-count{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .subscriber-section{
+    height: 60hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .youtube-button {
+    box-sizing: border-box;
+    padding: 3px 7px 3px 7px;
+    color: #fff;
+    background-color: #cc181e;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+  }
+
+  .youtube-button i{
+    font-size: 30px;
+    margin-right: 12px;
+  }
+
+  .youtube-button p{
+    font-size: 18px;
+  }
+
+  .youtube-button span{
+    margin-right: 4px;
+  }
+
+
+/* start - container body */
+.fontawesomecustomsize{
+  font-size: 30px;
+
+}
+
+.mgfive{
+  margin: 5px;
+}
+
+.anchorgroup{
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.anchorgroup {
+  transition: transform 0.3s ease; /* Adjust the duration and easing function as needed */
+}
+
+.anchorgroup:hover {
+  transform: translateY(-10px);
+}
+
+.containerMain{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px ;
+  margin: 30px 100px 40px 100px;
+  border-radius: 30px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+-webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+}
+
+.containerMainNoResult{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  margin: 30px 100px 40px 100px;
+  border-radius: 30px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+-webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+}
+
+.containerMain {
+  display: block !important;
+}
+
+.containerMain .bigtext {
+  text-align: center; /* Ensure text remains centered */
+  margin-top: 10px;
+}
+
+.subcontainer{
+  display: flex;
+  /*align-items: flex-start;*/
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+
+
+.containerMainplus{
+  padding: 30px;
+  margin: 20px 200px 40px 200px;
+  background-color: #71706dd5;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  border: solid 2px white;
+}
+
+.theTop{
+  margin: 0px 50px 10px 50px;
+  padding: 0;
+  gap: 0%;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 2px 6px 2px #00000000;
+}
+
+.dark{
+  background-color: rgba(5, 5, 5, 0.8) !important;
+  color: #e6e6e6 !important;
+  transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+
+
+.bigtext{
+  display: block !important;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.properalign{
+  display: block !important;
+  text-align: center !important;
+}
+
+.containerMainplus{
+  padding: 30px;
+  margin: 20px 200px 40px 200px;
+  background-color: #71706dd5;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  border: solid 2px white;
+}
+
+@media (max-width: 1500px){
+
+  .containerMainplus{
+    padding: 30px;
+    margin: 20px 10px 20px 10px;
+    background-color: #71706dd5;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+    border: solid 2px white;
+  }
+}
+@media (max-width: 1000px) {
+
+  .containerMainplus{
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    background-color: #959088d5;
+    border-radius: 20px;
+    box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .containerMain{
+    display: grid;
+    gap: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 30px;
+    box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-webkit-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+-moz-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
+  }
+
+  .theTop{
+    margin: 10px 20px 10px 20px;
+    padding: 0px;
+  }
+
+  .bigtext{
+    font-size: 18px;
+    font-weight: 850;
+    margin-bottom: 5px;
+  }
+  
+}
+@media (max-width: 500px) {
+  .containerMain{
+    display: grid;
+    gap: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+  }
+  .bannerimage{
+    width: 100%;
+    max-width: 700px;
+    align-content: center;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+}
+/* End - container body */
+
+/* start - arrow key */
+.arrowButton, .arrowButton a{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  padding: 10px 15px;
+  background-color: #211806;;
+  border-radius: 10px;
+  color: white;
+}
+/* end - arrow key */
+
+/* start - sidenav css */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* end - sidenav css */
+
+/* start - video container */
+.videoebody{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.videocontainer{
+  width: 1000px;
+}
+
+.slider{
+  display: flex;
+}
+
+.slider iframe{
+  max-width: 100%;
+  margin-right: 10px;
+}
+/* end - video container */
+
+.youtubelist{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtubelist iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: solid white 5px;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.46);
+  
+}
+
+.row, .row a {
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap onto multiple lines */
+  margin-top: 10px;
+}
+
+.col, .col a {
+  flex: 1;
+  margin: 0 1rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@media (max-width: 1000px) {
+  .col {
+    flex: 100%; /* Set to full width when screen size is 768px or less */
+  }
+
+  .row{
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.linebreaker{
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.linebreaker2 {
+  height: 5px;
+  background-color: rgb(78, 78, 78);
+  border-radius: 5px;
+  margin: 15px auto; /* Set auto margin for left and right sides */
+  width: 90%;
+}
+
+#noupdate{
+  display: none;
+}
+
