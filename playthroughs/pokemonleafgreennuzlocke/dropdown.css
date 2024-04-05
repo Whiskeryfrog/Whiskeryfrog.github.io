@@ -72,3 +72,72 @@
         text-overflow: ellipsis;
     }
 }
+
+.anchorgroup {
+    margin-top: 20px;
+}
+
+.bigtext {
+    text-align: center;
+}
+
+.slightlysmall {
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .topPanel1 {
+        padding-top: 8px;
+    }
+
+    .slightlysmall {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+}
+
+.topPanel {
+    background-color: #5ca904 !important;
+}
+
+.topPanel a:hover {
+    background-color: #346002 !important;
+}
+
+.containerMain {
+    margin: 10px 10px 10px 10px;
+}
+
+.clickable {
+    cursor: pointer;
+    animation: shadow-bob 1s infinite alternate;
+    /* Apply the animation */
+}
+
+@keyframes shadow-bob {
+    0% {
+        color: #5ca904;
+        /* Start with shadow */
+    }
+
+    100% {
+        color: #346002;
+        /* End with a more pronounced shadow */
+    }
+}
+
+.rules-content {
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.textjustify {
+    text-align: justify;
+    justify-content: center;
+    margin: 5px 20px 15px 20px;
+}
+
+.bannerimage {
+    border-radius: 20px;
+}
