@@ -14,10 +14,10 @@
 
 </head>
 
-<body oncontextmenu="return false;">
+<body>
     <main>
         <div class="topPanel" id="topPage">
-            <a href="index.html"><i class="fa-solid fa-house"></i>
+            <a href="index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
             <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i
@@ -76,7 +76,7 @@
                         YouTube channel and possibly use them as a guide, as well as updates to this website.</p>
                 </div>
                 <div class="row">
-                    <a href="playthroughs/playthrough.html" class="anchorgroup col">
+                    <a href="playthroughs/playthrough" class="anchorgroup col">
                         <div class="col row containerMain">
 
                             <div class="limiter">
@@ -88,13 +88,14 @@
                                     YouTube
                                     channel and maybe use them as
                                     guides for
-                                    your playthrough.
+                                    your playthrough. 
                                 </p>
                             </div>
 
+
                         </div>
                     </a>
-                    <a href="website/websiteupdate.html" class="anchorgroup col">
+                    <a href="website/websiteupdate" class="anchorgroup col">
                         <div class="col row containerMain">
                             <div class="limiter">
                                 <span class="bigtext">WEBSITE</span>
@@ -131,24 +132,24 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 -->
-    <script>
-        const youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
-        const youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
-        const subCount = document.getElementById('subCount');
+<?php
+$youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
+$youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
 
-        let getSubscribers = () => {
+// Make the API request
+$response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
 
-            fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
-                .then(response => {
-                    return response.json()
-                })
-                .then(data => {
-                    console.log(data);
-                    subCount.innerHTML = data["items"][0].statistics.subscriberCount;
-                })
-        }
-        getSubscribers();
-    </script>
+// Decode the JSON response
+$data = json_decode($response, true);
+
+// Extract the subscriber count
+$subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
+?>
+
+<script>
+    const subCountElement = document.getElementById('subCount');
+    subCountElement.innerHTML = "<?php echo $subCount; ?>";
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
         integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

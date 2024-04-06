@@ -25,7 +25,7 @@
 <body>
     <main>
         <div class="topPanel" id="topPage">
-            <a href="../index.html"><i class="fa-solid fa-house"></i>
+            <a href="../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
             <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i
@@ -59,7 +59,7 @@
                     </header>
                 </div>
                 <div class="row">
-                    <a href="pokemonleafgreennuzlocke/leafgreennuzlockeplay.html" class="anchorgroup col">
+                    <a href="pokemonleafgreennuzlocke/leafgreennuzlockeplay" class="anchorgroup col">
                         <div class=" col row containerMain pokemonleafgreen">
                             <img src="../images/leafgreenbanner.png" class="bannerimage" alt="" loading="lazy">
                             <span class="bigtext" style="display: block !important;">Pokemon Leafgreen Nuzlocke (GBA)

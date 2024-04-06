@@ -35,7 +35,7 @@
 <body>
     <main>
         <div class="topPanel" id="topPage">
-            <a href="../index.html"><i class="fa-solid fa-house"></i>
+            <a href="../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
             <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i

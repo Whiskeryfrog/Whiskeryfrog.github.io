@@ -82,18 +82,18 @@
             /* Ensure children remain in the flow */
         }
 
-        .lab {
+        .prof {
             position: relative;
         }
 
-        .lab::before {
+        .prof::before {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("sprites/lab.jpg");
+            background-image: url("sprites/laboratory.jpeg");
             filter: brightness(0.5);
             /* Adjust the brightness value as needed */
             border-radius: inherit;
@@ -101,10 +101,16 @@
 
         }
 
-        /* Ensure other properties for .route1 div are still applied */
-        .lab>* {
+        .twobyone{     
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .prof>* {
             position: relative;
-            /* Ensure children remain in the flow */
         }
 
         .route2 {
@@ -258,10 +264,10 @@
 <body>
     <main>
         <div class="topPanel" id="topPage">
-            <a href="../../index.html"><i class="fa-solid fa-house"></i>
+            <a href="../../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
-            <a href="../playthrough.html"><i class="fa-solid fa-gamepad"></i>
+            <a href="../playthrough"><i class="fa-solid fa-gamepad"></i>
                 <div class="smallscreen">Playthroughs</div>
 
             </a>
@@ -370,7 +376,9 @@
                         well as opinions and retrospectives that I have of my playthrough of this challenge per episode.
                     </p>
                     <span class="bigtext slightlysmall" style="color: white;">Origins</span>
-                    <p style="color: white;">
+                    <div class="twobyone">
+                        <div>
+                        <p style="color: white;">
                         <i class="fa-solid fa-gift"></i> = Gift Pokemon
                     </p>
                     <p style="color: white;">
@@ -385,6 +393,8 @@
                     <p style="color: white;">
                         <i class="fa-solid fa-mountain"></i> = Cave Encounter
                     </p>
+                        </div>
+                    <div>
                     <p style="color: white;">
                         <i class="fa-solid fa-crown"></i> = Legendary Encounter
                     </p>
@@ -398,9 +408,11 @@
                         Normal Name = Not Encountered
                     </p>
                     <p style="color: white;">
-                        <i class="fa-solid fa-flag"></i> Name = Encountered
+                        <i class="fa-solid fa-flag"></i> Name = Already Caught
                     </p>
-
+                    </div>
+                    
+                    </div>
                     <div class="containerMain">
                         <span class="bigtext clickable" onclick="toggleRules()">Rules for the Playthrough</span>
                         <div id="displayrules" class="rules-content" style="height: 0;">
@@ -457,7 +469,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">All possible encounters in this
                         episode</span>
                     <div class="row">
-                        <div class="col containerMain lab">
+                        <div class="col containerMain prof">
                             <div class="limiter">
                                 <span class="bigtext slightlysmall titlealign  ">Professor Oak's Lab
                                 </span>
