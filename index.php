@@ -133,7 +133,7 @@
     </a>
 -->
 <?php
-$youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
+$youtubeKey = '';
 $youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
 
 // Make the API request
