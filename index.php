@@ -128,26 +128,23 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 -->
-    <?php
-    $youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
-    $youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
+    <<<<<<< HEAD <?php
+                    $youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
+                    $youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
+                    // Make the API request
+                    $response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
 
-    // Make the API request
-    $response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
+                    // Decode the JSON response
+                    $data = json_decode($response, true);
 
-    // Decode the JSON response
-    $data = json_decode($response, true);
-
-    // Extract the subscriber count
-    $subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
-    ?>
-
-    <script>
+                    // Extract the subscriber count
+                    $subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
+                    ?> <script>
         const subCountElement = document.getElementById('subCount');
         subCountElement.innerHTML = "<?php echo $subCount; ?>";
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/app.js"></script>
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/app.js"></script>
 </body>
 
 </html>
