@@ -8,9 +8,7 @@
     <title>Whiskeryfrog</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/whiskeryface.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -20,8 +18,7 @@
             <a href="index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
-            <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i
-                    class="fa-brands fa-youtube"></i>
+            <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i class="fa-brands fa-youtube"></i>
                 <div class="smallscreen">My YouTube Channel</div>
 
             </a>
@@ -88,7 +85,7 @@
                                     YouTube
                                     channel and maybe use them as
                                     guides for
-                                    your playthrough. 
+                                    your playthrough.
                                 </p>
                             </div>
 
@@ -114,8 +111,7 @@
                 </div>
 
                 <div class="subcontainer youtubelist">
-                    <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUWQhZn7Z-zg7VI_wpOLNKvA"
-                        loading="lazy">
+                    <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUWQhZn7Z-zg7VI_wpOLNKvA" loading="lazy">
                     </iframe>
                 </div>
                 <div class="subscriber-section">
@@ -132,27 +128,25 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 -->
-<?php
-$youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
-$youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
+    <?php
+    $youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
+    $youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
 
-// Make the API request
-$response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
+    // Make the API request
+    $response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
 
-// Decode the JSON response
-$data = json_decode($response, true);
+    // Decode the JSON response
+    $data = json_decode($response, true);
 
-// Extract the subscriber count
-$subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
-?>
+    // Extract the subscriber count
+    $subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
+    ?>
 
-<script>
-    const subCountElement = document.getElementById('subCount');
-    subCountElement.innerHTML = "<?php echo $subCount; ?>";
-</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
-        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const subCountElement = document.getElementById('subCount');
+        subCountElement.innerHTML = "<?php echo $subCount; ?>";
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/app.js"></script>
 </body>
 

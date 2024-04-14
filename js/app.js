@@ -1,9 +1,11 @@
 //window.onscroll = function() {stickyNav()};
+// Set a cookie with SameSite attribute
+document.cookie = "cookieName=cookieValue; SameSite=Strict";
 
 var navbar = document.getElementsByClassName("topPanel1")[0];
 const version = document.getElementById("versionnumber");
 
-version.textContent = "V0.1.6";
+version.textContent = "V0.2.0";
 /*var sticky = navbar.offsetTop;*/
 
 /*
@@ -67,11 +69,8 @@ function enableDarkMode() {
   const sunMoonIcon = document.getElementById("sunMoon");
   const change = document.getElementsByClassName("change")[0];
 
-  // Set the cookie with SameSite attribute for darkMode enabled
-  setCookieWithSameSite('darkMode', 'enabled', 30, 'Lax');
-
   containers.forEach(container => {
-    container.classList.add("dark");
+      container.classList.add("dark");
   });
 
   element.classList.add("dark");
@@ -88,11 +87,8 @@ function disableDarkMode() {
   const sunMoonIcon = document.getElementById("sunMoon");
   const change = document.getElementsByClassName("change")[0];
 
-  // Set the cookie with SameSite attribute for darkMode disabled
-  setCookieWithSameSite('darkMode', 'disabled', 30, 'Lax');
-
   containers.forEach(container => {
-    container.classList.remove("dark");
+      container.classList.remove("dark");
   });
 
   element.classList.remove("dark");
@@ -104,9 +100,9 @@ function disableDarkMode() {
 
 function darkMode() {
   if (localStorage.getItem("darkMode") === "enabled") {
-    disableDarkMode();
+      disableDarkMode();
   } else {
-    enableDarkMode();
+      enableDarkMode();
   }
 }
 

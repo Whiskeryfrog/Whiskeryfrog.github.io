@@ -8,9 +8,7 @@
     <title>Whiskeryfrog / Website Updates</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/whiskeryface.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .anchorgroup {
             margin-top: 20px;
@@ -38,8 +36,7 @@
             <a href="../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
-            <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i
-                    class="fa-brands fa-youtube"></i>
+            <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i class="fa-brands fa-youtube"></i>
                 <div class="smallscreen">My YouTube Channel</div>
 
             </a>
@@ -74,6 +71,26 @@
                     </header>
                 </div>
                 <div id="anchorgroupContainer">
+                    <a href="#" class="anchorgroup col">
+                        <div class="containerMain">
+                            <span class="bigtext">Update 0.2.1 - More content</span>
+                            <span class="bigtext smaller">April 11, 2024</span>
+                            <hr class="linebreaker2">
+                            <ul>
+                                <li>More leafgreen CONTENT!</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="#" class="anchorgroup col">
+                        <div class="containerMain">
+                            <span class="bigtext">Update 0.2.0 - The PHP change</span>
+                            <span class="bigtext smaller">April 6, 2024</span>
+                            <hr class="linebreaker2">
+                            <ul>
+                                <li>Changed the structure of the whole website to PHP in order to use server-side features for certain things on the website.</li>
+                            </ul>
+                        </div>
+                    </a>
                     <a href="#" class="anchorgroup col">
                         <div class="containerMain">
                             <span class="bigtext">Update 0.1.6 - The Table question</span>
@@ -159,9 +176,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
-        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/app.js"></script>
 </body>
 

@@ -8,9 +8,7 @@
     <title>Whiskeryfrog / Playthroughs</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../images/whiskeryface.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .anchorgroup {
             margin-top: 20px;
@@ -28,8 +26,7 @@
             <a href="../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
             </a>
-            <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i
-                    class="fa-brands fa-youtube"></i>
+            <a href="https://www.youtube.com/channel/UCWQhZn7Z-zg7VI_wpOLNKvA" target="_blank"><i class="fa-brands fa-youtube"></i>
                 <div class="smallscreen">My YouTube Channel</div>
 
             </a>
@@ -60,7 +57,7 @@
                 </div>
                 <div class="row">
                     <a href="pokemonleafgreennuzlocke/leafgreennuzlockeplay" class="anchorgroup col">
-                        <div class=" col row containerMain pokemonleafgreen">
+                        <div class=" col row containerMain">
                             <img src="../images/leafgreenbanner.png" class="bannerimage" alt="" loading="lazy">
                             <span class="bigtext" style="display: block !important;">Pokemon Leafgreen Nuzlocke (GBA)
 
@@ -69,7 +66,7 @@
                         </div>
                     </a>
                     <a href="#" class="anchorgroup col">
-                        <div class=" col row containerMain terrariabow">
+                        <div class=" col row containerMain">
                             <img src="../images/terrariabanner.png" class="bannerimage" alt="" loading="lazy">
                             <span class="bigtext" style="display: block !important;">Terraria Bow Run - Expert Mode (PC)
                             </span>
@@ -128,9 +125,7 @@
                             <i class="fa-solid fa-arrow-up"></i>
                 </a>
                 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
-        integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js" integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/app.js"></script>
 </body>
 

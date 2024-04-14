@@ -86,6 +86,11 @@
     padding-top: 15px;
 }
 
+.small {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
 @media screen and (max-width: 1000px) {
     .topPanel1 {
         padding-top: 8px;
@@ -111,9 +116,10 @@
 
 .clickable {
     cursor: pointer;
-    animation: shadow-bob 1s infinite alternate;
+    /*animation: shadow-bob 1s infinite alternate;*/
     /* Apply the animation */
 }
+
 
 @keyframes shadow-bob {
     0% {

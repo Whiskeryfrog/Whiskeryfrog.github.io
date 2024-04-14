@@ -35,23 +35,13 @@ function changeTab(selectedValue) {
     document.getElementById("dropdownButton").textContent = currentSelection;
 }
 
-function toggleRules() {
-    const rulesDiv = document.getElementById("displayrules");
+function toggleElement(elementId) {
+    const element = document.getElementById(elementId);
 
-    if (rulesDiv.offsetHeight === 0) {
-        rulesDiv.style.height = rulesDiv.scrollHeight + "px";
+    if (element.offsetHeight === 0) {
+        element.style.height = element.scrollHeight + "px";
     } else {
-        rulesDiv.style.height = 0;
-    }
-}
-
-function toggleextraRules() {
-    const rulesDiv = document.getElementById("displayextrarules");
-
-    if (rulesDiv.offsetHeight === 0) {
-        rulesDiv.style.height = rulesDiv.scrollHeight + "px";
-    } else {
-        rulesDiv.style.height = 0;
+        element.style.height = 0;
     }
 }
 
