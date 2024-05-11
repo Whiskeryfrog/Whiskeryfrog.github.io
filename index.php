@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="mainBody">
     <main>
         <div class="topPanel" id="topPage">
             <a href="index"><i class="fa-solid fa-house"></i>
@@ -30,7 +30,7 @@
                     <div class="smallscreen"> Dark Mode:</div>
                     <span class="change"> Off</span>
                 </a>
-                <a href="#" id="versionnumber">
+                <a href="website/websiteupdate" id="versionnumber">
                     <div>V</div>
                 </a>
             </div>
@@ -72,39 +72,27 @@
                         played on my
                         YouTube channel and possibly use them as a guide, as well as updates to this website.</p>
                 </div>
-                <div class="row">
-                    <a href="playthroughs/playthrough" class="anchorgroup col">
-                        <div class="col row containerMain">
 
-                            <div class="limiter">
-                                <span class="bigtext">PLAYTHROUGH
-                                </span>
-                                <hr class="linebreaker2">
+                <a href="playthroughs/playthrough" class="anchorgroup">
+                    <div class="containerMain">
 
-                                <p>Learn all about the games that I have featured on my
-                                    YouTube
-                                    channel and maybe use them as
-                                    guides for
-                                    your playthrough.
-                                </p>
-                            </div>
+                        <div class="limiter">
+                            <span class="bigtext">PLAYTHROUGH
+                            </span>
+                            <hr class="linebreaker2">
 
-
+                            <p>Learn all about the games that I have featured on my
+                                YouTube
+                                channel and maybe use them as
+                                guides for
+                                your playthrough.
+                            </p>
                         </div>
-                    </a>
-                    <a href="website/websiteupdate" class="anchorgroup col">
-                        <div class="col row containerMain">
-                            <div class="limiter">
-                                <span class="bigtext">WEBSITE</span>
-                                <hr class="linebreaker2">
 
-                                <p>View every single update and new features that are being added to this
-                                    website.</p>
 
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+
                 <hr class="linebreaker">
                 <div class="limiter" style="color: white; ">
                     <span class="bigtext">My latest video on YouTube</span>
