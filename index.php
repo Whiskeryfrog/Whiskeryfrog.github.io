@@ -120,14 +120,19 @@
     $youtubeKey = 'AIzaSyBzkU9WvhdbXkDFPW1tvIi2HB94EtaNdgI';
     $youtubeUser = 'UCWQhZn7Z-zg7VI_wpOLNKvA';
 
-    // Make the API request
-    $response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
+    try {
+        // Make the API request
+        $response = file_get_contents("https://www.googleapis.com/youtube/v3/channels?part=statistics&id={$youtubeUser}&key={$youtubeKey}");
 
-    // Decode the JSON response
-    $data = json_decode($response, true);
+        // Decode the JSON response
+        $data = json_decode($response, true);
 
-    // Extract the subscriber count
-    $subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
+        // Extract the subscriber count
+        $subCount = isset($data['items'][0]['statistics']['subscriberCount']) ? $data['items'][0]['statistics']['subscriberCount'] : 'N/A';
+    } catch (Exception $e) {
+        // Handle any exceptions during the process
+        $subCount = 'N/A';
+    }
     ?>
 
     <script>
