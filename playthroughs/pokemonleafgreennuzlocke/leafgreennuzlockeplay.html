@@ -166,7 +166,7 @@
         table.customTable {
             width: 100%;
             border-collapse: collapse;
-            border-width: 4px;
+            border-width: 2px;
             border-color: #ffffff;
             border-style: solid;
             color: #000000;
@@ -190,38 +190,38 @@
 
         table.customTable td,
         table.customTable th {
-            border-width: 4px;
-            border-color: #F8F8F8;
+            border-width: 2px;
+            border-color: #f8f8f800;
             border-style: solid;
             padding: 1px;
         }
 
         table tr:last-child td:last-child {
-            border-bottom-right-radius: 10px;
+            border-bottom-right-radius: 1px;
         }
 
         table tr:last-child td:first-child {
-            border-bottom-left-radius: 10px;
+            border-bottom-left-radius: 1px;
         }
 
         table tr:first-child th:first-child,
         table tr:first-child td:first-child {
-            border-top-left-radius: 10px
+            border-top-left-radius: 1px
         }
 
         table tr:first-child th:last-child,
         table tr:first-child td:last-child {
-            border-top-right-radius: 10px
+            border-top-right-radius: 1px
         }
 
         table tr th:first-child,
         table tr td:first-child {
-            border-left: 2px solid #ffffff;
+            border-left: 2px solid #ffffff00;
         }
 
         table tr:first-child th,
         table tr:first-child td {
-            border-top: 2px solid #ffffff;
+            border-top: 2px solid #ffffff00;
         }
 
         .alive {
@@ -394,6 +394,28 @@
                         <i class="fa-solid fa-flag"></i> Name = Already Caught
                     </p>
 
+                    <span class="bigtext slightlysmall" style="color: white;">Difficulty of Trainers</span>
+                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
+                            class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> = Extremely Easy
+                    </span>
+                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
+                            class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> = Easy
+                    </span>
+                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> = Normal
+                    </span>
+                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> = Hard
+                    </span>
+                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> = Challenging
+                    </span>
+
                     <div class="containerMain">
                         <span class="bigtext clickable" onclick="toggleElement('displayrules')">Rules for the
                             Playthrough</span>
@@ -539,10 +561,10 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Professor Oak's Lab
                             </span>
-                            <span class="bigtext small titlealign  importantname">TOADMAN (Rival) - <i
+                            <span class="bigtext small titlealign  importantname">TOADMAN (Rival)<br><i
                                     class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Okay
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Blue1.webp">
                             <p class="textjustify titlealign">This will be the very first battle
@@ -608,10 +630,10 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 22
                             </span>
-                            <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival) - <i
+                            <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival)<br><i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Blue1.webp">
                             <p class="textjustify titlealign">This is the second time you will
@@ -632,9 +654,9 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Viridian Forest
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Rick - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign  ">Rick<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">It's just bugs, if you chose
@@ -647,9 +669,9 @@
                                 </table>
                             </div>
                             <br><br>
-                            <span class="bigtext slightlysmall titlealign  ">Doug - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign  ">Doug<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">You really need to that antidote
@@ -661,9 +683,9 @@
                                 </table>
                             </div>
                             <br><br>
-                            <span class="bigtext slightlysmall titlealign  ">Anthony - <i class="fa-solid fa-star"></i>
+                            <span class="bigtext slightlysmall titlealign  ">Anthony<br><i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">EZ, just press A.
@@ -674,9 +696,9 @@
                                 </table>
                             </div>
                             <br><br>
-                            <span class="bigtext slightlysmall titlealign  ">Charlie - <i class="fa-solid fa-star"></i>
+                            <span class="bigtext slightlysmall titlealign  ">Charlie<br><i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">Even easier, but with more EXP
@@ -688,9 +710,9 @@
                                 </table>
                             </div>
                             <br><br>
-                            <span class="bigtext slightlysmall titlealign  ">Sammy - <i class="fa-solid fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                            <span class="bigtext slightlysmall titlealign  ">Sammy<br><i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">Just a Weedle, after all of the
@@ -765,9 +787,9 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Pewter City Gym
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Liam - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign  ">Liam<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Camper.png">
                             <p class="textjustify titlealign">This is the only gym trainer in Pewter City gym and its
@@ -780,10 +802,10 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign importantname">Brock - <i
+                            <span class="bigtext slightlysmall titlealign importantname">Brock<br><i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Brock_FRLG.webp">
                             <p class="textjustify titlealign">Easiest gym leader you will ever face if you chose
@@ -801,9 +823,9 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 3
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Janice - <i class="fa-solid fa-star"></i>
+                            <span class="bigtext slightlysmall titlealign  ">Janice<br><i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Lass.png">
                             <p class="textjustify titlealign">Probably an easy match considering you already fought a
@@ -815,9 +837,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Colton - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Colton<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">Having bug catcher this late will not really cause you any
@@ -829,9 +851,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Ben - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Ben<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Youngster.png">
                             <p class="textjustify titlealign">I guess he likes his shorts? Watch out for intimidate
@@ -843,10 +865,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Greg - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Greg<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely
-                                Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">Another bug catcher this late in the game.
@@ -857,9 +878,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Sally - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Sally<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"> </i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Lass.png">
                             <p class="textjustify titlealign">Another fodder trainer, I'm pretty you guys get the jist
@@ -871,10 +892,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">James - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">James<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"> </i><i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely
-                                Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">BUG
@@ -885,9 +905,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Robin - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Robin<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i><i class="fa-regular fa-star"> </i><i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Lass.png">
                             <p class="textjustify titlealign">Just a jigglypuff, nothing too crazy
@@ -1006,9 +1026,9 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 3
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Calvin - <i class="fa-solid fa-star"></i>
+                            <span class="bigtext slightlysmall titlealign  ">Calvin<br><i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Youngster.png">
                             <p class="textjustify titlealign">I'm basically just cleaning up here.
@@ -1024,9 +1044,9 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Mt. Moon
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Iris - <i class="fa-solid fa-star"></i>
+                            <span class="bigtext slightlysmall titlealign  ">Iris<br><i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Lass.png">
                             <p class="textjustify titlealign">Not the champion from Black 2 and White 2.
@@ -1037,9 +1057,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Jovan - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Jovan<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Normal
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/53.png">
                             <p class="textjustify titlealign">If you are not prepared, this fight would be a lot more
@@ -1051,9 +1071,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Robby - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Robby<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">Another Bug Catcher, nothing too special.
@@ -1064,10 +1084,10 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
+                            <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">Your very first Rocket grunt battle.
@@ -1078,9 +1098,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Kent - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Kent<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">What is up with these bug catchers
@@ -1091,9 +1111,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Miriam - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Miriam<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Lass.png">
                             <p class="textjustify titlealign">You know what, I'm going to stop adding these side
@@ -1105,10 +1125,10 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
+                            <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">
@@ -1119,9 +1139,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Josh - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Josh<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"> </i><i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Youngster.png">
                             <p class="textjustify titlealign">I forgot to speed this up in the video.
@@ -1132,9 +1152,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Marcos - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Marcos<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"> </i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/26.png">
                             <p class="textjustify titlealign">
@@ -1145,10 +1165,10 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
+                            <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">
@@ -1159,10 +1179,10 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
+                            <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">
@@ -1173,9 +1193,9 @@
                                 </table>
                             </div>
                             <br>
-                            <span class="bigtext slightlysmall titlealign">Miguel - <i class="fa-solid fa-star"></i> <i
+                            <span class="bigtext slightlysmall titlealign">Miguel<br><i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/53.png">
                             <p class="textjustify titlealign">Despacito
@@ -1291,17 +1311,22 @@
 
                     <div class="col containerMain">
                         <div class="limiter">
-                            <span class="bigtext slightlysmall titlealign  ">Route 3
+                            <span class="bigtext slightlysmall titlealign  ">Cerulean City
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Calvin - <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                            <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival) <br> <i
+                                    class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
-                            <img src="sprites/Spr_FRLG_Youngster.png">
-                            <p class="textjustify titlealign">I'm basically just cleaning up here.
+                            <img src="sprites/Blue1.webp">
+                            <p class="textjustify titlealign">If you are not ready for this fight, it might cause you a
+                                bit of trouble.<br> But would you lose?<br> Nahh, I'd Win.
+                                <br>In all seriousness, the only members that could cause you trouble are Pidgeotto and
+                                Bulbasaur especially if you have nothing against them.
+
                             </p>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="calvin">
+                                <table border="1" class="customTable" id="rival3">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -1309,24 +1334,24 @@
                     </div>
                     <div class="col containerMain">
                         <div class="limiter">
-                            <span class="bigtext slightlysmall titlealign  ">Mt. Moon
+                            <span class="bigtext slightlysmall titlealign  ">Route 24
                             </span>
-                            <span class="bigtext slightlysmall titlealign  ">Iris - <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                            <span class="bigtext slightlysmall titlealign  ">Cale <br><i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
-                            <img src="sprites/Spr_FRLG_Lass.png">
-                            <p class="textjustify titlealign">Not the champion from Black 2 and White 2.
+                            <img src="sprites/7.png">
+                            <p class="textjustify titlealign">
                             </p>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="iris">
+                                <table border="1" class="customTable" id="cale">
                                     <tbody></tbody>
                                 </table>
                             </div>
                             <br>
                             <span class="bigtext slightlysmall titlealign">Jovan - <i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Normal
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/53.png">
                             <p class="textjustify titlealign">If you are not prepared, this fight would be a lot more
@@ -1340,7 +1365,7 @@
                             <br>
                             <span class="bigtext slightlysmall titlealign">Robby - <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">Another Bug Catcher, nothing too special.
@@ -1354,7 +1379,7 @@
                             <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">Your very first Rocket grunt battle.
@@ -1367,7 +1392,7 @@
                             <br>
                             <span class="bigtext slightlysmall titlealign">Kent - <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/7.png">
                             <p class="textjustify titlealign">What is up with these bug catchers
@@ -1380,7 +1405,7 @@
                             <br>
                             <span class="bigtext slightlysmall titlealign">Miriam - <i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Lass.png">
                             <p class="textjustify titlealign">You know what, I'm going to stop adding these side
@@ -1395,7 +1420,7 @@
                             <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">
@@ -1408,7 +1433,7 @@
                             <br>
                             <span class="bigtext slightlysmall titlealign">Josh - <i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"> </i><i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/Spr_FRLG_Youngster.png">
                             <p class="textjustify titlealign">I forgot to speed this up in the video.
@@ -1421,7 +1446,7 @@
                             <br>
                             <span class="bigtext slightlysmall titlealign">Marcos - <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"> </i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Extremely Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/26.png">
                             <p class="textjustify titlealign">
@@ -1435,7 +1460,7 @@
                             <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">
@@ -1449,7 +1474,7 @@
                             <span class="bigtext slightlysmall titlealign">Rocket Grunt - <i
                                     class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
                                     class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/57.png">
                             <p class="textjustify titlealign">
@@ -1462,7 +1487,7 @@
                             <br>
                             <span class="bigtext slightlysmall titlealign">Miguel - <i class="fa-solid fa-star"></i> <i
                                     class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> Easy
+                                    class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                             </span>
                             <img src="sprites/53.png">
                             <p class="textjustify titlealign">Despacito
@@ -1509,6 +1534,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/app.js"></script>
     <script src="changetab.js?v=1.0"></script>
+    <script src="pokemontypeslf.js"></script>
+    <script src="pokedexlf.js"></script>
     <script src="trainerslf.js"></script>
     <script src="wildpokemonlf.js"></script>
     <script src="partylf.js"></script>

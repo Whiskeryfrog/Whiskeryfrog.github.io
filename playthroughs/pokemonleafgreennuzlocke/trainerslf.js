@@ -19,7 +19,7 @@ function populateTable(pokemonData, tableId) {
             const cell = document.createElement("td");
 
             // If the cell value is the image path, create an image element
-            if (typeof cellValue === "string" && cellValue.endsWith(".png")) {
+            if (typeof cellValue === "string" && cellValue.endsWith(".png") || cellValue.endsWith(".gif")) {
                 const image = document.createElement("img");
                 image.setAttribute("src", cellValue); // Set the image source
                 cell.appendChild(image);
@@ -34,185 +34,200 @@ function populateTable(pokemonData, tableId) {
         // Append the completed row to the table body
         tbody.appendChild(rowElement);
     });
+    
 }
 
 //episode1
 const rival1 =[
     ["Bulbasaur"],
-    ["sprites/firered-leafgreen/1.png"],
+    [bulbasaur],
     ["Lv.5"],
-    ["Grass / Poison"]
+    [grassPoison]
 ];
 //episode2
 const rival2 =[
     ["Pidgey", "Bulbasaur"],
-    ["sprites/firered-leafgreen/16.png", "sprites/firered-leafgreen/1.png"],
+    [pidgey, bulbasaur],
     ["Lv.9", "Lv.9"],
-    ["Normal / Flying", "Grass / Poison"]
+    [normalFlying, grassPoison]
 ];
 const rick =[
     ["Weedle", "Caterpie"],
-    ["sprites/firered-leafgreen/13.png", "sprites/firered-leafgreen/10.png"],
+    [weedle, caterpie],
     ["Lv.6", "Lv.6"],
-    ["Bug/ Poison", "Bug"]
+    [bugPoison, bug]
 ];
 const doug =[
     ["Weedle", "Kakuna", "Weedle"],
-    ["sprites/firered-leafgreen/13.png", "sprites/firered-leafgreen/14.png", "sprites/firered-leafgreen/13.png"],
+    [weedle, kakuna, weedle],
     ["Lv.7", "Lv.7", "Lv.7"],
-    ["Bug/ Poison", "Bug/ Poison", "Bug/ Poison"]
+    [bugPoison, bugPoison, bugPoison]
 ];
 const anthony =[
     ["Catepie", "Caterpie"],
-    ["sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/10.png"],
+    [caterpie, caterpie],
     ["Lv.7", "Lv.8"],
-    ["Bug", "Bug"]
+    [bug, bug]
 ];
 const charlie =[
     ["Metapod", "Caterpie", "Metapod"],
-    ["sprites/firered-leafgreen/11.png", "sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/11.png"],
+    [metapod, caterpie, metapod],
     ["Lv.7", "Lv.7", "Lv.7"],
-    ["Bug", "Bug", "Bug"]
+    [bug, bug, bug]
 ];
 const sammy =[
     ["Weedle"],
-    ["sprites/firered-leafgreen/13.png"],
+    [weedle],
     ["Lv.9"],
-    ["Bug/ Poison"]
+    [bugPoison]
 ];  
 //episode3
 const liam =[
     ["Geodude", "Sandshrew"],
-    ["sprites/firered-leafgreen/74.png", "sprites/firered-leafgreen/27.png"],
+    [geodude, sandshrew],
     ["Lv.10", "Lv.11"],
-    ["Rock / Ground", "Ground"]
+    [rockGround, ground]
 ];
 const brock =[
     ["Geodude", "Onix"],
-    ["sprites/firered-leafgreen/74.png", "sprites/firered-leafgreen/95.png"],
+    [geodude, onix],
     ["Lv.12", "Lv.14"],
-    ["Rock / Ground", "Rock / Ground"]
+    [rockGround, rockGround]
 ];
 const janice =[
     ["Pidgey", "Pidgey"],
-    ["sprites/firered-leafgreen/16.png", "sprites/firered-leafgreen/16.png"],
+    [pidgey, pidgey],
     ["Lv.9", "Lv.9"],
-    ["Normal / Flying", "Normal / Flying"]
+    [normalFlying, normalFlying]
 ];
 const colton =[
     ["Caterpie", "Weedle", "Caterpie"],
-    ["sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/13.png", "sprites/firered-leafgreen/10.png"],
+    [caterpie, weedle, caterpie],
     ["Lv.10", "Lv.10", "Lv.10"],
-    ["Bug", "Bug / Poison", "Bug"]
+    [bug, bugPoison, bug]
 ];
 const ben =[
     ["Rattata", "Ekans"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/23.png"],
+    [rattata, ekans],
     ["Lv.11", "Lv.11"],
-    ["Normal", "Poison"]
+    [normal, poison]
 ];
 const greg =[
     ["Weedle", "Kakuna", "Caterpie", "Metapod"],
-    ["sprites/firered-leafgreen/13.png", "sprites/firered-leafgreen/14.png", "sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/11.png"],
+    [weedle, kakuna, caterpie, metapod],
     ["Lv.9", "Lv.9", "Lv.9", "Lv. 9"],
-    ["Bug / Poison", "Bug / Poison", "Bug", "Bug"]
+    [bugPoison, bugPoison, bug, bug]
 ];
 const sally =[
     ["Rattata", "Nidoran♀"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/29.png"],
+    [rattata, nidoranf],
     ["Lv.10", "Lv.10"],
-    ["Normal", "Poison"]
+    [normal, poison]
 ];
 const james =[
     ["Caterpie", "Metapod"],
-    ["sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/11.png"],
+    [caterpie, metapod],
     ["Lv.11", "Lv.11"],
-    ["Bug", "Bug"]
+    [bug, bug]
 ];
 const robin =[
     ["Jigglypuff"],
-    ["sprites/firered-leafgreen/39.png"],
+    [jigglypuff],
     ["Lv.14"],
-    ["Normal"]
+    [normal]
 ];
 //episode4
 const calvin =[
     ["Spearow"],
-    ["sprites/firered-leafgreen/21.png"],
+    [spearow],
     ["Lv.14"],
-    ["Normal / Flying"]
+    [normalFlying]
 ];
 const iris =[
     ["Clefairy"],
-    ["sprites/firered-leafgreen/35.png"],
+    [clefairy],
     ["Lv.14"],
-    ["Normal"]
+    [normal]
 ];
 const jovan =[
     ["Magnemite", "Voltorb"],
-    ["sprites/firered-leafgreen/81.png", "sprites/firered-leafgreen/100.png"],
+    [magnemite, voltorb],
     ["Lv.11", "Lv.11"],
-    ["Electric / Steel", "Electric"]
+    [electricSteel, electric]
 ];
 const robby = [
     ["Caterpie", "Metapod", "Caterpie"],
-    ["sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/11.png", "sprites/firered-leafgreen/10.png"],
+    [caterpie, metapod, caterpie],
     ["Lv.10", "Lv.10", "Lv.10"],
-    ["Bug", "Bug", "Bug"]
+    [bug, bug, bug]
 ];
 const rocketGruntMtMoon1 = [
     ["Sandshrew", "Rattata", "Zubat"],
-    ["sprites/firered-leafgreen/27.png", "sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/41.png"],
+    [sandshrew, rattata, zubat],
     ["Lv.11", "Lv.11", "Lv.11"],
-    ["Ground", "Normal", "Poison / Flying"]
+    [ground, normal, poisonFlying]
 ];
 const kent =[
     ["Weedle", "Kakuna"],
-    ["sprites/firered-leafgreen/13.png", "sprites/firered-leafgreen/14.png"],
+    [weedle, kakuna],
     ["Lv.11", "Lv.11"],
-    ["Bug / Poison", "Bug / Poison"]
+    [bugPoison, bugPoison]
 ];
 const miriam =[
     ["Oddish", "Bellsprout"],
-    ["sprites/firered-leafgreen/43.png", "sprites/firered-leafgreen/69.png"],
+    [oddish, bellsprout],
     ["Lv.11", "Lv.11"],
-    ["Grass / Poison", "Grass / Poison"]
+    [grassPoison, grassPoison]
 ];
 const rocketGruntMtMoon2 =[
     ["Zubat", "Ekans"],
-    ["sprites/firered-leafgreen/41.png", "sprites/firered-leafgreen/23.png"],
+    [zubat, ekans],
     ["Lv.11", "Lv.11"],
-    ["Poison / Flying", "Poison"]
+    [poisonFlying, poison]
 ];
 const josh = [
     ["Rattata", "Rattata", "Zubat"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/41.png"],
+    [rattata, rattata, zubat],
     ["Lv.10", "Lv.10", "Lv.10"],
-    ["Normal", "Normal", "Poison / Flying"]
+    [normal, normal, poisonFlying]
 ];
 const marcos = [
     ["Geodude", "Geodude", "Onix"],
-    ["sprites/firered-leafgreen/74.png", "sprites/firered-leafgreen/74.png", "sprites/firered-leafgreen/95.png"],
+    [geodude, geodude, onix],
     ["Lv.10", "Lv.10", "Lv.10"],
-    ["Rock / Ground", "Rock / Ground", "Rock / Ground"]
+    [rockGround, rockGround, rockGround]
 ];
 const rocketGruntMtMoon3 =[
     ["Rattata", "Sandshrew"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/27.png"],
+    [rattata, sandshrew],
     ["Lv.13", "Lv.13"],
-    ["Normal", "Ground"]
+    [normal, ground]
 ];
 const rocketGruntMtMoon4 =[
     ["Rattata", "Zubat"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/41.png"],
+    [rattata, zubat],
     ["Lv.13", "Lv.13"],
-    ["Normal", "Poison / Flying"]
+    [normal, poisonFlying]
 ];
 const miguel = [
     ["Grimer", "Voltorb", "Koffing"],
-    ["sprites/firered-leafgreen/88.png", "sprites/firered-leafgreen/100.png", "sprites/firered-leafgreen/109.png"],
+    [grimer, voltorb, koffing],
     ["Lv.12", "Lv.12", "Lv.12"],
-    ["Poison", "Electric", "Poison"]
+    [poison, electric, poison]
+];
+//episode5
+const rival3 = [
+    ["Pidgeotto", "Abra", "Rattata", "Bulbasaur"],
+    [pidgeotto, abra, rattata, bulbasaur],
+    ["Lv.17", "Lv.16", "Lv.15", "Lv.18"],
+    [normalFlying, psychic, normal, grassPoison]
+];
+
+const cale = [
+    ["Caterpie", "Weedle", "Metapod", "Kakuna"],
+    [caterpie, weedle, metapod, kakuna],
+    ["Lv.10", "Lv.10", "Lv.10", "Lv.10"],
+    [normalFlying, psychic, normal, grassPoison]
 ];
 
 
@@ -250,4 +265,5 @@ populateTable(rocketGruntMtMoon3, "rocketGruntMtMoon3");
 populateTable(rocketGruntMtMoon4, "rocketGruntMtMoon4");
 populateTable(miguel, "miguel");
 //episode5
+populateTable(rival3, "rival3");
 

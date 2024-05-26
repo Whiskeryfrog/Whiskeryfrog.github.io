@@ -19,7 +19,7 @@ function populateTable(partyData, tableId) {
             const cell = document.createElement("td");
 
             // If the cell value is the image path, create an image element
-            if (typeof cellValue === "string" && cellValue.endsWith(".png")) {
+            if (typeof cellValue === "string" && cellValue.endsWith(".png") || cellValue.endsWith(".gif")) {
                 const image = document.createElement("img");
                 image.setAttribute("src", cellValue); // Set the image source
                 cell.appendChild(image);
@@ -39,394 +39,394 @@ function populateTable(partyData, tableId) {
 //episode1
 const party1 =[
     ["GILAMONSTR", "LIZARD", "NEWT", "CAIMAN"],
-    ["sprites/firered-leafgreen/7.png","sprites/firered-leafgreen/13.png","sprites/firered-leafgreen/19.png","sprites/firered-leafgreen/10.png"],
+    [squirtle,weedle,rattata,caterpie],
     ["Lv.9","Lv.4","Lv.3","Lv.4"],
-    ["Water", "Bug / Poison", "Normal","Bug"]
+    [water, bugPoison, normal,bug]
 ];
 
 //episode2
 const party2 =[
     ["GILAMONSTR", "LIZARD", "NEWT", "CAIMAN"],
-    ["sprites/firered-leafgreen/7.png","sprites/firered-leafgreen/15.png","sprites/firered-leafgreen/19.png","sprites/firered-leafgreen/12.png"],
+    [squirtle,beedrill,rattata,butterfree],
     ["Lv.12","Lv.10","Lv.10","Lv.10"],
-    ["Water", "Bug / Poison", "Normal","Bug / Flying"]
+    [water, bugPoison, normal,bugFlying]
 ];
 //episode3
 const party3_1 =[
     ["GILAMONSTR", "LIZARD", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/15.png","sprites/firered-leafgreen/19.png"],
+    [wartortle,beedrill,rattata],
     ["Lv.16","Lv.14","Lv.14"],
-    ["Water", "Bug / Poison", "Normal"]
+    [water, bugPoison, normal]
 ];
 const party3_2 =[
     ["CAIMAN", "IGUANA"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/29.png"],
+    [butterfree,nidoranf],
     ["Lv.15","Lv.7"],
-    ["Bug / Flying", "Poison"]
+    [bugFlying, poison]
 ];
 //episode4
 const party4_1 =[
     ["GILAMONSTR", "LIZARD", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/15.png","sprites/firered-leafgreen/19.png"],
+    [wartortle,beedrill,rattata],
     ["Lv.17","Lv.14","Lv.14"],
-    ["Water", "Bug / Poison", "Normal"]
+    [water, bugPoison, normal]
 ];
 const party4_2 =[
     ["CAIMAN", "IGUANA", "FLYLIZARD"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/41.png"],
+    [butterfree,nidorina, zubat],
     ["Lv.17","Lv.16", "Lv.10"],
-    ["Bug / Flying", "Poison", "Poison / Flying"]
+    [bugFlying, poison, poisonFlying]
 ];
 //episode5
 const party5_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/69.png","sprites/firered-leafgreen/19.png"],
+    [wartortle,bellsprout,rattata],
     ["Lv.20","Lv.13","Lv.14"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party5_2 =[
     ["CAIMAN", "IGUANA", "FLYLIZARD"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/41.png"],
+    [butterfree,nidorina, zubat],
     ["Lv.20","Lv.18", "Lv.13"],
-    ["Bug / Flying", "Poison", "Poison / Flying"]
+    [bugFlying, poison, poisonFlying]
 ];
 //episode6
 const party6_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/69.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,bellsprout,rattata],
     ["Lv.21","Lv.18","Lv.20"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party6_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.20","Lv.20", "Lv.20"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];
 //episode7
 const party7_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.21","Lv.23","Lv.21"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party7_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.21","Lv.21", "Lv.20"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];
 //episode8
 const party8_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.23","Lv.23","Lv.22"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party8_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.21","Lv.22", "Lv.22"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];
 //episode9
 const party9_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.23","Lv.23","Lv.24"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party9_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.21","Lv.22", "Lv.22"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];  
 //episode10
 const party10_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.24","Lv.23","Lv.24"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party10_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.24","Lv.22", "Lv.24"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];      
 //episode11
 const party11_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.28","Lv.26","Lv.24"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party11_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.24","Lv.22", "Lv.24"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];  
 //episode12
 const party12_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.28","Lv.27","Lv.26"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party12_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.25","Lv.27", "Lv.26"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];  
 //episode13
 const party13_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.29","Lv.27","Lv.27"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party13_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.26","Lv.28", "Lv.28"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];
 //episode14
 const party14_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/20.png"],
+    [wartortle,weepinbell,rattata],
     ["Lv.29","Lv.28","Lv.28"],
-    ["Water", "Grass / Poison", "Normal"]
+    [water, grassPoison, normal]
 ];
 const party14_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.30","Lv.29", "Lv.28"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];
 //episode15
 const party15_1 =[
     ["GILAMONSTR", "GECKO", "KOMODO"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/70.png","sprites/firered-leafgreen/27.png"],
+    [wartortle,weepinbell,sandshrew],
     ["Lv.30","Lv.28","Lv.12"],
-    ["Water", "Grass / Poison", "Ground"]
+    [water, grassPoison, ground]
 ];
 const party15_2 =[
     ["CAIMAN", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/12.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [butterfree,nidorina, fearow],
     ["Lv.30","Lv.30", "Lv.30"],
-    ["Bug / Flying", "Poison", "Normal / Flying"]
+    [bugFlying, poison, normalFlying]
 ];
 //episode16
 const party16_1 =[
     ["GILAMONSTR", "EGG", "KOMODO"],
-    ["sprites/firered-leafgreen/8.png","sprites/firered-leafgreen/100.png","sprites/firered-leafgreen/28.png"],
+    [wartortle,voltorb,sandslash],
     ["Lv.33","Lv.16","Lv.22"],
-    ["Water", "Electric", "Ground"]
+    [water, grassPoison, ground]
 ];
 const party16_2 =[
     ["ANACONDA", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/143.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [snorlax,nidorina, fearow],
     ["Lv.32","Lv.31", "Lv.32"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [normal, poison, normalFlying]
 ];
 //episode17
 const party17_1 =[
     ["GILAMONSTR", "EGG", "KOMODO"],
-    ["sprites/firered-leafgreen/9.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/28.png"],
+    [blastoise,electrode,sandslash],
     ["Lv.39","Lv.38","Lv.39"],
-    ["Water", "Electric", "Ground"]
+    [water, electric, ground]
 ];
 const party17_2 =[
     ["RATTLESNEK", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [starmie,nidorina, fearow],
     ["Lv.37","Lv.36", "Lv.38"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode18
 const party18_1 =[
     ["GILAMONSTR", "EGG", "KOMODO"],
-    ["sprites/firered-leafgreen/9.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/28.png"],
+    [blastoise,electrode,sandslash],
     ["Lv.40","Lv.40","Lv.40"],
-    ["Water", "Electric", "Ground"]
+    [water, electric, ground]
 ];
 const party18_2 =[
     ["RATTLESNEK", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [starmie,nidorina, fearow],
     ["Lv.39","Lv.40", "Lv.40"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode19
 const party19_1 =[
     ["GILAMONSTR", "EGG", "KOMODO"],
-    ["sprites/firered-leafgreen/9.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/28.png"],
+    [blastoise,electrode,sandslash],
     ["Lv.40","Lv.40","Lv.40"],
-    ["Water", "Electric", "Ground"]
+    [water, electric, ground]
 ];
 const party19_2 =[
     ["RATTLESNEK", "IGUANA", "CROCODILE"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/22.png"],
+    [starmie,nidorina, fearow],
     ["Lv.41","Lv.40", "Lv.40"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode20
 const party20_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.25","Lv.40","Lv.25"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party20_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/84.png"],
+    [starmie,nidorina, doduo],
     ["Lv.41","Lv.40", "Lv.24"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode21
 const party21_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.40","Lv.46","Lv.40"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party21_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidorina, dodrio],
     ["Lv.42","Lv.40", "Lv.42"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode22
 const party22_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.47","Lv.47","Lv.47"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party22_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidorina, dodrio],
     ["Lv.44","Lv.47", "Lv.47"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode23
 const party23_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.50","Lv.50","Lv.50"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party23_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidorina, dodrio],
     ["Lv.48","Lv.50", "Lv.50"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode24
 const party24_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.50","Lv.50","Lv.50"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party24_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/30.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidorina, dodrio],
     ["Lv.50","Lv.50", "Lv.50"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode25
 const party25_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.51","Lv.50","Lv.50"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party25_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidoqueen, dodrio],
     ["Lv.50","Lv.53", "Lv.50"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode26
 const party26_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.51","Lv.52","Lv.51"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party26_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidoqueen, dodrio],
     ["Lv.53","Lv.53", "Lv.53"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode27
 const party27_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.59","Lv.59","Lv.59"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party27_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidoqueen, dodrio],
     ["Lv.59","Lv.59", "Lv.59"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode28
 const party28_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.59","Lv.59","Lv.59"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party28_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidoqueen, dodrio],
     ["Lv.59","Lv.59", "Lv.59"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode29 
 const party29_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.59","Lv.59","Lv.59"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party29_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidoqueen, dodrio],
     ["Lv.60","Lv.59", "Lv.59"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episode30 
 const party30_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.59","Lv.59","Lv.60"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const party30_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png", "sprites/firered-leafgreen/85.png"],
+    [starmie,nidoqueen, dodrio],
     ["Lv.60","Lv.59", "Lv.59"],
-    ["Normal", "Poison", "Normal / Flying"]
+    [waterPsychic, poison, normalFlying]
 ];
 //episodefinale  
 const partyfinale_1 =[
     ["CHAMELEON", "EGG", "MESOSAURUS"],
-    ["sprites/firered-leafgreen/106.png","sprites/firered-leafgreen/101.png","sprites/firered-leafgreen/131.png"],
+    [hitmonlee,electrode,lapras],
     ["Lv.59","Lv.59","Lv.60"],
-    ["Fighting", "Electric", "Water / Ice"]
+    [fighting, electric, waterIce]
 ];
 const partyfinale_2 =[
     ["RATTLESNEK", "IGUANA"],
-    ["sprites/firered-leafgreen/121.png","sprites/firered-leafgreen/31.png"],
+    [starmie,nidoqueen],
     ["Lv.60","Lv.59"],
-    ["Normal", "Poison"]
+    [waterPsychic, poison]
 ];
 
 populateTable(party1, "party1");

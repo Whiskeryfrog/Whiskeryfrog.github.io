@@ -1,4 +1,4 @@
-function populateTable(partyData, tableId) {
+function populateTable(deathData, tableId) {
     const table = document.getElementById(tableId);  // Get the table element
 
     // Check if the table exists
@@ -10,7 +10,7 @@ function populateTable(partyData, tableId) {
     const tbody = table.getElementsByTagName("tbody")[0]; // Get the table body
 
     // Loop through each row in the data
-    partyData.forEach(row => {
+    deathData.forEach(row => {
         // Create a new table row (<tr>)
         const rowElement = document.createElement("tr");
 
@@ -19,7 +19,7 @@ function populateTable(partyData, tableId) {
             const cell = document.createElement("td");
 
             // If the cell value is the image path, create an image element
-            if (typeof cellValue === "string" && cellValue.endsWith(".png")) {
+            if (typeof cellValue === "string" && cellValue.endsWith(".png") || cellValue.endsWith(".gif")) {
                 const image = document.createElement("img");
                 image.setAttribute("src", cellValue); // Set the image source
                 cell.appendChild(image);
@@ -36,7 +36,6 @@ function populateTable(partyData, tableId) {
         tbody.appendChild(rowElement);
     });
 }
-
 //episode1, episode 2, episode 3, episode 4
 const death1 =[
     ["ALLIGATOR"],
