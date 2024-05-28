@@ -227,9 +227,113 @@ const cale = [
     ["Caterpie", "Weedle", "Metapod", "Kakuna"],
     [caterpie, weedle, metapod, kakuna],
     ["Lv.10", "Lv.10", "Lv.10", "Lv.10"],
-    [normalFlying, psychic, normal, grassPoison]
+    [bug, bugPoison, bug, bugPoison]
 ];
 
+const ali = [
+    ["Pidgey", "Oddish", "Bellsprout"],
+    [pidgey, oddish, bellsprout],
+    ["Lv.12", "Lv.12", "Lv.12"],
+    [normalFlying, grassPoison, grassPoison]
+];
+
+const timmy = [
+    ["Sandshrew", "Ekans"],
+    [sandshrew, ekans],
+    ["Lv.14", "Lv.14"],
+    [ground, poison]
+];
+
+const reli = [
+    ["Nidoran♂", "Nidoran♀"],
+    [nidoranm, nidoranf],
+    ["Lv.16", "Lv.16"],
+    [poison, poison]
+];
+
+const ethan = [
+    ["Mankey"],
+    [mankey],
+    ["Lv.18"],
+    [fighting]
+];
+
+const rocketGruntRoute24_1 = [
+    ["Ekans", "Zubat"],
+    [ekans, zubat],
+    ["Lv.15", "Lv.15"],
+    [poison, poisonFlying]
+];
+
+const shane = [
+    ["Rattata", "Ekans"],
+    [rattata, ekans],
+    ["Lv.14", "Lv.14"],
+    [normal, poison]
+];
+
+const franklin = [
+    ["Machop", "Geodude"],
+    [machop, geodude],
+    ["Lv.15", "Lv.15"],
+    [fighting, rockGround]
+];
+
+const wayne = [
+    ["Onix"],
+    [onix],
+    ["Lv.17"],
+    [rockGround]
+];
+
+const joey = [
+    ["Rattata", "Spearow"],
+    [rattata, spearow],
+    ["Lv.15", "Lv.15"],
+    [normal, normalFlying]
+];
+
+const dan = [
+    ["Slowpoke"],
+    [slowpoke],
+    ["Lv.17"],
+    [waterPsychic]
+];
+
+const kelsey = [
+    ["Nidoran♂", "Nidoran♀"],
+    [nidoranm, nidoranf],
+    ["Lv.15", "Lv.15"],
+    [poison, poison]
+];
+
+const nob = [
+    ["Geodude", "Geodude", "Machop", "Geodude"],
+    [geodude, geodude, machop, geodude],
+    ["Lv.13", "Lv.13", "Lv.13", "Lv.13"],
+    [rockGround, rockGround, fighting, rockGround]
+];
+
+const flint = [
+    ["Rattata", "Ekans"],
+    [rattata, ekans],
+    ["Lv.14", "Lv.14"],
+    [normal, poison]
+];
+
+const chad = [
+    ["Ekans", "Sandshrew"],
+    [ekans, sandshrew],
+    ["Lv.14", "Lv.14"],
+    [poison, ground]
+];
+
+const haley = [
+    ["Oddish", "Pidgey", "Oddish"],
+    [oddish, pidgey, oddish],
+    ["Lv.13", "Lv.13", "Lv.13"],
+    [grassPoison, normalFlying, grassPoison]
+];
 
 //episode1
 populateTable(rival1, "rival1");
@@ -266,4 +370,29 @@ populateTable(rocketGruntMtMoon4, "rocketGruntMtMoon4");
 populateTable(miguel, "miguel");
 //episode5
 populateTable(rival3, "rival3");
+populateTable(cale, "cale");
+populateTable(ali, "ali");
+populateTable(timmy, "timmy");
+populateTable(reli, "reli");
+populateTable(ethan, "ethan");
+populateTable(rocketGruntRoute24_1, "rocketGruntRoute24_1");
+populateTable(shane, "shane");
+populateTable(franklin, "franklin");
+populateTable(wayne, "wayne");
+populateTable(joey, "joey");
+populateTable(dan, "dan");
+populateTable(kelsey, "kelsey");
+populateTable(nob, "nob");
+populateTable(flint, "flint");
+populateTable(chad, "chad");
+populateTable(haley, "haley");
+
+
+
+
+
+
+
+
+
 

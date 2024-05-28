@@ -112,7 +112,26 @@ const route4=[
     ["35% - Lv 8-12", "35% - Lv 8-12", "25% - Lv 6-12", "5% - Lv 10-12"],
 ];
 //episode5
-
+const route24_1=[
+    ["<span class='succenc'> Bellsprout <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Caterpie <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Weedle <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
+    [bellsprout, caterpie, weedle, pidgey],
+    ["25% - Lv 12-14", "20% - Lv 7-7", "20% - Lv 7-7", "15% - Lv 11-13"],
+];
+const route24_2=[
+    [" Abra <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Metapod <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Kakuna <i class='fa-solid fa-seedling'></i>"],
+    [abra, metapod, kakuna],
+    ["15% - Lv 8-12", "4% - Lv 8-8", "1% - Lv 8-8"],
+];
+const route25_1=[
+    ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Caterpie <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Weedle <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
+    [bellsprout, caterpie, weedle, pidgey],
+    ["25% - Lv 12-14", "20% - Lv 8-8", "20% - Lv 8-8", "15% - Lv 11-13"],
+];
+const route25_2=[
+    ["<span class='failenc'> Abra <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Metapod <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Kakuna <i class='fa-solid fa-seedling'></i>"],
+    [abra, metapod, kakuna],
+    ["15% - Lv 9-12", "4% - Lv 9-9", "1% - Lv 9-9"],
+];
 
 
 //episode1
@@ -132,3 +151,8 @@ populateTable(mtMoonB1f, "mtMoonB1f");
 populateTable(mtMoonB2f, "mtMoonB2f");
 populateTable(route3PKMNCenter, "route3PKMNCenter");
 populateTable(route4, "route4");
+//episode5
+populateTable(route24_1, "route24_1");
+populateTable(route24_2, "route24_2");
+populateTable(route25_1, "route25_1");
+populateTable(route25_2, "route25_2");

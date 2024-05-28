@@ -5,7 +5,7 @@ document.cookie = "cookieName=cookieValue; SameSite=Strict";
 var navbar = document.getElementsByClassName("topPanel1")[0];
 const version = document.getElementById("versionnumber");
 
-version.textContent = "V0.3.0";
+version.textContent = "V0.3.1";
 /*var sticky = navbar.offsetTop;*/
 
 /*
@@ -66,12 +66,17 @@ if (localStorage.getItem("darkMode") === "enabled") {
 function enableDarkMode() {
   let element = document.body;
   let containers = document.querySelectorAll(".containerMain");
+  let containers2 = document.querySelectorAll(".containerMain2")
   const sunMoonIcon = document.getElementById("sunMoon");
   const change = document.getElementsByClassName("change")[0];
 
   containers.forEach(container => {
       container.classList.add("dark");
   });
+
+  containers2.forEach(container2 => {
+    container2.classList.add("dank");
+});
 
   element.classList.add("dark");
   
@@ -84,12 +89,18 @@ function enableDarkMode() {
 function disableDarkMode() {
   let element = document.body;
   let containers = document.querySelectorAll(".containerMain");
+  let containers2 = document.querySelectorAll(".containerMain2")
   const sunMoonIcon = document.getElementById("sunMoon");
   const change = document.getElementsByClassName("change")[0];
 
   containers.forEach(container => {
       container.classList.remove("dark");
   });
+
+  containers2.forEach(container2 => {
+    container2.classList.remove("dank");
+});
+
 
   element.classList.remove("dark");
   sunMoonIcon.classList.remove("fa-moon");
