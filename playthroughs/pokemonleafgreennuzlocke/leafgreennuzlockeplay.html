@@ -278,7 +278,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="col containerMain route2">
@@ -296,7 +295,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col containerMain route22">
                             <div class="limiter">
                                 <span class="bigtext slightlysmall titlealign ">Route 22
@@ -335,26 +333,7 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Professor Oak's Lab
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrival1')">
-                                <span class="bigtext small titlealign  importantname">TOADMAN (Rival)<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Blue1.webp">
-                                <p class="textjustify titlealign">This will be the very first battle
-                                    that you will ever do in this challenge and if you ask me, if you want, you can not
-                                    consider this battle part of the challenge since technically the challenge will only
-                                    start once you can start catch Pokemon in the wild so losing here does not really
-                                    matter
-                                    (If you want to at least).
-                                </p>
-                                <div id="displayrival1" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rival1">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="rival1Container"></div>
                         </div>
                     </div>
                     <div class="containerMain party" style="margin-top: 18px;">
@@ -407,113 +386,18 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 22
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrival2')">
-                                <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival)<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Blue1.webp">
-                                <p class="textjustify titlealign">This is the second time you will
-                                    challenge your rival in a battle and is completely optional since you can just go
-                                    straight ahead of Viridian forest and move on with your adventure. This fight is not
-                                    that hard if you prepare accordingly and caught some Pokemon that can help with your
-                                    rival's two party members.
-                                </p>
-                                <div id="displayrival2" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rival2">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="rival2Container"></div>
                         </div>
                     </div>
-                    <br>
                     <div class="col containerMain viridian">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Viridian Forest
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrick')">
-                                <span class="bigtext slightlysmall titlealign  ">Rick<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">It's just bugs, if you chose
-                                    charmander this would be a piece of cake but if you chose the other two then it is
-                                    still
-                                    very easy. Just don't forget your antidotes, you're gonna need it.
-                                </p>
-                                <div id="displayrick" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rick">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaydoug')">
-                                <span class="bigtext slightlysmall titlealign  ">Doug<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">You really need to that antidote
-                                    now.
-                                </p>
-                                <div id="displaydoug" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="doug">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayanthony')">
-                                <span class="bigtext slightlysmall titlealign  ">Anthony<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">EZ, just press A.
-                                </p>
-                                <div id="displayanthony" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="anthony">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaycharlie')">
-                                <span class="bigtext slightlysmall titlealign  ">Charlie<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">Even easier, but with more EXP
-                                    because of Metapods.
-                                </p>
-                                <div id="displaycharlie" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="charlie">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaysammy')">
-                                <span class="bigtext slightlysmall titlealign  ">Sammy<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">Just a Weedle, after all of the
-                                    battles you went through.
-                                </p>
-                                <div id="displaysammy" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="sammy">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="rickContainer"></div>
+                            <div id="dougContainer"></div>
+                            <div id="anthonyContainer"></div>
+                            <div id="charlieContainer"></div>
+                            <div id="sammyContainer"></div>
                         </div>
                     </div>
                     <div class="containerMain party" style="margin-top: 18px;">
@@ -578,156 +462,21 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Pewter City Gym
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayliam')">
-                                <span class="bigtext slightlysmall titlealign  ">Liam<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Camper.png">
-                                <p class=" titlealign">This is the only gym trainer in Pewter City gym and
-                                    its
-                                    actually skippable if you want to. Also extremely easy if you have a water or grass
-                                    type
-                                    Pokemon.
-                                </p>
-                                <div id="displayliam" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="liam">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaybrock')">
-                                <span class="bigtext slightlysmall titlealign importantname">Brock<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Brock_FRLG.webp">
-                                <p class=" titlealign">Easiest gym leader you will ever face if you chose
-                                    Squirtle or Bulbasaur. Charmander could also stand a chance with its metal claw
-                                    although
-                                    you would need to be careful with it.
-                                </p>
-                                <div id="displaybrock" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="brock">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="liamContainer"></div>
+                            <div id="brockContainer"></div>
                         </div>
                     </div>
                     <div class="col containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 3
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayjanice')">
-                                <span class="bigtext slightlysmall titlealign  ">Janice<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign">Probably an easy match considering you already fought
-                                    a
-                                    gym leader prior to this fight.
-                                </p>
-                                <div id="displayjanice" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="janice">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayColton')">
-                                <span class="bigtext slightlysmall titlealign">Colton<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">Having bug catcher this late will not really cause you
-                                    any
-                                    problems.
-                                </p>
-                                <div id="displayColton" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="colton">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayben')">
-                                <span class="bigtext slightlysmall titlealign">Ben<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class=" titlealign">I guess he likes his shorts? Watch out for intimidate
-                                    Ekans.
-                                </p>
-                                <div id="displayben" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="ben">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaygreg')">
-                                <span class="bigtext slightlysmall titlealign">Greg<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">Another bug catcher this late in the game.
-                                </p>
-                                <div id="displaygreg" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="greg">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaysally')">
-                                <span class="bigtext slightlysmall titlealign">Sally<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"> </i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign">Another fodder trainer, I'm pretty you guys get the
-                                    jist
-                                    of this route. Though be careful with poison point Nidoran♀
-                                </p>
-                                <div id="displaysally" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="sally">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayjames')">
-                                <span class="bigtext slightlysmall titlealign">James<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"> </i><i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">BUG
-                                </p>
-                                <div id="displayjames" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="james">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrobin')">
-                                <span class="bigtext slightlysmall titlealign">Robin<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"> </i><i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign">Just a jigglypuff, nothing too crazy
-                                </p>
-                                <div id="displayrobin" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="robin">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="janiceContainer"></div>
+                            <div id="coltonContainer"></div>
+                            <div id="benContainer"></div>
+                            <div id="gregContainer"></div>
+                            <div id="sallyContainer"></div>
+                            <div id="jamesContainer"></div>
+                            <div id="robinContainer"></div>
                         </div>
                     </div>
                     <div class="containerMain party" style="margin-top: 18px;">
@@ -837,210 +586,25 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 3
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaycalvin')">
-                                <span class="bigtext slightlysmall titlealign  ">Calvin<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class=" titlealign">I'm basically just cleaning up here.
-                                </p>
-                                <div id="displaycalvin" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="calvin">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="calvinContainer"></div>
                         </div>
                     </div>
                     <div class="col containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Mt. Moon
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayiris')">
-                                <span class="bigtext slightlysmall titlealign  ">Iris<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign">Not the champion from Black 2 and White 2.
-                                </p>
-                                <div id="displayiris" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="iris">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayjovan')">
-                                <span class="bigtext slightlysmall titlealign">Jovan<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/53.png">
-                                <p class=" titlealign">If you are not prepared, this fight would be a lot
-                                    more
-                                    difficult considering he has a Magnemite which is very tanky.
-                                </p>
-                                <div id="displayjovan" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="jovan">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrobby')">
-                                <span class="bigtext slightlysmall titlealign">Robby<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">Another Bug Catcher, nothing too special.
-                                </p>
-                                <div id="displayrobby" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="robby">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrocketGruntMtMoon1')">
-                                <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/57.png">
-                                <p class=" titlealign">Your very first Rocket grunt battle.
-                                </p>
-                                <div id="displayrocketGruntMtMoon1" class="rules-content"
-                                    style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rocketGruntMtMoon1">
-                                        <tbody> </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaykent')">
-                                <span class="bigtext slightlysmall titlealign">Kent<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">What is up with these bug catchers
-                                </p>
-                                <div id="displaykent" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="kent">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaymiriam')">
-                                <span class="bigtext slightlysmall titlealign">Miriam<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign">You know what, I'm going to stop adding these side
-                                    comments for trainers who are just fodders.
-                                </p>
-                                <div id="displaymiriam" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="miriam">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrocketGruntMtMoon2')">
-                                <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/57.png">
-                                <p class=" titlealign">
-                                </p>
-                                <div id="displayrocketGruntMtMoon2" class="rules-content"
-                                    style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rocketGruntMtMoon2">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayjosh')">
-                                <span class="bigtext slightlysmall titlealign">Josh<br><i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"> </i><i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class=" titlealign">I forgot to speed this up in the video.
-                                </p>
-                                <div id="displayjosh" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="josh">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaymarcos')">
-                                <span class="bigtext slightlysmall titlealign">Marcos<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"> </i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/26.png">
-                                <p class=" titlealign">
-                                </p>
-                                <div id="displaymarcos" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="marcos">
-                                        <tbody> </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrocketGruntMtMoon3')">
-                                <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/57.png">
-                                <p class=" titlealign">
-                                </p>
-                                <div id="displayrocketGruntMtMoon3" class="rules-content"
-                                    style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rocketGruntMtMoon3">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrocketGruntMtMoon4')">
-                                <span class="bigtext slightlysmall titlealign">Rocket Grunt<br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/57.png">
-                                <p class=" titlealign">
-                                </p>
-                                <div id="displayrocketGruntMtMoon4" class="rules-content"
-                                    style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rocketGruntMtMoon4">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaymiguel')">
-                                <span class="bigtext slightlysmall titlealign">Miguel<br><i
-                                        class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/53.png">
-                                <p class=" titlealign">Despacito
-                                </p>
-                                <div id="displaymiguel" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="miguel">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="irisContainer"></div>
+                            <div id="jovanContainer"></div>
+                            <div id="robbyContainer"></div>
+                            <div id="rocketGruntMtMoon1Container"></div>
+                            <div id="kentContainer"></div>
+                            <div id="miriamContainer"></div>
+                            <div id="rocketGruntMtMoon2Container"></div>
+                            <div id="joshContainer"></div>
+                            <div id="marcosContainer"></div>
+                            <div id="rocketGruntMtMoon3Container"></div>
+                            <div id="rocketGruntMtMoon4Container"></div>
+                            <div id="miguelContainer"></div>
                         </div>
                     </div>
                     <div class="containerMain party" style="margin-top: 18px;">
@@ -1126,316 +690,35 @@
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Cerulean City
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayrival3')">
-                                <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival) <br> <i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Blue1.webp">
-                                <p class=" titlealign">If you are not ready for this fight, it might cause
-                                    you a
-                                    bit of trouble.<br> But would you lose?<br> Nahh, I'd Win.
-                                    <br>In all seriousness, the only members that could cause you trouble are Pidgeotto
-                                    and
-                                    Bulbasaur especially if you have nothing against them.
-                                </p>
-                                <div id="displayrival3" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rival3">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="rival3Container"></div>
                         </div>
                     </div>
                     <div class="col containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 24
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaycale')">
-                                <span class="bigtext slightlysmall titlealign  ">Cale <br><i
-                                        class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                                        class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/7.png">
-                                <p class=" titlealign">
-                                </p>
-                                <div id="displaycale" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="cale">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayali')">
-                                <span class="bigtext slightlysmall titlealign  ">Ali <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign"> Just be extra careful with her grass types but she is
-                                    mostly easy considering the Pokemon that I have.
-                                </p>
-                                <div id="displayali" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="ali">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaytimmy')">
-                                <span class="bigtext slightlysmall titlealign  ">Timmy <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class=" titlealign"> I don't what to say other than be careful with Ekans.
-                                </p>
-                                <div id="displaytimmy" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="timmy">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayreli')">
-                                <span class="bigtext slightlysmall titlealign  ">Reli <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign"> Extremely easy other than the part where both
-                                    Nidorans have poison point.
-                                </p>
-                                <div id="displayreli" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="reli">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayethan')">
-                                <span class="bigtext slightlysmall titlealign  ">Ethan <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Camper.png">
-                                <p class=" titlealign"> A flying move should do the trick
-                                </p>
-                                <div id="displayethan" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="ethan">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable"
-                                onclick="toggleElement('displayrocketGruntRoute24_1')">
-                                <span class="bigtext slightlysmall titlealign  ">Rocket Grunt <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/57.png">
-                                <p class=" titlealign"> Again, Psychic type moves are your key to this
-                                    battle.
-                                </p>
-                                <div id="displayrocketGruntRoute24_1" class="rules-content"
-                                    style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="rocketGruntRoute24_1">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayshane')">
-                                <span class="bigtext slightlysmall titlealign  ">Shane <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Camper.png">
-                                <p class=" titlealign"> A flying move should do the trick
-                                </p>
-                                <div id="displayshane" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="shane">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="caleContainer"></div>
+                            <div id="aliContainer"></div>
+                            <div id="timmyContainer"></div>
+                            <div id="reliContainer"></div>
+                            <div id="ethanContainer"></div>
+                            <div id="rocketGruntRoute24_1"></div>
+                            <div id="shaneContainer"></div>
                         </div>
                     </div>
                     <div class="col containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign  ">Route 25
                             </span>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayfranklin')">
-                                <span class="bigtext slightlysmall titlealign  ">Franklin <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/26.png">
-                                <p class=" titlealign"> Just be careful with Machop since I am pretty sure it
-                                    can knock out any normal types that you have.
-                                </p>
-                                <div id="displayfranklin" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="franklin">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayjoey')">
-                                <span class="bigtext slightlysmall titlealign  ">Joey <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class=" titlealign"> Not the iconic Youngster joey from Pokemon Crystal
-                                    and also not threatening at all.
-                                </p>
-                                <div id="displayjoey" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="joey">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaywayne')">
-                                <span class="bigtext slightlysmall titlealign  ">Wayne <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/26.png">
-                                <p class=" titlealign">Any water or grass move should do the trick.
-                                </p>
-                                <div id="displaywayne" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="wayne">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaydan')">
-                                <span class="bigtext slightlysmall titlealign  ">Dan <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class=" titlealign"> He has a Slowpoke which is tanky but its the only
-                                    thing you are going to be dealing with so not really a problem.
-                                </p>
-                                <div id="displaydan" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="dan">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaykelsey')">
-                                <span class="bigtext slightlysmall titlealign  ">Kelsey <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/39.png">
-                                <p class=" titlealign"> Just be watchful of poison point from her two
-                                    Nidorans.
-                                </p>
-                                <div id="displaykelsey" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="kelsey">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaynob')">
-                                <span class="bigtext slightlysmall titlealign  ">Nob <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/26.png">
-                                <p class=" titlealign"> Free EXP. Also, what a name.
-                                </p>
-                                <div id="displaynob" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="nob">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayflint')">
-                                <span class="bigtext slightlysmall titlealign  ">Flint <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Camper.png">
-                                <p class=" titlealign"> What is up with these team compositions, by now I am
-                                    pretty sure that we have encountered this team composition many times now.
-                                </p>
-                                <div id="displayflint" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="flint">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displaychad')">
-                                <span class="bigtext slightlysmall titlealign  ">Chad <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Youngster.png">
-                                <p class="titlealign">Not really chad in my opinion.</p>
-                                <div id="displaychad" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="chad">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="containerMain2 clickable" onclick="toggleElement('displayhaley')">
-                                <span class="bigtext slightlysmall titlealign  ">Haley <br>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <img src="sprites/Spr_FRLG_Lass.png">
-                                <p class=" titlealign"></p>
-                                <div id="displayhaley" class="rules-content" style="overflow-x: auto; height: 0;">
-                                    <table border="1" class="customTable" id="haley">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            <div id="franklinContainer"></div>
+                            <div id="joeyContainer"></div>
+                            <div id="wayneContainer"></div>
+                            <div id="danContainer"></div>
+                            <div id="kelseyContainer"></div>
+                            <div id="nobContainer"></div>
+                            <div id="flintContainer"></div>
+                            <div id="chadContainer"></div>
+                            <div id="haleyContainer"></div>
                         </div>
                     </div>
                     <div class="containerMain party" style="margin-top: 18px;">
@@ -1459,6 +742,204 @@
                         <div id="displaydeath5" class="rules-content" style="height: 0;">
                             <div style="overflow-x: auto; overflow-y: auto;">
                                 <table border="1" class="customTable" id="death5">
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Episode 6" class="tabcontent" style="display: none;">
+                    <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 6 -
+                        Not Too Thankful that my Starter is Squirtle"</span>
+                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/VJvnkvnBDIs?si=5rUQepa9ynlXVNgO"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <span class="bigtext slightlysmall" style="color: white;">All possible encounters in this
+                        episode</span>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall">No new encounter for this episode.
+                            </span>
+                        </div>
+                    </div>
+                    <span class="bigtext slightlysmall" style="color: white;">All trainers fought in this episode</span>
+                    <div class="col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign  ">Cerulean City Gym
+                            </span>
+                            <div id="luisContainer"></div>
+                            <div id="dianaContainer"></div>
+                            <div id="mistyContainer"></div>
+                        </div>
+                    </div>
+                    <div class="containerMain party" style="margin-top: 18px;">
+                        <span class="bigtext clickable" onclick="toggleElement('displayparty6')">Party at the end of the
+                            Episode</span>
+                        <div id="displayparty6" class="rules-content" style="height: 0;">
+                            <div style="overflow-x: auto; overflow-y: auto;">
+                                <table border="1" class="customTable" id="party6_1">
+                                    <tbody></tbody>
+                                </table>
+                                <table border="1" class="customTable" id="party6_2">
+                                    <tbody> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerMain death" style="margin-top: 18px;">
+                        <span class="bigtext clickable" onclick="toggleElement('displaydeath6')"><i
+                                class="fa-solid fa-skull"></i>
+                            Death/s <i class="fa-solid fa-skull"></i> [Spoilers]</span>
+                        <div id="displaydeath6" class="rules-content" style="height: 0;">
+                            <div style="overflow-x: auto; overflow-y: auto;">
+                                <table border="1" class="customTable" id="death6">
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Episode 7" class="tabcontent" style="display: none;">
+                    <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 7 -
+                        Vermillion dollars"</span>
+                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/39azBpM_r14?si=SU_qW-9VzU8JNFhp"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <span class="bigtext slightlysmall" style="color: white;">All possible encounters in this
+                        episode</span>
+                    <div class="row">
+                        <div class=" col containerMain">
+                            <div class="limiter">
+                                <span class="bigtext slightlysmall titlealign">Route 5
+                                </span>
+                                <p class="textjustify titlealign">There is really only one new encounter that I could
+                                    get here which I came so close to almost not catching due to my dupes clause limit
+                                    of 5 for this playthrough.
+                                </p>
+                                <div style="overflow-x: auto;">
+                                    <table border="1" class="customTable" id="route5">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col containerMain">
+                            <div class="limiter">
+                                <span class="bigtext slightlysmall titlealign">Route 6
+                                </span>
+                                <p class="textjustify titlealign"> I did not realize that the encounter here (for the
+                                    grass encounters atleast) is similar to route 5 so I wasted my encounter here.
+                                </p>
+                                <div style="overflow-x: auto;">
+                                    <table border="1" class="customTable" id="route6">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" col containerMain">
+                            <div class="limiter">
+                                <span class="bigtext slightlysmall titlealign">Diglett's Cave
+                                </span>
+                                <p class="textjustify titlealign">You can pretty much gurrantee that the encounter here
+                                    are Diglett and a rare chance to get an overleveled Dugtrio which I cannot use
+                                    currently in this challenge due to the level that you will get this Pokemon at.
+                                    <br><br>
+                                    All of the encounters here are pretty good considering the upcoming fight with the
+                                    next gym leader.
+                                </p>
+                                <div style="overflow-x: auto;">
+                                    <table border="1" class="customTable" id="diglettcave">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col containerMain">
+                            <div class="limiter">
+                                <span class="bigtext slightlysmall titlealign">Route 11
+                                </span>
+                                <p class="textjustify titlealign">It has decent Pokemon within it especially Sandshrew
+                                    (if you need an extra ground type) and Drowzee which is atleast a decent Psychic
+                                    type.
+                                </p>
+                                <div style="overflow-x: auto;">
+                                    <table border="1" class="customTable" id="route11">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="bigtext slightlysmall" style="color: white;">All trainers fought in this episode</span>
+                    <div class="col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign  ">Cerulean City
+                            </span>
+                            <div id="rocketCeruleanCityContainer"></div>
+                        </div>
+                    </div>
+                    <div class="col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign  ">Route 6
+                            </span>
+                            <div id="keigoContainer"></div>
+                            <div id="rickyContainer"></div>
+                            <div id="nancyContainer"></div>
+                            <div id="elijahContainer"></div>
+                            <div id="isabelleContainer"></div>
+                            <div id="jeffContainer"></div>
+                        </div>
+                    </div>
+                    <div class="col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign  ">Route 11
+                            </span>
+                            <div id="eddieContainer"></div>
+                            <div id="dillonContainer"></div>
+                            <div id="jasperContainer"></div>
+                            <div id="braxtonContainer"></div>
+                            <div id="hugoContainer"></div>
+                            <div id="bernieContainer"></div>
+                            <div id="daveContainer"></div>
+                            <div id="dirkContainer"></div>
+                            <div id="yasuContainer"></div>
+                            <div id="darianContainer"></div>
+                        </div>
+                    </div>
+                    <div class="containerMain party" style="margin-top: 18px;">
+                        <span class="bigtext clickable" onclick="toggleElement('displayparty7')">Party at the end of the
+                            Episode</span>
+                        <div id="displayparty7" class="rules-content" style="height: 0;">
+                            <div style="overflow-x: auto; overflow-y: auto;">
+                                <table border="1" class="customTable" id="party7_1">
+                                    <tbody></tbody>
+                                </table>
+                                <table border="1" class="customTable" id="party7_2">
+                                    <tbody> </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="containerMain death" style="margin-top: 18px;">
+                        <span class="bigtext clickable" onclick="toggleElement('displaydeath7')"><i
+                                class="fa-solid fa-skull"></i>
+                            Death/s <i class="fa-solid fa-skull"></i> [Spoilers]</span>
+                        <div id="displaydeath7" class="rules-content" style="height: 0;">
+                            <div style="overflow-x: auto; overflow-y: auto;">
+                                <table border="1" class="customTable" id="death7">
                                     <tbody></tbody>
                                 </table>
                             </div>
