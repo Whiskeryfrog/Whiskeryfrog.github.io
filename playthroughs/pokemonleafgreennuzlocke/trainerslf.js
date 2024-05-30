@@ -233,8 +233,6 @@ difficulty: 'extremely easy' },
 difficulty: 'easy' }
 
   ];
-  
-  /*
 //EPISODE 4
 const episode4 = [
     { name: 'Calvin', 
@@ -289,7 +287,7 @@ difficulty: 'easy' },
     { name: 'Rocket Grunt', 
         id: 'rocketGruntMtMoon2', 
      image: rocketGruntMale, 
-   insight: 'I have nothing to say about this particular trainer.', 
+   insight: '', 
   classimp: '',
 difficulty: 'easy' },
 
@@ -303,14 +301,14 @@ difficulty: 'easy' },
     { name: 'Marcos', 
         id: 'marcos', 
      image: hiker, 
-   insight: 'I have nothing to say about this particular trainer.', 
+   insight: '', 
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Rocket Grunt', 
         id: 'rocketGruntMtMoon3', 
      image: rocketGruntMale, 
-   insight: 'I have nothing to say about this particular trainer.', 
+   insight: '', 
   classimp: '',
 difficulty: 'easy' },
 
@@ -327,10 +325,8 @@ difficulty: 'easy' },
    insight: 'Despacito', 
   classimp: '',
 difficulty: 'easy' }
-
-  ];  
+];
   
-//EPISODE 5
 const episode5 = [
     { name: 'TOADMAN (Rival)', 
         id: 'rival3', 
@@ -342,7 +338,7 @@ difficulty: 'normal' },
     { name: 'Cale', 
         id: 'cale', 
      image: bugCatcher, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
@@ -375,9 +371,9 @@ difficulty: 'extremely easy' },
 difficulty: 'extremely easy' },
 
     { name: 'Rocket Grunt', 
-        id: 'rocketGruntRoute24_1', 
+        id: 'rocketGruntRoute24', 
      image: rocketGruntMale, 
-   insight: 'Again, Psychic type moves are your key to this battle.', 
+   insight: 'Psychic type moves are your key to this battle.', 
   classimp: '',
 difficulty: 'extremely easy' },
 
@@ -458,7 +454,7 @@ difficulty: 'extremely easy' },
   classimp: '',
 difficulty: 'extremely easy' }
 
-  ];
+];
 //EPISODE 6
 const episode6 = [
     { name: 'Luis', 
@@ -604,7 +600,7 @@ difficulty: 'easy' },
   classimp: '',
 difficulty: 'easy' }
   ];
-*/
+
 
 
 function displayTrainerCard(trainer) {
@@ -616,12 +612,11 @@ function displayTrainerCard(trainer) {
 episode1.forEach(displayTrainerCard);
 episode2.forEach(displayTrainerCard);
 episode3.forEach(displayTrainerCard);
-/*
 episode4.forEach(displayTrainerCard);
 episode5.forEach(displayTrainerCard);
 episode6.forEach(displayTrainerCard);
 episode7.forEach(displayTrainerCard);
-*/
+
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -884,7 +879,7 @@ const ethan = [
     [fighting]
 ];
 
-const rocketGruntRoute24_1 = [
+const rocketGruntRoute24 = [
     ["Ekans", "Zubat"],
     [ekans, zubat],
     ["Lv.15", "Lv.15"],
@@ -1141,7 +1136,7 @@ populateTable(ali, "ali");
 populateTable(timmy, "timmy");
 populateTable(reli, "reli");
 populateTable(ethan, "ethan");
-populateTable(rocketGruntRoute24_1, "rocketGruntRoute24_1");
+populateTable(rocketGruntRoute24, "rocketGruntRoute24");
 populateTable(shane, "shane");
 populateTable(franklin, "franklin");
 populateTable(wayne, "wayne");

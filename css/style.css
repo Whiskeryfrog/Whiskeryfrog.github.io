@@ -601,7 +601,7 @@ a .smallscreen1 {
 }
 
 .containerMain2 {
-  background-color: rgba(160, 152, 152, 0.684);
+  background-color: rgba(109, 108, 108, 0.509);
   padding: 10px;
   margin: 20px 5px 5px 5px;
   border-radius: 15px;
@@ -738,6 +738,15 @@ a .smallscreen1 {
   }
 }
 @media (max-width: 500px) {
+
+  .containerMain2 {
+    background-color: rgba(109, 108, 108, 0.509);
+    padding: 10px;
+    margin: 20px 5px 5px 5px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+
   .containerMain {
     display: grid;
     gap: 5%;
