@@ -33,3 +33,5 @@ const waterPsychic = "sprites/types/water-psychic.png";
 const ghostPoison = "sprites/types/ghost-poison.png";
 const poisonGround = "sprites/types/poison-ground.png";
 const bugGrass = "sprites/types/bug-grass.png";
+const waterPoison = "sprites/types/water-poison.png";
+

@@ -93,7 +93,7 @@ const party5_2 =[
 //episode6
 const party6_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,bellsprout,rattata],
+    [wartortle,bellsprout,raticate],
     ["Lv.21","Lv.18","Lv.20"],
     [water, grassPoison, normal]
 ];
@@ -106,7 +106,7 @@ const party6_2 =[
 //episode7
 const party7_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.21","Lv.23","Lv.21"],
     [water, grassPoison, normal]
 ];
@@ -119,7 +119,7 @@ const party7_2 =[
 //episode8
 const party8_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.23","Lv.23","Lv.22"],
     [water, grassPoison, normal]
 ];
@@ -132,7 +132,7 @@ const party8_2 =[
 //episode9
 const party9_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.23","Lv.23","Lv.24"],
     [water, grassPoison, normal]
 ];
@@ -145,7 +145,7 @@ const party9_2 =[
 //episode10
 const party10_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.24","Lv.23","Lv.24"],
     [water, grassPoison, normal]
 ];
@@ -158,7 +158,7 @@ const party10_2 =[
 //episode11
 const party11_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.28","Lv.26","Lv.24"],
     [water, grassPoison, normal]
 ];
@@ -171,7 +171,7 @@ const party11_2 =[
 //episode12
 const party12_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.28","Lv.27","Lv.26"],
     [water, grassPoison, normal]
 ];
@@ -184,7 +184,7 @@ const party12_2 =[
 //episode13
 const party13_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.29","Lv.27","Lv.27"],
     [water, grassPoison, normal]
 ];
@@ -197,7 +197,7 @@ const party13_2 =[
 //episode14
 const party14_1 =[
     ["GILAMONSTR", "GECKO", "NEWT"],
-    [wartortle,weepinbell,rattata],
+    [wartortle,weepinbell,raticate],
     ["Lv.29","Lv.28","Lv.28"],
     [water, grassPoison, normal]
 ];

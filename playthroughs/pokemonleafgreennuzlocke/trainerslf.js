@@ -105,13 +105,37 @@ const hiker = "sprites/26.png";
 const swimmerMale = "sprites/Spr_FRLG_Swimmer_M.png";
 const gambler = "sprites/24.png";
 const engineer = "sprites/22.png";
+const gentleman = "sprites/gentleman.png";
+const sailor = "sprites/sailor.png";
+const fisherman = "sprites/fisherman.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
 const brocksprite = "sprites/Brock_FRLG.webp";
 const mistysprite = "sprites/31.png";
+const rivalsprite2 = "sprites/rival2.png";
+const ltsurgesprite = "sprites/ltsurge.png"
 
-
+/*
+//colton
+const coltonCard = trainerCard1('Colton',
+                               'colton', 
+                               bugCatcher, 
+                               'Having bug catcher this late will not really cause you any problems.',
+                               "", 
+                               "extremely easy");
+const coltonContainer = document.getElementById('coltonContainer');
+coltonContainer.innerHTML = coltonCard;
+//ben
+const benCard = trainerCard1('Ben',
+                               'ben', 
+                               youngster, 
+                               'I guess he likes his shorts? Watch out for intimidate Ekans.',
+                               "", 
+                               "extremely easy");
+const benContainer = document.getElementById('benContainer');
+benContainer.innerHTML = benCard; 
+*/
 
 //EPISODE 1
 const episode1 = [
@@ -315,7 +339,7 @@ difficulty: 'easy' },
     { name: 'Rocket Grunt', 
         id: 'rocketGruntMtMoon4', 
      image: rocketGruntMale, 
-   insight: 'I have nothing to say about this particular trainer.', 
+   insight: '', 
   classimp: '',
 difficulty: 'easy' },
 
@@ -450,7 +474,7 @@ difficulty: 'extremely easy' },
     { name: 'Haley', 
         id: 'haley', 
      image: lass, 
-   insight: 'I have nothing to say about this particular trainer.', 
+   insight: '', 
   classimp: '',
 difficulty: 'extremely easy' }
 
@@ -460,14 +484,14 @@ const episode6 = [
     { name: 'Luis', 
         id: 'luis', 
      image: swimmerMale, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Diana', 
         id: 'diana', 
      image: camperFemale, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
@@ -484,42 +508,42 @@ const episode7 = [
     { name: 'Rocket Grunt', 
         id: 'rocketCeruleanCity', 
      image: rocketGruntMale, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Keigo', 
         id: 'keigo', 
      image: bugCatcher, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Ricky', 
         id: 'ricky', 
      image: camperMale, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremeley easy' },
 
     { name: 'Nancy', 
         id: 'nancy', 
      image: camperFemale, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Elijah', 
         id: 'elijah', 
      image: bugCatcher, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Isabelle', 
         id: 'isabelle', 
      image: camperFemale, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
@@ -533,74 +557,183 @@ difficulty: 'easy' },
     { name: 'Eddie', 
         id: 'eddie', 
      image: youngster, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Dillon', 
         id: 'dillon', 
      image: youngster, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Jasper', 
         id: 'jasper', 
      image: gambler, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Braxton', 
         id: 'braxton', 
      image: engineer, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Hugo', 
         id: 'hugo', 
      image: gambler, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'extremely easy' },
 
     { name: 'Bernie', 
         id: 'bernie', 
      image: engineer, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'normal' },
 
     { name: 'Dave', 
         id: 'dave', 
      image: youngster, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Dirk', 
         id: 'dirk', 
      image: engineer, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Yasu', 
         id: 'yasu', 
      image: youngster, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' },
 
     { name: 'Darian', 
         id: 'darian', 
      image: engineer, 
-   insight: 'I have nothing to say about this particular trainer.',
+   insight: '',
   classimp: '',
 difficulty: 'easy' }
   ];
+//EPISODE 8
+const episode8 = [
+  { name: 'Thomas', 
+      id: 'thomas', 
+   image: gentleman, 
+ insight: 'Not really too difficult considering I have Gilamonstr with me although I never really used him here in this fight for some reason.',
+classimp: '',
+difficulty: 'normal' },
 
+  { name: 'Arthur', 
+      id: 'arthur', 
+   image: gentleman, 
+ insight: 'Just be careful with the Nidorans that has both Poison point and Poison sting.',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Ann', 
+      id: 'ann', 
+   image: lass, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Tyler', 
+      id: 'tyler', 
+   image: youngster, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Trevor', 
+      id: 'trevor', 
+   image: sailor, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Edmond', 
+      id: 'edmond', 
+   image: sailor, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+    { name: 'Dale', 
+        id: 'dale', 
+     image: fisherman, 
+   insight: '',
+  classimp: '',
+difficulty: 'normal' },
+
+    { name: 'Brooks', 
+        id: 'brooks', 
+     image: gentleman, 
+   insight: '',
+  classimp: '',
+difficulty: 'normal' },
+
+    { name: 'Dawn', 
+        id: 'dawn', 
+     image: lass, 
+   insight: '',
+  classimp: '',
+difficulty: 'normal' },
+
+{ name: 'Lamar', 
+        id: 'lamar', 
+     image: gentleman, 
+   insight: '',
+  classimp: '',
+difficulty: 'easy' },
+
+    { name: 'TOADMAN (Rival)', 
+        id: 'rival4', 
+     image: rivalsprite2, 
+   insight: 'You might get in trouble if you don\'t play your cards correctly but overall not too bad of a fight.',
+  classimp: 'importantname',
+difficulty: 'normal' },
+];
+//EPISODE 9
+const episode9 = [
+  { name: 'Dwayne', 
+      id: 'dwayne', 
+   image: sailor, 
+ insight: 'Just read the heads up for the whole gym and you will know what you are up against.',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Baily', 
+      id: 'baily', 
+   image: engineer, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Tucker', 
+      id: 'tucker', 
+   image: gentleman, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Lt. Surge', 
+      id: 'ltsurge', 
+   image: ltsurgesprite, 
+ insight: 'You are dealing with fast mons here so just watch out and expect to be paralyzed from this fight. Me not using items in battle really added some challenge to this fight.',
+classimp: 'importantname',
+difficulty: 'normal' }
+
+];
 
 
 function displayTrainerCard(trainer) {
@@ -616,7 +749,8 @@ episode4.forEach(displayTrainerCard);
 episode5.forEach(displayTrainerCard);
 episode6.forEach(displayTrainerCard);
 episode7.forEach(displayTrainerCard);
-
+episode8.forEach(displayTrainerCard);
+episode9.forEach(displayTrainerCard);
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -1093,8 +1227,101 @@ const dirk = [
     ["Lv.18", "Lv.18"],
     [electric, electricSteel]
 ];
+//episode8
+const thomas = [
+  ["Growlithe", "Growlithe"],
+  [growlithe, growlithe],
+  ["Lv.18", "Lv.19"],
+  [fire, fire]
+];
+const arthur = [
+  ["Nidoran♂", "Nidoran♀"],
+  [nidoranm, nidoranf],
+  ["Lv.19", "Lv.19"],
+  [poison, poison]
+];
+const ann = [
+  ["Pidgey", "Nidoran♀"],
+  [pidgey, nidoranf],
+  ["Lv.18", "Lv.18"],
+  [normalFlying, poison]
+];
+const tyler = [
+  ["Nidoran♂"],
+  [nidoranm],
+  ["Lv.21"],
+  [poison]
+];
+const trevor = [
+  ["Machop", "Tentacool"],
+  [machop, tentacool],
+  ["Lv.17", "Lv.17"],
+  [fighting, waterPoison]
+];
+const edmond = [
+  ["Machop", "Shellder"],
+  [machop, shellder],
+  ["Lv.18", "Lv.18"],
+  [fighting, water]
+];
+const dale = [
+  ["Goldeen", "Tentacool", "Goldeen"],
+  [goldeen, tentacool, goldeen],
+  ["Lv.17", "Lv.17", "Lv.17"],
+  [water, waterPoison, water]
+];
+const brooks = [
+  ["Pikachu"],
+  [pikachu],
+  ["Lv.23"],
+  [electric]
+];
+const dawn = [
+  ["Rattata", "Pikachu"],
+  [rattata, pikachu],
+  ["Lv.18", "Lv.18"],
+  [normal, electric]
+];
+const lamar = [
+  ["Growlithe", "Ponyta"],
+  [growlithe, ponyta],
+  ["Lv.17", "Lv.17"],
+  [fire, fire]
+];
 
+const rival4 = [
+  ["Pidgeotto", "Raticate", "Kadabra", "Ivysaur"],
+  [pidgeotto, raticate, kadabra, ivysaur],
+  ["Lv.19", "Lv.16", "Lv.18", "Lv.20"],
+  [normalFlying, normal, psychic, grassPoison]
+];
+//episode9
+const dwayne= [
+  ["Pikachu", "Pikachu"],
+  [pikachu, pikachu],
+  ["Lv.21", "Lv.21"],
+  [electric, electric]
+];
+const baily= [
+  ["Voltorb", "Magnemite"],
+  [voltorb, magnemite],
+  ["Lv.21", "Lv.21"],
+  [electric, electricSteel]
+];
 
+const tucker= [
+  ["Pikachu"],
+  [pikachu],
+  ["Lv.23"],
+  [electric]
+];
+
+const ltsurge = [
+  ["Voltorb", "Pikachu", "Raichu"],
+  [voltorb, pikachu, raichu],
+  ["Lv.21", "Lv.18", "Lv.24"],
+  [electric, electric, electric]
+];
 
 //episode1
 populateTable(rival1, "rival1");
@@ -1169,3 +1396,20 @@ populateTable(braxton, "braxton");
 populateTable(yasu, "yasu");
 populateTable(darian, "darian");
 populateTable(dirk, "dirk");
+//episode8
+populateTable(thomas, "thomas");
+populateTable(arthur, "arthur");
+populateTable(ann, "ann");
+populateTable(tyler, "tyler");
+populateTable(trevor, "trevor");
+populateTable(edmond, "edmond");
+populateTable(dale, "dale");
+populateTable(brooks, "brooks");
+populateTable(dawn, "dawn");
+populateTable(lamar, "lamar");
+populateTable(rival4, "rival4");
+//episode9
+populateTable(dwayne, "dwayne");
+populateTable(baily, "baily");
+populateTable(tucker, "tucker");
+populateTable(ltsurge, "ltsurge");
