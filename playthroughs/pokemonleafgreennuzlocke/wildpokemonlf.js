@@ -170,10 +170,50 @@ const diglettcave=[
     [ground, ground]
 ];
 const route11=[
-    ["<span class='succenc'>Sandshrew <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", " Drowzee <i class='fa-solid fa-seedling'></i>"],
+    ["<span class='succenc'> Sandshrew <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", " Drowzee <i class='fa-solid fa-seedling'></i>"],
     [sandshrew, spearow, drowzee],
     ["40% - Lv 12-15", "35% - Lv 13-17", "25% - Lv 11-15"],
     [ground, normalFlying, psychic]
+];
+//episode8
+//episode9
+//episode10
+const route9=[
+    ["<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Sandshrew <i class='fa-solid fa-seedling'></i>"],
+    [rattata, spearow, sandshrew],
+    ["40% - Lv 14-17", "35% - Lv 13-17", "25% - Lv 11-17"],
+    [normal, normalFlying, ground]
+];
+const route10=[
+    ["<span class='succenc'> Voltorb <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Sandshrew <i class='fa-solid fa-seedling'></i>"],
+    [voltorb, spearow, sandshrew],
+    ["40% - Lv 14-17", "35% - Lv 13-17", "25% - Lv 11-17"],
+    [electric, normalFlying, ground]
+];
+//episode11
+const rocktunnel1f_1=[
+    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-seedling'></i>"],
+    [geodude, zubat, mankey],
+    ["35% - Lv 15-17", "30% - Lv 15-16", "15% - Lv 16-17"],
+    [rockGround, poisonFlying, fighting]
+];
+const rocktunnel1f_2=[
+    ["<span class='succenc'>Machop <i class='fa-solid fa-mountain'></i></span>", "Onix <i class='fa-solid fa-mountain'></i>"],
+    [machop, onix],
+    ["15% - Lv 16-17", "5% - Lv 13-15"],
+    [fighting, rockGround]
+];
+const rocktunnelb1f_1=[
+    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-seedling'></i>"],
+    [geodude, zubat, mankey],
+    ["35% - Lv 15-17", "30% - Lv 15-16", "15% - Lv 16-17"],
+    [rockGround, poisonFlying, fighting]
+];
+const rocktunnelb1f_2=[
+    ["<i class='fa-solid fa-flag'></i> Machop <i class='fa-solid fa-mountain'></i></span>", "Onix <i class='fa-solid fa-mountain'></i>"],
+    [machop, onix],
+    ["10% - Lv 17", "10% - Lv 13-15"],
+    [fighting, rockGround]
 ];
 
 //episode1
@@ -204,5 +244,13 @@ populateTable(route5, "route5");
 populateTable(route6, "route6");
 populateTable(diglettcave, "diglettcave");
 populateTable(route11, "route11");
-
-
+//episode8
+//episode9
+//episode10
+populateTable(route9, "route9");
+populateTable(route10, "route10");
+//episode11
+populateTable(rocktunnel1f_1, "rocktunnel1f_1");
+populateTable(rocktunnel1f_2, "rocktunnel1f_2");
+populateTable(rocktunnelb1f_1, "rocktunnelb1f_1");
+populateTable(rocktunnelb1f_2, "rocktunnelb1f_2");

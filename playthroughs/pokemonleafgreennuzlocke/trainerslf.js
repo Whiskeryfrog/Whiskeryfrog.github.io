@@ -96,7 +96,7 @@ function trainerCard2(trainerName, name, name2, imagePath, insight, cssClass = "
 //trainer Sprites
 const bugCatcher = "sprites/7.png";
 const camperMale = "sprites/Spr_FRLG_Camper.png";
-const camperFemale = "sprites/26.png";
+const camperFemale = "sprites/39.png";
 const lass = "sprites/Spr_FRLG_Lass.png";
 const youngster = "sprites/Spr_FRLG_Youngster.png";
 const nerd = "sprites/53.png";
@@ -108,6 +108,7 @@ const engineer = "sprites/22.png";
 const gentleman = "sprites/gentleman.png";
 const sailor = "sprites/sailor.png";
 const fisherman = "sprites/fisherman.png";
+const pokemaniac = "sprites/pokemaniac.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
@@ -734,7 +735,180 @@ classimp: 'importantname',
 difficulty: 'normal' }
 
 ];
+//EPISODE 10
+const episode10 = [
+  { name: 'Alicia', 
+      id: 'alicia', 
+   image: camperFemale, 
+ insight: 'An easy fight considering I have a lot of Pokemon good againsts grass and poison types',
+classimp: '',
+difficulty: 'easy' },
 
+  { name: 'Jeremy', 
+      id: 'jeremy', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Chris', 
+      id: 'chris', 
+   image: camperMale, 
+ insight: 'Maybe I was training but I decided to not use GILAMONSTR throughout the fight.',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Brent', 
+      id: 'brent', 
+   image: bugCatcher, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Conner', 
+      id: 'conner', 
+   image: bugCatcher, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Drew', 
+      id: 'drew', 
+   image: camperMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Brice', 
+      id: 'brice', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Caitlin', 
+      id: 'caitlin', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' }
+
+];
+//EPISODE 11
+const episode11= [
+  { name: 'Heidi', 
+      id: 'heidi', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Ashton', 
+      id: 'ashton', 
+   image: pokemaniac, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Winston', 
+      id: 'winston', 
+   image: pokemaniac, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Marth', 
+      id: 'marth', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Eric', 
+      id: 'eric', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Oliver', 
+      id: 'oliver', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Lucas', 
+      id: 'lucas', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Sofia', 
+      id: 'sofia', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Dudley', 
+      id: 'dudley', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Cooper', 
+      id: 'cooper', 
+   image: pokemaniac, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Leah', 
+      id: 'leah', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Dana', 
+      id: 'dana', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Carol', 
+      id: 'carol', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Clark', 
+      id: 'clark', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Herman', 
+      id: 'herman', 
+   image: pokemaniac, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Trent', 
+      id: 'trent', 
+   image: hiker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' }
+
+];
 
 function displayTrainerCard(trainer) {
     const card = trainerCard1(trainer.name, trainer.id, trainer.image, trainer.insight, trainer.classimp, trainer.difficulty);
@@ -751,6 +925,10 @@ episode6.forEach(displayTrainerCard);
 episode7.forEach(displayTrainerCard);
 episode8.forEach(displayTrainerCard);
 episode9.forEach(displayTrainerCard);
+episode10.forEach(displayTrainerCard);
+episode11.forEach(displayTrainerCard);
+
+
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -1308,20 +1486,174 @@ const baily= [
   ["Lv.21", "Lv.21"],
   [electric, electricSteel]
 ];
-
 const tucker= [
   ["Pikachu"],
   [pikachu],
   ["Lv.23"],
   [electric]
 ];
-
 const ltsurge = [
   ["Voltorb", "Pikachu", "Raichu"],
   [voltorb, pikachu, raichu],
   ["Lv.21", "Lv.18", "Lv.24"],
   [electric, electric, electric]
 ];
+//episode10
+const alicia = [
+  ["Oddish", "Bellsprout", "Oddish", "Bellsprout"],
+  [oddish, bellsprout, oddish, bellsprout],
+  ["Lv.18", "Lv.18", "Lv.18", "lv.18"],
+  [grassPoison, grassPoison, grassPoison, grassPoison]
+];
+const jeremy = [
+  ["Machop", "Onix"],
+  [machop, onix],
+  ["Lv.20", "Lv.20"],
+  [fighting, rockGround]
+];
+const chris = [
+  ["Growlithe", "Charmander"],
+  [growlithe, charmander],
+  ["Lv.21", "Lv.21"],
+  [fire, fire]
+];
+const brent = [
+  ["Beedrill", "Beedrill"],
+  [beedrill, beedrill],
+  ["Lv.19", "Lv.19"],
+  [bugPoison, bugPoison]
+];
+const conner = [
+  ["Caterpie", "Weedle", "Venonat"],
+  [caterpie, weedle, venonat],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [bug, bugPoison, bugPoison]
+];
+const alan = [
+  ["Geodude", "Onix"],
+  [geodude, onix],
+  ["Lv.21", "Lv.21"],
+  [rockGround, rockGround]
+];
+const drew = [
+  ["Rattata", "Sandshrew", "Ekans", "Sandshrew"],
+  [rattata, sandshrew, ekans, sandshrew],
+  ["Lv.19", "Lv.19", "Lv.19", "lv.19"],
+  [normal, ground, poison, ground]
+];
+const brice = [
+  ["Geodude", "Machop", "Geodude"],
+  [geodude, machop, geodude],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [rockGround, fighting, rockGround]
+];
+const caitlin = [
+  ["Meowth"],
+  [meowth],
+  ["Lv.23"],
+  [normal]
+];
+//episode11
+const heidi = [
+  ["Pikachu", "Clefairy"],
+  [pikachu, clefairy],
+  ["Lv.20", "Lv.20"],
+  [electric, normal]
+];
+const ashton = [
+  ["Cubone", "Slowpoke"],
+  [cubone, slowpoke],
+  ["Lv.23", "Lv.23"],
+  [ground, waterPsychic]
+];
+const winston = [
+  ["Slowpoke"],
+  [slowpoke],
+  ["Lv.25"],
+  [waterPsychic]
+];
+const marth = [
+  ["Oddish", "Bulbasaur"],
+  [oddish, bulbasaur],
+  ["Lv.22", "Lv.22"],
+  [grassPoison, grassPoison]
+];
+const eric = [
+  ["Machop", "Onix"],
+  [machop, onix],
+  ["Lv.20", "Lv.20"],
+  [fighting, rockGround]
+];
+const oliver = [
+  ["Onix", "Onix", "Geodude"],
+  [onix, onix, geodude],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [rockGround, rockGround, rockGround]
+];
+const lucas = [
+  ["Geodude", "Graveler"],
+  [geodude, graveler],
+  ["Lv.21", "Lv.21"],
+  [rockGround, rockGround]
+];
+const sofia = [
+  ["Jigglypuff", "Pidgey", "Meowth"],
+  [jigglypuff, pidgey, meowth],
+  ["Lv.21", "Lv.21", "Lv.21"],
+  [normal, normalFlying, normal]
+];
+const dudley = [
+  ["Geodude", "Geodude","Graveler"],
+  [geodude, geodude,graveler],
+  ["Lv.21", "Lv.21", "Lv.21"],
+  [rockGround, rockGround, rockGround]
+];
+const cooper = [
+  ["Slowpoke", "Slowpoke","Slowpoke"],
+  [slowpoke, slowpoke, slowpoke],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [waterPsychic, waterPsychic, waterPsychic]
+];
+const leah = [
+  ["Bellsprout", "Clefairy"],
+  [bellsprout, clefairy],
+  ["Lv.22", "Lv.22"],
+  [grassPoison, normal]
+];
+const dana = [
+  ["Meowth", "Oddish", "Pidgey"],
+  [meowth, oddish, pidgey],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [normal, grassPoison, normalFlying]
+];
+const carol = [
+  ["Pidgey", "Pidgeotto"],
+  [pidgey, pidgeotto],
+  ["Lv.21", "Lv.21"],
+  [normalFlying, normalFlying]
+];
+const clark = [
+  ["Geodude", "Onix"],
+  [geodude, onix],
+  ["Lv.21", "Lv.21"],
+  [rockGround, rockGround]
+];
+const herman = [
+  ["Cubone", "Slowpoke"],
+  [cubone, slowpoke],
+  ["Lv.20", "Lv.20"],
+  [ground, waterPsychic]
+];
+const trent = [
+  ["Onix", "Graveler"],
+  [onix, graveler],
+  ["Lv.19", "Lv.19"],
+  [rockGround, rockGround]
+];
+
+
+
+
 
 //episode1
 populateTable(rival1, "rival1");
@@ -1413,3 +1745,34 @@ populateTable(dwayne, "dwayne");
 populateTable(baily, "baily");
 populateTable(tucker, "tucker");
 populateTable(ltsurge, "ltsurge");
+//episode10
+populateTable(alicia, "alicia");
+populateTable(jeremy, "jeremy");
+populateTable(chris, "chris");
+populateTable(brent, "brent");
+populateTable(conner, "conner");
+populateTable(alan, "alan");
+populateTable(drew, "drew");
+populateTable(brice, "brice");
+populateTable(caitlin, "caitlin");
+//episode11
+populateTable(heidi, "heidi");
+populateTable(ashton, "ashton");
+populateTable(winston, "winston");
+populateTable(marth, "marth");
+populateTable(eric, "eric");
+populateTable(oliver, "oliver");
+populateTable(lucas, "lucas");
+populateTable(sofia, "sofia");
+populateTable(dudley, "dudley");
+populateTable(cooper, "cooper");
+populateTable(leah, "leah");
+populateTable(dana, "dana");
+populateTable(carol, "carol");
+populateTable(clark, "clark");
+populateTable(herman, "herman");
+populateTable(trent, "trent");
+
+
+
+
