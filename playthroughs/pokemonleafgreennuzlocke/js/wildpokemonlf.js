@@ -192,7 +192,7 @@ const route10=[
 ];
 //episode11
 const rocktunnel1f_1=[
-    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-seedling'></i>"],
+    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-mountain'></i>"],
     [geodude, zubat, mankey],
     ["35% - Lv 15-17", "30% - Lv 15-16", "15% - Lv 16-17"],
     [rockGround, poisonFlying, fighting]
@@ -204,7 +204,7 @@ const rocktunnel1f_2=[
     [fighting, rockGround]
 ];
 const rocktunnelb1f_1=[
-    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-seedling'></i>"],
+    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-mountain'></i>"],
     [geodude, zubat, mankey],
     ["35% - Lv 15-17", "30% - Lv 15-16", "15% - Lv 16-17"],
     [rockGround, poisonFlying, fighting]
@@ -214,6 +214,19 @@ const rocktunnelb1f_2=[
     [machop, onix],
     ["10% - Lv 17", "10% - Lv 13-15"],
     [fighting, rockGround]
+];
+//episode12
+const route8=[
+    ["<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Meowth <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Sandshrew <i class='fa-solid fa-seedling'></i>", "<span class='succenc'> Vulpix <i class='fa-solid fa-seedling'></i></span>"],
+    [pidgey, meowth, sandshrew, vulpix],
+    ["30% - Lv 18-20", "30% - Lv 18-20", "20% - Lv 17-19", "20% - Lv 15-18"],
+    [normalFlying, normal, ground, fire]
+];
+const route7=[
+    ["<i class='fa-solid fa-flag'></i> Meowth <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Vulpix <i class='fa-solid fa-seedling'></i>"],
+    [meowth, pidgey, bellsprout, vulpix],
+    ["40% - Lv 17-20", "30% - Lv 19-22", "20% - Lv 19-22", "10% - Lv 18-20"],
+    [normal, normalFlying, grassPoison, fire]
 ];
 
 //episode1
@@ -254,3 +267,6 @@ populateTable(rocktunnel1f_1, "rocktunnel1f_1");
 populateTable(rocktunnel1f_2, "rocktunnel1f_2");
 populateTable(rocktunnelb1f_1, "rocktunnelb1f_1");
 populateTable(rocktunnelb1f_2, "rocktunnelb1f_2");
+//episode12
+populateTable(route8, "route8");
+populateTable(route7, "route7");

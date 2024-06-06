@@ -44,7 +44,7 @@ function trainerCard1(trainerName, name, imagePath, insight, cssClass = "", diff
     return template;
   }
 
-function trainerCard2(trainerName, name, name2, imagePath, insight, cssClass = "", difficulty = "") {
+function trainerCard2(trainerName, name, name1, name2, imagePath, insight, cssClass = "", difficulty = "") {
     let starRatings;
     switch (difficulty.toLowerCase()) {
       case "extremely easy":
@@ -77,7 +77,7 @@ function trainerCard2(trainerName, name, name2, imagePath, insight, cssClass = "
         <p class="titlealign">${insight}
         </p>
         <div id="display${name}" class="rules-content" style="overflow-x: auto; height: 0;">
-          <table border="1" class="customTable" id="${name}">
+          <table border="1" class="customTable" id="${name1}">
             <tbody>
             </tbody>
           </table>
@@ -109,13 +109,19 @@ const gentleman = "sprites/gentleman.png";
 const sailor = "sprites/sailor.png";
 const fisherman = "sprites/fisherman.png";
 const pokemaniac = "sprites/pokemaniac.png";
+const twins = "sprites/twins.png";
+const biker = "sprites/biker.png";
+const youngCouple = "sprites/Spr_FRLG_Young_Couple.png";
+const beauty = "sprites/Spr_FRLG_Beauty.png";
+const cooltrainerFemale = "sprites/Spr_FRLG_Cooltrainer_F.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
 const brocksprite = "sprites/Brock_FRLG.webp";
 const mistysprite = "sprites/31.png";
 const rivalsprite2 = "sprites/rival2.png";
-const ltsurgesprite = "sprites/ltsurge.png"
+const ltsurgesprite = "sprites/ltsurge.png";
+const erikasprite = "sprites/Spr_FRLG_Erika.png";
 
 /*
 //colton
@@ -909,6 +915,178 @@ classimp: '',
 difficulty: 'easy' }
 
 ];
+//EPISODE12
+//rival5
+const rival5Card = trainerCard2('TOADMAN (Rival)',
+                               'rival5',
+                               'rival5_1',
+                               'rival5_2',
+                               rivalsprite2, 
+                               'Not that easy, not that difficult but that Gyarados really gave me a challenge because I don\'t have anything against it.',
+                               "importantname", 
+                               "normal");
+const rival5Container = document.getElementById('rival5Container');
+rival5Container.innerHTML = rival5Card;
+const meganCard = trainerCard2('Megan',
+                               'megan',
+                               'megan1',
+                               'megan2',
+                               lass, 
+                               'Not really difficult, just way too many Pokémon.',
+                               "", 
+                               "easy");
+const meganContainer = document.getElementById('meganContainer');
+meganContainer.innerHTML = meganCard;
+
+const episode12= [
+  { name: 'Julia', 
+      id: 'julia', 
+   image: lass, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Rich', 
+      id: 'rich', 
+   image: gambler, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Glenn', 
+      id: 'glenn', 
+   image: nerd, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Eli & Anne', 
+      id: 'eliandanne', 
+   image: twins, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Andrea', 
+      id: 'andrea', 
+   image: lass, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Leslie', 
+      id: 'leslie', 
+   image: nerd, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Paige', 
+      id: 'paige', 
+   image: lass, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Jaren', 
+      id: 'jaren', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Ricardo', 
+      id: 'ricardo', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Aidan', 
+      id: 'aidan', 
+   image: nerd, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Stan', 
+      id: 'stan', 
+   image: gambler, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' }
+
+];
+//EPISODE13
+const maryCard = trainerCard2('Mary',
+                               'mary',
+                               'mary1',
+                               'mary2',
+                               cooltrainerFemale, 
+                               'Way too many Pokémon for regular trainer in a gym.',
+                               "", 
+                               "normal");
+const maryContainer = document.getElementById('maryContainer');
+maryContainer.innerHTML = maryCard;
+
+const episode13= [
+  { name: 'Lea & Jed', 
+      id: 'leaandjed', 
+   image: youngCouple, 
+ insight: 'My team was somewhat underleveled and this double battle gave me a challenge even though their Pokémon type is only fire type.',
+classimp: '',
+difficulty: 'hard' },
+
+  { name: 'Kay', 
+      id: 'kay', 
+   image: lass, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Bridget', 
+      id: 'bridget', 
+   image: beauty, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Tina', 
+      id: 'tina', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Tamia', 
+      id: 'tamia', 
+   image: beauty, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Lisa', 
+      id: 'lisa', 
+   image: lass, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Lori', 
+      id: 'lori', 
+   image: beauty, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Erika', 
+      id: 'erika', 
+   image: erikasprite, 
+ insight: '',
+classimp: '',
+difficulty: 'hard' }
+
+];
 
 function displayTrainerCard(trainer) {
     const card = trainerCard1(trainer.name, trainer.id, trainer.image, trainer.insight, trainer.classimp, trainer.difficulty);
@@ -927,7 +1105,8 @@ episode8.forEach(displayTrainerCard);
 episode9.forEach(displayTrainerCard);
 episode10.forEach(displayTrainerCard);
 episode11.forEach(displayTrainerCard);
-
+episode12.forEach(displayTrainerCard);
+episode13.forEach(displayTrainerCard);
 
 
 //populate Table function
@@ -1650,10 +1829,158 @@ const trent = [
   ["Lv.19", "Lv.19"],
   [rockGround, rockGround]
 ];
-
-
-
-
+//episode12
+const rival5_1 = [
+  ["Pidgeotto", "Gyarados", "Growlithe"],
+  [pidgeotto, gyarados, growlithe],
+  ["Lv.25", "Lv.23", "Lv.22"],
+  [normalFlying, waterFlying, fire]
+];
+const rival5_2 = [
+  ["Kadabra", "Ivysaur"],
+  [kadabra, ivysaur],
+  ["Lv.20", "Lv.25"],
+  [psychic, grassPoison]
+];
+const julia = [
+  ["Clefairy", "Clefairy"],
+  [clefairy, clefairy],
+  ["Lv.22", "Lv.22"],
+  [normal, normal]
+];
+const rich = [
+  ["Grolithe", "Vulpix"],
+  [vulpix, vulpix],
+  ["Lv.24", "Lv.24"],
+  [fire, fire]
+];
+const glenn = [
+  ["Grimer", "Muk", "Grimer"],
+  [grimer, muk, grimer],
+  ["Lv.22", "Lv.22", "Lv.22"],
+  [poison, poison, poison]
+];
+const eliandanne = [
+  ["Clefairy", "Jigglypuff"],
+  [clefairy, jigglypuff],
+  ["Lv.22", "Lv.22"],
+  [normal, normal]
+];
+const megan1 = [
+  ["Pidgey", "Rattata", "Nidoran♂"],
+  [pidgey, rattata, nidoranm],
+  ["Lv.19", "Lv.19", "Lv.19"],
+  [normalFlying, normal, poison]
+];
+const megan2 = [
+  ["Meowth", "Pikachu"],
+  [meowth, pikachu],
+  ["Lv.19", "Lv.19"],
+  [normal, electric]
+];
+const andrea = [
+  ["Meowth", "Meowth", "Meowth"],
+  [meowth, meowth, meowth],
+  ["Lv.24", "Lv.24", "Lv.24"],
+  [normal, normal, normal]
+];
+const leslie = [
+  ["Koffing"],
+  [koffing],
+  ["Lv.26"],
+  [poison]
+];
+const paige = [
+  ["Nidoran♀", "Nidorina"],
+  [nidoranf, nidorina],
+  ["Lv.23", "Lv.23"],
+  [poison, poison]
+];
+const jaren = [
+  ["Grimer", "Grimer"],
+  [grimer, grimer],
+  ["Lv.24", "Lv.24"],
+  [poison, poison]
+];
+const ricardo = [
+  ["Koffing", "Koffing", "Grimer"],
+  [koffing, koffing, grimer],
+  ["Lv.22", "Lv.22", "Lv.23"],
+  [poison, poison, poison]
+];
+const aidan = [
+  ["Voltorb", "Koffing", "Voltorb", "Magnemite"],
+  [voltorb, koffing, voltorb, magnemite],
+  ["Lv.20", "Lv.20", "Lv.20", "Lv.20"],
+  [electric, poison, electric, electricSteel]
+];
+const stan = [
+  ["Poliwag", "Poliwag", "Poliwhirl"],
+  [poliwag, poliwag, poliwhirl],
+  ["Lv.22", "Lv.22", "Lv.22"],
+  [water, water, water]
+];
+//episode13
+const leaandjed = [
+  ["Ninetales", "Rapidash"],
+  [ninetales, rapidash],
+  ["Lv.29", "Lv.29"],
+  [fire, fire]
+];
+const kay = [
+  ["Bellsprout", "Weepinbell"],
+  [bellsprout, weepinbell],
+  ["Lv.23", "Lv.23"],
+  [grassPoison, grassPoison]
+];
+const bridget = [
+  ["Oddish", "Oddish", "Bellsprout", "Bellsprout"],
+  [oddish, oddish, bellsprout, bellsprout],
+  ["Lv.21", "Lv.21", "Lv.21", "Lv.21"],
+  [grassPoison, grassPoison, grassPoison, grassPoison]
+];
+const mary1 = [
+  ["Bellsprout", "Oddish", "Weepinbell"],
+  [bellsprout, oddish, weepinbell],
+  ["Lv.22", "Lv.22", "Lv.22"],
+  [grassPoison, grassPoison, grassPoison]
+];
+const mary2 = [
+  ["Gloom", "Ivysaur"],
+  [gloom, ivysaur],
+  ["Lv.22", "Lv.22"],
+  [grassPoison, grassPoison]
+];
+const lisa = [
+  ["Oddish", "Gloom"],
+  [oddish, gloom],
+  ["Lv.23", "Lv.23"],
+  [grassPoison, grassPoison]
+];
+const tina = [
+  ["Bulbasaur", "Ivysaur"],
+  [bulbasaur, ivysaur],
+  ["Lv.24", "Lv.24"],
+  [grassPoison, grassPoison]
+];
+const lori = [
+  ["Exeggcute"],
+  [exeggcute],
+  ["Lv.24"],
+  [grassPsychic]
+];
+const tamia = [
+  ["Bellsprout", "Bellsprout"],
+  [bellsprout, bellsprout],
+  ["Lv.24", "Lv.24"],
+  [grassPoison, grassPoison]
+];
+const erika = [
+  ["Victreebel", "Tangela", "Vileplume"],
+  [victreebel, tangela, vileplume],
+  ["Lv.29", "Lv.24", "Lv.29"],
+  [grassPoison, grass, grassPoison]
+];
 
 //episode1
 populateTable(rival1, "rival1");
@@ -1772,6 +2099,40 @@ populateTable(carol, "carol");
 populateTable(clark, "clark");
 populateTable(herman, "herman");
 populateTable(trent, "trent");
+//episode12
+populateTable(rival5_1, "rival5_1");
+populateTable(rival5_2, "rival5_2");
+populateTable(julia, "julia");
+populateTable(rich, "rich");
+populateTable(glenn, "glenn");
+populateTable(eliandanne, "eliandanne");
+populateTable(megan1, "megan1");
+populateTable(megan2, "megan2");
+populateTable(andrea, "andrea");
+populateTable(leslie, "leslie");
+populateTable(paige, "paige");
+populateTable(jaren, "jaren");
+populateTable(ricardo, "ricardo");
+populateTable(aidan, "aidan");
+populateTable(stan, "stan");
+//episode13
+populateTable(leaandjed, "leaandjed");
+populateTable(kay, "kay");
+populateTable(bridget, "bridget");
+populateTable(tina, "tina");
+populateTable(tamia, "tamia");
+populateTable(mary1, "mary1");
+populateTable(mary2, "mary2");
+populateTable(lisa, "lisa");
+populateTable(lori, "lori");
+populateTable(erika, "erika");
+
+
+
+
+
+
+
 
 
 
