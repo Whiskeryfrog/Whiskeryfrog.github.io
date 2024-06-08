@@ -114,6 +114,7 @@ const biker = "sprites/biker.png";
 const youngCouple = "sprites/Spr_FRLG_Young_Couple.png";
 const beauty = "sprites/Spr_FRLG_Beauty.png";
 const cooltrainerFemale = "sprites/Spr_FRLG_Cooltrainer_F.png";
+const chaneller = "sprites/chaneller.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
@@ -122,7 +123,7 @@ const mistysprite = "sprites/31.png";
 const rivalsprite2 = "sprites/rival2.png";
 const ltsurgesprite = "sprites/ltsurge.png";
 const erikasprite = "sprites/Spr_FRLG_Erika.png";
-
+const giovannisprite = "sprites/giovannie.png";
 /*
 //colton
 const coltonCard = trainerCard1('Colton',
@@ -1087,6 +1088,213 @@ classimp: '',
 difficulty: 'hard' }
 
 ];
+//EPISODE 14
+const rocketGruntHideout7Card = trainerCard2('Rocket Grunt',
+                               'rocketGruntHideout7',
+                               'rocketGruntHideout71',
+                               'rocketGruntHideout72',
+                               rocketGruntMale, 
+                               '',
+                               "", 
+                               "easy");
+const rocketGruntHideout7Container = document.getElementById('rocketGruntHideout7Container');
+rocketGruntHideout7Container.innerHTML = rocketGruntHideout7Card;
+
+const episode14= [
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout1', 
+   image: rocketGruntMale, 
+ insight: 'Trust me, you will be fighting grunts that have very similar team variation to this grunt.',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout2', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout3', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout4', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout5', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout8', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout9', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{ name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout10', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout11', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout12', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Giovanni', 
+      id: 'giovanni1', 
+   image: giovannisprite, 
+ insight: 'The first time you will be fighting him and to be honest its pretty dissapointing.',
+classimp: 'importantname',
+difficulty: 'easy' }
+
+];
+//EPISODE 15
+const episode15= [
+  { name: 'Patricia', 
+      id: 'patricia', 
+   image: chaneller, 
+ insight: 'This will not be the last time you fight a team similar to this.',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Carly', 
+      id: 'carly', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Hope', 
+      id: 'hope', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Laurel', 
+      id: 'laurel', 
+   image: chaneller, 
+ insight: 'Finally! Some variation... kinda',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Jody', 
+      id: 'jody', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Paula', 
+      id: 'paula', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Ruth', 
+      id: 'ruth', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Tammy', 
+      id: 'tammy', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Karina', 
+      id: 'karina', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Janae', 
+      id: 'janae', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Angelica', 
+      id: 'angelica', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Jennifer', 
+      id: 'jennifer', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Emilia', 
+      id: 'emilia', 
+   image: chaneller, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntTower1', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntTower2', 
+   image: rocketGruntMale, 
+ insight: 'Just be very careful with the selfdistructing Koffing. Trust me, I learned it the hard way.',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntTower3', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+];
+//EPISODE 16
+
 
 function displayTrainerCard(trainer) {
     const card = trainerCard1(trainer.name, trainer.id, trainer.image, trainer.insight, trainer.classimp, trainer.difficulty);
@@ -1107,6 +1315,8 @@ episode10.forEach(displayTrainerCard);
 episode11.forEach(displayTrainerCard);
 episode12.forEach(displayTrainerCard);
 episode13.forEach(displayTrainerCard);
+episode14.forEach(displayTrainerCard);
+episode15.forEach(displayTrainerCard);
 
 
 //populate Table function
@@ -1981,6 +2191,192 @@ const erika = [
   ["Lv.29", "Lv.24", "Lv.29"],
   [grassPoison, grass, grassPoison]
 ];
+//episode14
+const rocketGruntHideout1 = [
+  ["Raticate", "Zubat"],
+  [raticate, zubat],
+  ["Lv.20", "Lv.20"],
+  [normal, poisonFlying]
+];
+const rocketGruntHideout2 = [
+  ["Raticate", "Raticate"],
+  [raticate, raticate],
+  ["Lv.21", "Lv.21"],
+  [normal, normal]
+];
+const rocketGruntHideout3 = [
+  ["Drowzee", "Machop"],
+  [drowzee, machop],
+  ["Lv.21", "Lv.21"],
+  [psychic, fighting]
+];
+const rocketGruntHideout4 = [
+  ["Rattata", "Rattata", "Raticate", "Raticate"],
+  [rattata, rattata, raticate, raticate],
+  ["Lv.19", "Lv.19", "Lv.19", "Lv.19"],
+  [normal, normal, normal, normal]
+];
+const rocketGruntHideout5 = [
+  ["Grimer", "Koffing", "Koffing"],
+  [grimer, koffing, koffing],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [poison, poison, poison]
+];
+const rocketGruntHideout6 = [
+  ["Grimer", "Koffing"],
+  [grimer, koffing],
+  ["Lv.22", "Lv.22"],
+  [poison, poison]
+];
+const rocketGruntHideout71 = [
+  ["Zubat", "Koffing", "Grimer"],
+  [zubat, koffing, grimer],
+  ["Lv.17", "Lv.17", "Lv.17"],
+  [poisonFlying, poison, poison]
+];
+const rocketGruntHideout72 = [
+  ["Zubat", "raticate"],
+  [zubat, raticate],
+  ["Lv.17", "Lv.17"],
+  [poisonFlying, normal]
+];
+const rocketGruntHideout8 = [
+  ["Machop", "Machop"],
+  [machop, machop],
+  ["Lv.21", "Lv.21"],
+  [fighting, fighting]
+];
+const rocketGruntHideout9 = [
+  ["Rattata", "Raticate", "Drowzee"],
+  [rattata, raticate, drowzee],
+  ["Lv.20", "Lv.20", "Lv.20"],
+  [normal, normal, psychic]
+];
+const rocketGruntHideout10 = [
+  ["Koffing", "Zubat"],
+  [koffing, zubat],
+  ["Lv.21", "Lv.21"],
+  [poison, poisonFlying]
+];
+const rocketGruntHideout11 = [
+  ["Sandshrew", "Ekans", "Sandslash"],
+  [sandshrew, ekans, sandslash],
+  ["Lv.23", "Lv.23", "Lv.23"],
+  [ground, poison, ground]
+];
+const rocketGruntHideout12 = [
+  ["Ekans", "Sandshrew", "Arbok"],
+  [ekans, sandshrew, arbok],
+  ["Lv.23", "Lv.23", "Lv.23"],
+  [poison, ground, poison]
+];
+const giovanni1 = [
+  ["Onix", "Rhyhorn", "Kangaskhan"],
+  [onix, rhyhorn, kangaskhan],
+  ["Lv.25", "Lv.24", "Lv.29"],
+  [rockGround, groundRock, normal]
+];
+//episode15
+const hope = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.23"],
+  [ghostPoison]
+];
+const patricia = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.22"],
+  [ghostPoison]
+];
+const carly = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.24"],
+  [ghostPoison]
+];
+const laurel = [
+  ["Ghastly", "Ghastly"],
+  [ghastly, ghastly],
+  ["Lv.23", "Lv.23"],
+  [ghostPoison, ghostPoison]
+];
+const jody = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.22"],
+  [ghostPoison]
+];
+const paula = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.24"],
+  [ghostPoison]
+];
+const ruth = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.22"],
+  [ghostPoison]
+];
+const tammy = [
+  ["Haunter"],
+  [haunter],
+  ["Lv.23"],
+  [ghostPoison]
+];
+const karina = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.24"],
+  [ghostPoison]
+];
+const janae = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.22"],
+  [ghostPoison]
+];
+const angelica = [
+  ["Ghastly", "Ghastly", "Ghastly"],
+  [ghastly, ghastly, ghastly],
+  ["Lv.22", "Lv.22", "Lv.22"],
+  [ghostPoison, ghostPoison, ghostPoison]
+];
+const jennifer = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.24"],
+  [ghostPoison]
+];
+const emilia = [
+  ["Ghastly"],
+  [ghastly],
+  ["Lv.24"],
+  [ghostPoison]
+];
+const rocketGruntTower1 = [
+  ["Zubat", "Zubat", "Golbat"],
+  [zubat, zubat, golbat],
+  ["Lv.25", "Lv.25", "Lv.25"],
+  [poisonFlying, poisonFlying, poisonFlying]
+];
+const rocketGruntTower2 = [
+  ["Koffing", "Drowzee"],
+  [koffing, drowzee],
+  ["Lv.26", "Lv.26"],
+  [poison, psychic]
+];
+const rocketGruntTower3 = [
+  ["Zubat", "Rattata", "Raticate", "Zubat"],
+  [zubat, rattata, raticate, zubat],
+  ["Lv.23", "Lv.23", "Lv.23", "Lv.23"],
+  [poisonFlying, normal, normal, poisonFlying]
+];
+//episode16
+
+
+
 
 //episode1
 populateTable(rival1, "rival1");
@@ -2126,12 +2522,39 @@ populateTable(mary2, "mary2");
 populateTable(lisa, "lisa");
 populateTable(lori, "lori");
 populateTable(erika, "erika");
-
-
-
-
-
-
+//episode14
+populateTable(rocketGruntHideout1, "rocketGruntHideout1");
+populateTable(rocketGruntHideout2, "rocketGruntHideout2");
+populateTable(rocketGruntHideout3, "rocketGruntHideout3");
+populateTable(rocketGruntHideout4, "rocketGruntHideout4");
+populateTable(rocketGruntHideout5, "rocketGruntHideout5");
+populateTable(rocketGruntHideout6, "rocketGruntHideout6");
+populateTable(rocketGruntHideout71, "rocketGruntHideout71");
+populateTable(rocketGruntHideout72, "rocketGruntHideout72");
+populateTable(rocketGruntHideout8, "rocketGruntHideout8");
+populateTable(rocketGruntHideout9, "rocketGruntHideout9");
+populateTable(rocketGruntHideout10, "rocketGruntHideout10");
+populateTable(rocketGruntHideout11, "rocketGruntHideout11");
+populateTable(rocketGruntHideout12, "rocketGruntHideout12");
+populateTable(giovanni1, "giovanni1");
+//episode15
+populateTable(patricia, "patricia");
+populateTable(carly, "carly");
+populateTable(hope, "hope");
+populateTable(laurel, "laurel");
+populateTable(jody, "jody");
+populateTable(paula, "paula");
+populateTable(ruth, "ruth");
+populateTable(karina, "karina");
+populateTable(janae, "janae");
+populateTable(tammy, "tammy");
+populateTable(angelica, "angelica");
+populateTable(jennifer, "jennifer");
+populateTable(emilia, "emilia");
+populateTable(rocketGruntTower1, "rocketGruntTower1");
+populateTable(rocketGruntTower2, "rocketGruntTower2");
+populateTable(rocketGruntTower3, "rocketGruntTower3");
+//episode16
 
 
 

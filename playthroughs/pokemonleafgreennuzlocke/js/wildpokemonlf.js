@@ -228,6 +228,71 @@ const route7=[
     ["40% - Lv 17-20", "30% - Lv 19-22", "20% - Lv 19-22", "10% - Lv 18-20"],
     [normal, normalFlying, grassPoison, fire]
 ];
+//episode13
+//episode14
+//episode15
+const pokemontower3f=[
+    ["Ghastly <i class='fa-solid fa-mountain'></i>", " Cubone <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>"],
+    [ghastly, cubone, haunter],
+    ["90% - Lv 13-19", "9% - Lv 15-17", "1% - Lv 20"],
+    [ghostPoison, ground, ghostPoison]
+];
+const pokemontower4f5f=[
+    ["Ghastly <i class='fa-solid fa-mountain'></i>", " Cubone <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>"],
+    [ghastly, cubone, haunter],
+    ["86% - Lv 13-19", "9% - Lv 15-17", "5% - Lv 20"],
+    [ghostPoison, ground, ghostPoison]
+];
+const pokemontower6f=[
+    ["<span class='succenc'> Ghastly <i class='fa-solid fa-mountain'></i></span>", " Cubone <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>"],
+    [ghastly, cubone, haunter],
+    ["85% - Lv 14-19", "9% - Lv 17-19", "6% - Lv 21-23"],
+    [ghostPoison, ground, ghostPoison]
+];
+const pokemontower7f=[
+    ["<i class='fa-solid fa-flag'></i> Ghastly <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>", " Cubone <i class='fa-solid fa-mountain'></i>"],
+    [ghastly, haunter, cubone],
+    ["75% - Lv 15-19", "15% - Lv 23-25", "10% - Lv 17-19"],
+    [ghostPoison, ghostPoison, ground]
+];
+//episode16
+const route12=[
+    ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", " Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Weepinbell <i class='fa-solid fa-seedling'></i>"],
+    [bellsprout, pidgey, venonat, weepinbell],
+    ["35% - Lv 22-26", "30% - Lv 23-27", "30% - Lv 24-26", "5% - Lv 28-30"],
+    [grassPoison, normalFlying, bugPoison, grassPoison]
+];
+const route12superrod=[
+    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [krabby, gyarados, slowpoke],
+    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
+    [water, waterFlying, waterPsychic]
+];
+const route12special=[
+    ["<span class='succenc'> Snorlax <i class='fa-solid fa-seedling'></i></span>"],
+    [snorlax],
+    ["100% - Lv 30"],
+    [normal]
+];
+const route13_1=[
+    ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", " Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
+    [bellsprout, venonat, pidgey],
+    ["35% - Lv 22-26", "30% - Lv 24-26", "20% - Lv 25-27"],
+    [grassPoison, bugPoison, normalFlying]
+];
+const route13_2=[
+    [" Pidgeotto <i class='fa-solid fa-seedling'></i>", " Weepinbell <i class='fa-solid fa-seedling'></i>", "Ditto <i class='fa-solid fa-seedling'></i>"],
+    [pidgeotto, weepinbell, ditto],
+    ["5% - Lv 29", "5% - Lv 28-30", "5% - Lv 25"],
+    [normalFlying, grassPoison, normal]
+];
+const route13superrod=[
+    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [krabby, gyarados, slowpoke],
+    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
+    [water, waterFlying, waterPsychic]
+];
+
 
 //episode1
 populateTable(oaklab, "oaklab");
@@ -270,3 +335,17 @@ populateTable(rocktunnelb1f_2, "rocktunnelb1f_2");
 //episode12
 populateTable(route8, "route8");
 populateTable(route7, "route7");
+//episode13
+//episode14
+//episode15
+populateTable(pokemontower3f, "pokemontower3f");
+populateTable(pokemontower4f5f, "pokemontower4f5f");
+populateTable(pokemontower6f, "pokemontower6f");
+populateTable(pokemontower7f, "pokemontower7f");
+//episode16
+populateTable(route12, "route12");
+populateTable(route12special, "route12special");
+populateTable(route12superrod, "route12superrod");
+populateTable(route13_1, "route13_1");
+populateTable(route13_2, "route13_2");
+populateTable(route13superrod, "route13superrod");

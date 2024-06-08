@@ -188,6 +188,13 @@
 
 
 @media screen and (max-width: 1200px) {
+    .bannerimage {
+        border-radius: 15px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
     .division4 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -218,7 +225,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("sprites/party.png");
+    background-image: url("../sprites/party.png");
     filter: brightness(0.5);
 
     /* Adjust the brightness value as needed */
@@ -244,7 +251,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("sprites/deaths.png");
+    background-image: url("../sprites/deaths.png");
     filter: brightness(0.5);
 
     /* Adjust the brightness value as needed */
@@ -318,6 +325,8 @@ table.customTable {
     border-collapse: separate;
     color: white;
     background-color: #0000008b;
+    table-layout: fixed;
+  width: 100%;  
 }
 
 @media screen and (max-width: 1200px) {
