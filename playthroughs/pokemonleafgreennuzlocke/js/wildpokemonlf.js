@@ -1,3 +1,11 @@
+const tableHeaders = [
+    "Pokémon",
+    "Level",
+    "Type",
+    "Encounter Rate",
+    "Insight"
+];
+
 function populateTable(tableData, tableId) {
     const table = document.getElementById(tableId);  // Get the table element
 
@@ -7,78 +15,226 @@ function populateTable(tableData, tableId) {
         return;  // Exit the function if no table found
     }
 
-    const tbody = table.getElementsByTagName("tbody")[0]; // Get the table body
+    const tbody = table.getElementsByTagName("tbody")[0];
 
-    // Loop through each row in the data
-    tableData.forEach(row => {
-        // Create a new table row (<tr>)
+    // Clear existing rows in tbody
+    tbody.innerHTML = "";
+
+    // Create table header row
+    const headerRow = document.createElement("tr");
+    tableHeaders.forEach(header => {
+        const headerCell = document.createElement("th");
+        headerCell.textContent = header;
+        headerRow.appendChild(headerCell);
+    });
+    tbody.appendChild(headerRow);
+
+    // Loop through each Pokemon data (object)
+    tableData.forEach(pokemonData => {
         const rowElement = document.createElement("tr");
 
-        // Loop through each cell value in the current row
-        row.forEach(cellValue => {
-            const cell = document.createElement("td");
-            cell.classList.add("nopad");  // Add "nopad" class by default
+        // Combine name, image, and success indicator in a single cell
+        const nameCell = document.createElement("td");
+        const pokemonName = pokemonData.name; // Access name property
 
-            // If the cell value is an image path, create an image element
-            if (cellValue.startsWith("sprites/")) {
-                const image = document.createElement("img");
-                image.classList.add("nopad");  // Add "nopad" class to images
-                image.setAttribute("src", cellValue);
-                cell.appendChild(image);
-            } else {
-                // Otherwise, set the cell content as HTML (for icons)
-                cell.innerHTML = cellValue;
-            }
+        // Check for success indicator
+        if (pokemonName.includes("<span class='succenc'>")) {
+            rowElement.classList.add("succenc"); // Add success class to entire row
+        }
 
-            rowElement.appendChild(cell); // Add the cell to the row
-        });
+        if (pokemonName.includes("<span class='caughtpokemon'>")) {
+            rowElement.classList.add("caughtpokemon"); // Add success class to entire row
+        }
 
-        // Append the completed row to the table body
+        const nameContent = document.createElement("div");
+        nameContent.innerHTML = pokemonName; // Add name with HTML for icons
+
+        const pokemonImage = document.createElement("img");
+        pokemonImage.classList.add("nopad");
+        pokemonImage.setAttribute("src", pokemonData.image); // Access image property
+
+        nameCell.appendChild(nameContent);
+        nameCell.appendChild(pokemonImage);
+        rowElement.appendChild(nameCell);
+
+        // Add level cell
+        const levelCell = document.createElement("td");
+        levelCell.textContent = pokemonData.level;
+        rowElement.appendChild(levelCell);
+
+        // Add type cell with image
+        const typeCell = document.createElement("td");
+        const typeImage = document.createElement("img");
+        typeImage.setAttribute("src", pokemonData.type);
+        typeCell.appendChild(typeImage);
+        rowElement.appendChild(typeCell);
+
+        // Add encounter rate cell
+        const encounterRateCell = document.createElement("td");
+        encounterRateCell.textContent = pokemonData.encounterRate;
+        rowElement.appendChild(encounterRateCell);
+
+        // Add insight cell
+        const insightCell = document.createElement("td");
+        insightCell.textContent = pokemonData.insight;
+        rowElement.appendChild(insightCell);
+
         tbody.appendChild(rowElement);
     });
 }
 
 //episode 1
 const oaklab = [
-    ["Bulbasaur <i class='fa-solid fa-gift'></i>", "Charmander <i class='fa-solid fa-gift'></i>", "<span class='succenc'>Squirtle <i class='fa-solid fa-gift'></i></span>"],
-    ["sprites/firered-leafgreen/1.png", "sprites/firered-leafgreen/4.png", "sprites/firered-leafgreen/7.png"],
-    ["Gift - Lv.5", "Gift - Lv.5", "Gift - Lv.5"],
-    [grassPoison, fire, water]
+    {
+        name: "Bulbasaur",
+        image: bulbasaur,
+        level: "5",
+        type: grassPoison,
+        encounterRate: "Gift",
+        insight: "The best choice for this region if you want to have an easier time with the Nuzlocke and in the game in general."
+    },
+    {
+        name: "Charmander",
+        image: charmander,
+        level: "5",
+        type: fire,
+        encounterRate: "Gift",
+        insight: "Probably the hardest one to use due to the unfavorable match up with the first two gym leaders but somewhat decent if used properly."
+    },
+    {
+        name: "<span class='succenc'>Squirtle</span>",
+        image: squirtle,
+        level: "5",
+        type: water,
+        encounterRate: "Gift",
+        insight: "Somewhere in the middle between Bulbasaur and Charmander but more on the side of being easier due to the tankingness and overall reliability,"
+    }
 ];
+
 const route1 = [
-    ["<span class='succenc'>Pidgey <i class='fa-solid fa-seedling'></i><span>", "Rattata <i class='fa-solid fa-seedling'></i>"],
-    ["sprites/firered-leafgreen/16.png", "sprites/firered-leafgreen/19.png"],
-    ["50% - Lv.2-5", "50% - Lv.2-4"],
-    [normalFlying, normal]
+    {
+        name: "<span class='succenc'>Pidgey</span>",
+        image: pidgey,
+        level: "2-5",
+        type: normalFlying,
+        encounterRate: "50%",
+        insight: "Decent flyer in a Nuzlocke but there are better flying types in this region that fulfills the role better."
+    },
+    {
+        name: "Rattata",
+        image: rattata,
+        level: "2-4",
+        type: normal,
+        encounterRate: "50%",
+        insight: "A good HM slave for the whole region but can still be fighter in the early game. Only good trainers can keep their Rattata/Raticate through the end of the challenge."
+    }
 ];
 
 const route2 = [
-    ["<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "Rattata <i class='fa-solid fa-seedling'></i>", "Caterpie <i class='fa-solid fa-seedling'></i>", "<span class='succenc'>Weedle <i class='fa-solid fa-seedling'></i> </span>"],
-    ["sprites/firered-leafgreen/16.png", "sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/13.png"],
-    ["45% - Lv.2-5", "45% - Lv.2-5", "5% - Lv.4-5", "5% - Lv.4-5"],
-    [normalFlying, normal, bug, bugPoison]
+    {
+        name: "<span class='caughtpokemon'>Pidgey </span>",
+        image: pidgey,
+        level: "2-5",
+        type: normalFlying,
+        encounterRate: "45%",
+        insight: "Decent flyer in a Nuzlocke but there are better flying types in this region that fulfills the role better."
+    },
+    {
+        name: "Rattata",
+        image: rattata,
+        level: "2-5",
+        type: normal,
+        encounterRate: "45%",
+        insight: "A good HM slave for the whole region but can still be fighter in the early game. Only good trainers can keep their Rattata/Raticate through the end of the challenge."
+    },
+    {
+        name: "Caterpie",
+        image: caterpie,
+        level: "4-5",
+        type: bug,
+        encounterRate: "5%",
+        insight: "Make sure to evolve this Pokemon as soon as you can to fully utilize this Pokemon's strength. Though only useful in the early game."
+    },
+    {
+        name: "<span class='succenc'>Weedle</span>",
+        image: weedle,
+        level: "4-5",
+        type: bugPoison,
+        encounterRate: "5%",
+        insight: "If I\'m honest, probably worse than Caterpie due to the limited movepool but can still used early game as a somewhat reliable attacker."
+    }
 ];
 
-const route22 =[
-    ["<span class='succenc'>Rattata <i class='fa-solid fa-seedling'></i></span>", "Mankey <i class='fa-solid fa-seedling'></i>", "Spearow <i class='fa-solid fa-seedling'></i>"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/56.png", "sprites/firered-leafgreen/21.png"],
-    ["45% - Lv.2-5", "45% - Lv.2-5", "10% - Lv.3-5"],
-    [normal, fighting, normalFlying]
+const route22 = [
+    {
+        name: "<span class='succenc'>Rattata</span>",
+        image: rattata,
+        level: "2-5",
+        type: normal,
+        encounterRate: "45%",
+        insight: "A good HM slave for the whole region but can still be fighter in the early game. Only good trainers can keep their Rattata/Raticate through the end of the challenge."
+    },
+    {
+        name: "Mankey",
+        image: mankey,
+        level: "2-5",
+        type: fighting,
+        encounterRate: "45%",
+        insight: "If you chose Charmander as a starter, it is almost a requirement to have a Mankey in your team for the first gym due to type disadvantage. "
+    },
+    {
+        name: "Spearow",
+        image: spearow,
+        level: "3-5",
+        type: normalFlying,
+        encounterRate: "10%",
+        insight: "The best way to describe Spearow is its basically a better Pidgey."
+    }
 ];
 
-const viridian1 =[
-    ["<span class='succenc'>Caterpie <i class='fa-solid fa-seedling'></i></span>", "Weedle <i class='fa-solid fa-seedling'></i>", "Metapod <i class='fa-solid fa-seedling'></i>"],
-    ["sprites/firered-leafgreen/10.png", "sprites/firered-leafgreen/13.png", "sprites/firered-leafgreen/11.png"],
-    ["40% - Lv.3-5", "40% - Lv.3-5", "10% - Lv.4-6"],
-    [bug, bugPoison, bug]
+const viridian = [
+    {
+        name: "<span class='succenc'>Caterpie</span>",
+        image: caterpie,
+        level: "3-5",
+        type: bug,
+        encounterRate: "40%",
+        insight: "Make sure to evolve this Pokemon as soon as you can to fully utilize this Pokemon's strength. Though only useful in the early game."
+    },
+    {
+        name: "<span class='caughtpokemon'>Weedle</span>",
+        image: weedle,
+        level: "3-5",
+        type: bugPoison,
+        encounterRate: "40%",
+        insight: "If I\'m honest, probably worse than Caterpie due to the limited movepool but can still used early game as a somewhat reliable attacker."
+    },
+    {
+        name: "Metapod",
+        image: metapod,
+        level: "3-5",
+        type: bug,
+        encounterRate: "10%",
+        insight: "Make sure to evolve this Pokemon as soon as you can to fully utilize this Pokemon's strength. Though only useful in the early game."
+    },
+    {
+        name: "<span class='caughtpokemon'>Kakuna</span>",
+        image: kakuna,
+        level: "5",
+        type: bugPoison,
+        encounterRate: "5%",
+        insight: "If I\'m honest, probably worse than Caterpie due to the limited movepool but can still used early game as a somewhat reliable attacker."
+    },
+    {
+        name: "Pikachu",
+        image: pikachu,
+        level: "3-5",
+        type: electric,
+        encounterRate: "5%",
+        insight: "Pikachu is a pretty decent Pokemon in it of itself. There might be better electric types out there, the Pikachu line is still a pretty good choice for a team."
+    },
 ];
 
-const viridian2 =[
-    ["Kakuna <i class='fa-solid fa-seedling'></i>", "Pikachu <i class='fa-solid fa-seedling'></i>"],
-    ["sprites/firered-leafgreen/14.png", "sprites/firered-leafgreen/25.png"],
-    ["5% - Lv.5", "5% - Lv.3-5"],
-    [bugPoison, electric]
-];
 //episode 2,
 //episode 3
 const route3_1 =[
@@ -292,15 +448,286 @@ const route13superrod=[
     ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
     [water, waterFlying, waterPsychic]
 ];
+//episode17
 
+const safariZoneArea1_1 =[
+    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", " Exeggcute <i class='fa-solid fa-seedling'></i>", " Rhyhorn <i class='fa-solid fa-seedling'></i>"],
+    [nidoranf, exeggcute, rhyhorn ],
+    ["20% - Lv 22", "20% - Lv 24-25", "20% - Lv 25"],
+    [poison, grassPsychic, rockGround ]
+];
+const safariZoneArea1_2 =[
+    [" Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidorino <i class='fa-solid fa-seedling'></i>"],
+    [venonat, nidorina, nidorino],
+    ["15% - Lv 22", "10% - Lv 31", "5% - Lv 31"],
+    [bugPoison, poison, poison]
+];
+const safariZoneArea1_3 =[
+    [" Parasect <i class='fa-solid fa-seedling'></i>", " Pinsir <i class='fa-solid fa-seedling'></i>", " Chansey <i class='fa-solid fa-seedling'></i>"],
+    [parasect, pinsir, chansey],
+    ["5% - Lv 30", "4% - Lv 23", "1% - Lv 23"],
+    [bugGrass, bug, normal]
+];
+const safariZoneArea1superrod_1 =[
+    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
+    [goldeen, seaking, dratini],
+    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
+    [water, water, dragon]
+];
+const safariZoneArea1superrod_2 =[
+    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
+    [slowpoke, dragonair],
+    ["4% - Lv 15-35", "1% - Lv 25-35"],
+    [waterPsychic, dragon]
+];
+
+const safariZoneArea2_1 =[
+    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", "<span class='failenc'> Doduo <i class='fa-solid fa-seedling'></i></span>", " Exeggcute <i class='fa-solid fa-seedling'></i>"],
+    [nidoranf, doduo, exeggcute ],
+    ["20% - Lv 24", "20% - Lv 26", "20% - Lv 23-25"],
+    [poison, normalFlying, grassPsychic ]
+];
+const safariZoneArea2_2 =[
+    ["Paras <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidoran♂ <i class='fa-solid fa-seedling'></i>"],
+    [paras, nidorina, nidoranm ],
+    ["15% - Lv 22", "10% - Lv 33", "5% - Lv 24"],
+    [bugGrass, poison, poison ]
+];
+const safariZoneArea2_3 =[
+    [" Parasect <i class='fa-solid fa-seedling'></i>", " Kangaskhan <i class='fa-solid fa-seedling'></i>", " Pinsir <i class='fa-solid fa-seedling'></i>"],
+    [parasect, kangaskhan, pinsir],
+    ["5% - Lv 25", "4% - Lv 25", "1% - Lv 28"],
+    [bugGrass, normal, bug]
+];
+const safariZoneArea2superrod_1 =[
+    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
+    [goldeen, seaking, dratini],
+    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
+    [water, water, dragon]
+];
+const safariZoneArea2superrod_2 =[
+    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
+    [slowpoke, dragonair],
+    ["4% - Lv 15-35", "1% - Lv 25-35"],
+    [waterPsychic, dragon]
+];
+
+const safariZoneArea3_1 =[
+    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", " Exeggcute <i class='fa-solid fa-seedling'></i>", " Rhyhorn <i class='fa-solid fa-seedling'></i>"],
+    [nidoranf, exeggcute, rhyhorn ],
+    ["20% - Lv 30", "20% - Lv 25-27", "20% - Lv 26"],
+    [poison, grassPsychic, rockGround ]
+];
+const safariZoneArea3_2 =[
+    [" Paras <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidorino <i class='fa-solid fa-seedling'></i>"],
+    [paras, nidorina, nidorino],
+    ["15% - Lv 23", "10% - Lv 30", "5% - Lv 30"],
+    [bugGrass, poison, poison]
+];
+const safariZoneArea3_3 =[
+    [" Venomoth <i class='fa-solid fa-seedling'></i>", "Chansey <i class='fa-solid fa-seedling'></i>", " Tauros <i class='fa-solid fa-seedling'></i>"],
+    [venomoth, chansey, tauros],
+    ["5% - Lv 32", "4% - Lv 26", "1% - Lv 328"],
+    [bugPoison, normal, normal]
+];
+const safariZoneArea3superrod_1 =[
+    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
+    [goldeen, seaking, dratini],
+    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
+    [water, water, dragon]
+];
+const safariZoneArea3superrod_2 =[
+    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
+    [slowpoke, dragonair],
+    ["4% - Lv 15-35", "1% - Lv 25-35"],
+    [waterPsychic, dragon]
+];
+
+const safariZoneArea4_1 =[
+    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", "<span class='failenc'> Doduo <i class='fa-solid fa-seedling'></i></span>", " Exeggcute <i class='fa-solid fa-seedling'></i>"],
+    [nidoranf, doduo, exeggcute ],
+    ["20% - Lv 22", "20% - Lv 26", "20% - Lv 25-27"],
+    [poison, normalFlying, grassPsychic ]
+];
+const safariZoneArea4_2 =[
+    ["Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidoran♂ <i class='fa-solid fa-seedling'></i>"],
+    [venonat, nidorina, nidoranm ],
+    ["15% - Lv 23", "10% - Lv 30", "5% - Lv 30"],
+    [bugPoison, poison, poison ]
+];
+const safariZoneArea4_3 =[
+    ["Venomoth <i class='fa-solid fa-seedling'></i>", " Tauros <i class='fa-solid fa-seedling'></i>", " Kangaskhan <i class='fa-solid fa-seedling'></i>"],
+    [venomoth, tauros, kangaskhan ],
+    ["5% - Lv 32", "4% - Lv 25", "1% - Lv 28"],
+    [bugPoison, normal, normal ]
+];
+const safariZoneArea4superrod_1 =[
+    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
+    [goldeen, seaking, dratini],
+    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
+    [water, water, dragon]
+];
+const safariZoneArea4superrod_2 =[
+    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
+    [slowpoke, dragonair],
+    ["4% - Lv 15-35", "1% - Lv 25-35"],
+    [waterPsychic, dragon]
+];
+
+const route17_1 =[
+    ["<span class='succenc'> Doduo <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Raticate <i class='fa-solid fa-seedling'></i>"],
+    [doduo, spearow, raticate ],
+    ["35% - Lv 24-28", "30% - Lv 20-22", "25% - Lv 25-29"],
+    [normalFlying, normalFlying, normal ]
+];
+const route17_2 =[
+    ["<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Fearow <i class='fa-solid fa-seedling'></i>"],
+    [rattata, fearow],
+    ["5% - Lv 22", "5% - Lv 25-27"],
+    [normal, normalFlying]
+];
+
+const vermillionCitysuperrod_1 =[
+    ["<span class='succenc'> Staryu <i class='fa-solid fa-fish'></i></span>", " Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>"],
+    [staryu, krabby, gyarados],
+    ["40% - Lv 15-25", "40% - Lv 15-25", "15% - Lv 15-25"],
+    [water, water, waterFlying]
+];
+const vermillionCitysuperrod_2 =[
+    [" Horsea <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [horsea, slowpoke],
+    ["4% - Lv 25-30", "1% - Lv 25-35"],
+    [water, waterPsychic]
+];
+
+//episode18
+
+const saffronCity = [
+    ["<span class='succenc'>Hitmonlee <i class='fa-solid fa-gift'></i></span>", "Hitmonchan <i class='fa-solid fa-gift'></i>"],
+    [hitmonlee, hitmonchan],
+    ["Gift - Lv.30", "Gift - Lv.30"],
+    [fighting, fighting]
+];
+
+//episode19
+//episode20
+//episode21
+
+const route19 = [
+    ["<span class='succenc'> Tentacool <i class='fa-solid fa-water'></i></span>"],
+    [tentacool],
+    ["100% - Lv.5-40"],
+    [waterPoison]
+];
+const route19superrod=[
+    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [krabby, gyarados, slowpoke],
+    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
+    [water, waterFlying, waterPsychic]
+];
+
+const palletTown = [
+    ["<i class='fa-solid fa-flag'></i> Tentacool <i class='fa-solid fa-water'></i>"],
+    [tentacool],
+    ["100% - Lv.5-40"],
+    [waterPoison]
+];
+const palletTownsuperrod_1=[
+    ["<i class='fa-solid fa-flag'></i> Staryu <i class='fa-solid fa-fish'></i>", "<span class='succenc'> Krabby <i class='fa-solid fa-fish'></i></span>", " Gyarados <i class='fa-solid fa-fish'></i>"],
+    [staryu, krabby, gyarados],
+    ["40% - Lv 15-25", "40% - Lv 15-25", "15% - Lv 15-25"],
+    [water, water, waterFlying]
+];
+const palletTownsuperrod_2=[
+    [" Kingler <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [kingler, slowpoke],
+    ["4% - Lv 25-35", "1% - Lv 25-35"],
+    [water, waterPsychic]
+];
+
+const route21 = [
+    ["<span class='succenc'> Tangela <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Tentacool <i class='fa-solid fa-water'></i>"],
+    [tangela, tentacool],
+    ["100% - Lv 17-28", "100% - Lv.5-40"],
+    [grass, waterPoison]
+];
+const route21superrod=[
+    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [krabby, gyarados, slowpoke],
+    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
+    [water, waterFlying, waterPsychic]
+];
+
+const cinnabarIsland = [
+    ["<i class='fa-solid fa-flag'></i> Tentacool <i class='fa-solid fa-water'></i>"],
+    [tentacool],
+    ["100% - Lv.5-40"],
+    [waterPoison]
+];
+const cinnabarIslandsuperrod_1=[
+    ["<i class='fa-solid fa-flag'></i> Staryu <i class='fa-solid fa-fish'></i>", "<i class='fa-solid fa-flag'></i> Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>"],
+    [staryu, krabby, gyarados],
+    ["40% - Lv 15-25", "40% - Lv 15-25", "15% - Lv 15-25"],
+    [water, water, waterFlying]
+];
+const cinnabarIslandsuperrod_2=[
+    [" Kingler <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
+    [kingler, slowpoke],
+    ["4% - Lv 25-35", "1% - Lv 25-35"],
+    [water, waterPsychic]
+];
+
+const cinnabarMansion1_1 =[
+    ["<i class='fa-solid fa-flag'></i> Raticate <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Grimer <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>"],
+    [raticate, grimer, rattata],
+    ["30% - Lv 32-36", "30% - Lv 28-30", "15% - Lv 26-28"],
+    [normal, poison, normal]
+];
+const cinnabarMansion1f2f3f_2 =[
+    ["<i class='fa-solid fa-flag'></i> Vulpix <i class='fa-solid fa-seedling'></i>", " Koffing <i class='fa-solid fa-seedling'></i>", " Muk <i class='fa-solid fa-seedling'></i>"],
+    [vulpix, koffing, muk ],
+    ["15% - Lv 30-32", "5% - Lv 28", "5% - Lv 32"],
+    [fire, poison, poison]
+];
+
+const seafoamIsland =[
+    ["<span class='succenc'> Slowpoke <i class='fa-solid fa-mountain'></i></span>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Golbat <i class='fa-solid fa-mountain'></i>"],
+    [slowpoke, zubat, golbat],
+    ["55% - Lv 26-33", "34% - Lv 22-26", "11% - Lv 26-30"],
+    [waterPsychic, poisonFlying, poisonFlying]
+];
+
+//episode22
+//episode23
+//episode24
+//episode25
+
+const kindleRoad_1 =[
+    [" Ponyta <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Fearow <i class='fa-solid fa-seedling'></i>"],
+    [ponyta, spearow, fearow ],
+    ["30% - Lv 31-34", "25% - Lv 30-32", "10% - Lv 36"],
+    [fire, normalFlying, normalFlying]
+];
+const kindleRoad_2 =[
+    [" Meowth <i class='fa-solid fa-seedling'></i>", "<span class='failenc'> Geodude <i class='fa-solid fa-seedling'></i></span>", "Persian <i class='fa-solid fa-seedling'></i>"],
+    [ponyta, spearow, fearow ],
+    ["30% - Lv 31-34", "25% - Lv 30-32", "10% - Lv 36"],
+    [fire, normalFlying, normalFlying]
+];
+
+//episode26
+//episode27
+//episode28
+//episode29
+//episode30
+//episodefinale
 
 //episode1
 populateTable(oaklab, "oaklab");
 populateTable(route1, "route1"); 
 populateTable(route2, "route2");
 populateTable(route22, "route22");
-populateTable(viridian1, "viridian1");
-populateTable(viridian2, "viridian2");
+populateTable(viridian, "viridian");
 //episode2
 //episode3
 populateTable(route3_1, "route3_1");
@@ -349,3 +776,18 @@ populateTable(route12superrod, "route12superrod");
 populateTable(route13_1, "route13_1");
 populateTable(route13_2, "route13_2");
 populateTable(route13superrod, "route13superrod");
+//episode17
+//episode18
+//episode19
+//episode20
+//episode21
+//episode22
+//episode23
+//episode24
+//episode25
+//episode26
+//episode27
+//episode28
+//episode29
+//episode30
+//episodefinale

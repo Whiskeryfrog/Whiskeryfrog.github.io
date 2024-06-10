@@ -297,14 +297,72 @@
 
 .succenc {
     text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.93);
-    color: rgb(26, 222, 26);
+    color: white;
     font-weight: bold;
+    background-color: rgb(2, 84, 2);
+}
+
+.giftpokemon {
+    color: white;
+    background-color: rgb(113, 113, 113);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.grasspokemon {
+    color: white;
+    background-color: rgb(12, 115, 0);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.surfpokemon {
+    color: white;
+    background-color: rgb(0, 102, 174);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.fishpokemon {
+    color: white;
+    background-color: rgb(3, 37, 114);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.cavepokemon {
+    color: white;
+    background-color: rgb(68, 45, 45);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.caughtpokemon {
+    color: white;
+    background-color: rgb(109, 119, 2);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.legendarypokemon {
+    color: white;
+    background-color: rgb(225, 255, 1);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
 }
 
 .failenc {
     text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.93);
-    color: rgb(229, 57, 57);
+    background-color: rgb(229, 57, 57);
     font-weight: bold;
+    color: white;
 }
 
 .nopad {
@@ -326,28 +384,34 @@ table.customTable {
     color: white;
     background-color: #0000008b;
     table-layout: fixed;
-  width: 100%;  
 }
 
 @media screen and (max-width: 1200px) {
     table.customTable {
-        font-size: 12px;
+        font-size: 10px;
+        table-layout: auto;
     }
 }
 
 @media screen and (max-width: 375px) {
     table.customTable {
-        font-size: 9px;
+        font-size: 5px;
     }
 }
 
 table.customTable td,
 table.customTable th {
-    border-width: 2px;
+    border-width: 0;
     border-color: #f8f8f800;
     border-style: solid;
     padding: 1px;
 }
+
+table.customTable th {
+    background-color: white;
+    color: black;
+}
+
 
 table tr:last-child td:last-child {
     border-bottom-right-radius: 1px;
