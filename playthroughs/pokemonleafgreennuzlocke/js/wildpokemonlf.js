@@ -36,14 +36,18 @@ function populateTable(tableData, tableId) {
         // Combine name, image, and success indicator in a single cell
         const nameCell = document.createElement("td");
         const pokemonName = pokemonData.name; // Access name property
+        const pokemonlevel = pokemonData.level; // Access name property
 
-        // Check for success indicator
         if (pokemonName.includes("<span class='succenc'>")) {
             rowElement.classList.add("succenc"); // Add success class to entire row
         }
 
-        if (pokemonName.includes("<span class='caughtpokemon'>")) {
+        else if (pokemonName.includes("<span class='caughtpokemon'>")) {
             rowElement.classList.add("caughtpokemon"); // Add success class to entire row
+        }
+
+        else if (pokemonlevel.includes("<br>")) {
+            document.write("<br>");
         }
 
         const nameContent = document.createElement("div");
@@ -82,6 +86,35 @@ function populateTable(tableData, tableId) {
         tbody.appendChild(rowElement);
     });
 }
+
+function showAll(className) {
+    const tables = document.querySelectorAll(`.${className}`);
+    tables.forEach(table => {
+        const rows = table.querySelectorAll("tbody tr");
+        rows.forEach(row => {
+            row.style.display = "";
+        });
+    });
+}
+
+function showCaught(className) {
+    const tables = document.querySelectorAll(`.${className}`);
+    tables.forEach(table => {
+        const rows = table.querySelectorAll("tbody tr");
+        rows.forEach(row => {
+            if (row.classList.contains("succenc")) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    });
+}
+
+// Example usage for buttons affecting multiple tables with the 'pokemon-table' class
+document.getElementById("showAll").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught").addEventListener("click", () => showCaught("pokemon-table"));
+
 
 //episode 1
 const oaklab = [

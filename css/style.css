@@ -106,7 +106,7 @@ a .smallscreen {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/bowrun.gif");
+  /*background-image: url("../images/bowrun.gif");*/
   background-size: cover;
   opacity: 0; /* Initially invisible */
   z-index: -1; /* Ensure pseudo-element is behind the content */
@@ -140,7 +140,7 @@ a .smallscreen {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/bowrun.gif");
+  /*background-image: url("../images/bowrun.gif");*/
   background-size: cover;
   opacity: 0; /* Initially invisible */
   z-index: -1; /* Ensure pseudo-element is behind the content */
@@ -166,7 +166,7 @@ a .smallscreen {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/pokemoncrystal.gif");
+  /*background-image: url("../images/pokemoncrystal.gif");*/
   background-size: cover;
   opacity: 0; /* Initially invisible */
   z-index: -1; /* Ensure pseudo-element is behind the content */
@@ -197,7 +197,7 @@ a .smallscreen {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/coffeetalk.gif");
+  /*background-image: url("../images/coffeetalk.gif");*/
   background-size: cover;
   opacity: 0; /* Initially invisible */
   z-index: -1; /* Ensure pseudo-element is behind the content */
@@ -223,7 +223,7 @@ a .smallscreen {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/dinosaurking.gif");
+  /*background-image: url("../images/dinosaurking.gif");*/
   background-size: cover;
   opacity: 0; /* Initially invisible */
   z-index: -1; /* Ensure pseudo-element is behind the content */
@@ -249,7 +249,7 @@ a .smallscreen {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/coromon.gif");
+  /*background-image: url("../images/coromon.gif");*/
   background-size: cover;
   opacity: 0; /* Initially invisible */
   z-index: -1; /* Ensure pseudo-element is behind the content */

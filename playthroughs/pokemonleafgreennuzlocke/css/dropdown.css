@@ -1,17 +1,48 @@
 .dropbtn {
     background-color: #5ca904;
     color: white;
-    padding: 16px;
+    padding: 5px;
     border: none;
     cursor: pointer;
-    min-width: 100%; /* Change min-width to 100% */
+    width: 100%; /* Change min-width to 100% */
     font-size: 20px;
     font-weight: bold;
-    border-radius: 8px 8px 0 0;
-    box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
--webkit-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
--moz-box-shadow: 6px 4px 0px 1px rgba(0,0,0,0.45);
 }
+
+.theTop {
+    margin: 0px;
+    padding: 0;
+    gap: 0%;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 6px 2px #00000000;
+}
+
+.showbtn{
+    background-color: rgb(68, 67, 67);
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px  rgb(27, 27, 27);
+    padding: 5px 10px;
+}
+
+.showbtn img{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+
+}
+
+.showbtn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+  
+
+
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #346002;
@@ -36,7 +67,7 @@
     min-width: 100%;
     font-weight: bold;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .dropdown-content {
@@ -384,18 +415,19 @@ table.customTable {
     color: white;
     background-color: #0000008b;
     table-layout: fixed;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 1200px) {
     table.customTable {
         font-size: 10px;
-        table-layout: auto;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     table.customTable {
-        font-size: 5px;
+        font-size: 10px;
+        table-layout: auto;
     }
 }
 
