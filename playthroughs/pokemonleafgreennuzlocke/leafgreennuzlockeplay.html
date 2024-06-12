@@ -110,7 +110,8 @@
         </div>
         <div class="containerMainplus">
             <div class="shaper">
-
+                <button id="showVideo" class="showbtn">Show Episode</button>
+                <button id="hideVideo" class="showbtn">Hide Episode</button>
                 <div id="Introduction" class="tabcontent">
                     <div class="limiter" style="color: white;">
                         <br>
@@ -245,9 +246,9 @@
                         encountered a couple of early pokemon that may or may not help me in the future.</p>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-                    <button id="showAll" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                    <button id="showAll1" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
                             alt="show all button"></button>
-                    <button id="showCaught" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                    <button id="showCaught1" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
                             alt="show caught button"></button>
                     <div class="col containerMain prof">
                         <div class="limiter">
@@ -260,7 +261,7 @@
                             </p>
                             <div class="giftpokemon"><i class="fa-solid fa-gift"></i> Gift Pokémon</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable pokemon-table" id="oaklab">
+                                <table border="1" class="customTable pokemon-table1" id="oaklab">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -274,7 +275,7 @@
                             <p class="textjustify titlealign"></p>
                             <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable pokemon-table" id="route1">
+                                <table border="1" class="customTable pokemon-table1" id="route1">
                                     <tbody> </tbody>
                                 </table>
                             </div>
@@ -290,7 +291,7 @@
                             </p>
                             <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable pokemon-table" id="route2">
+                                <table border="1" class="customTable pokemon-table1" id="route2">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -305,7 +306,7 @@
                                 especially if you chose Charmander.</p>
                             <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable pokemon-table" id="route22">
+                                <table border="1" class="customTable pokemon-table1" id="route22">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -319,7 +320,7 @@
                                 bugs but Pikachu is probably the best one to encounter however it is quite rare.</p>
                             <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable pokemon-table" id="viridian">
+                                <table border="1" class="customTable pokemon-table1" id="viridian">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -433,6 +434,10 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
+                    <button id="showAll3" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught3" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
                     <div class="row">
                         <div class=" col containerMain">
                             <div class="limiter">
@@ -440,11 +445,9 @@
                                 </span>
                                 <p class="textjustify titlealign">A pretty good time for you to have another team member
                                     and you have plenty to choose from.</p>
+                                <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
                                 <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route3_1">
-                                        <tbody> </tbody>
-                                    </table>
-                                    <table border="1" class="customTable" id="route3_2">
+                                    <table border="1" class="customTable pokemon-table3" id="route3">
                                         <tbody> </tbody>
                                     </table>
                                 </div>
@@ -514,63 +517,54 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-                    <div class="row">
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Mt. Moon
-                                </span>
-                                <p class="textjustify titlealign">There are plenty of Pokémon to encounter here and you
-                                    can plan out which you can get based on the location within Mt. Moon. There are
-                                    different encounters depending on the floor but I will count them as one location.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <span class="bigtext slightlysmall titlealign">1F
-                                    </span>
-                                    <table border="1" class="customTable" id="mtMoon1f">
-                                        <tbody></tbody>
-                                    </table>
-                                    <span class="bigtext slightlysmall titlealign">B1F
-                                    </span>
-                                    <table border="1" class="customTable" id="mtMoonB1f">
-                                        <tbody></tbody>
-                                    </table>
-                                    <span class="bigtext slightlysmall titlealign">B2F
-                                    </span>
-                                    <table border="1" class="customTable" id="mtMoonB2f">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <button id="showAll4" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught4" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Mt. Moon
+                            </span>
+                            <p class="textjustify titlealign">There are plenty of Pokémon to encounter here and you
+                                can plan out which you can get based on the location within Mt. Moon. There are
+                                different encounters depending on the floor but I will count them as one location.
+                            </p>
+                            <div class="cavepokemon"><i class="fa-solid fa-mountain"></i> Cave Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table4" id="mtMoon">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 3 Pokémon Center
-                                </span>
-                                <p class="textjustify titlealign">You can get a Magikarp by buying it from a man inside
-                                    the Pokémon center and it is up to you whether to count this as a separate encounter
-                                    from your normal encounter on Route 3
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route3PKMNCenter">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 3 Pokémon Center
+                            </span>
+                            <p class="textjustify titlealign">You can get a Magikarp by buying it from a man inside
+                                the Pokémon center and it is up to you whether to count this as a separate encounter
+                                from your normal encounter on Route 3
+                            </p>
+                            <div class="giftpokemon"><i class="fa-solid fa-gift"></i> Gift Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table4" id="route3PKMNCenter">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 4
-                                </span>
-                                <p class="textjustify titlealign">Not as impressive as Mt. Moon but you really cannot
-                                    complain with the encounters you are given on a Nuzlocke.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route4">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 4
+                            </span>
+                            <p class="textjustify titlealign">Not as impressive as Mt. Moon but you really cannot
+                                complain with the encounters you are given on a Nuzlocke.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table4" id="route4">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -641,41 +635,39 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-                    <div class="row">
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 24
-                                </span>
-                                <p class="textjustify titlealign">A lot of things to encounter in case you missed some
-                                    prior to this route. The only thing new for me here are Bellsprout and Abra which
-                                    the latter is tough to catch.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route24_1">
-                                        <tbody></tbody>
-                                    </table>
-                                    <table border="1" class="customTable" id="route24_2">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <button id="showAll5" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught5" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 24
+                            </span>
+                            <p class="textjustify titlealign">A lot of things to encounter in case you missed some
+                                prior to this route. The only thing new for me here are Bellsprout and Abra which
+                                the latter is tough to catch.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-mountain"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table5" id="route24">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 25
-                                </span>
-                                <p class="textjustify titlealign">Similar encounters to Route 24 but some Pokemon have a
-                                    slightly higher level. Also, the only new encounter here for me is Abra so I do not
-                                    really have a choice.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route25_1">
-                                        <tbody></tbody>
-                                    </table>
-                                    <table border="1" class="customTable" id="route25_2">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 25
+                            </span>
+                            <p class="textjustify titlealign">Similar encounters to Route 24 but some Pokemon have a
+                                slightly higher level. Also, the only new encounter here for me is Abra so I do not
+                                really have a choice.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-mountain"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table5" id="route25">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -811,69 +803,73 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-                    <div class="row">
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 5
-                                </span>
-                                <p class="textjustify titlealign">There is really only one new encounter that I could
-                                    get here which I came so close to almost not catching due to my dupes clause limit
-                                    of 5 for this playthrough.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route5">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 6
-                                </span>
-                                <p class="textjustify titlealign"> I did not realize that the encounter here (for the
-                                    grass encounters atleast) is similar to route 5 so I wasted my encounter here.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route6">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <button id="showAll7" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught7" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 5
+                            </span>
+                            <p class="textjustify titlealign">There is really only one new encounter that I could
+                                get here which I came so close to almost not catching due to my dupes clause limit
+                                of 5 for this playthrough.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table7" id="route5">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Diglett's Cave
-                                </span>
-                                <p class="textjustify titlealign">You can pretty much gurrantee that the encounter here
-                                    are Diglett and a rare chance to get an overleveled Dugtrio which I cannot use
-                                    currently in this challenge due to the level that you will get this Pokemon at.
-                                    <br><br>
-                                    All of the encounters here are pretty good considering the upcoming fight with the
-                                    next gym leader.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="diglettcave">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 6
+                            </span>
+                            <p class="textjustify titlealign"> I did not realize that the encounter here (for the
+                                grass encounters atleast) is similar to route 5 so I wasted my encounter here.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table7" id="route6">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 11
-                                </span>
-                                <p class="textjustify titlealign">It has decent Pokemon within it especially Sandshrew
-                                    (if you need an extra ground type) and Drowzee which is atleast a decent Psychic
-                                    type.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route11">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Diglett's Cave
+                            </span>
+                            <p class="textjustify titlealign">You can pretty much gurrantee that the encounter here
+                                are Diglett and a rare chance to get an overleveled Dugtrio which I cannot use
+                                currently in this challenge due to the level that you will get this Pokemon at.
+                                <br><br>
+                                All of the encounters here are pretty good considering the upcoming fight with the
+                                next gym leader.
+                            </p>
+                            <div class="cavepokemon"><i class="fa-solid fa-mountain"></i> Cave Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table7" id="diglettcave">
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 11
+                            </span>
+                            <p class="textjustify titlealign">It has decent Pokemon within it especially Sandshrew
+                                (if you need an extra ground type) and Drowzee which is atleast a decent Psychic
+                                type.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table7" id="route11">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -1078,33 +1074,35 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-                    <div class="row">
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 9
-                                </span>
-                                <p class="textjustify titlealign">I have already caught all of the possible encounters
-                                    here.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route9">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <button id="showAll10" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught10" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 9
+                            </span>
+                            <p class="textjustify titlealign">I have already caught all of the possible encounters
+                                here.
+                            </p>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table10" id="route9">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class=" col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 10
-                                </span>
-                                <p class="textjustify titlealign"> A really good time to have an electric type Pokemon
-                                    if you have already caught the other two encounters here.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route10">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    </div>
+                    <div class=" col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 10
+                            </span>
+                            <p class="textjustify titlealign"> A really good time to have an electric type Pokemon
+                                if you have already caught the other two encounters here.
+                            </p>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table10" id="route10">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -1168,6 +1166,10 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
+                    <button id="showAll11" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught11" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
                     <div class="containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign">Rock Tunnel
@@ -1175,21 +1177,9 @@
                             <p class="titlealign">Many decent Pokemon that you can catch here though I think the best
                                 ones are the fighting types that can be caught here.
                             </p>
+                            <div class="cavepokemon"><i class="fa-solid fa-mountain"></i> Cave Encounters</div>
                             <div style="overflow-x: auto;">
-                                <span class="bigtext slightlysmall titlealign">1F
-                                </span>
-                                <table border="1" class="customTable" id="rocktunnel1f_1">
-                                    <tbody></tbody>
-                                </table>
-                                <table border="1" class="customTable" id="rocktunnel1f_2">
-                                    <tbody></tbody>
-                                </table>
-                                <span class="bigtext slightlysmall titlealign">B1F
-                                </span>
-                                <table border="1" class="customTable" id="rocktunnelb1f_1">
-                                    <tbody></tbody>
-                                </table>
-                                <table border="1" class="customTable" id="rocktunnelb1f_2">
+                                <table border="1" class="customTable pokemon-table11" id="rocktunnel">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -1285,34 +1275,38 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-                    <div class="row">
-                        <div class="col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 8
-                                </span>
-                                <p class="titlealign">You have probably encountered all of the Pokémon available here.
-                                    But
-                                    there is a chance that you could get a Vulpix (Growlithe if FireRed) here.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route8">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    <button id="showAll12" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught12" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
+                    <div class="col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 8
+                            </span>
+                            <p class="titlealign">You have probably encountered all of the Pokémon available here.
+                                But
+                                there is a chance that you could get a Vulpix (Growlithe if FireRed) here.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seeling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table12" id="route8">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="col containerMain">
-                            <div class="limiter">
-                                <span class="bigtext slightlysmall titlealign">Route 7
-                                </span>
-                                <p class="titlealign">Pretty much encountered all of the Pokémon available here which I
-                                    didn't know during the video.
-                                </p>
-                                <div style="overflow-x: auto;">
-                                    <table border="1" class="customTable" id="route7">
-                                        <tbody></tbody>
-                                    </table>
-                                </div>
+                    </div>
+                    <div class="col containerMain">
+                        <div class="limiter">
+                            <span class="bigtext slightlysmall titlealign">Route 7
+                            </span>
+                            <p class="titlealign">Pretty much encountered all of the Pokémon available here which I
+                                didn't know during the video.
+                            </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seeling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table12" id="route7">
+                                    <tbody></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -1539,6 +1533,10 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
+                    <button id="showAll15" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught15" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
                     <div class="col containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign">Pokémon Tower
@@ -1547,31 +1545,9 @@
                                 chance that you might encounter a Cubone, and depending on the floor, the higher the
                                 encounter rate for Cubone.
                             </p>
-                            <span class="bigtext slightlysmall titlealign">3F
-                            </span>
+                            <div class="giftpokemon"><i class="fa-solid fa-building"></i> Building Encounters</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="pokemontower3f">
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                            <span class="bigtext slightlysmall titlealign">4F - 5F
-                            </span>
-                            <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="pokemontower4f5f">
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                            <span class="bigtext slightlysmall titlealign">6F
-                            </span>
-                            <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="pokemontower6f">
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                            <span class="bigtext slightlysmall titlealign">7F
-                            </span>
-                            <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="pokemontower7f">
+                                <table border="1" class="customTable pokemon-table15" id="pokemontower">
                                     <tbody></tbody>
                                 </table>
                             </div>
@@ -1645,7 +1621,10 @@
 
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
-
+                    <button id="showAll16" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                            alt="show all button"></button>
+                    <button id="showCaught16" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                            alt="show caught button"></button>
                     <div class="col containerMain">
                         <div class="limiter">
                             <span class="bigtext slightlysmall titlealign">Route 12
@@ -1654,14 +1633,14 @@
                                 snorlax
                                 on this route if you want it.
                             </p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
                             <div style="overflow-x: auto;">
-                                <table border="1" class="customTable" id="route12">
+                                <table border="1" class="customTable pokemon-table16" id="route12">
                                     <tbody></tbody>
                                 </table>
-                                <table border="1" class="customTable" id="route12special">
-                                    <tbody></tbody>
-                                </table>
-                                <table border="1" class="customTable" id="route12superrod">
+                                <br>
+                                <div class="fishpokemon"><i class="fa-solid fa-fish"></i> Super Rod Encounters</div>
+                                <table border="1" class="customTable pokemon-table16" id="route12superrod">
                                     <tbody></tbody>
                                 </table>
                             </div>

@@ -26,11 +26,13 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 5px  rgb(27, 27, 27);
-    padding: 5px 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 0 15px;
 }
 
 .showbtn img{
-    width: 30px;
+    width: 40px;
     height: auto;
     cursor: pointer;
 

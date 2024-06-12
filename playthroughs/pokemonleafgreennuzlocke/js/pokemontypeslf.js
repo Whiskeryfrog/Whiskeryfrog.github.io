@@ -34,4 +34,7 @@ const ghostPoison = "sprites/types/ghost-poison.png";
 const poisonGround = "sprites/types/poison-ground.png";
 const bugGrass = "sprites/types/bug-grass.png";
 const waterPoison = "sprites/types/water-poison.png";
+const fireFlying = "sprites/types/fire-flying.png";
+const electricFlying = "sprites/types/electric-flying.png";
+const iceFlying = "sprites/types/ice-flying.png";
 

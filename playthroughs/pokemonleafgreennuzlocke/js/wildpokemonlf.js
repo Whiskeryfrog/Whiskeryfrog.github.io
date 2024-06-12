@@ -7,20 +7,16 @@ const tableHeaders = [
 ];
 
 function populateTable(tableData, tableId) {
-    const table = document.getElementById(tableId);  // Get the table element
+    const table = document.getElementById(tableId);
 
-    // Check if the table exists
     if (!table) {
         console.error(`Table with ID "${tableId}" not found.`);
-        return;  // Exit the function if no table found
+        return;
     }
 
     const tbody = table.getElementsByTagName("tbody")[0];
-
-    // Clear existing rows in tbody
     tbody.innerHTML = "";
 
-    // Create table header row
     const headerRow = document.createElement("tr");
     tableHeaders.forEach(header => {
         const headerCell = document.createElement("th");
@@ -29,33 +25,37 @@ function populateTable(tableData, tableId) {
     });
     tbody.appendChild(headerRow);
 
-    // Loop through each Pokemon data (object)
-    tableData.forEach(pokemonData => {
+    tableData.forEach(data => {
         const rowElement = document.createElement("tr");
 
         // Combine name, image, and success indicator in a single cell
         const nameCell = document.createElement("td");
-        const pokemonName = pokemonData.name; // Access name property
-        const pokemonlevel = pokemonData.level; // Access name property
+        let pokemonName = data.pokemon.name;
 
-        if (pokemonName.includes("<span class='succenc'>")) {
-            rowElement.classList.add("succenc"); // Add success class to entire row
-        }
-
-        else if (pokemonName.includes("<span class='caughtpokemon'>")) {
-            rowElement.classList.add("caughtpokemon"); // Add success class to entire row
-        }
-
-        else if (pokemonlevel.includes("<br>")) {
-            document.write("<br>");
+        // Add span tags based on ifCaught value
+        switch (data.ifCaught) {
+            case "success":
+                pokemonName = `<span class='succenc'>${pokemonName}</span>`;
+                rowElement.classList.add("succenc");
+                break;
+            case "already":
+                pokemonName = `<span class='caughtpokemon'>${pokemonName}</span>`;
+                rowElement.classList.add("caughtpokemon");
+                break;
+            case "failed":
+                pokemonName = `<span class='failenc'>${pokemonName}</span>`;
+                rowElement.classList.add("failenc");
+                break;
+            default:
+                break;
         }
 
         const nameContent = document.createElement("div");
-        nameContent.innerHTML = pokemonName; // Add name with HTML for icons
+        nameContent.innerHTML = pokemonName;
 
         const pokemonImage = document.createElement("img");
         pokemonImage.classList.add("nopad");
-        pokemonImage.setAttribute("src", pokemonData.image); // Access image property
+        pokemonImage.setAttribute("src", data.pokemon.image);
 
         nameCell.appendChild(nameContent);
         nameCell.appendChild(pokemonImage);
@@ -63,24 +63,24 @@ function populateTable(tableData, tableId) {
 
         // Add level cell
         const levelCell = document.createElement("td");
-        levelCell.textContent = pokemonData.level;
+        levelCell.textContent = data.level;
         rowElement.appendChild(levelCell);
 
         // Add type cell with image
         const typeCell = document.createElement("td");
         const typeImage = document.createElement("img");
-        typeImage.setAttribute("src", pokemonData.type);
+        typeImage.setAttribute("src", data.pokemon.type);
         typeCell.appendChild(typeImage);
         rowElement.appendChild(typeCell);
 
         // Add encounter rate cell
         const encounterRateCell = document.createElement("td");
-        encounterRateCell.textContent = pokemonData.encounterRate;
+        encounterRateCell.textContent = data.encounterRate;
         rowElement.appendChild(encounterRateCell);
 
         // Add insight cell
         const insightCell = document.createElement("td");
-        insightCell.textContent = pokemonData.insight;
+        insightCell.textContent = data.pokemon.insight;
         rowElement.appendChild(insightCell);
 
         tbody.appendChild(rowElement);
@@ -111,358 +111,656 @@ function showCaught(className) {
     });
 }
 
-// Example usage for buttons affecting multiple tables with the 'pokemon-table' class
-document.getElementById("showAll").addEventListener("click", () => showAll("pokemon-table"));
-document.getElementById("showCaught").addEventListener("click", () => showCaught("pokemon-table"));
+function showVideo() {
+    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    videoscreens.forEach(videoscreen => {
+        videoscreen.style.display = "block";
+    });
+}
 
+function hideVideo() {
+    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    videoscreens.forEach(videoscreen => {
+        videoscreen.style.display = "none";
+    });
+}
+
+document.getElementById("showVideo").addEventListener("click", showVideo);
+document.getElementById("hideVideo").addEventListener("click", hideVideo);
+
+document.getElementById("showAll1").addEventListener("click", () => showAll("pokemon-table1"));
+document.getElementById("showCaught1").addEventListener("click", () => showCaught("pokemon-table1"));
+
+document.getElementById("showAll3").addEventListener("click", () => showAll("pokemon-table3"));
+document.getElementById("showCaught3").addEventListener("click", () => showCaught("pokemon-table3"));
+
+document.getElementById("showAll4").addEventListener("click", () => showAll("pokemon-table4"));
+document.getElementById("showCaught4").addEventListener("click", () => showCaught("pokemon-table4"));
+
+document.getElementById("showAll5").addEventListener("click", () => showAll("pokemon-table5"));
+document.getElementById("showCaught5").addEventListener("click", () => showCaught("pokemon-table5"));
+
+document.getElementById("showAll7").addEventListener("click", () => showAll("pokemon-table7"));
+document.getElementById("showCaught7").addEventListener("click", () => showCaught("pokemon-table7"));
+
+document.getElementById("showAll10").addEventListener("click", () => showAll("pokemon-table10"));
+document.getElementById("showCaught10").addEventListener("click", () => showCaught("pokemon-table10"));
+
+document.getElementById("showAll11").addEventListener("click", () => showAll("pokemon-table11"));
+document.getElementById("showCaught11").addEventListener("click", () => showCaught("pokemon-table11"));
+
+document.getElementById("showAll12").addEventListener("click", () => showAll("pokemon-table12"));
+document.getElementById("showCaught12").addEventListener("click", () => showCaught("pokemon-table12"));
+
+document.getElementById("showAll15").addEventListener("click", () => showAll("pokemon-table15"));
+document.getElementById("showCaught15").addEventListener("click", () => showCaught("pokemon-table15"));
+
+document.getElementById("showAll16").addEventListener("click", () => showAll("pokemon-table16"));
+document.getElementById("showCaught16").addEventListener("click", () => showCaught("pokemon-table16"));
 
 //episode 1
 const oaklab = [
     {
-        name: "Bulbasaur",
-        image: bulbasaur,
+        pokemon: bulbasaur0,
         level: "5",
-        type: grassPoison,
         encounterRate: "Gift",
-        insight: "The best choice for this region if you want to have an easier time with the Nuzlocke and in the game in general."
+        ifCaught: "" 
     },
     {
-        name: "Charmander",
-        image: charmander,
+        pokemon: charmander0,
         level: "5",
-        type: fire,
         encounterRate: "Gift",
-        insight: "Probably the hardest one to use due to the unfavorable match up with the first two gym leaders but somewhat decent if used properly."
+        ifCaught: "" 
     },
     {
-        name: "<span class='succenc'>Squirtle</span>",
-        image: squirtle,
+        pokemon: squirtle0,
         level: "5",
-        type: water,
         encounterRate: "Gift",
-        insight: "Somewhere in the middle between Bulbasaur and Charmander but more on the side of being easier due to the tankingness and overall reliability,"
+        ifCaught: "success" 
     }
 ];
 
 const route1 = [
     {
-        name: "<span class='succenc'>Pidgey</span>",
-        image: pidgey,
+        pokemon: pidgey0,
         level: "2-5",
-        type: normalFlying,
         encounterRate: "50%",
-        insight: "Decent flyer in a Nuzlocke but there are better flying types in this region that fulfills the role better."
+        ifCaught: "success" 
     },
     {
-        name: "Rattata",
-        image: rattata,
+        pokemon: rattata0,
         level: "2-4",
-        type: normal,
         encounterRate: "50%",
-        insight: "A good HM slave for the whole region but can still be fighter in the early game. Only good trainers can keep their Rattata/Raticate through the end of the challenge."
+        ifCaught: "" 
     }
 ];
 
 const route2 = [
     {
-        name: "<span class='caughtpokemon'>Pidgey </span>",
-        image: pidgey,
+        pokemon: pidgey0,
         level: "2-5",
-        type: normalFlying,
         encounterRate: "45%",
-        insight: "Decent flyer in a Nuzlocke but there are better flying types in this region that fulfills the role better."
+        ifCaught: "already" 
     },
     {
-        name: "Rattata",
-        image: rattata,
+        pokemon: rattata0,
         level: "2-5",
-        type: normal,
         encounterRate: "45%",
-        insight: "A good HM slave for the whole region but can still be fighter in the early game. Only good trainers can keep their Rattata/Raticate through the end of the challenge."
+        ifCaught: "" 
     },
     {
-        name: "Caterpie",
-        image: caterpie,
+        pokemon: caterpie0,
         level: "4-5",
-        type: bug,
         encounterRate: "5%",
-        insight: "Make sure to evolve this Pokemon as soon as you can to fully utilize this Pokemon's strength. Though only useful in the early game."
+        ifCaught: "" 
     },
     {
-        name: "<span class='succenc'>Weedle</span>",
-        image: weedle,
+        pokemon: weedle0,
         level: "4-5",
-        type: bugPoison,
         encounterRate: "5%",
-        insight: "If I\'m honest, probably worse than Caterpie due to the limited movepool but can still used early game as a somewhat reliable attacker."
+        ifCaught: "success" 
     }
 ];
 
 const route22 = [
     {
-        name: "<span class='succenc'>Rattata</span>",
-        image: rattata,
+        pokemon: rattata0,
         level: "2-5",
-        type: normal,
         encounterRate: "45%",
-        insight: "A good HM slave for the whole region but can still be fighter in the early game. Only good trainers can keep their Rattata/Raticate through the end of the challenge."
+        ifCaught: "success" 
     },
     {
-        name: "Mankey",
-        image: mankey,
+        pokemon: mankey0,
         level: "2-5",
-        type: fighting,
         encounterRate: "45%",
-        insight: "If you chose Charmander as a starter, it is almost a requirement to have a Mankey in your team for the first gym due to type disadvantage. "
+        ifCaught: "" 
     },
     {
-        name: "Spearow",
-        image: spearow,
+        pokemon: spearow0,
         level: "3-5",
-        type: normalFlying,
         encounterRate: "10%",
-        insight: "The best way to describe Spearow is its basically a better Pidgey."
+        ifCaught: "" 
     }
 ];
 
 const viridian = [
     {
-        name: "<span class='succenc'>Caterpie</span>",
-        image: caterpie,
+        pokemon: caterpie0,
         level: "3-5",
-        type: bug,
         encounterRate: "40%",
-        insight: "Make sure to evolve this Pokemon as soon as you can to fully utilize this Pokemon's strength. Though only useful in the early game."
+        ifCaught: "success"  
     },
     {
-        name: "<span class='caughtpokemon'>Weedle</span>",
-        image: weedle,
+        pokemon: weedle0,
         level: "3-5",
-        type: bugPoison,
         encounterRate: "40%",
-        insight: "If I\'m honest, probably worse than Caterpie due to the limited movepool but can still used early game as a somewhat reliable attacker."
+        ifCaught: "already" 
     },
     {
-        name: "Metapod",
-        image: metapod,
+        pokemon: metapod0,
         level: "3-5",
-        type: bug,
         encounterRate: "10%",
-        insight: "Make sure to evolve this Pokemon as soon as you can to fully utilize this Pokemon's strength. Though only useful in the early game."
+        ifCaught: "" 
     },
     {
-        name: "<span class='caughtpokemon'>Kakuna</span>",
-        image: kakuna,
+        pokemon: kakuna0,
         level: "5",
-        type: bugPoison,
         encounterRate: "5%",
-        insight: "If I\'m honest, probably worse than Caterpie due to the limited movepool but can still used early game as a somewhat reliable attacker."
+        ifCaught: "already" 
     },
     {
-        name: "Pikachu",
-        image: pikachu,
+        pokemon: pikachu0,
         level: "3-5",
-        type: electric,
         encounterRate: "5%",
-        insight: "Pikachu is a pretty decent Pokemon in it of itself. There might be better electric types out there, the Pikachu line is still a pretty good choice for a team."
+        ifCaught: "" 
     },
 ];
 
 //episode 2,
 //episode 3
-const route3_1 =[
-    ["Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<span class='succenc'>Nidoran♀ <i class='fa-solid fa-seedling'></i></span>"],
-    ["sprites/firered-leafgreen/21.png", "sprites/firered-leafgreen/16.png", "sprites/firered-leafgreen/29.png"],
-    ["35% - Lv 6-8", "30% - Lv 6-7", "14% - Lv 6-7"],
-    [normalFlying, normalFlying, poison]
+const route3 = [
+    {
+        pokemon: spearow0,
+        level: "6-8",
+        encounterRate: "35%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: pidgey0,
+        level: "6-7",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: nidoranf0,
+        level: "6-7",
+        encounterRate: "14%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: jigglypuff0,
+        level: "3-7",
+        encounterRate: "10%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: mankey0,
+        level: "7",
+        encounterRate: "10%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: nidoranm0,
+        level: "6",
+        encounterRate: "1%",
+        ifCaught: "" 
+    }
 ];
-const route3_2 =[
-    ["Jigglypuff <i class='fa-solid fa-seedling'></i>", " Mankey <i class='fa-solid fa-seedling'></i>", "Nidoran♂ <i class='fa-solid fa-seedling'></i>"],
-    ["sprites/firered-leafgreen/39.png", "sprites/firered-leafgreen/56.png", "sprites/firered-leafgreen/32.png"],
-    ["10% - Lv 3-7", "10% - Lv 7", "1% - Lv 6"],
-    [normal, fighting, poison]
-];
+
 //episode 4
-const mtMoon1f =[
-    ["<span class='succenc'>Zubat <i class='fa-solid fa-mountain'></i></span>", "Geodude <i class='fa-solid fa-mountain'></i>", "Paras <i class='fa-solid fa-mountain'></i>", "Clefairy <i class='fa-solid fa-mountain'></i>"],
-    ["sprites/firered-leafgreen/41.png", "sprites/firered-leafgreen/74.png", "sprites/firered-leafgreen/46.png", "sprites/firered-leafgreen/35.png"],
-    ["69% - Lv 7-10", "25% - Lv 7-9", "5% - Lv 8", "1% - Lv 8"],
-    [poisonFlying, rockGround, bugGrass, normal]
+const mtMoon = [
+    {
+        pokemon: zubat0,
+        level: "1f\: 7-10\, B2f\: 8-11",
+        encounterRate: "1f\: 69%, B2f\: 49%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: geodude0,
+        level: "1f\: 7-9\, B2f\: 9-10",
+        encounterRate: "1f\: 25%, B2f\: 30%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: paras0,
+        level: "1f\: 8\, B1f\: 5-10\, B2f\: 10-12",
+        encounterRate: "1f\: 5%\, B1f\: 100%\, B2f\: 15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: clefairy0,
+        level: "8",
+        encounterRate: "1f\: 1%\, B2f\: 6%",
+        ifCaught: ""  
+    }
 ];
-const mtMoonB1f =[
-    ["Paras <i class='fa-solid fa-mountain'></i>"],
-    ["sprites/firered-leafgreen/46.png"],
-    ["100% - Lv 5-10"],
-    [bugGrass]
+
+const route3PKMNCenter = [
+    {
+        pokemon: magikarp0,
+        level: "5",
+        encounterRate: "Gift",
+        ifCaught: "success" 
+    }
 ];
-const mtMoonB2f =[
-    ["Zubat <i class='fa-solid fa-mountain'></i>", "Geodude <i class='fa-solid fa-mountain'></i>", "Paras <i class='fa-solid fa-mountain'></i>", "Clefairy <i class='fa-solid fa-mountain'></i>"],
-    ["sprites/firered-leafgreen/41.png", "sprites/firered-leafgreen/74.png", "sprites/firered-leafgreen/46.png", "sprites/firered-leafgreen/35.png"],
-    ["49% - Lv 8-11", "30% - Lv 9-10", "15% - Lv 10-12", "6% - Lv 10-12"],
-    [poisonFlying, rockGround, bugGrass, normal]
+
+const route4 = [
+    {
+        pokemon: rattata0,
+        level: "8-12",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: spearow0,
+        level: "8-12",
+        encounterRate: "35%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: sandshrew0,
+        level: "6-12",
+        encounterRate: "25%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: mankey0,
+        level: "10-12",
+        encounterRate: "5%",
+        ifCaught: ""  
+    }
 ];
-const route3PKMNCenter=[
-    ["<span class='succenc'>Magikarp <i class='fa-solid fa-gift'></i></span>"],
-    ["sprites/firered-leafgreen/129.png"],
-    ["Gift - Lv 5"],
-    [water]
-];
-const route4=[
-    ["<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>", "<span class='succenc'>Spearow <i class='fa-solid fa-seedling'></i></span>", "Sandshrew <i class='fa-solid fa-seedling'></i>", "Mankey <i class='fa-solid fa-seedling'></i>"],
-    ["sprites/firered-leafgreen/19.png", "sprites/firered-leafgreen/21.png", "sprites/firered-leafgreen/27.png", "sprites/firered-leafgreen/56.png"],
-    ["35% - Lv 8-12", "35% - Lv 8-12", "25% - Lv 6-12", "5% - Lv 10-12"],
-    [normal, normalFlying, ground, fighting]
-];
+
 //episode5
-const route24_1=[
-    ["<span class='succenc'> Bellsprout <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Caterpie <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Weedle <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
-    [bellsprout, caterpie, weedle, pidgey],
-    ["25% - Lv 12-14", "20% - Lv 7-7", "20% - Lv 7-7", "15% - Lv 11-13"],
-    [grassPoison, bug, bugPoison, normalFlying]
+const route24 = [
+    {
+        pokemon: bellsprout0,
+        level: "12-14",
+        encounterRate: "25%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: caterpie0,
+        level: "7",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: weedle0,
+        level: "7",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: pidgey0,
+        level: "11-13",
+        encounterRate: "15%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: abra0,
+        level: "8-12",
+        encounterRate: "15%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: metapod0,
+        level: "8",
+        encounterRate: "4%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: kakuna0,
+        level: "8",
+        encounterRate: "1%",
+        ifCaught: "already"  
+    },
 ];
-const route24_2=[
-    [" Abra <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Metapod <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Kakuna <i class='fa-solid fa-seedling'></i>"],
-    [abra, metapod, kakuna],
-    ["15% - Lv 8-12", "4% - Lv 8-8", "1% - Lv 8-8"],
-    [psychic, bug, bugPoison]
-];
-const route25_1=[
-    ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Caterpie <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Weedle <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
-    [bellsprout, caterpie, weedle, pidgey],
-    ["25% - Lv 12-14", "20% - Lv 8-8", "20% - Lv 8-8", "15% - Lv 11-13"],
-    [grassPoison, bug, bugPoison, normalFlying]
-];
-const route25_2=[
-    ["<span class='failenc'> Abra <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Metapod <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Kakuna <i class='fa-solid fa-seedling'></i>"],
-    [abra, metapod, kakuna],
-    ["15% - Lv 9-12", "4% - Lv 9-9", "1% - Lv 9-9"],
-    [psychic, bug, bugPoison]
+
+const route25 = [
+    {
+        pokemon: bellsprout0,
+        level: "12-14",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: caterpie0,
+        level: "8",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: weedle0,
+        level: "8",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: pidgey0,
+        level: "11-13",
+        encounterRate: "15%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: abra0,
+        level: "9-12",
+        encounterRate: "15%",
+        ifCaught: "failed"  
+    },
+    {
+        pokemon: metapod0,
+        level: "9",
+        encounterRate: "4%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: kakuna0,
+        level: "9",
+        encounterRate: "1%",
+        ifCaught: "already"  
+    }
 ];
 //episode6
 //episode7
-const route5=[
-    ["<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<span class='succenc'> Meowth <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>"],
-    [pidgey, meowth, bellsprout],
-    ["40% - Lv 13-16", "35% - Lv 10-16", "25% - Lv 13-16"],
-    [normalFlying, normal, grassPoison]
+const route5 = [
+    {
+        pokemon: pidgey0,
+        level: "13-16",
+        encounterRate: "40%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: meowth0,
+        level: "10-16",
+        encounterRate: "35%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: bellsprout0,
+        level: "13-16",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    }
 ];
-const route6=[
-    ["<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Meowth <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>"],
-    [pidgey, meowth, bellsprout],
-    ["40% - Lv 13-16", "35% - Lv 10-16", "25% - Lv 13-16"],
-    [normalFlying, normal, grassPoison]
+
+const route6 = [
+    {
+        pokemon: pidgey0,
+        level: "13-16",
+        encounterRate: "40%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: meowth0,
+        level: "10-16",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: bellsprout0,
+        level: "13-16",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    }
 ];
-const diglettcave=[
-    ["<span class='succenc'> Diglett <i class='fa-solid fa-mountain'></i></span>", " Dugtrio <i class='fa-solid fa-mountain'></i>"],
-    [diglett, dugtrio],
-    ["95% - Lv 15-22", "5% - Lv 29-31"],
-    [ground, ground]
+
+const diglettcave = [
+    {
+        pokemon: diglett0,
+        level: "15-22",
+        encounterRate: "95%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: dugtrio0,
+        level: "29-31",
+        encounterRate: "5%",
+        ifCaught: "" 
+    }
 ];
-const route11=[
-    ["<span class='succenc'> Sandshrew <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", " Drowzee <i class='fa-solid fa-seedling'></i>"],
-    [sandshrew, spearow, drowzee],
-    ["40% - Lv 12-15", "35% - Lv 13-17", "25% - Lv 11-15"],
-    [ground, normalFlying, psychic]
+
+const route11 = [
+    {
+        pokemon: sandshrew0,
+        level: "12-15",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: spearow0,
+        level: "13-17",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: drowzee0,
+        level: "11-15",
+        encounterRate: "25%",
+        ifCaught: "" 
+    }
 ];
 //episode8
 //episode9
 //episode10
-const route9=[
-    ["<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Sandshrew <i class='fa-solid fa-seedling'></i>"],
-    [rattata, spearow, sandshrew],
-    ["40% - Lv 14-17", "35% - Lv 13-17", "25% - Lv 11-17"],
-    [normal, normalFlying, ground]
+const route9 = [
+    {
+        pokemon: rattata0,
+        level: "14-17",
+        encounterRate: "40%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: spearow0,
+        level: "13-17",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: sandshrew0,
+        level: "11-17",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    }
 ];
-const route10=[
-    ["<span class='succenc'> Voltorb <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Sandshrew <i class='fa-solid fa-seedling'></i>"],
-    [voltorb, spearow, sandshrew],
-    ["40% - Lv 14-17", "35% - Lv 13-17", "25% - Lv 11-17"],
-    [electric, normalFlying, ground]
+
+const route10 = [
+    {
+        pokemon: voltorb0,
+        level: "14-17",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: spearow0,
+        level: "13-17",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: sandshrew0,
+        level: "11-17",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    }
 ];
 //episode11
-const rocktunnel1f_1=[
-    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-mountain'></i>"],
-    [geodude, zubat, mankey],
-    ["35% - Lv 15-17", "30% - Lv 15-16", "15% - Lv 16-17"],
-    [rockGround, poisonFlying, fighting]
-];
-const rocktunnel1f_2=[
-    ["<span class='succenc'>Machop <i class='fa-solid fa-mountain'></i></span>", "Onix <i class='fa-solid fa-mountain'></i>"],
-    [machop, onix],
-    ["15% - Lv 16-17", "5% - Lv 13-15"],
-    [fighting, rockGround]
-];
-const rocktunnelb1f_1=[
-    ["Geodude <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", " Mankey <i class='fa-solid fa-mountain'></i>"],
-    [geodude, zubat, mankey],
-    ["35% - Lv 15-17", "30% - Lv 15-16", "15% - Lv 16-17"],
-    [rockGround, poisonFlying, fighting]
-];
-const rocktunnelb1f_2=[
-    ["<i class='fa-solid fa-flag'></i> Machop <i class='fa-solid fa-mountain'></i></span>", "Onix <i class='fa-solid fa-mountain'></i>"],
-    [machop, onix],
-    ["10% - Lv 17", "10% - Lv 13-15"],
-    [fighting, rockGround]
+const rocktunnel = [
+    {
+        pokemon: geodude0,
+        level: "15-17",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: zubat0,
+        level: "15-16",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: mankey0,
+        level: "16-17",
+        encounterRate: "15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: machop0,
+        level: "1f\: 16-17, B1f\: 17",
+        encounterRate: "1f\: 15%\, B1f\: 10%",
+        ifCaught: "success"  
+    },
+    {
+        pokemon: onix0,
+        level: "13-15",
+        encounterRate: "1f\: 5%\, B1f\: 10%",
+        ifCaught: ""  
+    }
 ];
 //episode12
-const route8=[
-    ["<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Meowth <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Sandshrew <i class='fa-solid fa-seedling'></i>", "<span class='succenc'> Vulpix <i class='fa-solid fa-seedling'></i></span>"],
-    [pidgey, meowth, sandshrew, vulpix],
-    ["30% - Lv 18-20", "30% - Lv 18-20", "20% - Lv 17-19", "20% - Lv 15-18"],
-    [normalFlying, normal, ground, fire]
+const route8 = [
+    {
+        pokemon: pidgey0,
+        level: "18-20",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: meowth0,
+        level: "18-20",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: sandshrew0,
+        level: "17-19",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: vulpix0,
+        level: "15-18",
+        encounterRate: "20%",
+        ifCaught: "success"  
+    }
 ];
-const route7=[
-    ["<i class='fa-solid fa-flag'></i> Meowth <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Vulpix <i class='fa-solid fa-seedling'></i>"],
-    [meowth, pidgey, bellsprout, vulpix],
-    ["40% - Lv 17-20", "30% - Lv 19-22", "20% - Lv 19-22", "10% - Lv 18-20"],
-    [normal, normalFlying, grassPoison, fire]
+
+const route7 = [
+    {
+        pokemon: meowth0,
+        level: "17-20",
+        encounterRate: "40%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: pidgey0,
+        level: "19-22",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: sandshrew0,
+        level: "19-22",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: vulpix0,
+        level: "18-20",
+        encounterRate: "10%",
+        ifCaught: "already"  
+    }
 ];
+
 //episode13
 //episode14
 //episode15
-const pokemontower3f=[
-    ["Ghastly <i class='fa-solid fa-mountain'></i>", " Cubone <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>"],
-    [ghastly, cubone, haunter],
-    ["90% - Lv 13-19", "9% - Lv 15-17", "1% - Lv 20"],
-    [ghostPoison, ground, ghostPoison]
-];
-const pokemontower4f5f=[
-    ["Ghastly <i class='fa-solid fa-mountain'></i>", " Cubone <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>"],
-    [ghastly, cubone, haunter],
-    ["86% - Lv 13-19", "9% - Lv 15-17", "5% - Lv 20"],
-    [ghostPoison, ground, ghostPoison]
-];
-const pokemontower6f=[
-    ["<span class='succenc'> Ghastly <i class='fa-solid fa-mountain'></i></span>", " Cubone <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>"],
-    [ghastly, cubone, haunter],
-    ["85% - Lv 14-19", "9% - Lv 17-19", "6% - Lv 21-23"],
-    [ghostPoison, ground, ghostPoison]
-];
-const pokemontower7f=[
-    ["<i class='fa-solid fa-flag'></i> Ghastly <i class='fa-solid fa-mountain'></i>", " Haunter <i class='fa-solid fa-mountain'></i>", " Cubone <i class='fa-solid fa-mountain'></i>"],
-    [ghastly, haunter, cubone],
-    ["75% - Lv 15-19", "15% - Lv 23-25", "10% - Lv 17-19"],
-    [ghostPoison, ghostPoison, ground]
+const pokemontower = [
+    {
+        pokemon: ghastly0,
+        level: "3f-4f-5f\: 13-19\, 6f\: 14-19\, 7f\: 15-19",
+        encounterRate: "3f\: 90%\, 4f-5f\: 86%\, 6f\: 85%\, 7f\: 75%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: cubone0,
+        level: "3f-4f-5f\: 15-17\, 6f-7f\: 17-19",
+        encounterRate: "3f-4f-5f-6f\: 9%\, 7f: 10%;",
+        ifCaught: "" 
+    },
+    {
+        pokemon: haunter0,
+        level: "3f-4f-5f\: 20\, 6f\: 21-23\, 7f\: 23-25",
+        encounterRate: "3f\: 1%\, 4f-5f\: 5%\, 6f\: 6%\, 7f\: 15%",
+        ifCaught: "" 
+    }
 ];
 //episode16
-const route12=[
-    ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>", " Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Weepinbell <i class='fa-solid fa-seedling'></i>"],
-    [bellsprout, pidgey, venonat, weepinbell],
-    ["35% - Lv 22-26", "30% - Lv 23-27", "30% - Lv 24-26", "5% - Lv 28-30"],
-    [grassPoison, normalFlying, bugPoison, grassPoison]
+const route12 = [
+    {
+        pokemon: bellsprout0,
+        level: "22-26",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: pidgey0,
+        level: "23-27",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: venonat0,
+        level: "24-26",
+        encounterRate: "30%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: weepinbell0,
+        level: "28-30",
+        encounterRate: "5%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: snorlax0,
+        level: "30",
+        encounterRate: "special",
+        ifCaught: "success"  
+    },
 ];
-const route12superrod=[
-    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [krabby, gyarados, slowpoke],
-    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
-    [water, waterFlying, waterPsychic]
+
+const route12superrod = [
+    {
+        pokemon: krabby0,
+        level: "15-35",
+        encounterRate: "84%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    }
 ];
-const route12special=[
-    ["<span class='succenc'> Snorlax <i class='fa-solid fa-seedling'></i></span>"],
-    [snorlax],
-    ["100% - Lv 30"],
-    [normal]
-];
+
+
 const route13_1=[
     ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", " Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
     [bellsprout, venonat, pidgey],
@@ -763,19 +1061,14 @@ populateTable(route22, "route22");
 populateTable(viridian, "viridian");
 //episode2
 //episode3
-populateTable(route3_1, "route3_1");
-populateTable(route3_2, "route3_2");
+populateTable(route3, "route3");
 //episode4
-populateTable(mtMoon1f, "mtMoon1f");
-populateTable(mtMoonB1f, "mtMoonB1f");
-populateTable(mtMoonB2f, "mtMoonB2f");
+populateTable(mtMoon, "mtMoon");
 populateTable(route3PKMNCenter, "route3PKMNCenter");
 populateTable(route4, "route4");
 //episode5
-populateTable(route24_1, "route24_1");
-populateTable(route24_2, "route24_2");
-populateTable(route25_1, "route25_1");
-populateTable(route25_2, "route25_2");
+populateTable(route24, "route24");
+populateTable(route25, "route25");
 //episode6
 //episode7
 populateTable(route5, "route5");
@@ -788,27 +1081,17 @@ populateTable(route11, "route11");
 populateTable(route9, "route9");
 populateTable(route10, "route10");
 //episode11
-populateTable(rocktunnel1f_1, "rocktunnel1f_1");
-populateTable(rocktunnel1f_2, "rocktunnel1f_2");
-populateTable(rocktunnelb1f_1, "rocktunnelb1f_1");
-populateTable(rocktunnelb1f_2, "rocktunnelb1f_2");
+populateTable(rocktunnel, "rocktunnel");
 //episode12
 populateTable(route8, "route8");
 populateTable(route7, "route7");
 //episode13
 //episode14
 //episode15
-populateTable(pokemontower3f, "pokemontower3f");
-populateTable(pokemontower4f5f, "pokemontower4f5f");
-populateTable(pokemontower6f, "pokemontower6f");
-populateTable(pokemontower7f, "pokemontower7f");
+populateTable(pokemontower, "pokemontower");
 //episode16
 populateTable(route12, "route12");
-populateTable(route12special, "route12special");
 populateTable(route12superrod, "route12superrod");
-populateTable(route13_1, "route13_1");
-populateTable(route13_2, "route13_2");
-populateTable(route13superrod, "route13superrod");
 //episode17
 //episode18
 //episode19
