@@ -11,25 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .anchorgroup {
-            margin-top: 20px;
-        }
-
-        .containerMain {
-            margin: 0px 50px 20px 50px;
-        }
-
-        @media (max-width: 1000px) {
-            .containerMain {
-                margin: 20px 20px 20px 20px;
-            }
-        }
-
-        .smaller {
-            font-size: 15px;
-        }
-    </style>
 </head>
 
 <body>
@@ -52,177 +33,193 @@
                 </a>
             </div>
         </div>
+
         <div class="containerMainplus">
-            <div class="shaper">
-                <div class="limiter" style="color: white;">
-                    <span class="bigtext">WEBSITE UPDATES</span>
-                </div>
-                <div class=" theTop">
-                    <header>
-                        <div class="topPanel1">
-                            <input type="text" id="searchInput" placeholder="Search version">
-                            <select id="sortSelect" class="my-select-menu">
-                                <option value="newest">Newest to Oldest</option>
-                                <option value="oldest">Oldest to Newest</option>
-                            </select>
-                        </div>
-                    </header>
-                </div>
-                <div id="anchorgroupContainer">
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.4.0 - Added New features</span>
-                            <span class="bigtext smaller">June 12, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Changed table layout for the Pokemon encounters per area to be more informative and
-                                    adds insight to each possible encounter.
-                                </li>
-                                <li>You can now toggle the Pokemon per area whether you want to only see the caught
-                                    Pokemon or all possible encounters.
-                                </li>
-                                <li>Also added a toggle for the video itself whether you want it shown or hidden in the
-                                    screen.
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.3.2 - Even more Javascript</span>
-                            <span class="bigtext smaller">May 28, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Turned some sections into javascript for maintainable site for the developer(me).
-                                </li>
+            <div class="limiter" style="color: white;">
+                <span class="bigtext">WEBSITE UPDATES</span>
+            </div>
+            <div class=" theTop">
+                <header>
+                    <div class="topPanel1">
+                        <input type="text" id="searchInput" placeholder="Search version">
+                        <select id="sortSelect" class="my-select-menu">
+                            <option value="newest">Newest to Oldest</option>
+                            <option value="oldest">Oldest to Newest</option>
+                        </select>
+                    </div>
+                </header>
+            </div>
 
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.3.1 - Remove PHP</span>
-                            <span class="bigtext smaller">May 28, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Removed any PHP in the code so the full website is accessable in GitHub Pages.</li>
-                                <li>Added sub-container within each route for individual trainer in order to separate
-                                    them better.</li>
-                                <li>Trainer party member are now toggleable. You can toggle them by clicking the
-                                    sub-container itself.</li>
+            <div id="anchorgroupContainer">
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.4.1 - Added Changes</span>
+                        <span class="bigtext smaller">June 13, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Changed the table layout for the deaths.
+                            </li>
+                            <li>Changed the image of Pokemon for Insignificant trainers.
+                            </li>
+                            <li>The browser now remembers whether you clicked the show/hide video and the caught/all
+                                encounters buttons.
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.4.0 - Added New features</span>
+                        <span class="bigtext smaller">June 12, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Changed table layout for the Pokemon encounters per area to be more informative and
+                                adds insight to each possible encounter.
+                            </li>
+                            <li>You can now toggle the Pokemon per area whether you want to only see the caught
+                                Pokemon or all possible encounters.
+                            </li>
+                            <li>Also added a toggle for the video itself whether you want it shown or hidden in the
+                                screen.
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.3.2 - Even more Javascript</span>
+                        <span class="bigtext smaller">May 28, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Turned some sections into javascript for maintainable site for the developer(me).
+                            </li>
 
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.3.0 - Less HTML</span>
-                            <span class="bigtext smaller">May 15, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Change the structure of the website to be more javscript-centric to make it more
-                                    readable and managable (for the developer).</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.2.1 - More content</span>
-                            <span class="bigtext smaller">April 11, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>More leafgreen CONTENT!</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.2.0 - The PHP change</span>
-                            <span class="bigtext smaller">April 6, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Changed the structure of the whole website to PHP in order to use server-side
-                                    features for certain things on the website.</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.1.6 - The Table question</span>
-                            <span class="bigtext smaller">April 6, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Changed the Pokemon cards within leafgreen to tables for a cleaner look</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.1.5 - LeafgreenProgress</span>
-                            <span class="bigtext smaller">April 4, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Finished the introduction to Pokemon Leafgreen Nuzlocke section</li>
-                                <li>Decent progress with episode 1 of Pokemon LF Nuzlocke such as adding possible
-                                    encounters within an episode.</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.1.4</span>
-                            <span class="bigtext smaller">April 2, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Added Pokemon Leafgreen Nuzlocke section</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.1.3</span>
-                            <span class="bigtext smaller">April 1, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Changed the border-radius of the images within the cards in the playthrough secion
-                                </li>
-                                <li>Added an animated gif to the cards in the playthrough section when hovered over</li>
-                                <li>Added search function within the playthrough section</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.1.2</span>
-                            <span class="bigtext smaller">March 31, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Added functionality to the walkthrough card</li>
-                                <li>Added images to specific cards in the walkthrough page</li>
-                                <li>Changed the box shadow for each card</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href="#" class="anchorgroup col">
-                        <div class="containerMain">
-                            <span class="bigtext">Update 0.1.1</span>
-                            <span class="bigtext smaller">March 13, 2024</span>
-                            <hr class="linebreaker2">
-                            <ul>
-                                <li>Added dark theme mode for the website</li>
-                                <li>The Website card in the landing page now has a function which takes you to a page
-                                    where updates for the website will be shown</li>
-                                <li>Basic landing page functions</li>
-                            </ul>
-                        </div>
-                    </a>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.3.1 - Remove PHP</span>
+                        <span class="bigtext smaller">May 28, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Removed any PHP in the code so the full website is accessable in GitHub Pages.</li>
+                            <li>Added sub-container within each route for individual trainer in order to separate
+                                them better.</li>
+                            <li>Trainer party member are now toggleable. You can toggle them by clicking the
+                                sub-container itself.</li>
 
-                    <a href="#" class="anchorgroup col" id="noupdate">
-                        <div class="containerMain">
-                            <span class="bigtext">No Update available</span>
-                        </div>
-                    </a>
-                </div>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.3.0 - Less HTML</span>
+                        <span class="bigtext smaller">May 15, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Change the structure of the website to be more javscript-centric to make it more
+                                readable and managable (for the developer).</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.2.1 - More content</span>
+                        <span class="bigtext smaller">April 11, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>More leafgreen CONTENT!</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.2.0 - The PHP change</span>
+                        <span class="bigtext smaller">April 6, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Changed the structure of the whole website to PHP in order to use server-side
+                                features for certain things on the website.</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.1.6 - The Table question</span>
+                        <span class="bigtext smaller">April 6, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Changed the Pokemon cards within leafgreen to tables for a cleaner look</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.1.5 - LeafgreenProgress</span>
+                        <span class="bigtext smaller">April 4, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Finished the introduction to Pokemon Leafgreen Nuzlocke section</li>
+                            <li>Decent progress with episode 1 of Pokemon LF Nuzlocke such as adding possible
+                                encounters within an episode.</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.1.4</span>
+                        <span class="bigtext smaller">April 2, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Added Pokemon Leafgreen Nuzlocke section</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.1.3</span>
+                        <span class="bigtext smaller">April 1, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Changed the border-radius of the images within the cards in the playthrough secion
+                            </li>
+                            <li>Added an animated gif to the cards in the playthrough section when hovered over</li>
+                            <li>Added search function within the playthrough section</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.1.2</span>
+                        <span class="bigtext smaller">March 31, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Added functionality to the walkthrough card</li>
+                            <li>Added images to specific cards in the walkthrough page</li>
+                            <li>Changed the box shadow for each card</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="anchorgroup col">
+                    <div class="containerMain">
+                        <span class="bigtext">Update 0.1.1</span>
+                        <span class="bigtext smaller">March 13, 2024</span>
+                        <hr class="linebreaker2">
+                        <ul>
+                            <li>Added dark theme mode for the website</li>
+                            <li>The Website card in the landing page now has a function which takes you to a page
+                                where updates for the website will be shown</li>
+                            <li>Basic landing page functions</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="#" class="anchorgroup col" id="noupdate">
+                    <div class="containerMain">
+                        <span class="bigtext">No Update available</span>
+                    </div>
+                </a>
             </div>
         </div>
     </main>

@@ -45,3 +45,43 @@ function toggleElement(elementId) {
     }
 }
 
+// Function to show videos
+function showVideo() {
+    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    videoscreens.forEach(videoscreen => {
+        videoscreen.style.display = "block";
+    });
+    localStorage.setItem('videosVisible', 'true');
+}
+
+// Function to hide videos
+function hideVideo() {
+    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    videoscreens.forEach(videoscreen => {
+        videoscreen.style.display = "none";
+    });
+    localStorage.setItem('videosVisible', 'false');
+}
+
+// Function to set video visibility based on saved state
+function setVideoVisibility() {
+    const videosVisible = localStorage.getItem('videosVisible');
+    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+
+    if (videosVisible === 'true') {
+        videoscreens.forEach(videoscreen => {
+            videoscreen.style.display = "block";
+        });
+    } else {
+        videoscreens.forEach(videoscreen => {
+            videoscreen.style.display = "none";
+        });
+    }
+}
+
+document.getElementById("showVideo").addEventListener("click", showVideo);
+document.getElementById("hideVideo").addEventListener("click", hideVideo);
+
+// Call the function to set the visibility when the page loads
+document.addEventListener('DOMContentLoaded', setVideoVisibility);
+

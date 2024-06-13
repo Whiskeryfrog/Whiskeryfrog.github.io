@@ -9,11 +9,6 @@ const tableHeaders = [
 function populateTable(tableData, tableId) {
     const table = document.getElementById(tableId);
 
-    if (!table) {
-        console.error(`Table with ID "${tableId}" not found.`);
-        return;
-    }
-
     const tbody = table.getElementsByTagName("tbody")[0];
     tbody.innerHTML = "";
 
@@ -87,6 +82,7 @@ function populateTable(tableData, tableId) {
     });
 }
 
+// Function to show all rows
 function showAll(className) {
     const tables = document.querySelectorAll(`.${className}`);
     tables.forEach(table => {
@@ -95,8 +91,10 @@ function showAll(className) {
             row.style.display = "";
         });
     });
+    localStorage.setItem(`tableState_${className}`, 'all');
 }
 
+// Function to show only caught rows
 function showCaught(className) {
     const tables = document.querySelectorAll(`.${className}`);
     tables.forEach(table => {
@@ -109,54 +107,54 @@ function showCaught(className) {
             }
         });
     });
+    localStorage.setItem(`tableState_${className}`, 'caught');
 }
 
-function showVideo() {
-    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
-    videoscreens.forEach(videoscreen => {
-        videoscreen.style.display = "block";
-    });
+// Function to set table visibility based on saved state
+function setTableVisibility(className) {
+    const tableState = localStorage.getItem(`tableState_${className}`);
+    if (tableState === 'caught') {
+        showCaught(className);
+    } else {
+        showAll(className);
+    }
 }
 
-function hideVideo() {
-    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
-    videoscreens.forEach(videoscreen => {
-        videoscreen.style.display = "none";
-    });
-}
+document.getElementById("showAll1").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught1").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showVideo").addEventListener("click", showVideo);
-document.getElementById("hideVideo").addEventListener("click", hideVideo);
+document.getElementById("showAll3").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught3").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll1").addEventListener("click", () => showAll("pokemon-table1"));
-document.getElementById("showCaught1").addEventListener("click", () => showCaught("pokemon-table1"));
+document.getElementById("showAll4").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught4").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll3").addEventListener("click", () => showAll("pokemon-table3"));
-document.getElementById("showCaught3").addEventListener("click", () => showCaught("pokemon-table3"));
+document.getElementById("showAll5").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught5").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll4").addEventListener("click", () => showAll("pokemon-table4"));
-document.getElementById("showCaught4").addEventListener("click", () => showCaught("pokemon-table4"));
+document.getElementById("showAll7").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught7").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll5").addEventListener("click", () => showAll("pokemon-table5"));
-document.getElementById("showCaught5").addEventListener("click", () => showCaught("pokemon-table5"));
+document.getElementById("showAll10").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught10").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll7").addEventListener("click", () => showAll("pokemon-table7"));
-document.getElementById("showCaught7").addEventListener("click", () => showCaught("pokemon-table7"));
+document.getElementById("showAll11").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught11").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll10").addEventListener("click", () => showAll("pokemon-table10"));
-document.getElementById("showCaught10").addEventListener("click", () => showCaught("pokemon-table10"));
+document.getElementById("showAll12").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught12").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll11").addEventListener("click", () => showAll("pokemon-table11"));
-document.getElementById("showCaught11").addEventListener("click", () => showCaught("pokemon-table11"));
+document.getElementById("showAll15").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught15").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll12").addEventListener("click", () => showAll("pokemon-table12"));
-document.getElementById("showCaught12").addEventListener("click", () => showCaught("pokemon-table12"));
+document.getElementById("showAll16").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught16").addEventListener("click", () => showCaught("pokemon-table"));
 
-document.getElementById("showAll15").addEventListener("click", () => showAll("pokemon-table15"));
-document.getElementById("showCaught15").addEventListener("click", () => showCaught("pokemon-table15"));
-
-document.getElementById("showAll16").addEventListener("click", () => showAll("pokemon-table16"));
-document.getElementById("showCaught16").addEventListener("click", () => showCaught("pokemon-table16"));
+document.addEventListener('DOMContentLoaded', () => {
+    setTableVisibility("pokemon-table");
+    // Add additional table classes if there are more than one
+    // setTableVisibility("another-table-class");
+});
 
 //episode 1
 const oaklab = [

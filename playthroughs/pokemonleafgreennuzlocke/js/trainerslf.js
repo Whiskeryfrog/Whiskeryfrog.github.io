@@ -166,7 +166,7 @@ difficulty: 'easy' },
     { name: 'Rick', 
         id: 'rick', 
      image: bugCatcher, 
-   insight: 'It\'s just bugs, if you chose charmander this would be a piece of cake but if you chose the other two then it is still very easy. Just don\'t forget your antidotes, you\'re gonna need it.',
+   insight: 'It\'s just bugs, if you chose charmanderImage this would be a piece of cake but if you chose the other two then it is still very easy. Just don\'t forget your antidotes, you\'re gonna need it.',
   classimp: '',
 difficulty: 'extremely easy' },
 
@@ -260,7 +260,7 @@ difficulty: 'extremely easy' },
     { name: 'Robin', 
         id: 'robin', 
      image: lass, 
-   insight: 'Just a jigglypuff, nothing too crazy', 
+   insight: 'Just a jigglypuffImage, nothing too crazy', 
   classimp: '',
 difficulty: 'easy' }
 
@@ -1084,7 +1084,7 @@ difficulty: 'extremely easy' },
       id: 'erika', 
    image: erikasprite, 
  insight: '',
-classimp: '',
+classimp: 'importantname',
 difficulty: 'hard' }
 
 ];
@@ -1323,12 +1323,6 @@ episode15.forEach(displayTrainerCard);
 function populateTable(pokemonData, tableId) {
     const table = document.getElementById(tableId);  // Get the table element
 
-    // Check if the table exists
-    if (!table) {
-        console.error(`Table with ID "${tableId}" not found.`);
-        return;  // Exit the function if no table found
-    }
-
     const tbody = table.getElementsByTagName("tbody")[0]; // Get the table body
 
     // Loop through each row in the data
@@ -1375,38 +1369,38 @@ const rival2 =[
 ];
 const rick =[
     ["Weedle", "Caterpie"],
-    [weedle, caterpie],
+    [weedleImage, caterpieImage],
     ["Lv.6", "Lv.6"],
     [bugPoison, bug]
 ];
 const doug =[
     ["Weedle", "Kakuna", "Weedle"],
-    [weedle, kakuna, weedle],
+    [weedleImage, kakunaImage, weedleImage],
     ["Lv.7", "Lv.7", "Lv.7"],
     [bugPoison, bugPoison, bugPoison]
 ];
 const anthony =[
     ["Catepie", "Caterpie"],
-    [caterpie, caterpie],
+    [caterpieImage, caterpieImage],
     ["Lv.7", "Lv.8"],
     [bug, bug]
 ];
 const charlie =[
     ["Metapod", "Caterpie", "Metapod"],
-    [metapod, caterpie, metapod],
+    [metapodImage, caterpieImage, metapodImage],
     ["Lv.7", "Lv.7", "Lv.7"],
     [bug, bug, bug]
 ];
 const sammy =[
     ["Weedle"],
-    [weedle],
+    [weedleImage],
     ["Lv.9"],
     [bugPoison]
 ];  
 //episode3
 const liam =[
     ["Geodude", "Sandshrew"],
-    [geodude, sandshrew],
+    [geodudeImage, sandshrewImage],
     ["Lv.10", "Lv.11"],
     [rockGround, ground]
 ];
@@ -1418,122 +1412,122 @@ const brock =[
 ];
 const janice =[
     ["Pidgey", "Pidgey"],
-    [pidgey, pidgey],
+    [pidgeyImage, pidgeyImage],
     ["Lv.9", "Lv.9"],
     [normalFlying, normalFlying]
 ];
 const colton =[
     ["Caterpie", "Weedle", "Caterpie"],
-    [caterpie, weedle, caterpie],
+    [caterpieImage, weedleImage, caterpieImage],
     ["Lv.10", "Lv.10", "Lv.10"],
     [bug, bugPoison, bug]
 ];
 const ben =[
     ["Rattata", "Ekans"],
-    [rattata, ekans],
+    [rattataImage, ekansImage],
     ["Lv.11", "Lv.11"],
     [normal, poison]
 ];
 const greg =[
     ["Weedle", "Kakuna", "Caterpie", "Metapod"],
-    [weedle, kakuna, caterpie, metapod],
+    [weedleImage, kakunaImage, caterpieImage, metapodImage],
     ["Lv.9", "Lv.9", "Lv.9", "Lv. 9"],
     [bugPoison, bugPoison, bug, bug]
 ];
 const sally =[
     ["Rattata", "Nidoran♀"],
-    [rattata, nidoranf],
+    [rattataImage, nidoranFImage],
     ["Lv.10", "Lv.10"],
     [normal, poison]
 ];
 const james =[
     ["Caterpie", "Metapod"],
-    [caterpie, metapod],
+    [caterpieImage, metapodImage],
     ["Lv.11", "Lv.11"],
     [bug, bug]
 ];
 const robin =[
     ["Jigglypuff"],
-    [jigglypuff],
+    [jigglypuffImage],
     ["Lv.14"],
     [normal]
 ];
 //episode4
 const calvin =[
     ["Spearow"],
-    [spearow],
+    [spearowImage],
     ["Lv.14"],
     [normalFlying]
 ];
 const iris =[
     ["Clefairy"],
-    [clefairy],
+    [clefairyImage],
     ["Lv.14"],
     [normal]
 ];
 const jovan =[
     ["Magnemite", "Voltorb"],
-    [magnemite, voltorb],
+    [magnemiteImage, voltorbImage],
     ["Lv.11", "Lv.11"],
     [electricSteel, electric]
 ];
 const robby = [
     ["Caterpie", "Metapod", "Caterpie"],
-    [caterpie, metapod, caterpie],
+    [caterpieImage, metapodImage, caterpieImage],
     ["Lv.10", "Lv.10", "Lv.10"],
     [bug, bug, bug]
 ];
 const rocketGruntMtMoon1 = [
     ["Sandshrew", "Rattata", "Zubat"],
-    [sandshrew, rattata, zubat],
+    [sandshrewImage, rattataImage, zubatImage],
     ["Lv.11", "Lv.11", "Lv.11"],
     [ground, normal, poisonFlying]
 ];
 const kent =[
     ["Weedle", "Kakuna"],
-    [weedle, kakuna],
+    [weedleImage, kakunaImage],
     ["Lv.11", "Lv.11"],
     [bugPoison, bugPoison]
 ];
 const miriam =[
     ["Oddish", "Bellsprout"],
-    [oddish, bellsprout],
+    [oddishImage, bellsproutImage],
     ["Lv.11", "Lv.11"],
     [grassPoison, grassPoison]
 ];
 const rocketGruntMtMoon2 =[
     ["Zubat", "Ekans"],
-    [zubat, ekans],
+    [zubatImage, ekansImage],
     ["Lv.11", "Lv.11"],
     [poisonFlying, poison]
 ];
 const josh = [
     ["Rattata", "Rattata", "Zubat"],
-    [rattata, rattata, zubat],
+    [rattataImage, rattataImage, zubatImage],
     ["Lv.10", "Lv.10", "Lv.10"],
     [normal, normal, poisonFlying]
 ];
 const marcos = [
     ["Geodude", "Geodude", "Onix"],
-    [geodude, geodude, onix],
+    [geodudeImage, geodudeImage, onixImage],
     ["Lv.10", "Lv.10", "Lv.10"],
     [rockGround, rockGround, rockGround]
 ];
 const rocketGruntMtMoon3 =[
     ["Rattata", "Sandshrew"],
-    [rattata, sandshrew],
+    [rattataImage, sandshrewImage],
     ["Lv.13", "Lv.13"],
     [normal, ground]
 ];
 const rocketGruntMtMoon4 =[
     ["Rattata", "Zubat"],
-    [rattata, zubat],
+    [rattataImage, zubatImage],
     ["Lv.13", "Lv.13"],
     [normal, poisonFlying]
 ];
 const miguel = [
     ["Grimer", "Voltorb", "Koffing"],
-    [grimer, voltorb, koffing],
+    [grimerImage, voltorbImage, koffingImage],
     ["Lv.12", "Lv.12", "Lv.12"],
     [poison, electric, poison]
 ];
@@ -1547,125 +1541,125 @@ const rival3 = [
 
 const cale = [
     ["Caterpie", "Weedle", "Metapod", "Kakuna"],
-    [caterpie, weedle, metapod, kakuna],
+    [caterpieImage, weedleImage, metapodImage, kakunaImage],
     ["Lv.10", "Lv.10", "Lv.10", "Lv.10"],
     [bug, bugPoison, bug, bugPoison]
 ];
 
 const ali = [
     ["Pidgey", "Oddish", "Bellsprout"],
-    [pidgey, oddish, bellsprout],
+    [pidgeyImage, oddishImage, bellsproutImage],
     ["Lv.12", "Lv.12", "Lv.12"],
     [normalFlying, grassPoison, grassPoison]
 ];
 
 const timmy = [
     ["Sandshrew", "Ekans"],
-    [sandshrew, ekans],
+    [sandshrewImage, ekansImage],
     ["Lv.14", "Lv.14"],
     [ground, poison]
 ];
 
 const reli = [
     ["Nidoran♂", "Nidoran♀"],
-    [nidoranm, nidoranf],
+    [nidoranMImage, nidoranFImage],
     ["Lv.16", "Lv.16"],
     [poison, poison]
 ];
 
 const ethan = [
     ["Mankey"],
-    [mankey],
+    [mankeyImage],
     ["Lv.18"],
     [fighting]
 ];
 
 const rocketGruntRoute24 = [
     ["Ekans", "Zubat"],
-    [ekans, zubat],
+    [ekansImage, zubatImage],
     ["Lv.15", "Lv.15"],
     [poison, poisonFlying]
 ];
 
 const shane = [
     ["Rattata", "Ekans"],
-    [rattata, ekans],
+    [rattataImage, ekansImage],
     ["Lv.14", "Lv.14"],
     [normal, poison]
 ];
 
 const franklin = [
     ["Machop", "Geodude"],
-    [machop, geodude],
+    [machopImage, geodudeImage],
     ["Lv.15", "Lv.15"],
     [fighting, rockGround]
 ];
 
 const wayne = [
     ["Onix"],
-    [onix],
+    [onixImage],
     ["Lv.17"],
     [rockGround]
 ];
 
 const joey = [
     ["Rattata", "Spearow"],
-    [rattata, spearow],
+    [rattataImage, spearowImage],
     ["Lv.15", "Lv.15"],
     [normal, normalFlying]
 ];
 
 const dan = [
     ["Slowpoke"],
-    [slowpoke],
+    [slowpokeImage],
     ["Lv.17"],
     [waterPsychic]
 ];
 
 const kelsey = [
     ["Nidoran♂", "Nidoran♀"],
-    [nidoranm, nidoranf],
+    [nidoranMImage, nidoranFImage],
     ["Lv.15", "Lv.15"],
     [poison, poison]
 ];
 
 const nob = [
     ["Geodude", "Geodude", "Machop", "Geodude"],
-    [geodude, geodude, machop, geodude],
+    [geodudeImage, geodudeImage, machopImage, geodudeImage],
     ["Lv.13", "Lv.13", "Lv.13", "Lv.13"],
     [rockGround, rockGround, fighting, rockGround]
 ];
 
 const flint = [
     ["Rattata", "Ekans"],
-    [rattata, ekans],
+    [rattataImage, ekansImage],
     ["Lv.14", "Lv.14"],
     [normal, poison]
 ];
 
 const chad = [
     ["Ekans", "Sandshrew"],
-    [ekans, sandshrew],
+    [ekansImage, sandshrewImage],
     ["Lv.14", "Lv.14"],
     [poison, ground]
 ];
 
 const haley = [
     ["Oddish", "Pidgey", "Oddish"],
-    [oddish, pidgey, oddish],
+    [oddishImage, pidgeyImage, oddishImage],
     ["Lv.13", "Lv.13", "Lv.13"],
     [grassPoison, normalFlying, grassPoison]
 ];
 //episode6
 const luis = [
     ["Horsea", "Shellder"],
-    [horsea, shellder],
+    [horseaImage, shellderImage],
     ["Lv.16", "Lv.16"],
     [water, water]
 ];
 const diana = [
     ["Goldeen"],
-    [goldeen],
+    [goldeenImage],
     ["Lv.19"],
     [water]
 ];
@@ -1678,180 +1672,180 @@ const misty = [
 //episode7
 const rocketCeruleanCity = [
     ["Machop", "Drowzee"],
-    [machop, drowzee],
+    [machopImage, drowzeeImage],
     ["Lv.17", "Lv.17"],
     [fighting, psychic]
 ];
 
 const keigo = [
     ["Weedle", "Caterpie", "Weedle"],
-    [weedle, caterpie, weedle],
+    [weedleImage, caterpieImage, weedleImage],
     ["Lv.16", "Lv.16", "Lv.16"],
     [bugPoison, bug, bugPoison]
 ];
 
 const ricky = [
     ["Squirtle"],
-    [squirtle],
+    [squirtleImage],
     ["Lv.20"],
     [water]
 ];
 
 const nancy = [
     ["Rattata", "Pikachu"],
-    [rattata, pikachu],
+    [rattataImage, pikachuImage],
     ["Lv.16", "Lv.16"],
     [normal, electric]
 ];
 
 const elijah = [
     ["Butterfree"],
-    [butterfree],
+    [butterfreeImage],
     ["Lv.20"],
     [bugFlying]
 ];
 
 const isabelle = [
     ["Pidgey", "Pidgey", "Pidgey"],
-    [pidgey, pidgey, pidgey],
+    [pidgeyImage, pidgeyImage, pidgeyImage],
     ["Lv.16", "Lv.16", "Lv.16"],
     [normalFlying, normalFlying, normalFlying]
 ];
 
 const jeff = [
     ["Spearow", "Raticate"],
-    [spearow, raticate],
+    [spearowImage, raticateImage],
     ["Lv.16", "Lv.16"],
     [normalFlying, normal]
 ];
 
 const eddie = [
     ["Ekans"],
-    [ekans],
+    [ekansImage],
     ["Lv.21"],
     [poison]
 ];
 
 const hugo = [
     ["Poliwag", "Horsea"],
-    [poliwag, horsea],
+    [poliwagImage, horseaImage],
     ["Lv.18", "Lv.18"],
     [water, water]
 ];
 
 const bernie = [
     ["Magnemite", "Magnemite", "Magneton"],
-    [magnemite, magnemite, magneton],
+    [magnemiteImage, magnemiteImage, magnetonImage],
     ["Lv.18", "Lv.18", "Lv.18"],
     [electricSteel, electricSteel, electricSteel]
 ];
 
 const jasper = [
     ["Bellsprout", "Oddish"],
-    [bellsprout, oddish],
+    [bellsproutImage, oddishImage],
     ["Lv.18", "Lv.18"],
     [grassPoison, grassPoison]
 ];
 
 const dave = [
     ["Nidoran♂", "Nidorino"],
-    [nidoranm, nidorino],
+    [nidoranMImage, nidorinoImage],
     ["Lv.18", "Lv.18"],
     [poison, poison]
 ];
 
 const dillon = [
     ["Sandshrew", "Zubat"],
-    [sandshrew, zubat],
+    [sandshrewImage, zubatImage],
     ["Lv.19", "Lv.19"],
     [ground, poisonFlying]
 ];
 
 const braxton = [
     ["Magnemite"],
-    [magnemite],
+    [magnemiteImage],
     ["Lv.21"],
     [electricSteel]
 ];
 
 const yasu = [
     ["Rattata", "Rattata", "Raticate"],
-    [rattata, rattata, raticate],
+    [rattataImage, rattataImage, raticateImage],
     ["Lv.17", "Lv.17", "Lv.17"],
     [normal, normal, normal]
 ];
 
 const darian = [
     ["Growlithe", "Vulpix"],
-    [growlithe, vulpix],
+    [growlitheImage, vulpixImage],
     ["Lv.18", "Lv.18"],
     [fire, fire]
 ];
 
 const dirk = [
     ["Voltorb", "Magnemite"],
-    [voltorb, magnemite],
+    [voltorbImage, magnemiteImage],
     ["Lv.18", "Lv.18"],
     [electric, electricSteel]
 ];
 //episode8
 const thomas = [
   ["Growlithe", "Growlithe"],
-  [growlithe, growlithe],
+  [growlitheImage, growlitheImage],
   ["Lv.18", "Lv.19"],
   [fire, fire]
 ];
 const arthur = [
   ["Nidoran♂", "Nidoran♀"],
-  [nidoranm, nidoranf],
+  [nidoranMImage, nidoranFImage],
   ["Lv.19", "Lv.19"],
   [poison, poison]
 ];
 const ann = [
   ["Pidgey", "Nidoran♀"],
-  [pidgey, nidoranf],
+  [pidgeyImage, nidoranFImage],
   ["Lv.18", "Lv.18"],
   [normalFlying, poison]
 ];
 const tyler = [
   ["Nidoran♂"],
-  [nidoranm],
+  [nidoranMImage],
   ["Lv.21"],
   [poison]
 ];
 const trevor = [
   ["Machop", "Tentacool"],
-  [machop, tentacool],
+  [machopImage, tentacoolImage],
   ["Lv.17", "Lv.17"],
   [fighting, waterPoison]
 ];
 const edmond = [
   ["Machop", "Shellder"],
-  [machop, shellder],
+  [machopImage, shellderImage],
   ["Lv.18", "Lv.18"],
   [fighting, water]
 ];
 const dale = [
   ["Goldeen", "Tentacool", "Goldeen"],
-  [goldeen, tentacool, goldeen],
+  [goldeenImage, tentacoolImage, goldeenImage],
   ["Lv.17", "Lv.17", "Lv.17"],
   [water, waterPoison, water]
 ];
 const brooks = [
   ["Pikachu"],
-  [pikachu],
+  [pikachuImage],
   ["Lv.23"],
   [electric]
 ];
 const dawn = [
   ["Rattata", "Pikachu"],
-  [rattata, pikachu],
+  [rattataImage, pikachuImage],
   ["Lv.18", "Lv.18"],
   [normal, electric]
 ];
 const lamar = [
   ["Growlithe", "Ponyta"],
-  [growlithe, ponyta],
+  [growlitheImage, ponytaImage],
   ["Lv.17", "Lv.17"],
   [fire, fire]
 ];
@@ -1865,19 +1859,19 @@ const rival4 = [
 //episode9
 const dwayne= [
   ["Pikachu", "Pikachu"],
-  [pikachu, pikachu],
+  [pikachuImage, pikachuImage],
   ["Lv.21", "Lv.21"],
   [electric, electric]
 ];
 const baily= [
   ["Voltorb", "Magnemite"],
-  [voltorb, magnemite],
+  [voltorbImage, magnemiteImage],
   ["Lv.21", "Lv.21"],
   [electric, electricSteel]
 ];
 const tucker= [
   ["Pikachu"],
-  [pikachu],
+  [pikachuImage],
   ["Lv.23"],
   [electric]
 ];
@@ -1890,152 +1884,146 @@ const ltsurge = [
 //episode10
 const alicia = [
   ["Oddish", "Bellsprout", "Oddish", "Bellsprout"],
-  [oddish, bellsprout, oddish, bellsprout],
+  [oddishImage, bellsproutImage, oddishImage, bellsproutImage],
   ["Lv.18", "Lv.18", "Lv.18", "lv.18"],
   [grassPoison, grassPoison, grassPoison, grassPoison]
 ];
 const jeremy = [
   ["Machop", "Onix"],
-  [machop, onix],
+  [machopImage, onixImage],
   ["Lv.20", "Lv.20"],
   [fighting, rockGround]
 ];
 const chris = [
   ["Growlithe", "Charmander"],
-  [growlithe, charmander],
+  [growlitheImage, charmanderImage],
   ["Lv.21", "Lv.21"],
   [fire, fire]
 ];
 const brent = [
   ["Beedrill", "Beedrill"],
-  [beedrill, beedrill],
+  [beedrillImage, beedrillImage],
   ["Lv.19", "Lv.19"],
   [bugPoison, bugPoison]
 ];
 const conner = [
   ["Caterpie", "Weedle", "Venonat"],
-  [caterpie, weedle, venonat],
+  [caterpieImage, weedleImage, venonatImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [bug, bugPoison, bugPoison]
 ];
-const alan = [
-  ["Geodude", "Onix"],
-  [geodude, onix],
-  ["Lv.21", "Lv.21"],
-  [rockGround, rockGround]
-];
 const drew = [
   ["Rattata", "Sandshrew", "Ekans", "Sandshrew"],
-  [rattata, sandshrew, ekans, sandshrew],
+  [rattataImage, sandshrewImage, ekansImage, sandshrewImage],
   ["Lv.19", "Lv.19", "Lv.19", "lv.19"],
   [normal, ground, poison, ground]
 ];
 const brice = [
   ["Geodude", "Machop", "Geodude"],
-  [geodude, machop, geodude],
+  [geodudeImage, machopImage, geodudeImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [rockGround, fighting, rockGround]
 ];
 const caitlin = [
   ["Meowth"],
-  [meowth],
+  [meowthImage],
   ["Lv.23"],
   [normal]
 ];
 //episode11
 const heidi = [
   ["Pikachu", "Clefairy"],
-  [pikachu, clefairy],
+  [pikachuImage, clefairyImage],
   ["Lv.20", "Lv.20"],
   [electric, normal]
 ];
 const ashton = [
   ["Cubone", "Slowpoke"],
-  [cubone, slowpoke],
+  [cuboneImage, slowpokeImage],
   ["Lv.23", "Lv.23"],
   [ground, waterPsychic]
 ];
 const winston = [
   ["Slowpoke"],
-  [slowpoke],
+  [slowpokeImage],
   ["Lv.25"],
   [waterPsychic]
 ];
 const marth = [
   ["Oddish", "Bulbasaur"],
-  [oddish, bulbasaur],
+  [oddishImage, bulbasaurImage],
   ["Lv.22", "Lv.22"],
   [grassPoison, grassPoison]
 ];
 const eric = [
   ["Machop", "Onix"],
-  [machop, onix],
+  [machopImage, onixImage],
   ["Lv.20", "Lv.20"],
   [fighting, rockGround]
 ];
 const oliver = [
   ["Onix", "Onix", "Geodude"],
-  [onix, onix, geodude],
+  [onixImage, onixImage, geodudeImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [rockGround, rockGround, rockGround]
 ];
 const lucas = [
   ["Geodude", "Graveler"],
-  [geodude, graveler],
+  [geodudeImage, gravelerImage],
   ["Lv.21", "Lv.21"],
   [rockGround, rockGround]
 ];
 const sofia = [
   ["Jigglypuff", "Pidgey", "Meowth"],
-  [jigglypuff, pidgey, meowth],
+  [jigglypuffImage, pidgeyImage, meowthImage],
   ["Lv.21", "Lv.21", "Lv.21"],
   [normal, normalFlying, normal]
 ];
 const dudley = [
   ["Geodude", "Geodude","Graveler"],
-  [geodude, geodude,graveler],
+  [geodudeImage, geodudeImage,gravelerImage],
   ["Lv.21", "Lv.21", "Lv.21"],
   [rockGround, rockGround, rockGround]
 ];
 const cooper = [
   ["Slowpoke", "Slowpoke","Slowpoke"],
-  [slowpoke, slowpoke, slowpoke],
+  [slowpokeImage, slowpokeImage, slowpokeImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [waterPsychic, waterPsychic, waterPsychic]
 ];
 const leah = [
   ["Bellsprout", "Clefairy"],
-  [bellsprout, clefairy],
+  [bellsproutImage, clefairyImage],
   ["Lv.22", "Lv.22"],
   [grassPoison, normal]
 ];
 const dana = [
   ["Meowth", "Oddish", "Pidgey"],
-  [meowth, oddish, pidgey],
+  [meowthImage, oddishImage, pidgeyImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [normal, grassPoison, normalFlying]
 ];
 const carol = [
   ["Pidgey", "Pidgeotto"],
-  [pidgey, pidgeotto],
+  [pidgeyImage, pidgeottoImage],
   ["Lv.21", "Lv.21"],
   [normalFlying, normalFlying]
 ];
 const clark = [
   ["Geodude", "Onix"],
-  [geodude, onix],
+  [geodudeImage, onixImage],
   ["Lv.21", "Lv.21"],
   [rockGround, rockGround]
 ];
 const herman = [
   ["Cubone", "Slowpoke"],
-  [cubone, slowpoke],
+  [cuboneImage, slowpokeImage],
   ["Lv.20", "Lv.20"],
   [ground, waterPsychic]
 ];
 const trent = [
   ["Onix", "Graveler"],
-  [onix, graveler],
+  [onixImage, gravelerImage],
   ["Lv.19", "Lv.19"],
   [rockGround, rockGround]
 ];
@@ -2054,134 +2042,134 @@ const rival5_2 = [
 ];
 const julia = [
   ["Clefairy", "Clefairy"],
-  [clefairy, clefairy],
+  [clefairyImage, clefairyImage],
   ["Lv.22", "Lv.22"],
   [normal, normal]
 ];
 const rich = [
   ["Grolithe", "Vulpix"],
-  [vulpix, vulpix],
+  [vulpixImage, vulpixImage],
   ["Lv.24", "Lv.24"],
   [fire, fire]
 ];
 const glenn = [
   ["Grimer", "Muk", "Grimer"],
-  [grimer, muk, grimer],
+  [grimerImage, mukImage, grimerImage],
   ["Lv.22", "Lv.22", "Lv.22"],
   [poison, poison, poison]
 ];
 const eliandanne = [
   ["Clefairy", "Jigglypuff"],
-  [clefairy, jigglypuff],
+  [clefairyImage, jigglypuffImage],
   ["Lv.22", "Lv.22"],
   [normal, normal]
 ];
 const megan1 = [
   ["Pidgey", "Rattata", "Nidoran♂"],
-  [pidgey, rattata, nidoranm],
+  [pidgeyImage, rattataImage, nidoranMImage],
   ["Lv.19", "Lv.19", "Lv.19"],
   [normalFlying, normal, poison]
 ];
 const megan2 = [
   ["Meowth", "Pikachu"],
-  [meowth, pikachu],
+  [meowthImage, pikachuImage],
   ["Lv.19", "Lv.19"],
   [normal, electric]
 ];
 const andrea = [
   ["Meowth", "Meowth", "Meowth"],
-  [meowth, meowth, meowth],
+  [meowthImage, meowthImage, meowthImage],
   ["Lv.24", "Lv.24", "Lv.24"],
   [normal, normal, normal]
 ];
 const leslie = [
   ["Koffing"],
-  [koffing],
+  [koffingImage],
   ["Lv.26"],
   [poison]
 ];
 const paige = [
   ["Nidoran♀", "Nidorina"],
-  [nidoranf, nidorina],
+  [nidoranFImage, nidorinaImage],
   ["Lv.23", "Lv.23"],
   [poison, poison]
 ];
 const jaren = [
   ["Grimer", "Grimer"],
-  [grimer, grimer],
+  [grimerImage, grimerImage],
   ["Lv.24", "Lv.24"],
   [poison, poison]
 ];
 const ricardo = [
   ["Koffing", "Koffing", "Grimer"],
-  [koffing, koffing, grimer],
+  [koffingImage, koffingImage, grimerImage],
   ["Lv.22", "Lv.22", "Lv.23"],
   [poison, poison, poison]
 ];
 const aidan = [
   ["Voltorb", "Koffing", "Voltorb", "Magnemite"],
-  [voltorb, koffing, voltorb, magnemite],
+  [voltorbImage, koffingImage, voltorbImage, magnemiteImage],
   ["Lv.20", "Lv.20", "Lv.20", "Lv.20"],
   [electric, poison, electric, electricSteel]
 ];
 const stan = [
   ["Poliwag", "Poliwag", "Poliwhirl"],
-  [poliwag, poliwag, poliwhirl],
+  [poliwagImage, poliwagImage, poliwhirlImage],
   ["Lv.22", "Lv.22", "Lv.22"],
   [water, water, water]
 ];
 //episode13
 const leaandjed = [
   ["Ninetales", "Rapidash"],
-  [ninetales, rapidash],
+  [ninetalesImage, rapidashImage],
   ["Lv.29", "Lv.29"],
   [fire, fire]
 ];
 const kay = [
   ["Bellsprout", "Weepinbell"],
-  [bellsprout, weepinbell],
+  [bellsproutImage, weepinbellImage],
   ["Lv.23", "Lv.23"],
   [grassPoison, grassPoison]
 ];
 const bridget = [
   ["Oddish", "Oddish", "Bellsprout", "Bellsprout"],
-  [oddish, oddish, bellsprout, bellsprout],
+  [oddishImage, oddishImage, bellsproutImage, bellsproutImage],
   ["Lv.21", "Lv.21", "Lv.21", "Lv.21"],
   [grassPoison, grassPoison, grassPoison, grassPoison]
 ];
 const mary1 = [
   ["Bellsprout", "Oddish", "Weepinbell"],
-  [bellsprout, oddish, weepinbell],
+  [bellsproutImage, oddishImage, weepinbellImage],
   ["Lv.22", "Lv.22", "Lv.22"],
   [grassPoison, grassPoison, grassPoison]
 ];
 const mary2 = [
   ["Gloom", "Ivysaur"],
-  [gloom, ivysaur],
+  [gloomImage, ivysaurImage],
   ["Lv.22", "Lv.22"],
   [grassPoison, grassPoison]
 ];
 const lisa = [
   ["Oddish", "Gloom"],
-  [oddish, gloom],
+  [oddishImage, gloomImage],
   ["Lv.23", "Lv.23"],
   [grassPoison, grassPoison]
 ];
 const tina = [
   ["Bulbasaur", "Ivysaur"],
-  [bulbasaur, ivysaur],
+  [bulbasaurImage, ivysaurImage],
   ["Lv.24", "Lv.24"],
   [grassPoison, grassPoison]
 ];
 const lori = [
   ["Exeggcute"],
-  [exeggcute],
+  [exeggcuteImage],
   ["Lv.24"],
   [grassPsychic]
 ];
 const tamia = [
   ["Bellsprout", "Bellsprout"],
-  [bellsprout, bellsprout],
+  [bellsproutImage, bellsproutImage],
   ["Lv.24", "Lv.24"],
   [grassPoison, grassPoison]
 ];
@@ -2194,79 +2182,73 @@ const erika = [
 //episode14
 const rocketGruntHideout1 = [
   ["Raticate", "Zubat"],
-  [raticate, zubat],
+  [raticateImage, zubatImage],
   ["Lv.20", "Lv.20"],
   [normal, poisonFlying]
 ];
 const rocketGruntHideout2 = [
   ["Raticate", "Raticate"],
-  [raticate, raticate],
+  [raticateImage, raticateImage],
   ["Lv.21", "Lv.21"],
   [normal, normal]
 ];
 const rocketGruntHideout3 = [
   ["Drowzee", "Machop"],
-  [drowzee, machop],
+  [drowzeeImage, machopImage],
   ["Lv.21", "Lv.21"],
   [psychic, fighting]
 ];
 const rocketGruntHideout4 = [
   ["Rattata", "Rattata", "Raticate", "Raticate"],
-  [rattata, rattata, raticate, raticate],
+  [rattataImage, rattataImage, raticateImage, raticateImage],
   ["Lv.19", "Lv.19", "Lv.19", "Lv.19"],
   [normal, normal, normal, normal]
 ];
 const rocketGruntHideout5 = [
   ["Grimer", "Koffing", "Koffing"],
-  [grimer, koffing, koffing],
+  [grimerImage, koffingImage, koffingImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [poison, poison, poison]
 ];
-const rocketGruntHideout6 = [
-  ["Grimer", "Koffing"],
-  [grimer, koffing],
-  ["Lv.22", "Lv.22"],
-  [poison, poison]
-];
 const rocketGruntHideout71 = [
   ["Zubat", "Koffing", "Grimer"],
-  [zubat, koffing, grimer],
+  [zubatImage, koffingImage, grimerImage],
   ["Lv.17", "Lv.17", "Lv.17"],
   [poisonFlying, poison, poison]
 ];
 const rocketGruntHideout72 = [
-  ["Zubat", "raticate"],
-  [zubat, raticate],
+  ["Zubat", "raticateImage"],
+  [zubatImage, raticateImage],
   ["Lv.17", "Lv.17"],
   [poisonFlying, normal]
 ];
 const rocketGruntHideout8 = [
   ["Machop", "Machop"],
-  [machop, machop],
+  [machopImage, machopImage],
   ["Lv.21", "Lv.21"],
   [fighting, fighting]
 ];
 const rocketGruntHideout9 = [
   ["Rattata", "Raticate", "Drowzee"],
-  [rattata, raticate, drowzee],
+  [rattataImage, raticateImage, drowzeeImage],
   ["Lv.20", "Lv.20", "Lv.20"],
   [normal, normal, psychic]
 ];
 const rocketGruntHideout10 = [
   ["Koffing", "Zubat"],
-  [koffing, zubat],
+  [koffingImage, zubatImage],
   ["Lv.21", "Lv.21"],
   [poison, poisonFlying]
 ];
 const rocketGruntHideout11 = [
   ["Sandshrew", "Ekans", "Sandslash"],
-  [sandshrew, ekans, sandslash],
+  [sandshrewImage, ekansImage, sandslashImage],
   ["Lv.23", "Lv.23", "Lv.23"],
   [ground, poison, ground]
 ];
 const rocketGruntHideout12 = [
   ["Ekans", "Sandshrew", "Arbok"],
-  [ekans, sandshrew, arbok],
+  [ekansImage, sandshrewImage, arbokImage],
   ["Lv.23", "Lv.23", "Lv.23"],
   [poison, ground, poison]
 ];
@@ -2278,98 +2260,98 @@ const giovanni1 = [
 ];
 //episode15
 const hope = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.23"],
   [ghostPoison]
 ];
 const patricia = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.22"],
   [ghostPoison]
 ];
 const carly = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.24"],
   [ghostPoison]
 ];
 const laurel = [
-  ["Ghastly", "Ghastly"],
-  [ghastly, ghastly],
+  ["Gastly", "Gastly"],
+  [gastlyImage, gastlyImage],
   ["Lv.23", "Lv.23"],
   [ghostPoison, ghostPoison]
 ];
 const jody = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.22"],
   [ghostPoison]
 ];
 const paula = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.24"],
   [ghostPoison]
 ];
 const ruth = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.22"],
   [ghostPoison]
 ];
 const tammy = [
   ["Haunter"],
-  [haunter],
+  [haunterImage],
   ["Lv.23"],
   [ghostPoison]
 ];
 const karina = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.24"],
   [ghostPoison]
 ];
 const janae = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.22"],
   [ghostPoison]
 ];
 const angelica = [
-  ["Ghastly", "Ghastly", "Ghastly"],
-  [ghastly, ghastly, ghastly],
+  ["Gastly", "Gastly", "Gastly"],
+  [gastlyImage, gastlyImage, gastlyImage],
   ["Lv.22", "Lv.22", "Lv.22"],
   [ghostPoison, ghostPoison, ghostPoison]
 ];
 const jennifer = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.24"],
   [ghostPoison]
 ];
 const emilia = [
-  ["Ghastly"],
-  [ghastly],
+  ["Gastly"],
+  [gastlyImage],
   ["Lv.24"],
   [ghostPoison]
 ];
 const rocketGruntTower1 = [
   ["Zubat", "Zubat", "Golbat"],
-  [zubat, zubat, golbat],
+  [zubatImage, zubatImage, golbatImage],
   ["Lv.25", "Lv.25", "Lv.25"],
   [poisonFlying, poisonFlying, poisonFlying]
 ];
 const rocketGruntTower2 = [
   ["Koffing", "Drowzee"],
-  [koffing, drowzee],
+  [koffingImage, drowzeeImage],
   ["Lv.26", "Lv.26"],
   [poison, psychic]
 ];
 const rocketGruntTower3 = [
   ["Zubat", "Rattata", "Raticate", "Zubat"],
-  [zubat, rattata, raticate, zubat],
+  [zubatImage, rattataImage, raticateImage, zubatImage],
   ["Lv.23", "Lv.23", "Lv.23", "Lv.23"],
   [poisonFlying, normal, normal, poisonFlying]
 ];
@@ -2474,7 +2456,6 @@ populateTable(jeremy, "jeremy");
 populateTable(chris, "chris");
 populateTable(brent, "brent");
 populateTable(conner, "conner");
-populateTable(alan, "alan");
 populateTable(drew, "drew");
 populateTable(brice, "brice");
 populateTable(caitlin, "caitlin");
@@ -2528,7 +2509,6 @@ populateTable(rocketGruntHideout2, "rocketGruntHideout2");
 populateTable(rocketGruntHideout3, "rocketGruntHideout3");
 populateTable(rocketGruntHideout4, "rocketGruntHideout4");
 populateTable(rocketGruntHideout5, "rocketGruntHideout5");
-populateTable(rocketGruntHideout6, "rocketGruntHideout6");
 populateTable(rocketGruntHideout71, "rocketGruntHideout71");
 populateTable(rocketGruntHideout72, "rocketGruntHideout72");
 populateTable(rocketGruntHideout8, "rocketGruntHideout8");

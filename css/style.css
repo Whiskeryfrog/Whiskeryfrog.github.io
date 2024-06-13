@@ -628,7 +628,6 @@ a .smallscreen1 {
 
 .containerMain .bigtext {
   text-align: center; /* Ensure text remains centered */
-  margin-top: 10px;
 }
 
 .subcontainer {
@@ -776,7 +775,7 @@ a .smallscreen1 {
   }
   .containerMainplus {
     padding: 10px;
-    margin: 20px 10px 20px 10px;
+    margin: 5px 2px 5px 2px;
     background-color: #959088d5;
     border-radius: 20px;
     box-shadow: 4px 4px 0px 1px rgba(0, 0, 0, 0.45);

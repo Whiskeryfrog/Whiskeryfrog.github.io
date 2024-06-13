@@ -5,7 +5,7 @@ document.cookie = "cookieName=cookieValue; SameSite=Strict";
 var navbar = document.getElementsByClassName("topPanel1")[0];
 const version = document.getElementById("versionnumber");
 
-version.textContent = "V0.4.0";
+version.textContent = "V0.4.1";
 /*var sticky = navbar.offsetTop;*/
 
 /*
@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   */
+
+//const picPaths = ['../images/leafgreenbanner.png','../images/terrariabanner.png','../images/pokemoncrystal.png', '../images/coffeetalk.png', '../images/dinosaurking.png', '../images/coromonbanner.png'];
+
 
 
     // Optionally, you might want to add an event listener to close the navigation if the window is resized

@@ -504,7 +504,7 @@ const muk0 = new Pokemon(
     "A tanky poison type to have though not really useful considering most grass types in this game is also part poison type."
 );
 const ghastly0 = new Pokemon(
-    "Ghastly",
+    "Gastly",
     ghastly,
     ghostPoison,
     "Not really useful in this generation because of the typing though this Pokemon line is pretty fast."
