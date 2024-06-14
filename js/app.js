@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-// Check localStorage for dark mode preference on page load
+    
+  /*
 if (localStorage.getItem("darkMode") === "enabled") {
   enableDarkMode();
 }
@@ -119,6 +120,7 @@ function darkMode() {
       enableDarkMode();
   }
 }
+*/
 
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";

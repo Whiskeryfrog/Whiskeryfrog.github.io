@@ -1,12 +1,6 @@
 function populateTable(partyData, tableId) {
     const table = document.getElementById(tableId);  // Get the table element
 
-    // Check if the table exists
-    if (!table) {
-        console.error(`Table with ID "${tableId}" not found.`);
-        return;  // Exit the function if no table found
-    }
-
     const tbody = table.getElementsByTagName("tbody")[0]; // Get the table body
 
     // Loop through each row in the data
