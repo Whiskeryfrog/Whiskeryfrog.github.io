@@ -3,22 +3,22 @@ function trainerCard1(trainerName, name, imagePath, insight, cssClass = "", diff
     let starRatings;
     switch (difficulty.toLowerCase()) {
       case "extremely easy":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first xeasy\"></div> <div class=\"nofill\"></div> <div class=\"nofill\"></div> <div class=\"nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "easy":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first easy\"></div> <div class=\"easy\"></div> <div class=\"nofill\"></div> <div class=\"nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "normal":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first normal\"></div> <div class=\"fill normal\"></div> <div class=\"fill normal\"></div> <div class=\"fill nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "hard":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first hard\"></div> <div class=\"fill hard\"></div> <div class=\"fill hard\"></div> <div class=\"fill hard\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "challenging":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first challenging\"></div> <div class=\"fill challenging\"></div> <div class=\"fill challenging\"></div> <div class=\"fill challenging\"></div> <div class=\"last challenging slightspace\"></div> </div> ";
         break;
       default:
-        starRatings = " <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first nofill\"></div> <div class=\"fill nofill\"></div> <div class=\"fill nofill\"></div> <div class=\"fill nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
     }
   
     // Define the HTML template with string interpolation
@@ -48,22 +48,22 @@ function trainerCard2(trainerName, name, name1, name2, imagePath, insight, cssCl
     let starRatings;
     switch (difficulty.toLowerCase()) {
       case "extremely easy":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i><i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first xeasy\"></div> <div class=\"nofill\"></div> <div class=\"nofill\"></div> <div class=\"nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "easy":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first easy\"></div> <div class=\"easy\"></div> <div class=\"nofill\"></div> <div class=\"nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "normal":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first normal\"></div> <div class=\"fill normal\"></div> <div class=\"fill normal\"></div> <div class=\"nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "hard":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first hard\"></div> <div class=\"fill hard\"></div> <div class=\"fill hard\"></div> <div class=\"fill hard\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
         break;
       case "challenging":
-        starRatings = " <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> <i class=\"fa-solid fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first challenging\"></div> <div class=\"fill challenging\"></div> <div class=\"fill challenging\"></div> <div class=\"fill challenging\"></div> <div class=\"last challenging slightspace\"></div> </div> ";
         break;
       default:
-        starRatings = " <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> <i class=\"fa-regular fa-star\"></i> ";
+        starRatings = " <div class=\"difficultycontainer\"> <div class=\"first nofill\"></div> <div class=\"fill nofill\"></div> <div class=\"fill nofill\"></div> <div class=\"fill nofill\"></div> <div class=\"last nofill slightspace\"></div> </div> ";
     }
   
     // Define the HTML template with string interpolation

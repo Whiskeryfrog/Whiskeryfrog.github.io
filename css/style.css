@@ -16,7 +16,101 @@ body {
   color: #3d3933;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 260px;
+  margin-top: 2rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
 
+@keyframes scrollLeft {
+  to {
+    left: -570px;
+  }
+}
+
+.item, .item img{
+  width: 596px;
+  height: auto;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(570px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (max-width: 500px) {
+.wrapper {
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 150px;
+  margin-top: 2rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -298px;
+  }
+}
+
+.item, .item img{
+  width: 298px;
+  height: auto;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(270px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+}
+
+.item1 {
+  animation-delay: calc(40s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(40s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(40s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(40s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(40s / 6 * (6 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(40s / 6 * (6 - 6) * -1);
+}
 
 @keyframes slide {
   0% {
@@ -272,19 +366,6 @@ a .smallscreen {
   }
 }
 
-.fa-moon,
-.fa-sun {
-  transition: transform 0.5s ease-in-out;
-  animation: morphIcon 0.5s ease-in-out;
-}
-
-.dark .fa-moon {
-  transform: rotate(360deg);
-}
-
-.dark .fa-sun {
-  transform: rotate(0deg);
-}
 
 .bannerimage {
   width: 100%;

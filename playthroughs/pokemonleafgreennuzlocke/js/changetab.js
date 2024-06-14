@@ -4,6 +4,33 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+function glowButton(){
+    const glowButton = document.getElementById("dropdownButton");
+    glowButton.classList.add("glowinganim");
+    setTimeout(function()
+    {
+        glowButton.classList.remove("glowinganim")
+    }, 5000);
+}
+
+function glowShowButton(){
+    const glowButton = document.getElementById("showVideo");
+    glowButton.classList.add("glowinganim");
+    setTimeout(function()
+    {
+        glowButton.classList.remove("glowinganim")
+    }, 5000);
+}
+
+function glowHideButton(){
+    const glowButton = document.getElementById("hideVideo");
+    glowButton.classList.add("glowinganim");
+    setTimeout(function()
+    {
+        glowButton.classList.remove("glowinganim")
+    }, 5000);
+}
+
 function filterFunction() {
     var input, filter, a, i;
     input = document.getElementById("myInput");

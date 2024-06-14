@@ -120,6 +120,9 @@ function setTableVisibility(className) {
     }
 }
 
+document.getElementById("showAll0").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught0").addEventListener("click", () => showCaught("pokemon-table"));
+
 document.getElementById("showAll1").addEventListener("click", () => showAll("pokemon-table"));
 document.getElementById("showCaught1").addEventListener("click", () => showCaught("pokemon-table"));
 
@@ -175,6 +178,21 @@ const oaklab = [
         level: "5",
         encounterRate: "Gift",
         ifCaught: "success" 
+    }
+];
+
+const testroute = [
+    {
+        pokemon: pidgey0,
+        level: "2-5",
+        encounterRate: "50%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: rattata0,
+        level: "2-4",
+        encounterRate: "50%",
+        ifCaught: "" 
     }
 ];
 
@@ -1050,6 +1068,8 @@ const kindleRoad_2 =[
 //episode29
 //episode30
 //episodefinale
+
+populateTable(testroute, "testroute");
 
 //episode1
 populateTable(oaklab, "oaklab");

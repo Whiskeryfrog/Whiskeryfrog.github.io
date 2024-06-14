@@ -44,7 +44,64 @@
     transform: translateY(5px);
   }
   
+  .difficultflex-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+  }
 
+  .difficultflex-container .rightside{
+    justify-content: start !important;
+    text-align: left !important;    
+  }
+
+  .difficultycontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .difficultycontainer > div {
+    padding: 10px;
+    border: white solid 2px;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.46);
+  }
+
+  .first{
+    border-radius: 5px 0 0 5px;
+  }
+  .last{
+    border-radius: 0 5px 5px 0;
+  }
+
+  .xeasy{
+    background-color: #1d4877;
+  }
+  .easy{
+    background-color: #1b8a5a;
+  }
+  .normal{
+    background-color: #fbb021;
+  }
+  .hard{
+    background-color: #f68838;
+  }
+  .challenging{
+    background-color: #ee3e32;
+  }
+
+  .nofill{
+    background-color: #313533;
+  }
+
+  .slightspace{
+    margin-right: 10px;
+  }
 
 
 .dropbtn:hover, .dropbtn:focus {
@@ -502,3 +559,24 @@ table tr:first-child td {
 .importantname {
     color: rgb(245, 245, 18);
 }
+
+.glowinganim{
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: -1px -1px 42px 8px rgb(220, 213, 3);
+    }
+    to {
+        box-shadow: -1px -1px 42px 8px rgba(209, 229, 31, 0.52);
+    }
+  }
+
+  .tabledifficult{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }

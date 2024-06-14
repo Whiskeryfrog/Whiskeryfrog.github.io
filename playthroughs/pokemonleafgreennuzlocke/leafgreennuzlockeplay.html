@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <main>
+    <main id="thetoppage">
         <div class="topPanel" id="topPage">
             <a href="../../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
@@ -120,77 +120,327 @@
                     <span class="bigtext slightlysmall" style="color: white;">Introduction to the Playthrough</span>
                     <img src="../../images/leafgreenbanner.png" class="bannerimage"
                         alt="pokemon leafgreen nuzlocke logo" loading="lazy">
-
-                    <p class="textjustify" style="color: white;">This series was created during the pandemic when I had
-                        nothing better to do,
-                        so I decided to play
-                        and record my attempt at a Nuzlocke challenge on a Pokémon LeafGreen playthrough.</p>
-                    <p class="textjustify" style="color: white;">In this series, you will see details such as team
-                        composition, wild
-                        encounters, and trainers, as
-                        well as opinions and retrospectives that I have of my playthrough of this challenge per episode.
-                    </p>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <p class="textjustify">This series was created during the pandemic when I
+                                had
+                                nothing better to do,
+                                so I decided to play
+                                and record my attempt at a Nuzlocke challenge on a Pokémon LeafGreen playthrough.</p>
+                            <p class="textjustify">In this series, you will see details such as team
+                                composition, wild
+                                encounters, and trainers, as
+                                well as opinions and retrospectives that I have of my playthrough of this challenge per
+                                episode.
+                            </p>
+                        </div>
+                    </div>
                     <hr class="linebreaker">
-                    <span class="bigtext slightlysmall" style="color: white;">Instructions</span>
-                    <p class="" style="color: white;">You can show a trainer's team composition by
-                        clicking/tapping on the box containing them.
-                    </p>
+                    <span class="bigtext slightlysmall" style="color: white;">INSTRUCTIONS</span>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <a href="#thetoppage">
+                                <div class="dropdown">
+                                    <button onclick="glowButton()" class="dropbtn"><i class="fas fa-search"></i>
+                                        Introduction</button>
+                                </div>
+                            </a>
+                            <p class="textjustify">Clicking this tab on top of the page will show
+                                you
+                                every single episode within my Pokémon LeafGreen Nuzlocke. Clicking on an episode will
+                                show you
+                                details about that episode such as encounters per route, trainers fought, team
+                                composition at
+                                the end of the episode, and deaths so far in the series.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <a href="#thetoppage" onclick="glowShowButton()"><button class="showbtn">Show
+                                    Episode</button></a>
+                            <a href="#thetoppage" onclick="glowHideButton()"><button class="showbtn">Hide
+                                    Episode</button></a>
+                        </div>
+                        <p>You can click these buttons in order to either show or hide the videos
+                            per page respectively.
+                        </p>
+                    </div>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <button id="showAll0" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
+                                    alt="show all button"></button>
+                            <p>Clicking the grass button will show you all of the possible encounters per route.
+                            </p>
+                            <button id="showCaught0" class="showbtn"><img class="buttonimg" src="sprites/caughtIcon.png"
+                                    alt="show caught button"></button>
+                            <p>Clicking the Pokéball button only shows you the successful encounter per route.
+                            </p>
+                            <br>
+                            <span class="bigtext slightlysmall titlealign ">Route 1
+                            </span>
+                            <p class="textjustify titlealign"></p>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div>
+                            <div style="overflow-x: auto;">
+                                <table border="1" class="customTable pokemon-table" id="testroute">
+                                    <tbody> </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <div class="col containerMain2" onclick="toggleElement('displaytesttable')">
+                                <div class="limiter">
+                                    <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival)
+                                        <span><--- Trainer Name</span>
+                                        </span>
+                                        <div class="difficultycontainer">
+                                            <div class="first normal"></div>
+                                            <div class="normal"></div>
+                                            <div class="normal"></div>
+                                            <div class="nofill"></div>
+                                            <div class="last nofill slightspace"></div> <span><--- <a href="#difficulty"
+                                                    style="color:white;">Difficulty</a></span>
+                                        </div>
+                                        <img src="sprites/Blue1.webp">
+                                        <p class="titlealign">Insight
+                                        </p>
+                                        <div id="displaytesttable" class="rules-content"
+                                            style="overflow-x: auto; height: 0;">
+                                            <table border="1" class="customTable">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Bulbasaur</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="nopad" src="sprites/firered-leafgreen/1.png">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Lv.5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img class="nopad" src="sprites/types/grass-poison.png">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                </div>
+                            </div>
+                            <p class="">You can show a trainer's team composition by
+                                clicking on the container containing them.
+                            </p>
+                        </div>
+                    </div>
                     <p class="" style="color: white;">That's pretty much it.
                     </p>
                     <hr class="linebreaker">
-                    <span class="bigtext slightlysmall" style="color: white;">Symbols</span>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-gift"></i> = Gift Pokemon
-                    </p>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-seedling"></i> = Grass Encounter
-                    </p>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-water"></i> = Surfing Encounter
-                    </p>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-fish"></i> = Fishing Encounter
-                    </p>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-mountain"></i> = Cave Encounter
-                    </p>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-crown"></i> = Legendary Encounter
-                    </p>
-                    <p style="color: white;">
-                        <span class="succenc">Green Name</span> = Successful Encounter
-                    </p>
-                    <p style="color: white;">
-                        <span class="failenc">Red Name</span> = Failed Encounter
-                    </p>
-                    <p style="color: white;">
-                        Normal Name = Not Encountered
-                    </p>
-                    <p style="color: white;">
-                        <i class="fa-solid fa-flag"></i> Name = Already Caught
-                    </p>
+                    <span class="bigtext slightlysmall" style="color: white;">SYMBOLS</span>
+                    <div class="containerMain">
+                        <div class="limiter">
+                            <div class="giftpokemon"><i class="fa-solid fa-gift"></i> Gift Encounters</div><br>
+                            <div class="grasspokemon"><i class="fa-solid fa-seedling"></i> Grass Encounters</div><br>
+                            <div class="surfpokemon"><i class="fa-solid fa-water"></i> Surfing Encounters</div><br>
+                            <div class="fishpokemon"><i class="fa-solid fa-fish"></i> Fishing (Old/Good/Super Rods)
+                                Encounters
+                            </div><br>
+                            <div class="cavepokemon"><i class="fa-solid fa-mountain"></i> Cave Encounters</div><br>
+                            <div class="giftpokemon"><i class="fa-solid fa-building"></i> Building Encounters</div><br>
+                            <p>
+                                <b>Not Encountered</b>
+                            </p>
+                            <table border="1" class="customTable">
+                                <tbody>
+                                    <thead>
+                                        <th> Pokémon </th>
+                                        <th> Level </th>
+                                        <th> Type </th>
+                                        <th> Encounter Rate </th>
+                                        <th> Insight </th>
+                                    </thead>
+                                    <tr class="">
+                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>5</td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td>Gift</td>
+                                        <td>The best choice for this region if you want to have an easier time with the
+                                            Nuzlocke
+                                            and in the game in general.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                <b>Successfully Caught</b>
+                            </p>
+                            <table border="1" class="customTable">
+                                <tbody>
+                                    <thead>
+                                        <th> Pokémon </th>
+                                        <th> Level </th>
+                                        <th> Type </th>
+                                        <th> Encounter Rate </th>
+                                        <th> Insight </th>
+                                    </thead>
+                                    <tr class="succenc">
+                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>5</td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td>Gift</td>
+                                        <td>The best choice for this region if you want to have an easier time with the
+                                            Nuzlocke
+                                            and in the game in general.</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <p>
+                                <b>Already Caught</b>
+                            </p>
+                            <table border="1" class="customTable">
+                                <tbody>
+                                    <thead>
+                                        <th> Pokémon </th>
+                                        <th> Level </th>
+                                        <th> Type </th>
+                                        <th> Encounter Rate </th>
+                                        <th> Insight </th>
+                                    </thead>
+                                    <tr class="caughtpokemon">
+                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>5</td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td>Gift</td>
+                                        <td>The best choice for this region if you want to have an easier time with the
+                                            Nuzlocke
+                                            and in the game in general.</td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <p>
+                                <b>Failed Encounter</b>
+                            </p>
+                            <table border="1" class="customTable">
+                                <tbody>
+                                    <thead>
+                                        <th> Pokémon </th>
+                                        <th> Level </th>
+                                        <th> Type </th>
+                                        <th> Encounter Rate </th>
+                                        <th> Insight </th>
+                                    </thead>
+                                    <tr class="failenc">
+                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>5</td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td>Gift</td>
+                                        <td>The best choice for this region if you want to have an easier time with the
+                                            Nuzlocke
+                                            and in the game in general.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
                     <hr class="linebreaker">
-                    <span class="bigtext slightlysmall" style="color: white;">Difficulty of Trainers</span>
-                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                            class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> = Extremely Easy
-                    </span>
-                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i
-                            class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> = Easy
-                    </span>
-                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                            class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i> = Normal
-                    </span>
-                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                            class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> = Hard
-                    </span>
-                    <span class="bigtext small titlealign"><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i
-                            class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> = Challenging
-                    </span>
+                    <span class="bigtext slightlysmall" style="color: white;">DIFFICULTY OF
+                        TRAINERS</span>
+                    <div class="containerMain">
+                        <div class="tabledifficult">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="difficultycontainer">
+                                                <div class="first xeasy"></div>
+                                                <div class="nofill"></div>
+                                                <div class="nofill"></div>
+                                                <div class="nofill"></div>
+                                                <div class="last nofill slightspace"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: left !important; font-weight: bold;">
+                                                Extremely Easy - Not really a challenge
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="difficultycontainer">
+                                                <div class="first easy"></div>
+                                                <div class="easy"></div>
+                                                <div class="nofill"></div>
+                                                <div class="nofill"></div>
+                                                <div class="last nofill slightspace"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: left !important; font-weight: bold;">
+                                                Easy - Not a challenge but with minor issues
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="difficultycontainer">
+                                                <div class="first normal"></div>
+                                                <div class="normal"></div>
+                                                <div class="normal"></div>
+                                                <div class="nofill"></div>
+                                                <div class="last nofill slightspace"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: left !important; font-weight: bold;">
+                                                Normal - A fair fight where my team and my opponent's team are evenly
+                                                matched.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="difficultycontainer">
+                                                <div class="first hard"></div>
+                                                <div class="hard"></div>
+                                                <div class="hard"></div>
+                                                <div class="hard"></div>
+                                                <div class="last nofill slightspace"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: left !important; font-weight: bold;">
+                                                Hard - A fight where I struggled a bit due to certain things.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="difficultycontainer">
+                                                <div class="first challenging"></div>
+                                                <div class="challenging"></div>
+                                                <div class="challenging"></div>
+                                                <div class="challenging"></div>
+                                                <div class="last challenging slightspace"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p style="text-align: left !important; font-weight: bold;">
+                                                Challenging - I struggled throughout the fight in an unfair manner.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p id="difficulty" class="">Note that just because a fight is easy, it does not mean there were
+                            no deaths during
+                            the fight. On the other hand, a difficult fight does not necessarily mean there were deaths.
+                        </p>
+                    </div>
                     <hr class="linebreaker">
                     <div class="containerMain">
                         <span class="bigtext clickable" onclick="toggleElement('displayrules')">Rules for the
@@ -241,9 +491,14 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <p class="textjustify" style="color: white;">This is the first episode of the playthrough and there
-                        is really nothing too special with it other than this is where I choose my starter and
-                        encountered a couple of early pokemon that may or may not help me in the future.</p>
+                    <p class="textjustify" style="color: white;">This is the first episode of the playthrough. The
+                        things that I did in this episode is that
+                        I picked my starter and battled my rival as soon as he chose his. I had to pick up a package
+                        from Viridian City's PokéMart and give it to Professor Oak in order to receive my Pokédex as
+                        well as a set of Pokéballs which I can now properly start my Nuzlocke challenge. Now that the
+                        Nuzlocke challenge
+                        is properly started, I then decided to catch my encounters for Route 1, Route 2, Route 22, and
+                        Viridian forest.</p>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll1" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
