@@ -47,6 +47,17 @@ function filterFunction() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.tab-link');
+    links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const tabName = this.getAttribute('data-tab');
+            changeTab(tabName);
+        });
+    });
+});
+
 function changeTab(selectedValue) {
     var tabContent = document.getElementsByClassName("tabcontent");
 
@@ -55,9 +66,8 @@ function changeTab(selectedValue) {
     }
 
     document.getElementById(selectedValue).style.display = "block";
-    document.getElementById("myDropdown").classList.remove("show"); // Hide dropdown after selection
+    document.getElementById("myDropdown").classList.remove("show");
 
-    // Update dropdown button text with selected option
     currentSelection = selectedValue;
     document.getElementById("dropdownButton").textContent = currentSelection;
 }

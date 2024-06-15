@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <main id="thetoppage">
+    <main>
         <div class="topPanel" id="topPage">
             <a href="../../index"><i class="fa-solid fa-house"></i>
                 <div class="smallscreen"> Home</div>
@@ -38,68 +38,58 @@
                         Introduction</button>
                     <div id="myDropdown" class="dropdown-content">
                         <input type="text" placeholder="Search episode" id="myInput" onkeyup="filterFunction()">
-                        <a href="javascript:void(0)" onclick="changeTab('Introduction')">Introduction</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 1')">Episode 1 - This series
-                            will most likely be cancelled halfway through</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 2')">Episode 2 - Very
+                        <a href="#Introduction" class="tab-link" data-tab="Introduction">Introduction</a>
+                        <a href="#Episode1" class="tab-link" data-tab="Episode 1">Episode 1 - This series will most
+                            likely be cancelled halfway through</a>
+                        <a href="#Episode2" class="tab-link" data-tab="Episode 2">Episode 2 - Very
                             Loooooooooooooooooooooooooooooooooooooooooooong forest</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 3')">Episode 3 - Good thing I
-                            started with Squirtle</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 4')">Episode 4 - I Sped Up Most
-                            Pokémon Battles in this Episode</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 5')">Episode 5 - Look Closely
-                            at the Thumbnail</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 6')">Episode 6 - Not Too
-                            Thankful that my Starter is Squirtle</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 7')">Episode 7 - Vermillion
-                            dollars</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 8')">Episode 8 - That Time I
-                            "GAME ENDED" my Rival's Raticate</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 9')">Episode 9 - Normal Rat
-                            V.S. Electric Rat</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 10')">Episode 10 - Trainer
-                            Beatdown</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 11')">Episode 11 - Dank
-                            Tunnel</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 12')">Episode 12 - Nothing
-                            Much, Just Trainers</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 13')">Episode 13 - This Gym is
-                            Surprisingly Tough Without A Decent Fire
-                            Type</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 14')">Episode 14 - Good Thing
-                            This isn't Twitch Plays Pokémon</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 15')">Episode 15 - Can Pokémon
-                            Talk when They're Dead?</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 16')">Episode 16 - Trainer
-                            Mayhem</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 17')">Episode 17 - A Disastrous
-                            RAID</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 18')">Episode 18 - Dojo
-                            Danger</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 19')">Episode 19 - Ninja
-                            Saga</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 20')">Episode 20 - SaBRUHna</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 21')">Episode 21 - "LOOK GUYS I
-                            DID MISSINGNO GLITCH IN POKÉMON LEAFGREEN"</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 22')">Episode 22 - GOING INSIDE
-                            AN ABANDONED MANSION AT 3:00am NOT CLICKBAIT</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 23')">Episode 23 - I Blaine
-                            Myself for this Channel's Irrelevance</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 24')">Episode 24 - I, (Giorno)
-                            Giovanni, Have a Dream</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 25')">Episode 25 - That One
-                            Beach Episode of an Anime</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 26')">Episode 26 - Road to
-                            Victory</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 27')">Episode 27 - Lorelei is
-                            Surprisingly Tough</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 28')">Episode 28 - Bruh, no</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 29')">Episode 29 - AgaBRUH</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Episode 30')">Episode 30 - "You don't
-                            get to be Champion of the Pokemon League"</a>
-                        <a href="javascript:void(0)" onclick="changeTab('Finale')">FINALE - FINALLY! I FINISHED
-                            A SERIES IN THIS CHANNEL!</a>
-
+                        <a href="#Episode3" class="tab-link" data-tab="Episode 3">Episode 3 - Good thing I started with
+                            Squirtle</a>
+                        <a href="#Episode4" class="tab-link" data-tab="Episode 4">Episode 4 - I Sped Up Most Pokémon
+                            Battles in this Episode</a>
+                        <a href="#Episode5" class="tab-link" data-tab="Episode 5">Episode 5 - Look Closely at the
+                            Thumbnail</a>
+                        <a href="#Episode6" class="tab-link" data-tab="Episode 6">Episode 6 - Not Too Thankful that my
+                            Starter is Squirtle</a>
+                        <a href="#Episode7" class="tab-link" data-tab="Episode 7">Episode 7 - Vermillion dollars</a>
+                        <a href="#Episode8" class="tab-link" data-tab="Episode 8">Episode 8 - That Time I "GAME ENDED"
+                            my Rival's Raticate</a>
+                        <a href="#Episode9" class="tab-link" data-tab="Episode 9">Episode 9 - Normal Rat V.S. Electric
+                            Rat</a>
+                        <a href="#Episode10" class="tab-link" data-tab="Episode 10">Episode 10 - Trainer Beatdown</a>
+                        <a href="#Episode11" class="tab-link" data-tab="Episode 11">Episode 11 - Dank Tunnel</a>
+                        <a href="#Episode12" class="tab-link" data-tab="Episode 12">Episode 12 - Nothing Much, Just
+                            Trainers</a>
+                        <a href="#Episode13" class="tab-link" data-tab="Episode 13">Episode 13 - This Gym is
+                            Surprisingly Tough Without A Decent Fire Type</a>
+                        <a href="#Episode14" class="tab-link" data-tab="Episode 14">Episode 14 - Good Thing This isn't
+                            Twitch Plays Pokémon</a>
+                        <a href="#Episode15" class="tab-link" data-tab="Episode 15">Episode 15 - Can Pokémon Talk when
+                            They're Dead?</a>
+                        <a href="#Episode16" class="tab-link" data-tab="Episode 16">Episode 16 - Trainer Mayhem</a>
+                        <a href="#Episode17" class="tab-link" data-tab="Episode 17">Episode 17 - A Disastrous RAID</a>
+                        <a href="#Episode18" class="tab-link" data-tab="Episode 18">Episode 18 - Dojo Danger</a>
+                        <a href="#Episode19" class="tab-link" data-tab="Episode 19">Episode 19 - Ninja Saga</a>
+                        <a href="#Episode20" class="tab-link" data-tab="Episode 20">Episode 20 - SaBRUHna</a>
+                        <a href="#Episode21" class="tab-link" data-tab="Episode 21">Episode 21 - "LOOK GUYS I DID
+                            MISSINGNO GLITCH IN POKÉMON LEAFGREEN"</a>
+                        <a href="#Episode22" class="tab-link" data-tab="Episode 22">Episode 22 - GOING INSIDE AN
+                            ABANDONED MANSION AT 3:00am NOT CLICKBAIT</a>
+                        <a href="#Episode23" class="tab-link" data-tab="Episode 23">Episode 23 - I Blaine Myself for
+                            this Channel's Irrelevance</a>
+                        <a href="#Episode24" class="tab-link" data-tab="Episode 24">Episode 24 - I, (Giorno) Giovanni,
+                            Have a Dream</a>
+                        <a href="#Episode25" class="tab-link" data-tab="Episode 25">Episode 25 - That One Beach Episode
+                            of an Anime</a>
+                        <a href="#Episode26" class="tab-link" data-tab="Episode 26">Episode 26 - Road to Victory</a>
+                        <a href="#Episode27" class="tab-link" data-tab="Episode 27">Episode 27 - Lorelei is Surprisingly
+                            Tough</a>
+                        <a href="#Episode28" class="tab-link" data-tab="Episode 28">Episode 28 - Bruh, no</a>
+                        <a href="#Episode29" class="tab-link" data-tab="Episode 29">Episode 29 - AgaBRUH</a>
+                        <a href="#Episode30" class="tab-link" data-tab="Episode 30">Episode 30 - "You don't get to be
+                            Champion of the Pokemon League"</a>
+                        <a href="#Finale" class="tab-link" data-tab="Finale">FINALE - FINALLY! I FINISHED A SERIES IN
+                            THIS CHANNEL!</a>
                     </div>
                 </div>
 
@@ -158,9 +148,9 @@
                         <div class="limiter">
                             <span class="bigtext">2. Videos Button</span>
                             <hr class="linebreaker">
-                            <a href="#thetoppage" onclick="glowShowButton()"><button class="showbtn">Show
+                            <a href="#topPage" onclick="glowShowButton()"><button class="showbtn">Show
                                     Episode</button></a>
-                            <a href="#thetoppage" onclick="glowHideButton()"><button class="showbtn">Hide
+                            <a href="#topPage" onclick="glowHideButton()"><button class="showbtn">Hide
                                     Episode</button></a>
                         </div>
                         <p>You can click these buttons in order to either show or hide the videos
@@ -209,7 +199,7 @@
                                             <div class="last nofill slightspace"></div> <span><--- <a href="#difficulty"
                                                     style="color:white;">Difficulty</a></span>
                                         </div>
-                                        <img src="sprites/Blue1.webp">
+                                        <img src="sprites/Blue1.webp" alt="Trainer Blue">
                                         <p class="titlealign">Insight
                                         </p>
                                         <div id="displaytesttable" class="rules-content"
@@ -221,14 +211,16 @@
 
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="nopad" src="sprites/firered-leafgreen/1.png">
+                                                        <td><img class="nopad" src="sprites/firered-leafgreen/1.png"
+                                                                alt="bulbasaur">
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>Lv.5</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="nopad" src="sprites/types/grass-poison.png">
+                                                        <td><img class="nopad" src="sprites/types/grass-poison.png"
+                                                                alt="Grass Poison type">
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -266,9 +258,11 @@
                                         <th> Insight </th>
                                     </thead>
                                     <tr class="">
-                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>Bulbasaur <br> <img src="sprites/firered-leafgreen/1.png" alt="bulbasaur">
+                                        </td>
                                         <td>5</td>
-                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="grass poison type" class="">
+                                        </td>
                                         <td>Gift</td>
                                         <td>The best choice for this region if you want to have an easier time with the
                                             Nuzlocke
@@ -289,9 +283,11 @@
                                         <th> Insight </th>
                                     </thead>
                                     <tr class="succenc">
-                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>Bulbasaur <br> <img src="sprites/firered-leafgreen/1.png" alt="bulbasaur">
+                                        </td>
                                         <td>5</td>
-                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="grass poison type" class="">
+                                        </td>
                                         <td>Gift</td>
                                         <td>The best choice for this region if you want to have an easier time with the
                                             Nuzlocke
@@ -312,9 +308,11 @@
                                         <th> Insight </th>
                                     </thead>
                                     <tr class="caughtpokemon">
-                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>Bulbasaur <br> <img src="sprites/firered-leafgreen/1.png" alt="bulbasaur">
+                                        </td>
                                         <td>5</td>
-                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="grass poison type" class="">
+                                        </td>
                                         <td>Gift</td>
                                         <td>The best choice for this region if you want to have an easier time with the
                                             Nuzlocke
@@ -335,9 +333,11 @@
                                         <th> Insight </th>
                                     </thead>
                                     <tr class="failenc">
-                                        <td>Squirtle <br> <img src="sprites/firered-leafgreen/1.png"></td>
+                                        <td>Bulbasaur <br> <img src="sprites/firered-leafgreen/1.png" alt="bulbasaur">
+                                        </td>
                                         <td>5</td>
-                                        <td><img src="sprites/types/grass-poison.png" alt="" class=""></td>
+                                        <td><img src="sprites/types/grass-poison.png" alt="grass poison type" class="">
+                                        </td>
                                         <td>Gift</td>
                                         <td>The best choice for this region if you want to have an easier time with the
                                             Nuzlocke
