@@ -1337,7 +1337,8 @@ function populateTable(pokemonData, tableId) {
             // If the cell value is the image path, create an image element
             if (typeof cellValue === "string" && cellValue.endsWith(".png") || cellValue.endsWith(".gif")) {
                 const image = document.createElement("img");
-                image.setAttribute("src", cellValue); // Set the image source
+                image.setAttribute("src", cellValue);
+                image.setAttribute("alt", cellValue);
                 cell.appendChild(image);
             } else {
                 // Otherwise, just set the cell content as text

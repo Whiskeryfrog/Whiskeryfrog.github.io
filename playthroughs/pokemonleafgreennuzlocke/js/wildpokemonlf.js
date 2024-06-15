@@ -51,6 +51,7 @@ function populateTable(tableData, tableId) {
         const pokemonImage = document.createElement("img");
         pokemonImage.classList.add("nopad");
         pokemonImage.setAttribute("src", data.pokemon.image);
+        pokemonImage.setAttribute("alt", pokemonName);
 
         nameCell.appendChild(nameContent);
         nameCell.appendChild(pokemonImage);
@@ -65,6 +66,7 @@ function populateTable(tableData, tableId) {
         const typeCell = document.createElement("td");
         const typeImage = document.createElement("img");
         typeImage.setAttribute("src", data.pokemon.type);
+        typeImage.setAttribute("alt", data.pokemon.type);
         typeCell.appendChild(typeImage);
         rowElement.appendChild(typeCell);
 
