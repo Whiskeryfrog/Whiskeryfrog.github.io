@@ -74,7 +74,7 @@ function toggleElement(elementId) {
 
 // Function to show videos
 function showVideo() {
-    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    const videoscreens = document.querySelectorAll(".youtubevideo");
     videoscreens.forEach(videoscreen => {
         videoscreen.style.display = "block";
     });
@@ -83,7 +83,7 @@ function showVideo() {
 
 // Function to hide videos
 function hideVideo() {
-    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    const videoscreens = document.querySelectorAll(".youtubevideo");
     videoscreens.forEach(videoscreen => {
         videoscreen.style.display = "none";
     });
@@ -93,7 +93,7 @@ function hideVideo() {
 // Function to set video visibility based on saved state
 function setVideoVisibility() {
     const videosVisible = localStorage.getItem('videosVisible');
-    const videoscreens = document.querySelectorAll(".subcontainer.youtubelist");
+    const videoscreens = document.querySelectorAll(".youtubevideo");
 
     if (videosVisible === 'true') {
         videoscreens.forEach(videoscreen => {

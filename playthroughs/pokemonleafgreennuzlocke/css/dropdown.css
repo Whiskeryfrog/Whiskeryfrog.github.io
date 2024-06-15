@@ -303,6 +303,9 @@
     .showbtn{
         font-size: 10px;
     }
+    .bannerNewSize{
+        max-width: 300px;
+    }
 }
 
 .route1 {

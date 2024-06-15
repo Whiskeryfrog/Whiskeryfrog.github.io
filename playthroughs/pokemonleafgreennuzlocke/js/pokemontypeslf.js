@@ -37,4 +37,7 @@ const waterPoison = "sprites/types/water-poison.png";
 const fireFlying = "sprites/types/fire-flying.png";
 const electricFlying = "sprites/types/electric-flying.png";
 const iceFlying = "sprites/types/ice-flying.png";
-
+const waterFighting = "sprites/types/water-fighting.png";
+const icePsychic = "sprites/types/ice-psychic.png";
+const rockWater = "sprites/types/rock-water.png";
+const rockFlying = "sprites/types/rock-flying.png";

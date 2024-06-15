@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../css/lite-yt-embed.css">
 </head>
 
 <body>
@@ -114,7 +115,7 @@
                         <span class="bigtext">POKEMON LEAFGREEN NUZLOCKE</span>
                     </div>
                     <span class="bigtext slightlysmall" style="color: white;">Introduction to the Playthrough</span>
-                    <img src="../../images/pokemonlogoleafgreenNoBg.png" class="bannerimage bannerNewSize"
+                    <img src="../../images/pokemonlogoleafgreenNoBg.webp" class="bannerimage bannerNewSize"
                         alt="pokemon leafgreen nuzlocke logo" loading="lazy">
                     <div class="containerMain">
                         <div class="limiter">
@@ -135,6 +136,8 @@
                     <span class="bigtext slightlysmall" style="color: white;">INSTRUCTIONS</span>
                     <div class="containerMain">
                         <div class="limiter">
+                            <span class="bigtext">1. Episodes</span>
+                            <hr class="linebreaker">
                             <a href="#thetoppage">
                                 <div class="dropdown">
                                     <button onclick="glowButton()" class="dropbtn"><i class="fas fa-search"></i>
@@ -153,6 +156,8 @@
                     </div>
                     <div class="containerMain">
                         <div class="limiter">
+                            <span class="bigtext">2. Videos Button</span>
+                            <hr class="linebreaker">
                             <a href="#thetoppage" onclick="glowShowButton()"><button class="showbtn">Show
                                     Episode</button></a>
                             <a href="#thetoppage" onclick="glowHideButton()"><button class="showbtn">Hide
@@ -164,6 +169,8 @@
                     </div>
                     <div class="containerMain">
                         <div class="limiter">
+                            <span class="bigtext">3. Encounters Section</span>
+                            <hr class="linebreaker">
                             <button id="showAll0" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
                                     alt="show all button"></button>
                             <p>Clicking the grass button will show you all of the possible encounters per route.
@@ -187,6 +194,8 @@
                     </div>
                     <div class="containerMain">
                         <div class="limiter">
+                            <span class="bigtext">4. Trainers Section</span>
+                            <hr class="linebreaker">
                             <div class="col containerMain2" onclick="toggleElement('displaytesttable')">
                                 <div class="limiter">
                                     <span class="bigtext slightlysmall titlealign  importantname">TOADMAN (Rival)
@@ -232,8 +241,6 @@
                             </p>
                         </div>
                     </div>
-                    <p class="" style="color: white;">That's pretty much it.
-                    </p>
                     <hr class="linebreaker">
                     <span class="bigtext slightlysmall" style="color: white;">SYMBOLS</span>
                     <div class="containerMain">
@@ -481,12 +488,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Episode 1 - This series
                         will most likely be cancelled halfway through"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px; ">
-                        <iframe src="https://www.youtube.com/embed/z7nrU5ErHpk?si=uu3Tt7jmMZlOqNx7"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                    <lite-youtube class="youtubevideo" videoid="z7nrU5ErHpk"></lite-youtube>
                     <p class="textjustify" style="color: white;">This is the first episode of the playthrough. The
                         things that I did in this episode is that
                         I picked my starter and battled my rival as soon as he chose his. I had to pick up a package
@@ -614,14 +616,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 2 -
                         Very Looooooooong forest"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/99NT8e4OhVY?si=9vKslRUM4bvhT4z_"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="99NT8e4OhVY"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <div class="col containerMain">
@@ -679,14 +674,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 3 -
                         Good thing I started with Squirtle"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/aY8DG28Y7MM?si=vFGpNLkdWpEPEnQx"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="aY8DG28Y7MM"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll3" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -764,14 +752,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 4 -
                         I Sped Up Most Pokémon Battles in this Episode"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/04JGG7xF-fs?si=v40nwhT_3v88QiWd"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="04JGG7xF-fs"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll4" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -883,14 +864,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 5 -
                         Look Closely at the Thumbnail"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/fnuHq8D2c1Y?si=DTgGD21LohRDV531"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="fnuHq8D2c1Y"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll5" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -996,14 +970,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 6 -
                         Not Too Thankful that my Starter is Squirtle"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/VJvnkvnBDIs?si=5rUQepa9ynlXVNgO"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="VJvnkvnBDIs"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <div class="containerMain">
@@ -1053,14 +1020,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 7 -
                         Vermillion dollars"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/39azBpM_r14?si=SU_qW-9VzU8JNFhp"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="39azBpM_r14"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll7" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -1200,14 +1160,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 8 -
                         That Time I "GAME ENDED" my Rival's Raticate"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/6TtZLgiaI0w?si=AucHZv2bDh8ENRVL"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="6TtZLgiaI0w"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <div class="col containerMain">
@@ -1265,14 +1218,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 9 -
                         Normal Rat V.S. Electric Rat"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/_qhjVqA1kco?si=PJ9Uxi4RncE0EDKd"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="_qhjVqA1kco"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <div class="col containerMain">
@@ -1327,14 +1273,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 10 -
                         Trainer Beatdown"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/klH7wJdonIM?si=vts9vjo1n0ASrdkW"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="klH7wJdonIM"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll10" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -1420,14 +1359,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 11 -
                         Dank Tunnel"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/jV0cdqCj0SM?si=mJyBleFlpKalH9MP"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="jV0cdqCj0SM"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll11" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -1530,14 +1462,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 12 -
                         Nothing Much, Just Trainers"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/NECzipb3f1Q?si=aQ0f_0NaYVbMDqbk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="NECzipb3f1Q"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll12" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -1642,14 +1567,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 13 -
                         This Gym is Surprisingly Tough Without A Decent Fire"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/E-PzmNIxJHU?si=4zpIuFV6C0TF1-yz"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="E-PzmNIxJHU"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <div class="col containerMain">
@@ -1720,14 +1638,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 14 -
                         Good Thing This isn't Twitch Plays Pokémon"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/oE_9iu3atUA?si=CP_Df4khgyqzP-Zz"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="oE_9iu3atUA"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <div class="col containerMain">
@@ -1791,14 +1702,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 15 -
                         Can Pokémon Talk when They're Dead?"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/zf8jWrXtPtk?si=wWl4DdeQcJwpwpKW"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="zf8jWrXtPtk"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll15" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -1880,14 +1784,7 @@
                     <span class="bigtext slightlysmall" style="color: white;">"Pokémon LeafGreen Nuzlocke - Episode 16 -
                         Trainer Mayhem"</span>
                     <hr class="linebreaker">
-                    <div class="subcontainer youtubelist" style="margin-top: 10px;">
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/BQR6Hu9VTKA?si=uMU3m-vmW2foAJTe"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-
+                    <lite-youtube class="youtubevideo" videoid="BQR6Hu9VTKA"></lite-youtube>
                     <span class="bigtext slightlysmall" style="color: white;">All encounters in this
                         episode</span>
                     <button id="showAll16" class="showbtn"><img class="buttonimg" src="sprites/allEncounters.png"
@@ -2026,6 +1923,7 @@
     <script src="js/wildpokemonlf.js"></script>
     <script src="js/partylf.js"></script>
     <script src="js/deathslf.js"></script>
+    <script src="../../js/lite-yt-embed.js"></script>
 </body>
 
 </html>
