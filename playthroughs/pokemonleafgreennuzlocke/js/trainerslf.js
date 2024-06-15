@@ -928,16 +928,6 @@ const rival5Card = trainerCard2('TOADMAN (Rival)',
                                "normal");
 const rival5Container = document.getElementById('rival5Container');
 rival5Container.innerHTML = rival5Card;
-const meganCard = trainerCard2('Megan',
-                               'megan',
-                               'megan1',
-                               'megan2',
-                               lass, 
-                               'Not really difficult, just way too many Pokémon.',
-                               "", 
-                               "easy");
-const meganContainer = document.getElementById('meganContainer');
-meganContainer.innerHTML = meganCard;
 
 const episode12= [
   { name: 'Julia', 
@@ -953,6 +943,13 @@ difficulty: 'extremely easy' },
  insight: '',
 classimp: '',
 difficulty: 'extremely easy' },
+
+  { name: 'Megan', 
+      id: 'megan', 
+   image: lass, 
+ insight: 'Not really difficult, just way too many Pokémon.',
+classimp: '',
+difficulty: 'easy' },
 
   { name: 'Glenn', 
       id: 'glenn', 
@@ -1019,17 +1016,6 @@ difficulty: 'easy' }
 
 ];
 //EPISODE13
-const maryCard = trainerCard2('Mary',
-                               'mary',
-                               'mary1',
-                               'mary2',
-                               cooltrainerFemale, 
-                               'Way too many Pokémon for regular trainer in a gym.',
-                               "", 
-                               "normal");
-const maryContainer = document.getElementById('maryContainer');
-maryContainer.innerHTML = maryCard;
-
 const episode13= [
   { name: 'Lea & Jed', 
       id: 'leaandjed', 
@@ -1044,6 +1030,13 @@ difficulty: 'hard' },
  insight: '',
 classimp: '',
 difficulty: 'easy' },
+
+  { name: 'Mary', 
+      id: 'mary', 
+   image: cooltrainerFemale, 
+ insight: 'Way too many Pokémon for regular trainer in a gym.',
+classimp: '',
+difficulty: 'normal' },
 
   { name: 'Bridget', 
       id: 'bridget', 
@@ -1089,16 +1082,7 @@ difficulty: 'hard' }
 
 ];
 //EPISODE 14
-const rocketGruntHideout7Card = trainerCard2('Rocket Grunt',
-                               'rocketGruntHideout7',
-                               'rocketGruntHideout71',
-                               'rocketGruntHideout72',
-                               rocketGruntMale, 
-                               '',
-                               "", 
-                               "easy");
-const rocketGruntHideout7Container = document.getElementById('rocketGruntHideout7Container');
-rocketGruntHideout7Container.innerHTML = rocketGruntHideout7Card;
+
 
 const episode14= [
   { name: 'Rocket Grunt', 
@@ -1131,6 +1115,13 @@ difficulty: 'easy' },
 
   { name: 'Rocket Grunt', 
       id: 'rocketGruntHideout5', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntHideout7', 
    image: rocketGruntMale, 
  insight: '',
 classimp: '',
@@ -2065,17 +2056,11 @@ const eliandanne = [
   ["Lv.22", "Lv.22"],
   [normal, normal]
 ];
-const megan1 = [
-  ["Pidgey", "Rattata", "Nidoran♂"],
-  [pidgeyImage, rattataImage, nidoranMImage],
-  ["Lv.19", "Lv.19", "Lv.19"],
-  [normalFlying, normal, poison]
-];
-const megan2 = [
-  ["Meowth", "Pikachu"],
-  [meowthImage, pikachuImage],
-  ["Lv.19", "Lv.19"],
-  [normal, electric]
+const megan = [
+  ["Pidgey", "Rattata", "Nidoran♂", "Meowth", "Pikachu"],
+  [pidgeyImage, rattataImage, nidoranMImage, meowthImage, pikachuImage],
+  ["Lv.19", "Lv.19", "Lv.19", "Lv.19", "Lv.19"],
+  [normalFlying, normal, poison, normal, electric]
 ];
 const andrea = [
   ["Meowth", "Meowth", "Meowth"],
@@ -2138,17 +2123,11 @@ const bridget = [
   ["Lv.21", "Lv.21", "Lv.21", "Lv.21"],
   [grassPoison, grassPoison, grassPoison, grassPoison]
 ];
-const mary1 = [
-  ["Bellsprout", "Oddish", "Weepinbell"],
-  [bellsproutImage, oddishImage, weepinbellImage],
-  ["Lv.22", "Lv.22", "Lv.22"],
-  [grassPoison, grassPoison, grassPoison]
-];
-const mary2 = [
-  ["Gloom", "Ivysaur"],
-  [gloomImage, ivysaurImage],
-  ["Lv.22", "Lv.22"],
-  [grassPoison, grassPoison]
+const mary = [
+  ["Bellsprout", "Oddish", "Weepinbell", "Gloom", "Ivysaur"],
+  [bellsproutImage, oddishImage, weepinbellImage, gloomImage, ivysaurImage],
+  ["Lv.22", "Lv.22", "Lv.22", "Lv.22", "Lv.22"],
+  [grassPoison, grassPoison, grassPoison, grassPoison, grassPoison]
 ];
 const lisa = [
   ["Oddish", "Gloom"],
@@ -2211,17 +2190,11 @@ const rocketGruntHideout5 = [
   ["Lv.20", "Lv.20", "Lv.20"],
   [poison, poison, poison]
 ];
-const rocketGruntHideout71 = [
-  ["Zubat", "Koffing", "Grimer"],
-  [zubatImage, koffingImage, grimerImage],
-  ["Lv.17", "Lv.17", "Lv.17"],
-  [poisonFlying, poison, poison]
-];
-const rocketGruntHideout72 = [
-  ["Zubat", "raticateImage"],
-  [zubatImage, raticateImage],
-  ["Lv.17", "Lv.17"],
-  [poisonFlying, normal]
+const rocketGruntHideout7 = [
+  ["Zubat", "Koffing", "Grimer", "Zubat", "raticateImage"],
+  [zubatImage, koffingImage, grimerImage, zubatImage, raticateImage],
+  ["Lv.17", "Lv.17", "Lv.17", "Lv.17", "Lv.17"],
+  [poisonFlying, poison, poison, poisonFlying, normal]
 ];
 const rocketGruntHideout8 = [
   ["Machop", "Machop"],
@@ -2484,8 +2457,7 @@ populateTable(julia, "julia");
 populateTable(rich, "rich");
 populateTable(glenn, "glenn");
 populateTable(eliandanne, "eliandanne");
-populateTable(megan1, "megan1");
-populateTable(megan2, "megan2");
+populateTable(megan, "megan");
 populateTable(andrea, "andrea");
 populateTable(leslie, "leslie");
 populateTable(paige, "paige");
@@ -2499,8 +2471,7 @@ populateTable(kay, "kay");
 populateTable(bridget, "bridget");
 populateTable(tina, "tina");
 populateTable(tamia, "tamia");
-populateTable(mary1, "mary1");
-populateTable(mary2, "mary2");
+populateTable(mary, "mary");
 populateTable(lisa, "lisa");
 populateTable(lori, "lori");
 populateTable(erika, "erika");
@@ -2510,8 +2481,7 @@ populateTable(rocketGruntHideout2, "rocketGruntHideout2");
 populateTable(rocketGruntHideout3, "rocketGruntHideout3");
 populateTable(rocketGruntHideout4, "rocketGruntHideout4");
 populateTable(rocketGruntHideout5, "rocketGruntHideout5");
-populateTable(rocketGruntHideout71, "rocketGruntHideout71");
-populateTable(rocketGruntHideout72, "rocketGruntHideout72");
+populateTable(rocketGruntHideout7, "rocketGruntHideout7");
 populateTable(rocketGruntHideout8, "rocketGruntHideout8");
 populateTable(rocketGruntHideout9, "rocketGruntHideout9");
 populateTable(rocketGruntHideout10, "rocketGruntHideout10");
