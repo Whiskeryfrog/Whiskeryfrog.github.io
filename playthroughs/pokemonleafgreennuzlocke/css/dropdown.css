@@ -1,5 +1,5 @@
 .dropbtn {
-    background-color: #5ca904;
+    background-color: #0d8402;
     color: white;
     padding: 5px;
     border: none;
@@ -105,7 +105,7 @@
 
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #346002;
+    background-color: #075700;
 }
 
 #myInput {
@@ -194,11 +194,11 @@
 }
 
 .topPanel {
-    background-color: #5ca904 !important;
+    background-color: #0d8402 !important;
 }
 
 .topPanel a:hover {
-    background-color: #346002 !important;
+    background-color: #075700 !important;
 }
 
 .containerMain {
