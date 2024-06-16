@@ -213,6 +213,27 @@
         margin: 10px 0px 10px 0px;
     }
     
+    .showbtn{
+        background-color: rgb(68, 67, 67);
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px  rgb(27, 27, 27);
+        padding: 10px 15px;
+        font-size: 20px;
+        margin: 0 5px;
+        margin-bottom: 0px;
+    }
+
+    .showbtn img{
+        width: 25px;
+        height: auto;
+        cursor: pointer;
+    }
+    
     
 }
 
