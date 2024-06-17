@@ -1,0 +1,7 @@
+# Ignore apikey.js file
+js/apikey.js
+
+# Other common ignores
+node_modules/
+.DS_Store
+.env
