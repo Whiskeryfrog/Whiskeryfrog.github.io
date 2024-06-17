@@ -695,6 +695,19 @@ a .smallscreen1 {
     margin: 0 0px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
+
+  body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: #fbf7ef url(#) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 0;
+    box-sizing: border-box;
+    animation: slide 60s linear infinite alternate; /* Set animation-direction to alternate */
+    background-color: rgba(5, 5, 5, 0.8) !important;
+    color: #e6e6e6 !important;
+  }
 }
 /* End - container body */
 

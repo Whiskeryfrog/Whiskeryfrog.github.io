@@ -778,25 +778,66 @@ const route12superrod = [
     }
 ];
 
+const route13 = [
+    {
+        pokemon: bellsprout0,
+        level: "22-26",
+        encounterRate: "35%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: venonat0,
+        level: "24-26",
+        encounterRate: "30%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: pidgey0,
+        level: "25-27",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: pidgeotto0,
+        level: "29",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: weepinbell0,
+        level: "28-30",
+        encounterRate: "5%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: ditto0,
+        level: "25",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+];
 
-const route13_1=[
-    ["<i class='fa-solid fa-flag'></i> Bellsprout <i class='fa-solid fa-seedling'></i>", " Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Pidgey <i class='fa-solid fa-seedling'></i>"],
-    [bellsprout, venonat, pidgey],
-    ["35% - Lv 22-26", "30% - Lv 24-26", "20% - Lv 25-27"],
-    [grassPoison, bugPoison, normalFlying]
+const route13superrod = [
+    {
+        pokemon: krabby0,
+        level: "15-35",
+        encounterRate: "84%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    }
 ];
-const route13_2=[
-    [" Pidgeotto <i class='fa-solid fa-seedling'></i>", " Weepinbell <i class='fa-solid fa-seedling'></i>", "Ditto <i class='fa-solid fa-seedling'></i>"],
-    [pidgeotto, weepinbell, ditto],
-    ["5% - Lv 29", "5% - Lv 28-30", "5% - Lv 25"],
-    [normalFlying, grassPoison, normal]
-];
-const route13superrod=[
-    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [krabby, gyarados, slowpoke],
-    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
-    [water, waterFlying, waterPsychic]
-];
+
 //episode17
 
 const safariZoneArea1_1 =[
@@ -1112,6 +1153,8 @@ populateTable(pokemontower, "pokemontower");
 //episode16
 populateTable(route12, "route12");
 populateTable(route12superrod, "route12superrod");
+populateTable(route13, "route13");
+populateTable(route13superrod, "route13superrod");
 //episode17
 //episode18
 //episode19

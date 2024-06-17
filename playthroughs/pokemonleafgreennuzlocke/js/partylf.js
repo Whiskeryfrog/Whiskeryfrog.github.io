@@ -219,7 +219,7 @@ const party16_1 =[
     ["GILAMONSTR", "EGG", "KOMODO"],
     [wartortle,voltorb,sandslash],
     ["Lv.33","Lv.16","Lv.22"],
-    [water, grassPoison, ground]
+    [water, electric, ground]
 ];
 const party16_2 =[
     ["ANACONDA", "IGUANA", "CROCODILE"],
