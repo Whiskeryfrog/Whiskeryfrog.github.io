@@ -155,10 +155,11 @@ document.getElementById("showCaught15").addEventListener("click", () => showCaug
 document.getElementById("showAll16").addEventListener("click", () => showAll("pokemon-table"));
 document.getElementById("showCaught16").addEventListener("click", () => showCaught("pokemon-table"));
 
+document.getElementById("showAll17").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught17").addEventListener("click", () => showCaught("pokemon-table"));
+
 document.addEventListener('DOMContentLoaded', () => {
     setTableVisibility("pokemon-table");
-    // Add additional table classes if there are more than one
-    // setTableVisibility("another-table-class");
 });
 
 //episode 1
@@ -839,157 +840,327 @@ const route13superrod = [
 ];
 
 //episode17
+const safariZoneArea1 = [
+    {
+        pokemon: nidoranf0,
+        level: "22",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: exeggcute0,
+        level: "24-25",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: rhyhorn0,
+        level: "25",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: venonat0,
+        level: "22",
+        encounterRate: "15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: nidorina0,
+        level: "31",
+        encounterRate: "10%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: nidorino0,
+        level: "31",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: parasect0,
+        level: "30",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: pinsir0,
+        level: "23",
+        encounterRate: "4%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: chansey0,
+        level: "23",
+        encounterRate: "1%",
+        ifCaught: ""  
+    },
+];
+const safariZonesuperrod = [
+    {
+        pokemon: goldeen0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: seaking0,
+        level: "20-30",
+        encounterRate: "40%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: dratini0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "15-35",
+        encounterRate: "4%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: dragonair0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    },
+];
+const safariZoneArea2 = [
+    {
+        pokemon: nidoranf0,
+        level: "24",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: doduo0,
+        level: "26",
+        encounterRate: "20%",
+        ifCaught: "failed" 
+    },
+    {
+        pokemon: exeggcute0,
+        level: "23-25",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: paras0,
+        level: "22",
+        encounterRate: "15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: nidorina0,
+        level: "33",
+        encounterRate: "10%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: nidoranm0,
+        level: "24",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: parasect0,
+        level: "25",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: kangaskhan0,
+        level: "25",
+        encounterRate: "4%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: pinsir0,
+        level: "28",
+        encounterRate: "1%",
+        ifCaught: ""  
+    },
+];
+const safariZoneArea3 = [
+    {
+        pokemon: nidoranf0,
+        level: "30",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: exeggcute0,
+        level: "25-27",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: rhyhorn0,
+        level: "26",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: paras0,
+        level: "23",
+        encounterRate: "15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: nidorina0,
+        level: "30",
+        encounterRate: "10%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: nidorino0,
+        level: "30",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: venomoth0,
+        level: "32",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: chansey0,
+        level: "26",
+        encounterRate: "4%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: tauros0,
+        level: "32",
+        encounterRate: "1%",
+        ifCaught: ""  
+    },
+];
+const safariZoneArea4 = [
+    {
+        pokemon: nidoranf0,
+        level: "22",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: doduo0,
+        level: "26",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: exeggcute0,
+        level: "25-27",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: venonat0,
+        level: "23",
+        encounterRate: "15%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: nidorina0,
+        level: "30",
+        encounterRate: "10%",
+        ifCaught: "already"  
+    },
+    {
+        pokemon: nidoranm0,
+        level: "30",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: venomoth0,
+        level: "32",
+        encounterRate: "5%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: tauros0,
+        level: "25",
+        encounterRate: "4%",
+        ifCaught: ""  
+    },
+    {
+        pokemon: kangaskhan0,
+        level: "28",
+        encounterRate: "1%",
+        ifCaught: ""  
+    },
+];
+const route17 = [
+    {
+        pokemon: doduo0,
+        level: "24-28",
+        encounterRate: "35%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: spearow0,
+        level: "20-22",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: raticate0,
+        level: "25-29",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: rattata0,
+        level: "22",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: fearow0,
+        level: "25-27",
+        encounterRate: "5%",
+        ifCaught: "already"  
+    }
+];
 
-const safariZoneArea1_1 =[
-    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", " Exeggcute <i class='fa-solid fa-seedling'></i>", " Rhyhorn <i class='fa-solid fa-seedling'></i>"],
-    [nidoranf, exeggcute, rhyhorn ],
-    ["20% - Lv 22", "20% - Lv 24-25", "20% - Lv 25"],
-    [poison, grassPsychic, rockGround ]
+const vermillionCitysuperrod = [
+    {
+        pokemon: staryu0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: krabby0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: horsea0,
+        level: "25-30",
+        encounterRate: "4%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: ""  
+    }
 ];
-const safariZoneArea1_2 =[
-    [" Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidorino <i class='fa-solid fa-seedling'></i>"],
-    [venonat, nidorina, nidorino],
-    ["15% - Lv 22", "10% - Lv 31", "5% - Lv 31"],
-    [bugPoison, poison, poison]
-];
-const safariZoneArea1_3 =[
-    [" Parasect <i class='fa-solid fa-seedling'></i>", " Pinsir <i class='fa-solid fa-seedling'></i>", " Chansey <i class='fa-solid fa-seedling'></i>"],
-    [parasect, pinsir, chansey],
-    ["5% - Lv 30", "4% - Lv 23", "1% - Lv 23"],
-    [bugGrass, bug, normal]
-];
-const safariZoneArea1superrod_1 =[
-    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
-    [goldeen, seaking, dratini],
-    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
-    [water, water, dragon]
-];
-const safariZoneArea1superrod_2 =[
-    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
-    [slowpoke, dragonair],
-    ["4% - Lv 15-35", "1% - Lv 25-35"],
-    [waterPsychic, dragon]
-];
-
-const safariZoneArea2_1 =[
-    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", "<span class='failenc'> Doduo <i class='fa-solid fa-seedling'></i></span>", " Exeggcute <i class='fa-solid fa-seedling'></i>"],
-    [nidoranf, doduo, exeggcute ],
-    ["20% - Lv 24", "20% - Lv 26", "20% - Lv 23-25"],
-    [poison, normalFlying, grassPsychic ]
-];
-const safariZoneArea2_2 =[
-    ["Paras <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidoran♂ <i class='fa-solid fa-seedling'></i>"],
-    [paras, nidorina, nidoranm ],
-    ["15% - Lv 22", "10% - Lv 33", "5% - Lv 24"],
-    [bugGrass, poison, poison ]
-];
-const safariZoneArea2_3 =[
-    [" Parasect <i class='fa-solid fa-seedling'></i>", " Kangaskhan <i class='fa-solid fa-seedling'></i>", " Pinsir <i class='fa-solid fa-seedling'></i>"],
-    [parasect, kangaskhan, pinsir],
-    ["5% - Lv 25", "4% - Lv 25", "1% - Lv 28"],
-    [bugGrass, normal, bug]
-];
-const safariZoneArea2superrod_1 =[
-    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
-    [goldeen, seaking, dratini],
-    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
-    [water, water, dragon]
-];
-const safariZoneArea2superrod_2 =[
-    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
-    [slowpoke, dragonair],
-    ["4% - Lv 15-35", "1% - Lv 25-35"],
-    [waterPsychic, dragon]
-];
-
-const safariZoneArea3_1 =[
-    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", " Exeggcute <i class='fa-solid fa-seedling'></i>", " Rhyhorn <i class='fa-solid fa-seedling'></i>"],
-    [nidoranf, exeggcute, rhyhorn ],
-    ["20% - Lv 30", "20% - Lv 25-27", "20% - Lv 26"],
-    [poison, grassPsychic, rockGround ]
-];
-const safariZoneArea3_2 =[
-    [" Paras <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidorino <i class='fa-solid fa-seedling'></i>"],
-    [paras, nidorina, nidorino],
-    ["15% - Lv 23", "10% - Lv 30", "5% - Lv 30"],
-    [bugGrass, poison, poison]
-];
-const safariZoneArea3_3 =[
-    [" Venomoth <i class='fa-solid fa-seedling'></i>", "Chansey <i class='fa-solid fa-seedling'></i>", " Tauros <i class='fa-solid fa-seedling'></i>"],
-    [venomoth, chansey, tauros],
-    ["5% - Lv 32", "4% - Lv 26", "1% - Lv 328"],
-    [bugPoison, normal, normal]
-];
-const safariZoneArea3superrod_1 =[
-    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
-    [goldeen, seaking, dratini],
-    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
-    [water, water, dragon]
-];
-const safariZoneArea3superrod_2 =[
-    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
-    [slowpoke, dragonair],
-    ["4% - Lv 15-35", "1% - Lv 25-35"],
-    [waterPsychic, dragon]
-];
-
-const safariZoneArea4_1 =[
-    ["<i class='fa-solid fa-flag'></i> Nidoran♀ <i class='fa-solid fa-seedling'></i>", "<span class='failenc'> Doduo <i class='fa-solid fa-seedling'></i></span>", " Exeggcute <i class='fa-solid fa-seedling'></i>"],
-    [nidoranf, doduo, exeggcute ],
-    ["20% - Lv 22", "20% - Lv 26", "20% - Lv 25-27"],
-    [poison, normalFlying, grassPsychic ]
-];
-const safariZoneArea4_2 =[
-    ["Venonat <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Nidorina <i class='fa-solid fa-seedling'></i>", " Nidoran♂ <i class='fa-solid fa-seedling'></i>"],
-    [venonat, nidorina, nidoranm ],
-    ["15% - Lv 23", "10% - Lv 30", "5% - Lv 30"],
-    [bugPoison, poison, poison ]
-];
-const safariZoneArea4_3 =[
-    ["Venomoth <i class='fa-solid fa-seedling'></i>", " Tauros <i class='fa-solid fa-seedling'></i>", " Kangaskhan <i class='fa-solid fa-seedling'></i>"],
-    [venomoth, tauros, kangaskhan ],
-    ["5% - Lv 32", "4% - Lv 25", "1% - Lv 28"],
-    [bugPoison, normal, normal ]
-];
-const safariZoneArea4superrod_1 =[
-    [" Goldeen <i class='fa-solid fa-fish'></i>", " Seaking <i class='fa-solid fa-fish'></i>", " Dratini <i class='fa-solid fa-fish'></i>"],
-    [goldeen, seaking, dratini],
-    ["40% - Lv 15-25", "40% - Lv 20-30", "15% - Lv 15-25"],
-    [water, water, dragon]
-];
-const safariZoneArea4superrod_2 =[
-    [" Slowpoke <i class='fa-solid fa-fish'></i>", " Dragonair <i class='fa-solid fa-fish'></i>"],
-    [slowpoke, dragonair],
-    ["4% - Lv 15-35", "1% - Lv 25-35"],
-    [waterPsychic, dragon]
-];
-
-const route17_1 =[
-    ["<span class='succenc'> Doduo <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Raticate <i class='fa-solid fa-seedling'></i>"],
-    [doduo, spearow, raticate ],
-    ["35% - Lv 24-28", "30% - Lv 20-22", "25% - Lv 25-29"],
-    [normalFlying, normalFlying, normal ]
-];
-const route17_2 =[
-    ["<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Fearow <i class='fa-solid fa-seedling'></i>"],
-    [rattata, fearow],
-    ["5% - Lv 22", "5% - Lv 25-27"],
-    [normal, normalFlying]
-];
-
-const vermillionCitysuperrod_1 =[
-    ["<span class='succenc'> Staryu <i class='fa-solid fa-fish'></i></span>", " Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>"],
-    [staryu, krabby, gyarados],
-    ["40% - Lv 15-25", "40% - Lv 15-25", "15% - Lv 15-25"],
-    [water, water, waterFlying]
-];
-const vermillionCitysuperrod_2 =[
-    [" Horsea <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [horsea, slowpoke],
-    ["4% - Lv 25-30", "1% - Lv 25-35"],
-    [water, waterPsychic]
-];
-
 //episode18
 
 const saffronCity = [
@@ -1156,6 +1327,13 @@ populateTable(route12superrod, "route12superrod");
 populateTable(route13, "route13");
 populateTable(route13superrod, "route13superrod");
 //episode17
+populateTable(safariZoneArea1, "safariZoneArea1");
+populateTable(safariZonesuperrod, "safariZonesuperrod");
+populateTable(safariZoneArea2, "safariZoneArea2");
+populateTable(safariZoneArea3, "safariZoneArea3");
+populateTable(safariZoneArea4, "safariZoneArea4");
+populateTable(route17, "route17");
+populateTable(vermillionCitysuperrod, "vermillionCitysuperrod");
 //episode18
 //episode19
 //episode20
