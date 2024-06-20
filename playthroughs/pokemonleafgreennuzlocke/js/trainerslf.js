@@ -118,6 +118,7 @@ const chaneller = "sprites/chaneller.png";
 const rocker = "sprites/Spr_FRLG_Rocker.png";
 const birdKeeper = "sprites/4.png";
 const crushkin = "sprites/crushkin.png";
+const cueball = "sprites/cueball.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
@@ -1519,6 +1520,240 @@ classimp: '',
 difficulty: 'extremely easy' }
 
 ];
+//EPISODE 16
+const episode17= [
+  { name: 'Yazmin', 
+      id: 'yazmin', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Edwin', 
+      id: 'edwin', 
+   image: birdKeeper, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Chester', 
+      id: 'chester', 
+   image: birdKeeper, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Kindra', 
+      id: 'kindra', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Olivia', 
+      id: 'olivia', 
+   image: beauty, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Grace', 
+      id: 'grace', 
+   image: beauty, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Alex', 
+      id: 'alex', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Ernest', 
+      id: 'ernest', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Jacob', 
+      id: 'jacob', 
+   image: birdKeeper, 
+ insight: 'A good place to train if you have a VS. seeker',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Wilton', 
+      id: 'wilton', 
+   image: birdKeeper, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Ramiro', 
+      id: 'ramiro', 
+   image: birdKeeper, 
+ insight: 'Be very careful because of the potential level gap.',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'William', 
+      id: 'william', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Corey', 
+      id: 'corey', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Zeek', 
+      id: 'zeek', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Nikolas', 
+      id: 'nikolas', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Raul', 
+      id: 'raul', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Isaiah', 
+      id: 'isaiah', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Virgil', 
+      id: 'virgil', 
+   image: biker, 
+ insight: 'Will not bury the light',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Billy', 
+      id: 'billy', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Jamal', 
+      id: 'jamal', 
+   image: cueball, 
+ insight: 'Normal types worst nightmare!',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Jaxon', 
+      id: 'jaxon', 
+   image: biker, 
+ insight: 'Too much bulk, be very careful.',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Lao', 
+      id: 'lao', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Koji', 
+      id: 'koji', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Hideo', 
+      id: 'hideo', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Luke', 
+      id: 'luke', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Camron', 
+      id: 'camron', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Ruben', 
+      id: 'ruben', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+/*
+  { name: 'Malik', 
+      id: 'malik', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Isaac', 
+      id: 'isaac', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Donald', 
+      id: 'donald', 
+   image: birdKeeper, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Becky', 
+      id: 'becky', 
+   image: camperFemale, 
+ insight: 'Be careful with static',
+classimp: '',
+difficulty: 'normal' },
+
+  { name: 'Ron & Mya', 
+      id: 'ronandmya', 
+   image: crushkin, 
+ insight: 'If you are not ready then you will have a bad time.',
+classimp: '',
+difficulty: 'hard' },
+
+  { name: 'Celia', 
+      id: 'celia', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' }
+ */
+];
 
 function displayTrainerCard(trainer) {
     const card = trainerCard1(trainer.name, trainer.id, trainer.image, trainer.insight, trainer.classimp, trainer.difficulty);
@@ -1542,6 +1777,7 @@ episode13.forEach(displayTrainerCard);
 episode14.forEach(displayTrainerCard);
 episode15.forEach(displayTrainerCard);
 episode16.forEach(displayTrainerCard);
+episode17.forEach(displayTrainerCard);
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -2755,6 +2991,171 @@ const celia = [
   ["Lv.33"],
   [normal]
 ];
+//episode17
+const yazmin = [
+  ["Bellsprout", "Oddish", "Tangela"],
+  [bellsproutImage,oddishImage,tangelaImage],
+  ["Lv.29", "Lv.29", "Lv.29"],
+  [grassPoison, grassPoison, grass]
+];
+const edwin = [
+  ["Pidgeotto", "Farfetch'd", "Doduo", "Pidgey"],
+  [pidgeottoImage,farfetchdImage,doduoImage,pidgeyImage],
+  ["Lv.26", "Lv.26", "Lv.26", "Lv.26"],
+  [normalFlying, normalFlying, normalFlying, normalFlying]
+];
+const chester = [
+  ["Dodrio", "Doduo", "Doduo"],
+  [dodrioImage,doduoImage,doduoImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [normalFlying, normalFlying, normalFlying]
+];
+const kindra = [
+  ["Gloom", "Oddish", "Oddish"],
+  [gloomImage,oddishImage,oddishImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [grassPoison, grassPoison, grassPoison]
+];
+const olivia = [
+  ["Bulbasaur", "Ivysaur"],
+  [bulbasaurImage,ivysaurImage],
+  ["Lv.29", "Lv.29"],
+  [grassPoison, grassPoison]
+];
+const grace = [
+  ["Pidgeotto", "Wigglytuff"],
+  [pidgeottoImage, wigglytuffImage],
+  ["Lv.29", "Lv.29"],
+  [normalFlying, normal]
+];
+const alex = [
+  ["Koffing", "Grimer", "Weezing"],
+  [koffingImage, grimerImage, weezingImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poison, poison, poison]
+];
+const ernest = [
+  ["Koffing", "Koffing", "Weezing", "Koffing", "Grimer"],
+  [koffingImage, koffingImage, weezingImage, koffingImage, grimerImage],
+  ["Lv.25", "Lv.25", "Lv.25", "Lv.25", "Lv.25" ],
+  [poison, poison, poison, poison, poison]
+];
+const jacob = [
+  ["Spearow", "Spearow", "Fearow", "Spearow"],
+  [spearowImage,spearowImage,fearowImage,spearowImage],
+  ["Lv.26", "Lv.26", "Lv.26", "Lv.26"],
+  [normalFlying, normalFlying, normalFlying, normalFlying]
+];
+const wilton = [
+  ["Spearow", "Fearow"],
+  [spearowImage,fearowImage],
+  ["Lv.29", "Lv.29"],
+  [normalFlying, normalFlying]
+];
+const ramiro = [
+  ["Dodrio"],
+  [dodrioImage],
+  ["Lv.34"],
+  [normalFlying]
+];
+const william = [
+  ["Koffing", "Weezing", "Koffing", "Koffing", "Weezing"],
+  [koffingImage, weezingImage, koffingImage, koffingImage, weezingImage],
+  ["Lv.25", "Lv.25", "Lv.25", "Lv.25", "Lv.25" ],
+  [poison, poison, poison, poison, poison]
+];
+const corey = [
+  ["Primeape", "Machoke"],
+  [primeapeImage, machokeImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, fighting]
+];
+const zeek = [
+  ["Machoke"],
+  [machokeImage],
+  ["Lv.33"],
+  [fighting]
+];
+const nikolas = [
+  ["Voltorb", "Voltorb"],
+  [voltorbImage, voltorbImage],
+  ["Lv.29", "Lv.29"],
+  [electric, electric]
+];
+const raul = [
+  ["Mankey", "Primeape"],
+  [mankeyImage, primeapeImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, fighting]
+];
+const isaiah = [
+  ["Machop", "Machamp"],
+  [machopImage, machampImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, fighting]
+];
+const virgil = [
+  ["Weezing", "Koffing", "Weezing"],
+  [weezingImage, koffingImage, weezingImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poison, poison, poison]
+];
+const billy = [
+  ["Muk"],
+  [mukImage],
+  ["Lv.33"],
+  [poison]
+];
+const jamal = [
+  ["Mankey", "Mankey", "Machamp", "Machop"],
+  [mankeyImage, mankeyImage, machampImage, machopImage],
+  ["Lv.26", "Lv.26", "Lv.26", "Lv.26"],
+  [fighting, fighting, fighting, fighting]
+];
+const jaxon = [
+  ["Weezing", "Muk"],
+  [weezingImage, mukImage],
+  ["Lv.29", "Lv.29"],
+  [poison, poison]
+];
+const lao = [
+  ["Grimer", "Koffing"],
+  [grimerImage, koffingImage],
+  ["Lv.29", "Lv.29"],
+  [poison, poison]
+];
+const koji = [
+  ["Machop", "Mankey", "Machop"],
+  [machopImage, mankeyImage, machopImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [fighting, fighting, fighting]
+];
+const hideo = [
+  ["Weezing"],
+  [weezingImage],
+  ["Lv.33"],
+  [poison]
+];
+const luke = [
+  ["Mankey", "Machop"],
+  [mankeyImage, machopImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, fighting]
+];
+const camron = [
+  ["Mankey", "Machop"],
+  [mankeyImage, machopImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, fighting]
+];
+const ruben = [
+  ["Weezing", "Koffing", "Weezing"],
+  [weezingImage, koffingImage, weezingImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poison, poison, poison]
+];
+
+
 //episode1
 populateTable(rival1, "rival1");
 //episode2
@@ -2959,6 +3360,35 @@ populateTable(isaac, "isaac");
 populateTable(becky, "becky");
 populateTable(ronandmya, "ronandmya");
 populateTable(celia, "celia");
+//episode17
+populateTable(yazmin, "yazmin");
+populateTable(edwin, "edwin");
+populateTable(chester, "chester");
+populateTable(kindra, "kindra");
+populateTable(olivia, "olivia");
+populateTable(grace, "grace");
+populateTable(alex, "alex");
+populateTable(ernest, "ernest");
+populateTable(jacob, "jacob");
+populateTable(wilton, "wilton");
+populateTable(ramiro, "ramiro");
+populateTable(william, "william");
+populateTable(corey, "corey");
+populateTable(zeek, "zeek");
+populateTable(nikolas, "nikolas");
+populateTable(raul, "raul");
+populateTable(isaiah, "isaiah");
+populateTable(virgil, "virgil");
+populateTable(billy, "billy");
+populateTable(jamal, "jamal");
+populateTable(jaxon, "jaxon");
+populateTable(lao, "lao");
+populateTable(koji, "koji");
+populateTable(hideo, "hideo");
+populateTable(luke, "luke");
+populateTable(camron, "camron");
+populateTable(ruben, "ruben");
+
 
 
 

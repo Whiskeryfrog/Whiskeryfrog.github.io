@@ -1161,6 +1161,15 @@ const vermillionCitysuperrod = [
         ifCaught: ""  
     }
 ];
+
+const silphco = [
+    {
+        pokemon: lapras0,
+        level: "25",
+        encounterRate: "Gift",
+        ifCaught: "success" 
+    }
+];
 //episode18
 
 const saffronCity = [
@@ -1334,6 +1343,7 @@ populateTable(safariZoneArea3, "safariZoneArea3");
 populateTable(safariZoneArea4, "safariZoneArea4");
 populateTable(route17, "route17");
 populateTable(vermillionCitysuperrod, "vermillionCitysuperrod");
+populateTable(silphco, "silphco");
 //episode18
 //episode19
 //episode20

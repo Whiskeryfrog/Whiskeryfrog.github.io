@@ -5,3 +5,5 @@ js/apikey.js
 node_modules/
 .DS_Store
 .env
+js/apikey.js
+.DS_Store
