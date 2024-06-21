@@ -122,6 +122,8 @@ const cueball = "sprites/cueball.png";
 const scientist = "sprites/scientist.png";
 const juggler = "sprites/juggler.png";
 const blackbelt = "sprites/blackbelt.png";
+const tamer = "sprites/tamer.png";
+const psychicMale = "sprites/psychicMale.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
@@ -131,6 +133,8 @@ const rivalsprite2 = "sprites/rival2.png";
 const ltsurgesprite = "sprites/ltsurge.png";
 const erikasprite = "sprites/Spr_FRLG_Erika.png";
 const giovannisprite = "sprites/giovannie.png";
+const kogasprite = "sprites/koga.png";
+const sabrinasprite = "sprites/sabrina.png";
 /*
 //colton
 const coltonCard = trainerCard1('Colton',
@@ -1970,7 +1974,101 @@ difficulty: 'extremely easy' },
  insight: 'I\'m not sure why decided to not speed up the fight here. After defeating him, you get to choose between Hitmonlee or Hitmonchan. I\'m not too sure if those were his.',
 classimp: '',
 difficulty: 'easy' },
+];
+//EPISODE19
+const episode19= [
+  { name: 'Kayden', 
+      id: 'kayden', 
+   image: juggler, 
+ insight: 'How is this team allowed in this Gym.',
+classimp: '',
+difficulty: 'extremely easy' },
 
+  { name: 'Kirk', 
+      id: 'kirk', 
+   image: juggler, 
+ insight: 'Just HOW ARE THESE SUPPOSE TO BE POISON TYPES',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Edgar', 
+      id: 'edgar', 
+   image: tamer, 
+ insight: 'Now some real poison types',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Phil', 
+      id: 'phil', 
+   image: tamer, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Shawn', 
+      id: 'shawn', 
+   image: juggler, 
+ insight: 'Just when you though the psychic types are done.',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Koga', 
+    id: 'koga', 
+ image: kogasprite, 
+insight: 'A cake walk with a psychic type Pokémon.',
+classimp: 'importantname',
+difficulty: 'extremely easy' },
+];
+//EPISODE20
+const episode20= [
+  { name: 'Cameron', 
+      id: 'cameron', 
+   image: psychicMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Johan', 
+      id: 'johan', 
+   image: psychicMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Tyron', 
+      id: 'tyron', 
+   image: psychicMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Tasha', 
+      id: 'tasha', 
+   image: chaneller, 
+ insight: 'Be very careful with destiny bond. (I\'m not sure if her Pokémon has it.)',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Preston', 
+      id: 'preston', 
+   image: psychicMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Amanda', 
+      id: 'amanda', 
+   image: chaneller, 
+ insight: 'Be very careful with destiny bond.',
+classimp: '',
+difficulty: 'easy' },
+
+{ name: 'Sabrina', 
+    id: 'sabrina', 
+ image: sabrinasprite, 
+insight: 'Don\'t let her Pokémon setup on you.',
+classimp: 'importantname',
+difficulty: 'normal' },
 ];
 
 function displayTrainerCard(trainer) {
@@ -1997,6 +2095,8 @@ episode15.forEach(displayTrainerCard);
 episode16.forEach(displayTrainerCard);
 episode17.forEach(displayTrainerCard);
 episode18.forEach(displayTrainerCard);
+episode19.forEach(displayTrainerCard);
+episode20.forEach(displayTrainerCard);
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -3596,8 +3696,87 @@ const koichi = [
   ["Lv.37", "Lv.37"],
   [fighting, fighting]
 ];
-
-//episode1
+//episode19
+const kayden = [
+  ["Hypno"],
+  [hypnoImage],
+  ["Lv.38"],
+  [psychic]
+];
+const kirk = [
+  ["Drowzee", "Drowzee", "Kadabra", "Drowzee"],
+  [drowzeeImage, drowzeeImage, kadabraImage, drowzeeImage],
+  ["Lv.31", "Lv.31", "Lv.31", "Lv.31"],
+  [psychic, psychic, psychic, psychic]
+];
+const edgar = [
+  ["Arbok", "Sandslash", "Arbok"],
+  [arbokImage, sandslashImage, arbokImage],
+  ["Lv.33", "Lv.33", "Lv.33"],
+  [poison, ground, poison]
+];
+const phil = [
+  ["Sandslash", "Arbok"],
+  [sandslashImage, arbokImage],
+  ["Lv.34", "Lv.34"],
+  [ground, poison]
+];
+const shawn = [
+  ["Drowzee", "Hypno"],
+  [drowzeeImage, hypnoImage],
+  ["Lv.34", "Lv.34"],
+  [psychic, psychic]
+];
+const koga = [
+  ["Koffing", "Muk", "Koffing", "Weezing"],
+  [koffing, muk, koffing, weezing],
+  ["Lv.37", "Lv.39", "Lv.37", "Lv.43"],
+  [poison, poison, poison, poison]
+];
+//episode20
+const cameron = [
+  ["Slowpoke", "Slowpoke", "Slowbro"],
+  [slowpokeImage, slowpokeImage, slowbroImage],
+  ["Lv.33", "Lv.33", "Lv.33"],
+  [waterPsychic, waterPsychic, waterPsychic]
+];
+const johan = [
+  ["Kadabra", "Slowpoke", "Mr.Mime", "Kadabra"],
+  [kadabraImage, slowpokeImage, mrMimeImage, kadabraImage],
+  ["Lv.31", "Lv.31", "Lv.31", "Lv.31"],
+  [psychic, waterPsychic, psychic, psychic]
+];
+const tyron = [
+  ["Mr.Mime", "Kadabra"],
+  [mrMimeImage, kadabraImage],
+  ["Lv.34", "Lv.34"],
+  [psychic, psychic]
+];
+const tasha = [
+  ["Ghastly", "Ghastly", "Haunter"],
+  [gastlyImage, gastlyImage, haunterImage],
+  ["Lv.33", "Lv.33", "Lv.33"],
+  [ghostPoison, ghostPoison, ghostPoison]
+];
+const preston = [
+  ["Slowbro"],
+  [slowbroImage],
+  ["Lv.38"],
+  [waterPsychic]
+];
+const amanda = [
+  ["Ghastly", "Haunter"],
+  [gastlyImage, haunterImage],
+  ["Lv.34", "Lv.34"],
+  [ghostPoison, ghostPoison]
+];
+const sabrina = [
+  ["Kadabra", "Mr.Mime", "Venomoth", "Alakazam"],
+  [kadabra, mr_mime, venomoth, alakazam],
+  ["Lv.38", "Lv.37", "Lv.38", "Lv.43"],
+  [psychic, psychic, bugPoison, psychic]
+];
+// //episode1
 populateTable(rival1, "rival1");
 //episode2
 populateTable(rival2, "rival2");
@@ -3867,6 +4046,21 @@ populateTable(hideki, "hideki");
 populateTable(aaron, "aaron");
 populateTable(mike, "mike");
 populateTable(koichi, "koichi");
+//episode19
+populateTable(kayden, "kayden");
+populateTable(kirk, "kirk");
+populateTable(edgar, "edgar");
+populateTable(phil, "phil");
+populateTable(shawn, "shawn");
+populateTable(koga, "koga");
+//episode20
+populateTable(cameron, "cameron");
+populateTable(johan, "johan");
+populateTable(tyron, "tyron");
+populateTable(tasha, "tasha");
+populateTable(preston, "preston");
+populateTable(amanda, "amanda");
+populateTable(sabrina, "sabrina");
 
 
 
