@@ -158,6 +158,9 @@ document.getElementById("showCaught16").addEventListener("click", () => showCaug
 document.getElementById("showAll17").addEventListener("click", () => showAll("pokemon-table"));
 document.getElementById("showCaught17").addEventListener("click", () => showCaught("pokemon-table"));
 
+document.getElementById("showAll18").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught18").addEventListener("click", () => showCaught("pokemon-table"));
+
 document.addEventListener('DOMContentLoaded', () => {
     setTableVisibility("pokemon-table");
 });
@@ -1171,12 +1174,19 @@ const silphco = [
     }
 ];
 //episode18
-
 const saffronCity = [
-    ["<span class='succenc'>Hitmonlee <i class='fa-solid fa-gift'></i></span>", "Hitmonchan <i class='fa-solid fa-gift'></i>"],
-    [hitmonlee, hitmonchan],
-    ["Gift - Lv.30", "Gift - Lv.30"],
-    [fighting, fighting]
+    {
+        pokemon: hitmonlee0,
+        level: "30",
+        encounterRate: "Gift",
+        ifCaught: "success" 
+    }, 
+    {
+        pokemon: hitmonchan0,
+        level: "30",
+        encounterRate: "Gift",
+        ifCaught: "" 
+    }
 ];
 
 //episode19
@@ -1345,6 +1355,7 @@ populateTable(route17, "route17");
 populateTable(vermillionCitysuperrod, "vermillionCitysuperrod");
 populateTable(silphco, "silphco");
 //episode18
+populateTable(saffronCity, "saffronCity");
 //episode19
 //episode20
 //episode21

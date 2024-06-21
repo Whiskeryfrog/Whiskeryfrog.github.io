@@ -119,6 +119,9 @@ const rocker = "sprites/Spr_FRLG_Rocker.png";
 const birdKeeper = "sprites/4.png";
 const crushkin = "sprites/crushkin.png";
 const cueball = "sprites/cueball.png";
+const scientist = "sprites/scientist.png";
+const juggler = "sprites/juggler.png";
+const blackbelt = "sprites/blackbelt.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
@@ -1710,49 +1713,264 @@ difficulty: 'extremely easy' },
  insight: '',
 classimp: '',
 difficulty: 'normal' },
-/*
-  { name: 'Malik', 
-      id: 'malik', 
-   image: biker, 
- insight: '',
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph1', 
+   image: rocketGruntMale, 
+ insight: 'Too many Pokémon',
 classimp: '',
 difficulty: 'easy' },
 
-  { name: 'Isaac', 
-      id: 'isaac', 
-   image: biker, 
+  { name: 'Jerry', 
+      id: 'jerry', 
+   image: scientist, 
  insight: '',
 classimp: '',
-difficulty: 'easy' },
+difficulty: 'normal' },
 
-  { name: 'Donald', 
-      id: 'donald', 
-   image: birdKeeper, 
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph2', 
+   image: rocketGruntMale, 
  insight: '',
 classimp: '',
 difficulty: 'extremely easy' },
 
-  { name: 'Becky', 
-      id: 'becky', 
-   image: camperFemale, 
- insight: 'Be careful with static',
+  { name: 'Parker', 
+      id: 'parker', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph3', 
+   image: rocketGruntMale, 
+ insight: '',
 classimp: '',
 difficulty: 'normal' },
 
-  { name: 'Ron & Mya', 
-      id: 'ronandmya', 
-   image: crushkin, 
- insight: 'If you are not ready then you will have a bad time.',
-classimp: '',
-difficulty: 'hard' },
-
-  { name: 'Celia', 
-      id: 'celia', 
-   image: camperFemale, 
+  { name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph4', 
+   image: rocketGruntMale, 
  insight: '',
 classimp: '',
-difficulty: 'extremely easy' }
- */
+difficulty: 'normal' },
+
+  {   name: 'Rocket Grunt', 
+        id: 'rocketGruntSilph5', 
+     image: rocketGruntMale, 
+   insight: '',
+  classimp: '',
+difficulty: 'easy' },
+  
+  {   name: 'Joshua', 
+        id: 'joshua', 
+     image: scientist, 
+   insight: '',
+  classimp: '',
+difficulty: 'normal' },
+
+{     name: 'Rocket Grunt', 
+        id: 'rocketGruntSilph6', 
+     image: rocketGruntMale, 
+   insight: '',
+  classimp: '',
+difficulty: 'easy' },
+
+{     name: 'Rocket Grunt', 
+        id: 'rocketGruntSilph7', 
+     image: rocketGruntMale, 
+   insight: '',
+  classimp: '',
+difficulty: 'easy' },
+
+{     name: 'Rocket Grunt', 
+        id: 'rocketGruntSilph8', 
+     image: rocketGruntMale, 
+   insight: '',
+  classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Taylor', 
+      id: 'taylor', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+{   name: 'Rodney', 
+      id: 'rodney', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph9', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph10', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph11', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Travis', 
+      id: 'travis', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph12', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph13', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+{   name: 'Ed', 
+      id: 'ed', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph14', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph15', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Jose', 
+      id: 'jose', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph16', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph17', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Beau', 
+      id: 'beau', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'normal' },
+
+{   name: 'Dalton', 
+      id: 'dalton', 
+   image: juggler, 
+ insight: 'What on earth is a juggler doing here?',
+classimp: '',
+difficulty: 'normal' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph18', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Rocket Grunt', 
+      id: 'rocketGruntSilph19', 
+   image: rocketGruntMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{   name: 'Giovanni', 
+      id: 'giovanni2', 
+   image: giovannisprite, 
+ insight: '',
+classimp: 'importantname',
+difficulty: 'normal' },
+];
+const rival6Card = trainerCard2('TOADMAN (Rival)',
+                               'rival6',
+                               'rival6_1',
+                               'rival6_2',
+                               rivalsprite2, 
+                               'Surprisingly easier than the last time I fought him.',
+                               "importantname", 
+                               "easy");
+const rival6Container = document.getElementById('rival6Container');
+rival6Container.innerHTML = rival6Card;
+//EPISODE18
+const episode18= [
+  { name: 'Hitoshi', 
+      id: 'hitoshi', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Hideki', 
+      id: 'hideki', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Aaron', 
+      id: 'aaron', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Mike', 
+      id: 'mike', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Koichi', 
+      id: 'koichi', 
+   image: blackbelt, 
+ insight: 'I\'m not sure why decided to not speed up the fight here. After defeating him, you get to choose between Hitmonlee or Hitmonchan. I\'m not too sure if those were his.',
+classimp: '',
+difficulty: 'easy' },
+
 ];
 
 function displayTrainerCard(trainer) {
@@ -1778,6 +1996,7 @@ episode14.forEach(displayTrainerCard);
 episode15.forEach(displayTrainerCard);
 episode16.forEach(displayTrainerCard);
 episode17.forEach(displayTrainerCard);
+episode18.forEach(displayTrainerCard);
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -3154,7 +3373,229 @@ const ruben = [
   ["Lv.28", "Lv.28", "Lv.28"],
   [poison, poison, poison]
 ];
-
+const rocketGruntSilph1 = [
+  ["Golbat", "Zubat", "Zubat", "Raticate", "Zubat"],
+  [golbatImage, zubatImage, zubatImage, raticateImage, zubatImage],
+  ["Lv.25", "Lv.25", "Lv.25", "Lv.25", "Lv.25"],
+  [poisonFlying, poisonFlying, poisonFlying, normal, poisonFlying]
+];
+const jerry = [
+  ["Magnemite", "Voltorb", "Mageton"],
+  [magnemiteImage, voltorbImage, magnetonImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [electricSteel, electric, electricSteel]
+];
+const rocketGruntSilph2 = [
+  ["Cubone", "Zubat"],
+  [cuboneImage, zubatImage],
+  ["Lv.29", "Lv.29"],
+  [ground, poisonFlying]
+];
+const parker = [
+  ["Grimer", "Electrode"],
+  [grimerImage, electrodeImage],
+  ["Lv.29", "Lv.29"],
+  [poison, electric]
+];
+const rocketGruntSilph3 = [
+  ["Weezing", "Golbat", "Koffing"],
+  [weezingImage, golbatImage, koffingImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poison, poisonFlying, poison]
+];
+const rocketGruntSilph4 = [
+  ["Raticate", "Arbok", "Koffing", "Golbat"],
+  [raticateImage, arbokImage, koffingImage, golbatImage],
+  ["Lv.26", "Lv.26", "Lv.26", "Lv.26"],
+  [normal, poison, poison, poisonFlying]
+];
+const rocketGruntSilph5 = [
+  ["Cubone", "Cubone"],
+  [cuboneImage, cuboneImage],
+  ["Lv.29", "Lv.29"],
+  [ground, ground]
+];
+const joshua = [
+  ["Electrode", "Muk"],
+  [electrodeImage, mukImage],
+  ["Lv.29", "Lv.29"],
+  [electric, poison]
+];
+const rocketGruntSilph6 = [
+  ["Raticate", "Zubat", "Golbat", "Rattata"],
+  [raticateImage, zubatImage, golbatImage, rattataImage],
+  ["Lv.26", "Lv.26", "Lv.26", "Lv.26"],
+  [normal, poisonFlying, poisonFlying, normal]
+];
+const rocketGruntSilph7 = [
+  ["Machop", "Machoke"],
+  [machopImage, machokeImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, fighting]
+];
+const rocketGruntSilph8 = [
+  ["Zubat", "Zubat", "Golbat"],
+  [zubatImage, zubatImage, golbatImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poisonFlying, poisonFlying, poisonFlying]
+];
+const taylor = [
+  ["Voltorb", "Koffing", "Magneton", "Magnemite", "Koffing"],
+  [voltorbImage, koffingImage, magnetonImage, magnemiteImage, koffingImage],
+  ["Lv.25", "Lv.25", "Lv.25", "Lv.25", "Lv.25"],
+  [electric, poison, electricSteel, electricSteel, poison]
+];
+const rodney = [
+  ["Electrode"],
+  [electrodeImage],
+  ["Lv.33"],
+  [electric]
+];
+const rocketGruntSilph9 = [
+  ["Machop", "Drowzee"],
+  [machopImage, drowzeeImage],
+  ["Lv.29", "Lv.29"],
+  [fighting, psychic]
+];
+const rocketGruntSilph10 = [
+  ["Ekans", "Zubat", "Cubone"],
+  [ekansImage, zubatImage, cuboneImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poison, poisonFlying, ground]
+];
+const rocketGruntSilph11 = [
+  ["Machoke"],
+  [machokeImage],
+  ["Lv.33"],
+  [poison]
+];
+const travis = [
+  ["Magnemite", "Koffing"],
+  [magnemiteImage, koffingImage],
+  ["Lv.29", "Lv.29"],
+  [electricSteel, poison]
+];
+const rocketGruntSilph12 = [
+  ["Rattata", "Rattata", "Zubat", "Rattata", "Ekans"],
+  [rattataImage, rattataImage, zubatImage, rattataImage, ekansImage],
+  ["Lv.25", "Lv.25", "Lv.25", "Lv.25", "Lv.25"],
+  [normal, normal, poisonFlying, normal, poison]
+];
+const rocketGruntSilph13 = [
+  ["Golbat", "Drowzee", "Hypno"],
+  [golbatImage, drowzeeImage, hypnoImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [poisonFlying, psychic, psychic]
+];
+const ed = [
+  ["Voltorb", "Koffing", "Magneton"],
+  [voltorbImage, koffingImage, magnetonImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [electric, poison, electricSteel]
+];
+const rocketGruntSilph14 = [
+  ["Arbok"],
+  [arbokImage],
+  ["Lv.33"],
+  [poison]
+];
+const rocketGruntSilph15 = [
+  ["Hypno"],
+  [hypnoImage],
+  ["Lv.33"],
+  [psychic]
+];
+const jose = [
+  ["Electrode", "Weezing"],
+  [electrodeImage, weezingImage],
+  ["Lv.29", "Lv.29"],
+  [electric, poison]
+];
+const rocketGruntSilph16 = [
+  ["Raticate","Hypno","Raticate"],
+  [raticateImage, hypnoImage, raticateImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [normal, psychic, normal]
+];
+const rocketGruntSilph17 = [
+  ["Drowzee","Grimer","Machop"],
+  [drowzeeImage, grimerImage, machopImage],
+  ["Lv.28", "Lv.28", "Lv.28"],
+  [psychic, poison, fighting]
+];
+const beau = [
+  ["Magneton","Koffing","Weezing", "Magnemite"],
+  [magnetonImage, koffingImage, weezingImage, magnemiteImage],
+  ["Lv.26", "Lv.26", "Lv.26", "Lv.26"],
+  [electricSteel, poison, poison, electricSteel]
+];
+const dalton = [
+  ["Kadabra","Mr. Mime"],
+  [kadabraImage, mrMimeImage],
+  ["Lv.29", "Lv.29"],
+  [psychic, psychic]
+];
+const rocketGruntSilph18 = [
+  ["Sandshrew","Sandshrew"],
+  [sandshrewImage, sandshrewImage],
+  ["Lv.29", "Lv.29"],
+  [ground, ground]
+];
+const rival6_1 = [
+  ["Pidgeot","Gyarados", "Growlithe"],
+  [pidgeot, gyarados, growlithe],
+  ["Lv.37", "Lv.38", "Lv.35"],
+  [normalFlying, waterFlying, fire]
+];
+const rival6_2 = [
+  ["Alakazam", "Venusaur"],
+  [alakazam, venusaur],
+  ["Lv.35", "Lv.40"],
+  [psychic, grassPoison]
+];
+const rocketGruntSilph19 = [
+  ["Cubone", "Drowzee", "Marowak"],
+  [cuboneImage, drowzeeImage, marowakImage],
+  ["Lv.32", "Lv.32", "Lv.32"],
+  [ground, psychic, ground]
+];
+const giovanni2 = [
+  ["Nidorino", "Kangaskan", "Rhyhorn", "Nidoqueen"],
+  [nidorino, kangaskhan, rhyhorn, nidoqueen],
+  ["Lv.37", "Lv.35", "Lv.37", "Lv.41"],
+  [poison, normal, groundRock, poisonGround]
+];
+//episode18
+const hitoshi = [
+  ["Machop", "Mankey", "Primeape"],
+  [machopImage, mankeyImage, primeapeImage],
+  ["Lv.31", "Lv.31", "Lv.31"],
+  [fighting, fighting, fighting]
+];
+const hideki = [
+  ["Machop", "Machoke"],
+  [machopImage, machokeImage],
+  ["Lv.32", "Lv.32"],
+  [fighting, fighting]
+];
+const aaron = [
+  ["Primeape"],
+  [primeapeImage],
+  ["Lv.36"],
+  [fighting]
+];
+const mike = [
+  ["Mankey", "Mankey", "Primeape"],
+  [mankeyImage, mankeyImage, primeapeImage],
+  ["Lv.31", "Lv.31", "Lv.31"],
+  [fighting, fighting, fighting]
+];
+const koichi = [
+  ["Hitmonlee", "Hitmonchan"],
+  [hitmonleeImage, hitmonchanImage],
+  ["Lv.37", "Lv.37"],
+  [fighting, fighting]
+];
 
 //episode1
 populateTable(rival1, "rival1");
@@ -3388,6 +3829,45 @@ populateTable(hideo, "hideo");
 populateTable(luke, "luke");
 populateTable(camron, "camron");
 populateTable(ruben, "ruben");
+populateTable(rocketGruntSilph1, "rocketGruntSilph1");
+populateTable(jerry, "jerry");
+populateTable(rocketGruntSilph2, "rocketGruntSilph2");
+populateTable(parker, "parker");
+populateTable(rocketGruntSilph3, "rocketGruntSilph3");
+populateTable(rocketGruntSilph4, "rocketGruntSilph4");
+populateTable(rocketGruntSilph5, "rocketGruntSilph5");
+populateTable(joshua, "joshua");
+populateTable(rocketGruntSilph6, "rocketGruntSilph6");
+populateTable(rocketGruntSilph7, "rocketGruntSilph7");
+populateTable(rocketGruntSilph8, "rocketGruntSilph8");
+populateTable(taylor, "taylor");
+populateTable(rodney, "rodney");
+populateTable(rocketGruntSilph9, "rocketGruntSilph9");
+populateTable(rocketGruntSilph10, "rocketGruntSilph10");
+populateTable(rocketGruntSilph11, "rocketGruntSilph11");
+populateTable(travis, "travis");
+populateTable(rocketGruntSilph12, "rocketGruntSilph12");
+populateTable(rocketGruntSilph13, "rocketGruntSilph13");
+populateTable(ed, "ed");
+populateTable(rocketGruntSilph14, "rocketGruntSilph14");
+populateTable(rocketGruntSilph15, "rocketGruntSilph15");
+populateTable(jose, "jose");
+populateTable(rocketGruntSilph16, "rocketGruntSilph16");
+populateTable(rocketGruntSilph17, "rocketGruntSilph17");
+populateTable(beau, "beau");
+populateTable(dalton, "dalton");
+populateTable(rocketGruntSilph18, "rocketGruntSilph18");
+populateTable(rival6_1, "rival6_1");
+populateTable(rival6_2, "rival6_2");
+populateTable(rocketGruntSilph19, "rocketGruntSilph19");
+populateTable(giovanni2, "giovanni2");
+//episode18
+populateTable(hitoshi, "hitoshi");
+populateTable(hideki, "hideki");
+populateTable(aaron, "aaron");
+populateTable(mike, "mike");
+populateTable(koichi, "koichi");
+
 
 
 
