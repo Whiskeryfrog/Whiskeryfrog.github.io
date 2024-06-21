@@ -161,6 +161,9 @@ document.getElementById("showCaught17").addEventListener("click", () => showCaug
 document.getElementById("showAll18").addEventListener("click", () => showAll("pokemon-table"));
 document.getElementById("showCaught18").addEventListener("click", () => showCaught("pokemon-table"));
 
+document.getElementById("showAll21").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught21").addEventListener("click", () => showCaught("pokemon-table"));
+
 document.addEventListener('DOMContentLoaded', () => {
     setTableVisibility("pokemon-table");
 });
@@ -1192,91 +1195,224 @@ const saffronCity = [
 //episode19
 //episode20
 //episode21
-
 const route19 = [
-    ["<span class='succenc'> Tentacool <i class='fa-solid fa-water'></i></span>"],
-    [tentacool],
-    ["100% - Lv.5-40"],
-    [waterPoison]
+    {
+        pokemon: tentacool0,
+        level: "5-40",
+        encounterRate: "100%",
+        ifCaught: "success" 
+    }, 
 ];
-const route19superrod=[
-    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [krabby, gyarados, slowpoke],
-    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
-    [water, waterFlying, waterPsychic]
+const route19superrod = [
+    {
+        pokemon: krabby0,
+        level: "15-30",
+        encounterRate: "84%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    },
 ];
-
-const palletTown = [
-    ["<i class='fa-solid fa-flag'></i> Tentacool <i class='fa-solid fa-water'></i>"],
-    [tentacool],
-    ["100% - Lv.5-40"],
-    [waterPoison]
+const pallettown = [
+    {
+        pokemon: tentacool0,
+        level: "5-40",
+        encounterRate: "100%",
+        ifCaught: "already" 
+    }, 
 ];
-const palletTownsuperrod_1=[
-    ["<i class='fa-solid fa-flag'></i> Staryu <i class='fa-solid fa-fish'></i>", "<span class='succenc'> Krabby <i class='fa-solid fa-fish'></i></span>", " Gyarados <i class='fa-solid fa-fish'></i>"],
-    [staryu, krabby, gyarados],
-    ["40% - Lv 15-25", "40% - Lv 15-25", "15% - Lv 15-25"],
-    [water, water, waterFlying]
+const pallettownsuperrod = [
+    {
+        pokemon: staryu0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: krabby0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    }, 
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: kingler0,
+        level: "25-35",
+        encounterRate: "4%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    }, 
 ];
-const palletTownsuperrod_2=[
-    [" Kingler <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [kingler, slowpoke],
-    ["4% - Lv 25-35", "1% - Lv 25-35"],
-    [water, waterPsychic]
-];
-
 const route21 = [
-    ["<span class='succenc'> Tangela <i class='fa-solid fa-seedling'></i></span>", "<i class='fa-solid fa-flag'></i> Tentacool <i class='fa-solid fa-water'></i>"],
-    [tangela, tentacool],
-    ["100% - Lv 17-28", "100% - Lv.5-40"],
-    [grass, waterPoison]
+    {
+        pokemon: tangela0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    }
 ];
-const route21superrod=[
-    [" Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [krabby, gyarados, slowpoke],
-    ["84% - Lv 15-35", "15% - Lv 15-25", "1% - Lv 25-35"],
-    [water, waterFlying, waterPsychic]
+const route21surf = [
+    {
+        pokemon: tentacool0,
+        level: "5-40",
+        encounterRate: "100%",
+        ifCaught: "already" 
+    }
 ];
-
-const cinnabarIsland = [
-    ["<i class='fa-solid fa-flag'></i> Tentacool <i class='fa-solid fa-water'></i>"],
-    [tentacool],
-    ["100% - Lv.5-40"],
-    [waterPoison]
-];
-const cinnabarIslandsuperrod_1=[
-    ["<i class='fa-solid fa-flag'></i> Staryu <i class='fa-solid fa-fish'></i>", "<i class='fa-solid fa-flag'></i> Krabby <i class='fa-solid fa-fish'></i>", " Gyarados <i class='fa-solid fa-fish'></i>"],
-    [staryu, krabby, gyarados],
-    ["40% - Lv 15-25", "40% - Lv 15-25", "15% - Lv 15-25"],
-    [water, water, waterFlying]
-];
-const cinnabarIslandsuperrod_2=[
-    [" Kingler <i class='fa-solid fa-fish'></i>", " Slowpoke <i class='fa-solid fa-fish'></i>"],
-    [kingler, slowpoke],
-    ["4% - Lv 25-35", "1% - Lv 25-35"],
-    [water, waterPsychic]
-];
-
-const cinnabarMansion1_1 =[
-    ["<i class='fa-solid fa-flag'></i> Raticate <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Grimer <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Rattata <i class='fa-solid fa-seedling'></i>"],
-    [raticate, grimer, rattata],
-    ["30% - Lv 32-36", "30% - Lv 28-30", "15% - Lv 26-28"],
-    [normal, poison, normal]
-];
-const cinnabarMansion1f2f3f_2 =[
-    ["<i class='fa-solid fa-flag'></i> Vulpix <i class='fa-solid fa-seedling'></i>", " Koffing <i class='fa-solid fa-seedling'></i>", " Muk <i class='fa-solid fa-seedling'></i>"],
-    [vulpix, koffing, muk ],
-    ["15% - Lv 30-32", "5% - Lv 28", "5% - Lv 32"],
-    [fire, poison, poison]
+const route21superrod = [
+    {
+        pokemon: krabby0,
+        level: "15-30",
+        encounterRate: "84%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    },
 ];
 
-const seafoamIsland =[
-    ["<span class='succenc'> Slowpoke <i class='fa-solid fa-mountain'></i></span>", "<i class='fa-solid fa-flag'></i> Zubat <i class='fa-solid fa-mountain'></i>", "<i class='fa-solid fa-flag'></i> Golbat <i class='fa-solid fa-mountain'></i>"],
-    [slowpoke, zubat, golbat],
-    ["55% - Lv 26-33", "34% - Lv 22-26", "11% - Lv 26-30"],
-    [waterPsychic, poisonFlying, poisonFlying]
+const cinnabarisland = [
+    {
+        pokemon: tentacool0,
+        level: "5-40",
+        encounterRate: "100%",
+        ifCaught: "already" 
+    }
 ];
 
+const cinnabarislandsuperrod = [
+    {
+        pokemon: staryu0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: krabby0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    }, 
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: kingler0,
+        level: "25-35",
+        encounterRate: "4%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: slowpoke0,
+        level: "25-35",
+        encounterRate: "1%",
+        ifCaught: "" 
+    }, 
+];
+const mansion = [
+    {
+        pokemon: raticate0,
+        level: "32-36",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: grimer0,
+        level: "28-30",
+        encounterRate: "30%",
+        ifCaught: "success" 
+    }, 
+    {
+        pokemon: rattata0,
+        level: "26-28",
+        encounterRate: "1f-3f\:15%, B1f: 5%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: vulpix0,
+        level: "30-32",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: koffing0,
+        level: "28",
+        encounterRate: "5%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: muk0,
+        level: "32",
+        encounterRate: "5%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: ditto0,
+        level: "30",
+        encounterRate: "B1f: 10%",
+        ifCaught: "" 
+    }, 
+];
+const route20 = [
+    {
+        pokemon: tentacool0,
+        level: "5-40",
+        encounterRate: "100%",
+        ifCaught: "already" 
+    }
+];
+const seafoamislands = [
+    {
+        pokemon: slowpoke0,
+        level: "26-33",
+        encounterRate: "55%",
+        ifCaught: "success" 
+    }, 
+    {
+        pokemon: zubat0,
+        level: "22-26",
+        encounterRate: "34%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: golbat0,
+        level: "26-30",
+        encounterRate: "11%",
+        ifCaught: "already" 
+    }
+];
 //episode22
 //episode23
 //episode24
@@ -1359,6 +1495,18 @@ populateTable(saffronCity, "saffronCity");
 //episode19
 //episode20
 //episode21
+populateTable(route19, "route19");
+populateTable(route19superrod, "route19superrod");
+populateTable(pallettown, "pallettown");
+populateTable(pallettownsuperrod, "pallettownsuperrod");
+populateTable(route21, "route21");
+populateTable(route21surf, "route21surf");
+populateTable(route21superrod, "route21superrod");
+populateTable(cinnabarisland, "cinnabarisland");
+populateTable(cinnabarislandsuperrod, "cinnabarislandsuperrod");
+populateTable(mansion, "mansion");
+populateTable(route20, "route20");
+populateTable(seafoamislands, "seafoamislands");
 //episode22
 //episode23
 //episode24
