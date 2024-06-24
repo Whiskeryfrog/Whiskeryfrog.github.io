@@ -124,6 +124,14 @@ const juggler = "sprites/juggler.png";
 const blackbelt = "sprites/blackbelt.png";
 const tamer = "sprites/tamer.png";
 const psychicMale = "sprites/psychicMale.png";
+const swimmerFemale = "sprites/swimmerFemale.png";
+const scubaSquad = "sprites/scubaSquad.png";
+const burglar = "sprites/burglar.png";
+const cooltrainerMale = "sprites/cooltrainerMale.png";
+const crushgirl = "sprites/crushgirl.png";
+const aromagirl = "sprites/aromagirl.png";
+const scubaFemale = "sprites/scubaFemale.png";
+const coolcouple = "sprites/coolcouple.png";
 
 //important Trainer Sprites
 const rivalsprite1 = "sprites/Blue1.webp";
@@ -135,6 +143,12 @@ const erikasprite = "sprites/Spr_FRLG_Erika.png";
 const giovannisprite = "sprites/giovannie.png";
 const kogasprite = "sprites/koga.png";
 const sabrinasprite = "sprites/sabrina.png";
+const blainesprite = "sprites/blaine.png";
+const loreleisprite = "sprites/lorelei.png";
+const brunosprite = "sprites/bruno.png";
+const agathasprite = "sprites/agatha.png";
+const lancesprite = "sprites/lance.png";
+const championsprite = "sprites/champion.png";
 /*
 //colton
 const coltonCard = trainerCard1('Colton',
@@ -2070,6 +2084,599 @@ insight: 'Don\'t let her Pokémon setup on you.',
 classimp: 'importantname',
 difficulty: 'normal' },
 ];
+//EPISODE21
+const episode21= [
+  { name: 'Richard', 
+      id: 'richard', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Reece', 
+      id: 'reece', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Tony', 
+      id: 'tony', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'David', 
+      id: 'david', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Douglas', 
+      id: 'douglas', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Wade', 
+      id: 'wade', 
+   image: fisherman, 
+ insight: 'Just Magikarp',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Ronald', 
+    id: 'ronald', 
+ image: fisherman, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Lil & Ian', 
+    id: 'lilandian', 
+ image: scubaSquad, 
+insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+{ name: 'Spencer', 
+    id: 'spencer', 
+ image: swimmerMale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Claude', 
+    id: 'claude', 
+ image: fisherman, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Nolan', 
+    id: 'nolan', 
+ image: fisherman, 
+insight: 'Think Mark!',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Jack', 
+    id: 'jack', 
+ image: swimmerMale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Roland', 
+    id: 'roland', 
+ image: swimmerMale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Jerome', 
+    id: 'jerome', 
+ image: swimmerMale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Melissa', 
+    id: 'melissa', 
+ image: swimmerFemale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Missy', 
+    id: 'missy', 
+ image: camperFemale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Missy', 
+    id: 'missy', 
+ image: camperFemale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Dean', 
+    id: 'dean', 
+ image: swimmerMale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Nora', 
+    id: 'nora', 
+ image: swimmerFemale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Roger', 
+    id: 'roger', 
+ image: birdKeeper, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Irene', 
+    id: 'irene', 
+ image: camperFemale, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+];
+//EPISODE22
+const episode22= [
+  { name: 'Johnson', 
+      id: 'johnson', 
+   image: youngster, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Arnie', 
+      id: 'arnie', 
+   image: burglar, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Braydon', 
+      id: 'braydon', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Ted', 
+      id: 'ted', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Lewis', 
+      id: 'lewis', 
+   image: burglar, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Ivan', 
+      id: 'ivan', 
+   image: scientist, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Simon', 
+    id: 'simon', 
+ image: burglar, 
+insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+];
+//EPISODE23
+const episode23= [
+  { name: 'Quinn', 
+      id: 'quinn', 
+   image: burglar, 
+ insight: 'The answer is YES',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Erik', 
+      id: 'erik', 
+   image: nerd, 
+ insight: 'For some reason does not have an assigned quiz so you can totally skip this one.',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Avery', 
+      id: 'avery', 
+   image: nerd, 
+ insight: 'The answer is NO',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Ramon', 
+      id: 'ramon', 
+   image: burglar, 
+ insight: 'The answer is NO',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Derek', 
+      id: 'derek', 
+   image: nerd, 
+ insight: 'The answer is NO',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Dusty', 
+      id: 'dusty', 
+   image: burglar, 
+ insight: 'The answer is YES',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Zac', 
+    id: 'zac', 
+ image: nerd, 
+insight: 'The answer is NO',
+classimp: '',
+difficulty: 'extremely easy' },
+
+{ name: 'Blaine', 
+    id: 'blaine', 
+ image: blainesprite, 
+insight: 'Don\'t forget your burn heal!',
+classimp: 'importantname',
+difficulty: 'easy' },
+];
+//EPISODE24
+const episode24= [
+  { name: 'Yuji', 
+      id: 'yuji', 
+   image: cooltrainerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Warren', 
+      id: 'warren', 
+   image: cooltrainerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Takashi', 
+      id: 'takashi', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+];
+const giovanni3Card = trainerCard2('Giovanni',
+                               'giovannie3',
+                               'giovanni3_1',
+                               'giovanni3_2',
+                               giovannisprite, 
+                               'I just used Rattlesnek and won',
+                               "importantname", 
+                               "extremely easy");
+const giovanni3Container = document.getElementById('giovanni3Container');
+giovanni3Container.innerHTML = giovanni3Card;
+
+const rival7Card = trainerCard2('TOADMAN (Rival)',
+                               'rival7',
+                               'rival7_1',
+                               'rival7_2',
+                               rivalsprite2, 
+                               'Surprisingly easier than the last time I fought him.',
+                               "importantname", 
+                               "easy");
+const rival7Container = document.getElementById('rival7Container');
+rival7Container.innerHTML = rival7Card;
+//EPISODE25
+const episode25= [
+  { name: 'Abigail', 
+      id: 'abigail', 
+   image: swimmerFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Claire', 
+      id: 'claire', 
+   image: camperFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Bryce', 
+      id: 'bryce', 
+   image: camperMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Tanya', 
+      id: 'tanya', 
+   image: crushgirl, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Garrett', 
+      id: 'garrett', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Mik & Kia', 
+      id: 'mikandkia', 
+   image: crushkin, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Hugh', 
+      id: 'hugh', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Shea', 
+      id: 'shea', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Maria', 
+      id: 'maria', 
+   image: swimmerFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Tommy', 
+      id: 'tommy', 
+   image: fisherman, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Finn', 
+      id: 'finn', 
+   image: swimmerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Sharon', 
+      id: 'sharon', 
+   image: crushgirl, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Goon', 
+      id: 'goon1', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Goon', 
+      id: 'goon2', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Goon', 
+      id: 'goon3', 
+   image: biker, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Paxton', 
+      id: 'paxton', 
+   image: cueball, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Joy & Meg', 
+      id: 'joyandmeg', 
+   image: twins, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Violet', 
+      id: 'violet', 
+   image: aromagirl, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Alexis', 
+      id: 'alexis', 
+   image: scubaFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Amira', 
+      id: 'amira', 
+   image: scubaFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Nikki', 
+      id: 'nikki', 
+   image: aromagirl, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+];
+//EPISODE26
+const episode26= [
+  { name: 'Naomi', 
+      id: 'naomi', 
+   image: cooltrainerFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Rolando', 
+      id: 'rolando', 
+   image: cooltrainerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Daisuke', 
+      id: 'daisuke', 
+   image: blackbelt, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Nelson', 
+      id: 'nelson', 
+   image: juggler, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Gregory', 
+      id: 'gregory', 
+   image: juggler, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+
+  { name: 'Vincent', 
+      id: 'vincent', 
+   image: tamer, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'George', 
+      id: 'george', 
+   image: cooltrainerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Dawson', 
+      id: 'dawson', 
+   image: pokemaniac, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Alexa', 
+      id: 'alexa', 
+   image: cooltrainerFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Colby', 
+      id: 'colby', 
+   image: cooltrainerMale, 
+ insight: '',
+classimp: '',
+difficulty: 'easy' },
+
+  { name: 'Caroline', 
+      id: 'caroline', 
+   image: cooltrainerFemale, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+
+  { name: 'Ray & Tyra', 
+      id: 'rayandtyra', 
+   image: coolcouple, 
+ insight: '',
+classimp: '',
+difficulty: 'extremely easy' },
+];
+//EPISODE27
+const loreleiCard = trainerCard2('Lorelei',
+                               'lorelei',
+                               'lorelei_1',
+                               'lorelei_2',
+                               loreleisprite, 
+                               'Surprisingly tough just like the title says.',
+                               "importantname", 
+                               "normal");
+const loreleiContainer = document.getElementById('loreleiContainer');
+loreleiContainer.innerHTML = loreleiCard;
+//EPISODE28
+const brunoCard = trainerCard2('Bruno',
+                               'bruno',
+                               'bruno_1',
+                               'bruno_2',
+                               brunosprite, 
+                               'Look at the length of the episode and see how easy this battle was.',
+                               "importantname", 
+                               "extremely easy");
+const brunoContainer = document.getElementById('brunoContainer');
+brunoContainer.innerHTML = brunoCard;
+//EPISODE29
+const agathaCard = trainerCard2('Agatha',
+                               'agatha',
+                               'agatha_1',
+                               'agatha_2',
+                               agathasprite, 
+                               'Even shorter than the last episode.',
+                               "importantname", 
+                               "extremely easy");
+const agathaContainer = document.getElementById('agathaContainer');
+agathaContainer.innerHTML = agathaCard;
+//EPISODE30
+const lanceCard = trainerCard2('Lance',
+                               'lance',
+                               'lance_1',
+                               'lance_2',
+                               lancesprite, 
+                               'I only used lapras',
+                               "importantname", 
+                               "extremely easy");
+const lanceContainer = document.getElementById('lanceContainer');
+lanceContainer.innerHTML = lanceCard;
+//FINALE
+const championCard = trainerCard2('Champion Toadman',
+                               'champion',
+                               'champion_1',
+                               'champion_2',
+                               championsprite, 
+                               'It was easy but at what cost?',
+                               "importantname", 
+                               "easy");
+const championContainer = document.getElementById('championContainer');
+championContainer.innerHTML = championCard;
 
 function displayTrainerCard(trainer) {
     const card = trainerCard1(trainer.name, trainer.id, trainer.image, trainer.insight, trainer.classimp, trainer.difficulty);
@@ -2097,6 +2704,12 @@ episode17.forEach(displayTrainerCard);
 episode18.forEach(displayTrainerCard);
 episode19.forEach(displayTrainerCard);
 episode20.forEach(displayTrainerCard);
+episode21.forEach(displayTrainerCard);
+episode22.forEach(displayTrainerCard);
+episode23.forEach(displayTrainerCard);
+episode24.forEach(displayTrainerCard);
+episode25.forEach(displayTrainerCard);
+episode26.forEach(displayTrainerCard);
 
 //populate Table function
 function populateTable(pokemonData, tableId) {
@@ -3776,6 +4389,528 @@ const sabrina = [
   ["Lv.38", "Lv.37", "Lv.38", "Lv.43"],
   [psychic, psychic, bugPoison, psychic]
 ];
+//episode21
+const richard = [
+  ["Tentacool", "Shellder"],
+  [tentacoolImage, shellderImage],
+  ["Lv.30", "Lv.30"],
+  [waterPoison, water]
+];
+const reece = [
+  ["Goldeen", "Horsea", "Staryu"],
+  [goldeenImage, horseaImage, staryuImage],
+  ["Lv.29", "Lv.29", "Lv.29"],
+  [water, water, water]
+];
+const tony = [
+  ["Horsea", "Horsea"],
+  [horseaImage, horseaImage],
+  ["Lv.30", "Lv.30"],
+  [water, water]
+];
+const david = [
+  ["Goldeen", "Shellder", "Seaking"],
+  [goldeenImage, shellderImage, seakingImage],
+  ["Lv.29", "Lv.29", "Lv.29"],
+  [water, water, water]
+];
+const douglas = [
+  ["Horsea", "Tentacool", "Tentacool", "Goldeen"],
+  [horseaImage, tentacoolImage, tentacoolImage, goldeenImage],
+  ["Lv.27", "Lv.27", "Lv.27", "Lv.27"],
+  [water, waterPoison, waterPoison, water]
+];
+const wade = [
+  ["Magikarp", "Magikarp", "Magikarp", "Magikarp", "Magikarp", "Magikarp"],
+  [magikarpImage, magikarpImage, magikarpImage, magikarpImage, magikarpImage, magikarpImage],
+  ["Lv.27", "Lv.27", "Lv.27", "Lv.27", "Lv.27", "Lv.27"],
+  [water, water, water, water, water, water]
+];
+const ronald = [
+  ["Seaking", "Goldeen", "Seaking", "Seaking"],
+  [seakingImage, seakingImage, seakingImage, seakingImage],
+  ["Lv.28", "Lv.28", "Lv.28", "Lv.28"],
+  [water, water, water, water]
+];
+const lilandian = [
+  ["Seadra", "Starmie"],
+  [seadraImage, starmieImage],
+  ["Lv.33", "Lv.33"],
+  [water, waterPsychic]
+];
+const spencer = [
+  ["Seadra", "Tentacruel"],
+  [seadraImage, tentacruelImage],
+  ["Lv.33", "Lv.33"],
+  [water, waterPoison]
+];
+const claude = [
+  ["Shellder", "Cloyster"],
+  [shellderImage, cloysterImage],
+  ["Lv.31", "Lv.31"],
+  [water, waterIce]
+];
+const nolan = [
+  ["Seaking", "Goldeen"],
+  [seakingImage, goldeenImage],
+  ["Lv.33", "Lv.33"],
+  [water, water]
+];
+const jack = [
+  ["Starmie"],
+  [starmieImage],
+  ["Lv.37"],
+  [waterPsychic]
+];
+const roland = [
+  ["Poliwhirl", "Tentacool", "Seadra"],
+  [poliwhirlImage, tentacoolImage, seadraImage],
+  ["Lv.32", "Lv.32", "Lv.32"],
+  [water, waterPoison, water]
+];
+const jerome = [
+  ["Staryu", "Wartortle"],
+  [staryuImage, wartortleImage],
+  ["Lv.33", "Lv.33"],
+  [water, water]
+];
+const melissa = [
+  ["Poliwag", "Seaking"],
+  [poliwagImage, seakingImage],
+  ["Lv.31", "Lv.31"],
+  [water, water]
+];
+const missy = [
+  ["Goldeen", "Seaking"],
+  [goldeenImage, seakingImage],
+  ["Lv.31", "Lv.31"],
+  [water, water]
+];
+const dean = [
+  ["Staryu"],
+  [staryuImage],
+  ["Lv.35"],
+  [water]
+];
+const nora = [
+  ["Shellder", "Shellder", "Cloyster"],
+  [shellderImage, shellderImage, cloysterImage],
+  ["Lv.30", "Lv.30", "Lv.30"],
+  [water, water, waterIce]
+];
+const roger = [
+  ["Fearow", "Fearow", "Pidgeotto"],
+  [fearowImage, fearowImage, pidgeottoImage],
+  ["Lv.30", "Lv.30", "Lv.30"],
+  [normalFlying, normalFlying, normalFlying]
+];
+const irene = [
+  ["Tentacool", "Horsea", "Seel"],
+  [tentacoolImage, horseaImage, seelImage],
+  ["Lv.30", "Lv.30", "Lv.30"],
+  [waterPoison, water, water]
+];
+//episode22
+const johnson = [
+  ["Ekans", "Ekans", "Raticate"],
+  [ekansImage, ekansImage, raticateImage],
+  ["Lv.33", "Lv.33", "Lv.34"],
+  [poison, poison, normal]
+];
+const ted = [
+  ["Electrode", "Weezing"],
+  [electrodeImage, weezingImage],
+  ["Lv.29", "Lv.29"],
+  [electric, poison]
+];
+const arnie = [
+  ["Charmander", "Charmeleon"],
+  [charmanderImage, charmeleonImage],
+  ["Lv.34", "Lv.34"],
+  [fire, fire]
+];
+const braydon = [
+  ["Magnemite", "Magneton", "Voltorb"],
+  [magnemiteImage, magnetonImage, voltorbImage],
+  ["Lv.34", "Lv.34", "Lv.33"],
+  [electricSteel, electricSteel, electric]
+];
+const lewis = [
+  ["Growlithe", "Ponyta"],
+  [growlitheImage, ponytaImage],
+  ["Lv.34", "Lv.34"],
+  [fire, fire]
+];
+const ivan = [
+  ["Magnemite", "Electrode"],
+  [magnemiteImage, electrodeImage],
+  ["Lv.34", "Lv.34"],
+  [electricSteel, electric]
+];
+const simon = [
+  ["Ninetales"],
+  [ninetalesImage],
+  ["Lv.38"],
+  [fire]
+];
+//episode23
+const quinn = [
+  ["Growlithe", "Vulpix", "Ninetales"],
+  [growlitheImage, vulpixImage, ninetalesImage],
+  ["Lv.36", "Lv.36", "Lv.36"],
+  [fire, fire, fire]
+];
+const erik = [
+  ["Vulpix", "Vulpix", "Ninetales"],
+  [vulpixImage, vulpixImage, ninetalesImage],
+  ["Lv.36", "Lv.36", "Lv.36"],
+  [fire, fire, fire]
+];
+const avery = [
+  ["Ponyta", "Charmander", "Vulpix", "Primeape"],
+  [ponytaImage, charmanderImage, vulpixImage, primeapeImage],
+  ["Lv.34", "Lv.34", "Lv.34", "Lv.34"],
+  [fire, fire, fire, fighting]
+];
+const ramon = [
+  ["Ponyta"],
+  [ponytaImage],
+  ["Lv.41"],
+  [fire]
+];
+const derek = [
+  ["Rapidash"],
+  [rapidashImage],
+  ["Lv.41"],
+  [fire]
+];
+const dusty = [
+  ["Vulpix", "Growlithe"],
+  [vulpixImage, growlitheImage],
+  ["Lv.37", "Lv.37"],
+  [fire, fire]
+];
+const zac = [
+  ["Growlithe", "Vulpix"],
+  [growlitheImage, vulpixImage],
+  ["Lv.37", "Lv.37"],
+  [fire, fire]
+];
+const blaine = [
+  ["Growlithe", "Ponyta", "Rapidash", "Arcanine"],
+  [growlithe, ponyta, rapidash, arcanine],
+  ["Lv.42", "Lv.40", "Lv.42", "Lv.47"],
+  [fire, fire, fire, fire]
+];
+//episode24
+const yuji = [
+  ["Sandslash", "Graveler", "Onix", "Graveler", "Marowak"],
+  [sandslashImage, gravelerImage, onixImage, gravelerImage, marowakImage],
+  ["Lv.38", "Lv.38", "Lv.38", "Lv.38", "Lv.38"],
+  [ground, rockGround, rockGround, rockGround, ground]
+];
+const warren = [
+  ["Marowak", "Marowak", "Rhyhorn", "Nidorina", "Nidoqueen"],
+  [marowakImage, marowakImage, rhyhornImage, nidorinaImage, nidoqueenImage],
+  ["Lv.37", "Lv.37", "Lv.38", "Lv.39", "Lv.39"],
+  [ground, ground, groundRock, poison, poisonGround]
+];
+const takashi = [
+  ["Machoke", "Machop", "Machoke"],
+  [machokeImage, machopImage, machokeImage],
+  ["Lv.38", "Lv.38", "Lv.38"],
+  [fighting, fighting, fighting]
+];
+const giovanni3_1 = [
+  ["Rhyhorn", "Dugtrio", "Nidoqueen"],
+  [rhyhorn, dugtrio, nidoqueen],
+  ["Lv.45", "Lv.42", "Lv.44"],
+  [groundRock, ground, poisonGround]
+];
+const giovanni3_2 = [
+  ["Nidoking", "Rhyhorn"],
+  [nidoking, rhyhorn],
+  ["Lv.45", "Lv.50"],
+  [poisonGround, groundRock]
+];
+const rival7_1 = [
+  ["Pidgeot", "Rhyhorn", "Gyarados"],
+  [pidgeot, rhyhorn, gyarados],
+  ["Lv.47", "Lv.45", "Lv.45"],
+  [normalFlying, groundRock, waterFlying]
+];
+const rival7_2 = [
+  ["Growlithe", "Alakazam", "Venusaur"],
+  [growlithe, alakazam, venusaur],
+  ["Lv.45", "Lv.47", "Lv.53"],
+  [fire, psychic, grassPoison]
+];
+//episode25
+const abigail = [
+  ["Psyduck", "Psyduck", "Golduck"],
+  [psyduckImage, psyduckImage, golduckImage],
+  ["Lv.35", "Lv.36", "Lv.37"],
+  [water, water, water]
+];
+const claire = [
+  ["Meowth", "Meowth", "Pikachu", "Clefairy"],
+  [meowthImage, meowthImage, pikachuImage, clefairyImage],
+  ["Lv.35", "Lv.35", "Lv.35", "Lv.35"],
+  [normal, normal, electric, normal]
+];
+const bryce = [
+  ["Nidorino", "Raticate", "Sandslash"],
+  [nidorinoImage, raticateImage, sandslashImage],
+  ["Lv.36", "Lv.36", "Lv.36"],
+  [poison, normal, ground]
+];
+const tanya = [
+  ["Hitmonlee", "Hitmonchan"],
+  [hitmonleeImage, hitmonchanImage],
+  ["Lv.38", "Lv.38"],
+  [fighting, fighting]
+];
+const garrett = [
+  ["Shellder", "Cloyster", "Wartortle"],
+  [shellderImage, cloysterImage, wartortleImage],
+  ["Lv.35", "Lv.35", "Lv.38"],
+  [water, waterIce, water]
+];
+const mikandkia = [
+  ["Machoke", "Primeape"],
+  [machokeImage, primeapeImage],
+  ["Lv.39", "Lv.39"],
+  [fighting, fighting]
+];
+const hugh = [
+  ["Machop", "Machoke"],
+  [machopImage, machokeImage],
+  ["Lv.37", "Lv.37"],
+  [fighting, fighting]
+];
+const shea = [
+  ["Machop", "Machoke"],
+  [machopImage, machokeImage],
+  ["Lv.38", "Lv.38"],
+  [fighting, fighting]
+];
+const maria = [
+  ["Seadra", "Seadra"],
+  [seadraImage, seadraImage],
+  ["Lv.37", "Lv.37"],
+  [water, water]
+];
+const tommy = [
+  ["Goldeen", "Goldeen", "Seaking", "Seaking", "Seaking"],
+  [goldeenImage, goldeenImage, seakingImage, seakingImage, seakingImage],
+  ["Lv.35", "Lv.35", "Lv.35", "Lv.35", "Lv.35"],
+  [water, water, water, water, water]
+];
+const finn = [
+  ["Starmie"],
+  [starmieImage],
+  ["Lv.38"],
+  [waterPsychic]
+];
+const sharon = [
+  ["Mankey", "Primeape"],
+  [mankeyImage, primeapeImage],
+  ["Lv.37", "Lv.37"],
+  [fighting, fighting]
+];
+const goon1 = [
+  ["Koffing", "Grimer"],
+  [koffingImage, grimerImage],
+  ["Lv.37", "Lv.37"],
+  [poison, poison]
+];
+const goon2 = [
+  ["Koffing"],
+  [koffingImage],
+  ["Lv.38"],
+  [poison]
+];
+const goon3 = [
+  ["Grimer"],
+  [grimerImage],
+  ["Lv.38"],
+  [poison]
+];
+const paxton = [
+  ["Weezing", "Muk"],
+  [weezingImage, mukImage],
+  ["Lv.39", "Lv.39"],
+  [poison, poison]
+];
+const joyandmeg = [
+  ["Clefairy", "Clefairy"],
+  [clefairyImage, clefairyImage],
+  ["Lv.37", "Lv.37"],
+  [normal, normal]
+];
+const violet = [
+  ["Bulbasaur", "Ivysaur", "Ivysaur"],
+  [bulbasaurImage, ivysaurImage, ivysaurImage],
+  ["Lv.36", "Lv.36", "Lv.36"],
+  [grassPoison, grassPoison, grassPoison]
+];
+const alexis = [
+  ["Staryu", "Staryu", "Krabby", "Krabby"],
+  [staryuImage, staryuImage, krabbyImage, krabbyImage],
+  ["Lv.34", "Lv.34", "Lv.34", "Lv.34"],
+  [water, water, water, water]
+];
+const amira = [
+  ["Poliwag", "Poliwhirl", "Poliwag"],
+  [poliwagImage, poliwhirlImage, poliwagImage],
+  ["Lv.34", "Lv.35", "Lv.34"],
+  [water, water, water]
+];
+const nikki = [
+  ["Bellsprout", "Weepinbell"],
+  [bellsproutImage, weepinbellImage],
+  ["Lv.37", "Lv.37"],
+  [grassPoison, grassPoison]
+];
+//episode26
+const naomi = [
+  ["Persian", "Ponyta", "Rapidash", "Vulpix", "Ninetales"],
+  [persianImage, ponytaImage, rapidashImage, vulpixImage, ninetalesImage],
+  ["Lv.42", "Lv.42", "Lv.42", "Lv.42", "Lv.42"],
+  [normal, fire, fire, fire, fire]
+];
+const rolando = [
+  ["Raticate", "Ivysaur", "Wartortle", "Charmeleon", "Charizard"],
+  [raticateImage, ivysaurImage, wartortleImage, charmeleonImage, charizardImage],
+  ["Lv.42", "Lv.42", "Lv.42", "Lv.42", "Lv.42"],
+  [normal, grassPoison, water, fire, fireFlying]
+];
+const daisuke = [
+  ["Machoke", "Machop", "Machoke"],
+  [machokeImage, machopImage, machokeImage],
+  ["Lv.43", "Lv.43", "Lv.43"],
+  [fighting, fighting, fighting]
+];
+const nelson = [
+  ["Drowzee", "Hypno", "Kadabra", "Kadabra"],
+  [drowzeeImage, hypnoImage, kadabraImage, kadabraImage],
+  ["Lv.41", "Lv.41", "Lv.41", "Lv.41"],
+  [psychic, psychic, psychic, psychic]
+];
+const gregory = [
+  ["Mr. Mime"],
+  [mrMimeImage],
+  ["Lv.48"],
+  [psychic]
+];
+const vincent = [
+  ["Persian", "Golduck"],
+  [persianImage, golduckImage],
+  ["Lv.44", "Lv.44"],
+  [normal, water]
+];
+const george = [
+  ["Exeggutor", "Sandslash", "Cloyster", "Electrode", "Arcanine"],
+  [exeggutorImage, sandslashImage, cloysterImage, electrodeImage, arcanineImage],
+  ["Lv.42", "Lv.42", "Lv.42", "Lv.42", "Lv.42"],
+  [grassPsychic, ground, waterIce, electric, fire]
+];
+const dawson = [
+  ["Charmeleon", "Lapras", "Lickitung"],
+  [charmeleonImage, laprasImage, lickitungImage],
+  ["Lv.40", "Lv.40", "Lv.40"],
+  [fire, waterIce, normal]
+];
+const alexa = [
+  ["Clefairy", "Jigglypuff", "Persian", "Dewgong", "Chansey"],
+  [clefairyImage, jigglypuffImage, persianImage, dewgongImage, chanseyImage],
+  ["Lv.42", "Lv.42", "Lv.42", "Lv.42", "Lv.42"],
+  [normal, normal, normal, waterIce, normal]
+];
+const colby = [
+  ["Kingler", "Poliwhirl", "Tentacruel", "Seadra", "Blastoise"],
+  [kinglerImage, poliwhirlImage, tentacruelImage, seadraImage, blastoiseImage],
+  ["Lv.42", "Lv.42", "Lv.42", "Lv.42", "Lv.42"],
+  [water, water, waterPoison, water, water]
+];
+const caroline = [
+  ["Bellsprout", "Weepinbell", "Victreebel", "Paras", "Parasect"],
+  [bellsproutImage, weepinbellImage, victreebelImage, parasImage, parasectImage],
+  ["Lv.42", "Lv.42", "Lv.42", "Lv.42", "Lv.42"],
+  [grassPoison, grassPoison, grassPoison, bugGrass, bugGrass]
+];
+const rayandtyra = [
+  ["Nidoking", "Nidoqueen"],
+  [nidokingImage, nidoqueenImage],
+  ["Lv.45", "Lv.45"],
+  [poisonGround, poisonGround]
+];
+//episode27
+const lorelei_1 = [
+  ["Dewgong", "Cloyster", "Slowbro"],
+  [dewgong, cloyster, slowbro],
+  ["Lv.52", "Lv.51", "Lv.52"],
+  [waterIce, waterIce, waterPsychic]
+];
+const lorelei_2 = [
+  ["Jynx", "Lapras"],
+  [jynx, lapras],
+  ["Lv.54", "Lv.54"],
+  [icePsychic, waterIce]
+];
+//episode28
+const bruno_1 = [
+  ["Onix", "Hitmonchan", "Hitmonlee"],
+  [onix, hitmonchan, hitmonlee],
+  ["Lv.51", "Lv.53", "Lv.53"],
+  [rockGround, fighting, fighting]
+];
+const bruno_2 = [
+  ["Onix", "Machamp"],
+  [onix, machamp],
+  ["Lv.54", "Lv.56"],
+  [rockGround, fighting]
+];
+//episode29
+const agatha_1 = [
+  ["Gengar", "Golbat", "Haunter"],
+  [gengar, golbat, haunter],
+  ["Lv.54", "Lv.54", "Lv.53"],
+  [ghostPoison, poisonFlying, ghostPoison]
+];
+const agatha_2 = [
+  ["Arbok", "Gengar"],
+  [arbok, gengar],
+  ["Lv.56", "Lv.58"],
+  [poison, ghostPoison]
+];
+//episode30
+const lance_1 = [
+  ["Gyarados", "Dragonair", "Dragonair"],
+  [gyarados, dragonair, dragonair],
+  ["Lv.56", "Lv.54", "Lv.54"],
+  [ghostPoison, poisonFlying, ghostPoison]
+];
+const lance_2 = [
+  ["Aerodactyl", "Dragonite"],
+  [aerodactyl, dragonite],
+  ["Lv.58", "Lv.60"],
+  [poison, ghostPoison]
+];
+//episode30
+const champion_1 = [
+  ["Pidgeot", "Alakazam", "Rhydon"],
+  [pidgeot, alakazam, rhydon],
+  ["Lv.59", "Lv.57", "Lv.59"],
+  [normalFlying, psychic, groundRock]
+];
+const champion_2 = [
+  ["Gyarados", "Arcanine", "Venusaur"],
+  [gyarados, arcanine, venusaur],
+  ["Lv.59", "Lv.61", "Lv.63"],
+  [waterFlying, fire, grassPoison]
+];
+
 // //episode1
 populateTable(rival1, "rival1");
 //episode2
@@ -4061,6 +5196,102 @@ populateTable(tasha, "tasha");
 populateTable(preston, "preston");
 populateTable(amanda, "amanda");
 populateTable(sabrina, "sabrina");
+//episode21
+populateTable(richard, "richard");
+populateTable(reece, "reece");
+populateTable(tony, "tony");
+populateTable(david, "david");
+populateTable(douglas, "douglas");
+populateTable(wade, "wade");
+populateTable(ronald, "ronald");
+populateTable(lilandian, "lilandian");
+populateTable(spencer, "spencer");
+populateTable(claude, "claude");
+populateTable(nolan, "nolan");
+populateTable(jack, "jack");
+populateTable(roland, "roland");
+populateTable(jerome, "jerome");
+populateTable(melissa, "melissa");
+populateTable(missy, "missy");
+populateTable(dean, "dean");
+populateTable(nora, "nora");
+populateTable(roger, "roger");
+populateTable(irene, "irene");
+//episode22
+populateTable(johnson, "johnson");
+populateTable(arnie, "arnie");
+populateTable(braydon, "braydon");
+populateTable(ted, "ted");
+populateTable(lewis, "lewis");
+populateTable(ivan, "ivan");
+populateTable(simon, "simon");
+//episode23
+populateTable(quinn, "quinn");
+populateTable(erik, "erik");
+populateTable(avery, "avery");
+populateTable(ramon, "ramon");
+populateTable(derek, "derek");
+populateTable(dusty, "dusty");
+populateTable(zac, "zac");
+populateTable(blaine, "blaine");
+//episode24
+populateTable(yuji, "yuji");
+populateTable(warren, "warren");
+populateTable(takashi, "takashi");
+populateTable(giovanni3_1, "giovanni3_1");
+populateTable(giovanni3_2, "giovanni3_2");
+populateTable(rival7_1, "rival7_1");
+populateTable(rival7_2, "rival7_2");
+//episode25
+populateTable(abigail, "abigail");
+populateTable(claire, "claire");
+populateTable(bryce, "bryce");
+populateTable(tanya, "tanya");
+populateTable(garrett, "garrett");
+populateTable(mikandkia, "mikandkia");
+populateTable(hugh, "hugh");
+populateTable(shea, "shea");
+populateTable(maria, "maria");
+populateTable(tommy, "tommy");
+populateTable(finn, "finn");
+populateTable(sharon, "sharon");
+populateTable(goon1, "goon1");
+populateTable(goon2, "goon2");
+populateTable(goon3, "goon3");
+populateTable(paxton, "paxton");
+populateTable(joyandmeg, "joyandmeg");
+populateTable(violet, "violet");
+populateTable(alexis, "alexis");
+populateTable(amira, "amira");
+populateTable(nikki, "nikki");
+//episode26
+populateTable(naomi, "naomi");
+populateTable(rolando, "rolando");
+populateTable(daisuke, "daisuke");
+populateTable(nelson, "nelson");
+populateTable(gregory, "gregory");
+populateTable(vincent, "vincent");
+populateTable(george, "george");
+populateTable(dawson, "dawson");
+populateTable(alexa, "alexa");
+populateTable(colby, "colby");
+populateTable(caroline, "caroline");
+populateTable(rayandtyra, "rayandtyra");
+//episode27
+populateTable(lorelei_1, "lorelei_1");
+populateTable(lorelei_2, "lorelei_2");
+//episode28
+populateTable(bruno_1, "bruno_1");
+populateTable(bruno_2, "bruno_2");
+//episode29
+populateTable(agatha_1, "agatha_1");
+populateTable(agatha_2, "agatha_2");
+//episode30
+populateTable(lance_1, "lance_1");
+populateTable(lance_2, "lance_2");
+//finale
+populateTable(champion_1, "champion_1");
+populateTable(champion_2, "champion_2");
 
 
 

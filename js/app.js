@@ -5,7 +5,7 @@ document.cookie = "cookieName=cookieValue; SameSite=Strict";
 var navbar = document.getElementsByClassName("topPanel1")[0];
 const version = document.getElementById("versionnumber");
 
-version.textContent = "V0.4.5";
+version.textContent = "V0.5.0";
 /*var sticky = navbar.offsetTop;*/
 
 /*

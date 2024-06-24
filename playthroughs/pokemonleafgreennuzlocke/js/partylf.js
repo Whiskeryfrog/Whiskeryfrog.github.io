@@ -342,7 +342,7 @@ const party25_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
     [starmie,nidoqueen, dodrio],
     ["Lv.50","Lv.53", "Lv.50"],
-    [waterPsychic, poison, normalFlying]
+    [waterPsychic, poisonGround, normalFlying]
 ];
 //episode26
 const party26_1 =[
@@ -355,7 +355,7 @@ const party26_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
     [starmie,nidoqueen, dodrio],
     ["Lv.53","Lv.53", "Lv.53"],
-    [waterPsychic, poison, normalFlying]
+    [waterPsychic, poisonGround, normalFlying]
 ];
 //episode27
 const party27_1 =[
@@ -368,7 +368,7 @@ const party27_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
     [starmie,nidoqueen, dodrio],
     ["Lv.59","Lv.59", "Lv.59"],
-    [waterPsychic, poison, normalFlying]
+    [waterPsychic, poisonGround, normalFlying]
 ];
 //episode28
 const party28_1 =[
@@ -381,7 +381,7 @@ const party28_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
     [starmie,nidoqueen, dodrio],
     ["Lv.59","Lv.59", "Lv.59"],
-    [waterPsychic, poison, normalFlying]
+    [waterPsychic, poisonGround, normalFlying]
 ];
 //episode29 
 const party29_1 =[
@@ -394,7 +394,7 @@ const party29_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
     [starmie,nidoqueen, dodrio],
     ["Lv.60","Lv.59", "Lv.59"],
-    [waterPsychic, poison, normalFlying]
+    [waterPsychic, poisonGround, normalFlying]
 ];
 //episode30 
 const party30_1 =[
@@ -407,7 +407,7 @@ const party30_2 =[
     ["RATTLESNEK", "IGUANA", "BOA"],
     [starmie,nidoqueen, dodrio],
     ["Lv.60","Lv.59", "Lv.59"],
-    [waterPsychic, poison, normalFlying]
+    [waterPsychic, poisonGround, normalFlying]
 ];
 //episodefinale  
 const partyfinale_1 =[
@@ -420,7 +420,7 @@ const partyfinale_2 =[
     ["RATTLESNEK", "IGUANA"],
     [starmie,nidoqueen],
     ["Lv.60","Lv.59"],
-    [waterPsychic, poison]
+    [waterPsychic, poisonGround]
 ];
 
 populateTable(party1, "party1");

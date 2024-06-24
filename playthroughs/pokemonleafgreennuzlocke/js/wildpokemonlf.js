@@ -164,6 +164,12 @@ document.getElementById("showCaught18").addEventListener("click", () => showCaug
 document.getElementById("showAll21").addEventListener("click", () => showAll("pokemon-table"));
 document.getElementById("showCaught21").addEventListener("click", () => showCaught("pokemon-table"));
 
+document.getElementById("showAll25").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught25").addEventListener("click", () => showCaught("pokemon-table"));
+
+document.getElementById("showAll27").addEventListener("click", () => showAll("pokemon-table"));
+document.getElementById("showCaught27").addEventListener("click", () => showCaught("pokemon-table"));
+
 document.addEventListener('DOMContentLoaded', () => {
     setTableVisibility("pokemon-table");
 });
@@ -934,6 +940,32 @@ const safariZonesuperrod = [
         ifCaught: "" 
     },
 ];
+const fuchsiacitysuperrod = [
+    {
+        pokemon: goldeen0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: seaking0,
+        level: "20-30",
+        encounterRate: "40%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "15-35",
+        encounterRate: "5%",
+        ifCaught: "" 
+    },
+];
 const safariZoneArea2 = [
     {
         pokemon: nidoranf0,
@@ -1417,19 +1449,322 @@ const seafoamislands = [
 //episode23
 //episode24
 //episode25
+const kindleroad = [
+    {
+        pokemon: ponyta0,
+        level: "31-34",
+        encounterRate: "30%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: spearow0,
+        level: "30-32",
+        encounterRate: "25%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: fearow0,
+        level: "36",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: meowth0,
+        level: "31",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: geodude0,
+        level: "31",
+        encounterRate: "10%",
+        ifCaught: "failed" 
+    },
+    {
+        pokemon: persian0,
+        level: "37-40",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: rapidash0,
+        level: "37-40",
+        encounterRate: "5%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "34",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+];
+const capebrink = [
+    {
+        pokemon: bellsprout0,
+        level: "30-32",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: spearow0,
+        level: "31",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: weepinbell0,
+        level: "36-38",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: fearow0,
+        level: "36",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: meowth0,
+        level: "31",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: persian0,
+        level: "37-40",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "31",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowbro0,
+        level: "37-40",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+];
+const capebrinksuperrod = [
+    {
+        pokemon: poliwag0,
+        level: "15-25",
+        encounterRate: "40%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: poliwhirl0,
+        level: "20-30",
+        encounterRate: "40%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: gyarados0,
+        level: "15-25",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "15-35",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    }
+];
+const capebrinkgoodrod = [
+    {
+        pokemon: poliwag0,
+        level: "5-15",
+        encounterRate: "60%",
+        ifCaught: "success" 
+    }, 
+    {
+        pokemon: goldeen0,
+        level: "5-15",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: magikarp0,
+        level: "5-15",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }
+];
+const bondbridge = [
+    {
+        pokemon: pidgey0,
+        level: "29-32",
+        encounterRate: "30%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: bellsprout0,
+        level: "31",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: pidgeotto0,
+        level: "34-40",
+        encounterRate: "15%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: weepinbell0,
+        level: "36",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: meowth0,
+        level: "31",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: venonat0,
+        level: "34",
+        encounterRate: "5%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: persian0,
+        level: "37-40",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "31",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+];
+const berryforest = [
+    {
+        pokemon: pidgeotto0,
+        level: "37",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: weepinbell0,
+        level: "35",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: pidgey0,
+        level: "32",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: bellsprout0,
+        level: "30",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: venonat0,
+        level: "34",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: drowzee0,
+        level: "34",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: venomoth0,
+        level: "37-40",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: slowpoke0,
+        level: "31",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: hypno0,
+        level: "Normal: 37-40, Special: 30",
+        encounterRate: "Normal: 5%, Special: 100%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: exeggcute0,
+        level: "35",
+        encounterRate: "5%",
+        ifCaught: "" 
+    },
+];
+//episode27
+const victoryroad = [
+    {
+        pokemon: machop0,
+        level: "34",
+        encounterRate: "20%",
+        ifCaught: "already" 
+    }, 
+    {
+        pokemon: geodude0,
+        level: "34",
+        encounterRate: "20%",
+        ifCaught: "" 
+    }, 
+    {
+        pokemon: onix0,
+        level: "45-48",
+        encounterRate: "20%",
+        ifCaught: "" 
+    },
+    {
+        pokemon: zubat0,
+        level: "34",
+        encounterRate: "10%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: primeape0,
+        level: "42",
+        encounterRate: "10%",
+        ifCaught: "success" 
+    },
+    {
+        pokemon: sandslash0,
+        level: "46",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: golbat0,
+        level: "46",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: machoke0,
+        level: "46",
+        encounterRate: "5%",
+        ifCaught: "already" 
+    },
+    {
+        pokemon: marowak0,
+        level: "46-48",
+        encounterRate: "5%",
+        ifCaught: "" 
+    }
+];
 
-const kindleRoad_1 =[
-    [" Ponyta <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Spearow <i class='fa-solid fa-seedling'></i>", "<i class='fa-solid fa-flag'></i> Fearow <i class='fa-solid fa-seedling'></i>"],
-    [ponyta, spearow, fearow ],
-    ["30% - Lv 31-34", "25% - Lv 30-32", "10% - Lv 36"],
-    [fire, normalFlying, normalFlying]
-];
-const kindleRoad_2 =[
-    [" Meowth <i class='fa-solid fa-seedling'></i>", "<span class='failenc'> Geodude <i class='fa-solid fa-seedling'></i></span>", "Persian <i class='fa-solid fa-seedling'></i>"],
-    [ponyta, spearow, fearow ],
-    ["30% - Lv 31-34", "25% - Lv 30-32", "10% - Lv 36"],
-    [fire, normalFlying, normalFlying]
-];
 
 //episode26
 //episode27
@@ -1489,6 +1824,7 @@ populateTable(safariZoneArea3, "safariZoneArea3");
 populateTable(safariZoneArea4, "safariZoneArea4");
 populateTable(route17, "route17");
 populateTable(vermillionCitysuperrod, "vermillionCitysuperrod");
+populateTable(fuchsiacitysuperrod, "fuchsiacitysuperrod");
 populateTable(silphco, "silphco");
 //episode18
 populateTable(saffronCity, "saffronCity");
@@ -1511,8 +1847,15 @@ populateTable(seafoamislands, "seafoamislands");
 //episode23
 //episode24
 //episode25
+populateTable(kindleroad, "kindleroad");
+populateTable(capebrink, "capebrink");
+populateTable(capebrinksuperrod, "capebrinksuperrod");
+populateTable(capebrinkgoodrod, "capebrinkgoodrod");
+populateTable(bondbridge, "bondbridge");
+populateTable(berryforest, "berryforest");
 //episode26
 //episode27
+populateTable(victoryroad, "victoryroad");
 //episode28
 //episode29
 //episode30
